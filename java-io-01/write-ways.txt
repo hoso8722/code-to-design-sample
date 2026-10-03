@@ -1,0 +1,7 @@
+1バイトずつ（FileOutputStream）        2599.0 ms
+1バイトずつ（BufferedOutputStream）      10.1 ms
+配列ごと1回で書く                         5.4 ms
+# 2回目
+1バイトずつ（FileOutputStream）        2594.9 ms
+1バイトずつ（BufferedOutputStream）       9.4 ms
+配列ごと1回で書く                         4.3 ms

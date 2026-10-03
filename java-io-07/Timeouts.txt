@@ -1,0 +1,2 @@
+タイムアウトあり: 523 ms 待って java.net.http.HttpTimeoutException: request timed out
+タイムアウトなし: 3632 ms 待って 200 ok

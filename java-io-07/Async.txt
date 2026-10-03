@@ -1,0 +1,3 @@
+1回目: send 2145 ms、sendAsync 136 ms
+2回目: send 2117 ms、sendAsync 115 ms
+3回目: send 2101 ms、sendAsync 115 ms

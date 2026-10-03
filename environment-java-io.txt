@@ -1,0 +1,10 @@
+# 計測環境（コードで見るJavaの入出力とネットワーク）
+date: 2026-10-03
+os: Linux 6.6.87.2-microsoft-standard-WSL2 x86_64 (WSL2)
+filesystem: ext4（WSL2 の仮想ディスク）。一時ファイルは /tmp に作成
+cpu: 16 logical CPUs, AMD Ryzen 7 7735HS with Radeon Graphics
+MemTotal:       15743164 kB
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+jmh: 1.37

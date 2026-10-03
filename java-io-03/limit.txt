@@ -1,0 +1,4 @@
+ヒープの上限: 64 MB
+ファイル: 51.5 MB
+BufferedReader: 2,000,000行を読めました
+Files.readAllLines: java.lang.OutOfMemoryError: Java heap space

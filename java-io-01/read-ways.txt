@@ -1,0 +1,10 @@
+# java ReadWays.java (1回目)
+1バイトずつ（FileInputStream）         5967.3 ms
+1バイトずつ（BufferedInputStream）       41.7 ms
+8,192バイトの配列で読む                   3.6 ms
+Files.readAllBytes                       13.2 ms
+# java ReadWays.java (2回目)
+1バイトずつ（FileInputStream）         5930.2 ms
+1バイトずつ（BufferedInputStream）       38.8 ms
+8,192バイトの配列で読む                   3.1 ms
+Files.readAllBytes                       11.5 ms

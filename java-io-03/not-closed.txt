@@ -1,0 +1,8 @@
+# java NotClosed.java
+最初に開いているファイル: 6
+1,000回読んだあと: 1006
+すべて閉じたあと: 6
+# ulimit -n 512; java NotClosed.java
+最初に開いているファイル: 6
+506個を開いたところで失敗: java.nio.file.FileSystemException: /tmp/scores9548909434885531642.csv: Too many open files
+すべて閉じたあと: 6

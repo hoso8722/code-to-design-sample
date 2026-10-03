@@ -1,0 +1,32 @@
+# java ReadText 500000
+ファイル: 500,000行、12.9 MB
+Files.readAllLines: 435 ms（合計 74,998,570）
+Files.readString: 493 ms（合計 74,998,570）
+Files.lines: 247 ms（合計 74,998,570）
+BufferedReader: 198 ms（合計 74,998,570）
+readAllLines が読み込んだデータ: 43 MB
+readString が読み込んだデータ: 21 MB
+# java ReadText 1000000
+ファイル: 1,000,000行、25.7 MB
+Files.readAllLines: 685 ms（合計 150,000,150）
+Files.readString: 809 ms（合計 150,000,150）
+Files.lines: 569 ms（合計 150,000,150）
+BufferedReader: 437 ms（合計 150,000,150）
+readAllLines が読み込んだデータ: 85 MB
+readString が読み込んだデータ: 40 MB
+# java ReadText 2000000
+ファイル: 2,000,000行、51.5 MB
+Files.readAllLines: 1131 ms（合計 300,000,018）
+Files.readString: 1764 ms（合計 300,000,018）
+Files.lines: 972 ms（合計 300,000,018）
+BufferedReader: 826 ms（合計 300,000,018）
+readAllLines が読み込んだデータ: 172 MB
+readString が読み込んだデータ: 80 MB
+# java ReadText 4000000
+ファイル: 4,000,000行、102.9 MB
+Files.readAllLines: 1953 ms（合計 599,999,817）
+Files.readString: 4030 ms（合計 599,999,817）
+Files.lines: 1549 ms（合計 599,999,817）
+BufferedReader: 1445 ms（合計 599,999,817）
+readAllLines が読み込んだデータ: 335 MB
+readString が読み込んだデータ: 159 MB

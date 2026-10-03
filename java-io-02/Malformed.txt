@@ -1,0 +1,4 @@
+new String: A����,���i（置換文字 7個）
+InputStreamReader: A����,���i
+Files.readString: java.nio.charset.MalformedInputException: Input length = 1
+Files.newBufferedReader: java.nio.charset.MalformedInputException: Input length = 1

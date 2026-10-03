@@ -1,0 +1,4 @@
+既定の文字コード: UTF-8
+file.encoding: UTF-8
+native.encoding: UTF-8
+stdout.encoding: UTF-8

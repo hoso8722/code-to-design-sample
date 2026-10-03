@@ -1,0 +1,6 @@
+作った直後        position=0 limit=16 capacity=16
+put のあと      position=4 limit=16 capacity=16
+flip のあと     position=0 limit=4 capacity=16
+get のあと      position=4 limit=4 capacity=16
+読み出した内容: PASS
+clear のあと    position=0 limit=16 capacity=16
