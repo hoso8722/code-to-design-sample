@@ -1,0 +1,14 @@
+105   30       3       Morphism$Square::area (10 bytes)
+106   31       3       Morphism$Rect::area (10 bytes)
+106   32       3       Morphism$Circle::area (14 bytes)
+106   33       4       Morphism$Square::area (10 bytes)
+106   30       3       Morphism$Square::area (10 bytes)   made not entrant: not used
+106   34       4       Morphism$Rect::area (10 bytes)
+107   31       3       Morphism$Rect::area (10 bytes)   made not entrant: not used
+107   35       4       Morphism$Circle::area (14 bytes)
+107   32       3       Morphism$Circle::area (14 bytes)   made not entrant: not used
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: virtual call
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: virtual call
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: virtual call

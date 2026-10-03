@@ -1,0 +1,28 @@
+  static double total(Deopt$Shape[]);
+    Code:
+         0: dconst_0
+         1: dstore_1
+         2: aload_0
+         3: astore_3
+         4: aload_3
+         5: arraylength
+         6: istore        4
+         8: iconst_0
+         9: istore        5
+        11: iload         5
+        13: iload         4
+        15: if_icmpge     40
+        18: aload_3
+        19: iload         5
+        21: aaload
+        22: astore        6
+        24: dload_1
+        25: aload         6
+        27: invokeinterface #7,  1            // InterfaceMethod Deopt$Shape.area:()D
+        32: dadd
+        33: dstore_1
+        34: iinc          5, 1
+        37: goto          11
+        40: dload_1
+        41: dreturn
+

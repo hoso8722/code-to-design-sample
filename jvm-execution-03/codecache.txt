@@ -1,0 +1,10 @@
+処理時間: 173 ms（check=66566744000000）
+CodeHeap 'non-profiled nmethods': size=119168Kb used=34Kb max_used=34Kb free=119133Kb
+ bounds [0x000073353bfa0000, 0x000073353c210000, 0x0000733543400000]
+CodeHeap 'profiled nmethods': size=119168Kb used=82Kb max_used=82Kb free=119085Kb
+ bounds [0x00007335343ff000, 0x000073353466f000, 0x000073353b85f000]
+CodeHeap 'non-nmethods': size=7428Kb used=2418Kb max_used=2433Kb free=5009Kb
+ bounds [0x000073353b85f000, 0x000073353bacf000, 0x000073353bfa0000]
+CodeCache: size=245764Kb, used=2534Kb, max_used=2549Kb, free=243227Kb
+ total_blobs=492, nmethods=110, adapters=285, full_count=0
+Compilation: enabled, stopped_count=0, restarted_count=0

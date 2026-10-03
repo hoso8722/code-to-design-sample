@@ -1,0 +1,4 @@
+main 開始時の JVM の稼働時間: 76 ms、HttpClient を作る: 404 ms、HttpRequest を作る: 4 ms
+main 開始時の JVM の稼働時間: 74 ms、HttpClient を作る: 401 ms、HttpRequest を作る: 4 ms
+main 開始時の JVM の稼働時間: 74 ms、HttpClient を作る: 395 ms、HttpRequest を作る: 4 ms
+main 開始時の JVM の稼働時間: 70 ms、HttpClient を作る: 349 ms、HttpRequest を作る: 4 ms

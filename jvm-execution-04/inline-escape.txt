@@ -1,0 +1,3 @@
+[default] Point を1,000万個作ったときの確保量: 0.0 MB（check=120000000000000）
+[-XX:-Inline] Point を1,000万個作ったときの確保量: 240.0 MB（check=120000000000000）
+[-XX:-DoEscapeAnalysis] Point を1,000万個作ったときの確保量: 240.0 MB（check=120000000000000）

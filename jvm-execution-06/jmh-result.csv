@@ -1,0 +1,16 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: n"
+"bench.StringConcatBench.blackhole","avgt",1,15,0.001932,0.000028,"us/op",10
+"bench.StringConcatBench.blackhole","avgt",1,15,0.001962,0.000059,"us/op",100
+"bench.StringConcatBench.blackhole","avgt",1,15,0.001929,0.000038,"us/op",1000
+"bench.StringConcatBench.builder","avgt",1,15,0.034691,0.003599,"us/op",10
+"bench.StringConcatBench.builder","avgt",1,15,0.466188,0.021832,"us/op",100
+"bench.StringConcatBench.builder","avgt",1,15,8.220712,0.263776,"us/op",1000
+"bench.StringConcatBench.deadCode","avgt",1,15,0.000540,0.000019,"us/op",10
+"bench.StringConcatBench.deadCode","avgt",1,15,0.000549,0.000017,"us/op",100
+"bench.StringConcatBench.deadCode","avgt",1,15,0.000547,0.000024,"us/op",1000
+"bench.StringConcatBench.joining","avgt",1,15,0.199136,0.007692,"us/op",10
+"bench.StringConcatBench.joining","avgt",1,15,1.855359,0.096744,"us/op",100
+"bench.StringConcatBench.joining","avgt",1,15,20.675666,0.933604,"us/op",1000
+"bench.StringConcatBench.plusLoop","avgt",1,15,0.171249,0.006183,"us/op",10
+"bench.StringConcatBench.plusLoop","avgt",1,15,1.947826,0.100237,"us/op",100
+"bench.StringConcatBench.plusLoop","avgt",1,15,173.871286,15.584056,"us/op",1000

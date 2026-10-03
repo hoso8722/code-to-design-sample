@@ -1,0 +1,20 @@
+== 1. AOTキャッシュを作る
+Reading AOTConfiguration app.aot.config and writing AOTCache app.aot
+AOTCache creation is complete: app.aot 22163456 bytes
+Removed temporary AOT configuration file app.aot.config
+共有アーカイブから読み込んだクラス: 2200
+== 2. -jar ではなく -cp で起動する
+共有アーカイブから読み込んだクラス: 2200
+== 3. JAR を作り直す（中身は同じ、更新日時が変わる）
+[0.018s][warning][aot] This file is not the one used while building the AOT cache: 'app.jar', timestamp has changed
+[0.018s][error  ][aot] An error has occurred while processing the AOT cache. Run with -Xlog:aot for details.
+[0.018s][error  ][aot] shared class paths mismatch (hint: enable -Xlog:class+path=info to diagnose the failure)
+[0.023s][error  ][aot] Unable to map shared spaces
+GET example.com、12 か月ぶん、main の処理 555 ms
+終了コード: 0
+共有アーカイブから読み込んだクラス: 0
+== 4. 元の JAR（更新日時も元のまま）に戻す
+共有アーカイブから読み込んだクラス: 2200
+== 5. JDK 21 で -XX:AOTCacheOutput を指定する
+Unrecognized VM option 'AOTCacheOutput=x.aot'
+Error: Could not create the Java Virtual Machine.

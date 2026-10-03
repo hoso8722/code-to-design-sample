@@ -1,0 +1,8 @@
+124   26       3       Morphism$Square::area (10 bytes)
+124   27       4       Morphism$Square::area (10 bytes)
+125   26       3       Morphism$Square::area (10 bytes)   made not entrant: not used
+                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (44120/44120 counts) = Morphism$Square
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
+                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
+                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (275200/275200 counts) = Morphism$Square
+                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (1180445/1180445 counts) = Morphism$Square

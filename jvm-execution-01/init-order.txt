@@ -1,0 +1,8 @@
+1. main が始まった
+2. Config.NAME を読む: config
+3. Config.load() を呼ぶ
+  Config を初期化した（static 初期化子）
+   → loaded
+4. Heavy の配列を作る: 3
+5. Heavy.use() を呼ぶ
+  Heavy を初期化した（static 初期化子）

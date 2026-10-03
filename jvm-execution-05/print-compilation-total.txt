@@ -1,0 +1,14 @@
+59   23       3       Deopt$Square::area (10 bytes)
+59   24       4       Deopt$Square::area (10 bytes)
+60   23       3       Deopt$Square::area (10 bytes)   made not entrant: not used
+61   25 %     4       Deopt::total @ 11 (42 bytes)
+101  108       4       Deopt::total (42 bytes)
+101   25 %     4       Deopt::total @ 11 (42 bytes)   made not entrant: uncommon trap
+106  110 %     4       Deopt::total @ 11 (42 bytes)
+224  265       3       Deopt$Rect::area (10 bytes)
+225  110 %     4       Deopt::total @ 11 (42 bytes)   made not entrant: uncommon trap
+225  266       4       Deopt$Rect::area (10 bytes)
+225  265       3       Deopt$Rect::area (10 bytes)   made not entrant: not used
+226  267 %     4       Deopt::total @ 11 (42 bytes)
+229  108       4       Deopt::total (42 bytes)   made not entrant: uncommon trap
+230  268       4       Deopt::total (42 bytes)
