@@ -1,0 +1,9 @@
+200443:
+ num     #instances         #bytes  class name (module)
+-------------------------------------------------------
+   1:        100000      228366224  jdk.internal.vm.StackChunk (java.base@21.0.12.1)
+   2:        100000       14400000  java.lang.VirtualThread (java.base@21.0.12.1)
+   3:        100000        4800000  java.lang.VirtualThread$VThreadContinuation (java.base@21.0.12.1)
+   4:         28510        4107856  [Ljdk.internal.vm.FillerElement; (java.base@21.0.12.1)
+   5:        101415        3245280  java.util.concurrent.ConcurrentHashMap$Node (java.base@21.0.12.1)
+   6:        100001        3200032  java.util.concurrent.locks.AbstractQueuedSynchronizer$SharedNode (java.base@21.0.12.1)

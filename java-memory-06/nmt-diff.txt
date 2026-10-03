@@ -1,0 +1,87 @@
+74008:
+
+Native Memory Tracking:
+
+(Omitting categories weighting less than 1KB)
+
+Total: reserved=5749859KB +275549KB, committed=633875KB +292761KB
+
+-                 Java Heap (reserved=3936256KB, committed=249856KB)
+                            (mmap: reserved=3936256KB, committed=249856KB)
+ 
+-                     Class (reserved=1054454KB +5788KB, committed=15990KB +15772KB)
+                            (classes #10781 +10084)
+                            (  instance classes #10670 +10080, array classes #111 +4)
+                            (malloc=5878KB +5788KB #51773 +50236)
+                            (mmap: reserved=1048576KB, committed=10112KB +9984KB)
+                           : (  Metadata)
+                            (    reserved=65536KB, committed=10624KB +10176KB)
+                            (    used=8944KB +8608KB)
+                            (    waste=1680KB =15.81% +1568KB)
+                           : (  Class space)
+                            (    reserved=1048576KB, committed=10112KB +9984KB)
+                            (    used=5190KB +5164KB)
+                            (    waste=4922KB =48.68% +4820KB)
+ 
+-                    Thread (reserved=21565KB +3079KB, committed=965KB +131KB)
+                            (thread #21 +3)
+                            (stack: reserved=21504KB +3072KB, committed=904KB +124KB)
+                            (malloc=41KB +7KB #130 +18)
+                            (arena=20KB +1KB #37 +3)
+ 
+-                      Code (reserved=247774KB +35KB, committed=7638KB +35KB)
+                            (malloc=90KB +35KB #1372 +221)
+                            (mmap: reserved=247684KB, committed=7548KB)
+ 
+-                        GC (reserved=137976KB +1KB, committed=65976KB +1KB)
+                            (malloc=27592KB +1KB #1032 +71)
+                            (mmap: reserved=110384KB, committed=38384KB)
+ 
+-                 GCCardSet (reserved=28KB, committed=28KB)
+                            (malloc=28KB #369)
+ 
+-                  Compiler (reserved=185KB +18KB, committed=185KB +18KB)
+                            (malloc=19KB +15KB #40 +13)
+                            (arena=167KB +3KB #7 +3)
+ 
+-                  Internal (reserved=1587KB +351KB, committed=1587KB +351KB)
+                            (malloc=1551KB +351KB #11603 +10358)
+                            (mmap: reserved=36KB, committed=36KB)
+ 
+-                     Other (reserved=262144KB +262144KB, committed=262144KB +262144KB)
+                            (malloc=262144KB +262144KB #16 +16)
+ 
+-                    Symbol (reserved=2023KB +881KB, committed=2023KB +881KB)
+                            (malloc=1663KB +881KB #10180 +10024)
+                            (arena=360KB #1)
+ 
+-    Native Memory Tracking (reserved=1411KB +1291KB, committed=1411KB +1291KB)
+                            (malloc=24KB +19KB #414 +339)
+                            (tracking overhead=1387KB +1273KB)
+ 
+-        Shared class space (reserved=16384KB, committed=12912KB)
+                            (mmap: reserved=16384KB, committed=12912KB)
+ 
+-               Arena Chunk (reserved=1KB -462KB, committed=1KB -462KB)
+                            (malloc=1KB -462KB)
+ 
+-                    Module (reserved=39KB, committed=39KB)
+                            (malloc=39KB #1243)
+ 
+-                 Safepoint (reserved=8KB, committed=8KB)
+                            (mmap: reserved=8KB, committed=8KB)
+ 
+-           Synchronization (reserved=1051KB +1016KB, committed=1051KB +1016KB)
+                            (malloc=1051KB +1016KB #10339 +10008)
+ 
+-            Serviceability (reserved=17KB, committed=17KB)
+                            (malloc=17KB #9)
+ 
+-                 Metaspace (reserved=66955KB +1407KB, committed=12043KB +11583KB)
+                            (malloc=1419KB +1407KB #167 +158)
+                            (mmap: reserved=65536KB, committed=10624KB +10176KB)
+ 
+-      String Deduplication (reserved=1KB, committed=1KB)
+                            (malloc=1KB #8)
+ 
+VmRSS:	  353588 kB

@@ -1,0 +1,6 @@
+allocated_mb,heap_used_mb,direct_mb,rss_mb
+0,1,0,40
+32,1,32,75
+64,1,64,106
+96,1,96,138
+Exception in thread "main" java.lang.OutOfMemoryError: Cannot reserve 16777216 bytes of direct buffer memory (allocated: 117448704, limit: 134217728)

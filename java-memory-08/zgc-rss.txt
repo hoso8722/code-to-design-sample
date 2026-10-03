@@ -1,0 +1,3 @@
+-XX:+UseZGC: VmRSS: 3117 MB  RssAnon: 24 MB  RssFile: 20 MB  RssShmem: 30-XX:+UseZGC -XX:+ZGenerational: VmRSS: 2 MB  RssAnon: 0 MB  RssFile: 2 MB  RssShmem: 0 MB  
+hmem: 1024 MB  
+-XX:+UseG1GC: VmRSS: 1092 MB  RssAnon: 1071 MB  RssFile: 21 MB  RssShmem: 0 MB  

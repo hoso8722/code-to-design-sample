@@ -1,0 +1,19 @@
+== --memory=512m -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB
+max heap = 371 MB
+heap: 300 MB
+direct: 50 MB
+direct: 100 MB
+exit code: 137
+== --memory=512m -XX:MaxRAMPercentage=50, heap 300MB + direct 150MB
+max heap = 247 MB
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at FillMemory.main(FillMemory.java:16)
+exit code: 1
+ExitCode=137 OOMKilled=false
+java exit=137
+low 0
+high 0
+max 0
+oom 0
+oom_kill 1
+oom_group_kill 0

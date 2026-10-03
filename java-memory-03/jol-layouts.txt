@@ -1,0 +1,64 @@
+java.lang.Long object internals:
+OFF  SZ   TYPE DESCRIPTION               VALUE
+  0   8        (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
+  8   4        (object header: class)    0x00037c78
+ 12   4        (alignment/padding gap)   
+ 16   8   long Long.value                0
+Instance size: 24 bytes
+Space losses: 4 bytes internal + 0 bytes external = 4 bytes total
+java.lang.Integer object internals:
+OFF  SZ   TYPE DESCRIPTION               VALUE
+  0   8        (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
+  8   4        (object header: class)    0x00025fd8
+ 12   4    int Integer.value             0
+Instance size: 16 bytes
+Space losses: 0 bytes internal + 0 bytes external = 0 bytes total
+java.lang.String object internals:
+OFF  SZ      TYPE DESCRIPTION               VALUE
+  0   8           (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
+  8   4           (object header: class)    0x0000e878
+ 12   4       int String.hash               0
+ 16   1      byte String.coder              0
+ 17   1   boolean String.hashIsZero         false
+ 18   2           (alignment/padding gap)   
+ 20   4    byte[] String.value              []
+Instance size: 24 bytes
+Space losses: 2 bytes internal + 0 bytes external = 2 bytes total
+java.util.ArrayList object internals:
+OFF  SZ                 TYPE DESCRIPTION               VALUE
+  0   8                      (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
+  8   4                      (object header: class)    0x000b94b0
+ 12   4                  int AbstractList.modCount     0
+ 16   4                  int ArrayList.size            0
+ 20   4   java.lang.Object[] ArrayList.elementData     []
+Instance size: 24 bytes
+Space losses: 0 bytes internal + 0 bytes external = 0 bytes total
+java.util.HashMap$Node object internals:
+OFF  SZ                     TYPE DESCRIPTION               VALUE
+  0   8                          (object header: mark)     N/A
+  8   4                          (object header: class)    N/A
+ 12   4                      int Node.hash                 N/A
+ 16   4         java.lang.Object Node.key                  N/A
+ 20   4         java.lang.Object Node.value                N/A
+ 24   4   java.util.HashMap.Node Node.next                 N/A
+ 28   4                          (object alignment gap)    
+Instance size: 32 bytes
+Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
+java.util.LinkedList$Node object internals:
+OFF  SZ                        TYPE DESCRIPTION               VALUE
+  0   8                             (object header: mark)     N/A
+  8   4                             (object header: class)    N/A
+ 12   4            java.lang.Object Node.item                 N/A
+ 16   4   java.util.LinkedList.Node Node.next                 N/A
+ 20   4   java.util.LinkedList.Node Node.prev                 N/A
+Instance size: 24 bytes
+Space losses: 0 bytes internal + 0 bytes external = 0 bytes total
+AllocSize$Point object internals:
+OFF  SZ   TYPE DESCRIPTION               VALUE
+  0   8        (object header: mark)     0x0000000000000001 (non-biasable; age: 0)
+  8   4        (object header: class)    0x01026848
+ 12   4    int Point.x                   0
+ 16   4    int Point.y                   0
+ 20   4        (object alignment gap)    
+Instance size: 24 bytes
+Space losses: 0 bytes internal + 4 bytes external = 4 bytes total

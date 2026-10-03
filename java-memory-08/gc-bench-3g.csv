@@ -1,0 +1,10 @@
+gc,run,elapsed_ms,peak_rss_mb
+g1,1,6924,2037
+g1,2,5874,1997
+g1,3,6712,2035
+zgc-gen,1,11812,3269
+zgc-gen,2,10279,3263
+zgc-gen,3,10416,3261
+parallel,1,5478,1528
+parallel,2,4985,1528
+parallel,3,5180,1528

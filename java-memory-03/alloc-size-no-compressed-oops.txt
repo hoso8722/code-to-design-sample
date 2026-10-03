@@ -1,0 +1,8 @@
+new Object()           :  16.0 bytes
+Integer.valueOf(i%100) :   0.0 bytes
+Integer.valueOf(1000+i):  16.0 bytes
+Long.valueOf(1000+i)   :  24.0 bytes
+new Point(i, i)        :  24.0 bytes
+new int[0]             :  16.0 bytes
+new int[10]            :  56.0 bytes
+new byte[10]           :  32.0 bytes
