@@ -1,0 +1,6 @@
+作り方                    add        元の src に追加したあとの中身                  null を含む   クラス
+List.of(...)           UnsupportedOperationException [a, b]                             NullPointerException java.util.ImmutableCollections$List12
+List.copyOf(src)       UnsupportedOperationException [a, b]                             NullPointerException java.util.ImmutableCollections$List12
+unmodifiableList(src)  UnsupportedOperationException [a, b, c]                          できた        java.util.Collections$UnmodifiableRandomAccessList
+stream().toList()      UnsupportedOperationException [a, b]                             できた        java.util.ImmutableCollections$ListN
+collect(toList())      できた        [a, b, x]                          できた        java.util.ArrayList

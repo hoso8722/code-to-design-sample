@@ -1,0 +1,3 @@
+List.copyOf(List.of(...)) は同じオブジェクト?       true
+List.copyOf(unmodifiableList(...)) は同じオブジェクト? false
+List.of() は毎回同じオブジェクト?                     true

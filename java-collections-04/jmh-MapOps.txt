@@ -1,0 +1,633 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.get
+# Parameters: (n = 1000, type = HashMap)
+
+# Run progress: 0.00% complete, ETA 00:03:12
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 5.929 ns/op
+# Warmup Iteration   2: 6.076 ns/op
+# Warmup Iteration   3: 5.747 ns/op
+Iteration   1: 6.309 ns/op
+Iteration   2: 5.739 ns/op
+Iteration   3: 5.949 ns/op
+Iteration   4: 5.861 ns/op
+Iteration   5: 5.846 ns/op
+
+# Run progress: 4.17% complete, ETA 00:03:16
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 5.915 ns/op
+# Warmup Iteration   2: 5.948 ns/op
+# Warmup Iteration   3: 5.907 ns/op
+Iteration   1: 5.754 ns/op
+Iteration   2: 5.924 ns/op
+Iteration   3: 5.797 ns/op
+Iteration   4: 6.063 ns/op
+Iteration   5: 5.929 ns/op
+
+
+Result "bench.MapOps.get":
+  5.917 ±(99.9%) 0.256 ns/op [Average]
+  (min, avg, max) = (5.739, 5.917, 6.309), stdev = 0.169
+  CI (99.9%): [5.662, 6.173] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.get
+# Parameters: (n = 1000, type = LinkedHashMap)
+
+# Run progress: 8.33% complete, ETA 00:03:06
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 6.414 ns/op
+# Warmup Iteration   2: 6.605 ns/op
+# Warmup Iteration   3: 6.327 ns/op
+Iteration   1: 6.073 ns/op
+Iteration   2: 6.216 ns/op
+Iteration   3: 6.099 ns/op
+Iteration   4: 6.219 ns/op
+Iteration   5: 6.219 ns/op
+
+# Run progress: 12.50% complete, ETA 00:02:58
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 6.722 ns/op
+# Warmup Iteration   2: 6.284 ns/op
+# Warmup Iteration   3: 6.183 ns/op
+Iteration   1: 6.002 ns/op
+Iteration   2: 6.359 ns/op
+Iteration   3: 6.034 ns/op
+Iteration   4: 6.004 ns/op
+Iteration   5: 6.471 ns/op
+
+
+Result "bench.MapOps.get":
+  6.170 ±(99.9%) 0.238 ns/op [Average]
+  (min, avg, max) = (6.002, 6.170, 6.471), stdev = 0.157
+  CI (99.9%): [5.932, 6.407] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.get
+# Parameters: (n = 1000, type = TreeMap)
+
+# Run progress: 16.67% complete, ETA 00:02:49
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 24.084 ns/op
+# Warmup Iteration   2: 23.255 ns/op
+# Warmup Iteration   3: 25.338 ns/op
+Iteration   1: 27.778 ns/op
+Iteration   2: 24.687 ns/op
+Iteration   3: 25.451 ns/op
+Iteration   4: 26.299 ns/op
+Iteration   5: 26.550 ns/op
+
+# Run progress: 20.83% complete, ETA 00:02:41
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 23.441 ns/op
+# Warmup Iteration   2: 23.837 ns/op
+# Warmup Iteration   3: 26.972 ns/op
+Iteration   1: 26.045 ns/op
+Iteration   2: 25.602 ns/op
+Iteration   3: 27.282 ns/op
+Iteration   4: 25.847 ns/op
+Iteration   5: 26.075 ns/op
+
+
+Result "bench.MapOps.get":
+  26.162 ±(99.9%) 1.348 ns/op [Average]
+  (min, avg, max) = (24.687, 26.162, 27.778), stdev = 0.891
+  CI (99.9%): [24.814, 27.509] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.get
+# Parameters: (n = 100000, type = HashMap)
+
+# Run progress: 25.00% complete, ETA 00:02:32
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 17.828 ns/op
+# Warmup Iteration   2: 20.045 ns/op
+# Warmup Iteration   3: 15.860 ns/op
+Iteration   1: 17.508 ns/op
+Iteration   2: 17.245 ns/op
+Iteration   3: 16.147 ns/op
+Iteration   4: 16.805 ns/op
+Iteration   5: 16.077 ns/op
+
+# Run progress: 29.17% complete, ETA 00:02:24
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 19.896 ns/op
+# Warmup Iteration   2: 20.329 ns/op
+# Warmup Iteration   3: 17.709 ns/op
+Iteration   1: 18.962 ns/op
+Iteration   2: 17.904 ns/op
+Iteration   3: 17.482 ns/op
+Iteration   4: 18.939 ns/op
+Iteration   5: 18.704 ns/op
+
+
+Result "bench.MapOps.get":
+  17.577 ±(99.9%) 1.607 ns/op [Average]
+  (min, avg, max) = (16.077, 17.577, 18.962), stdev = 1.063
+  CI (99.9%): [15.970, 19.184] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.get
+# Parameters: (n = 100000, type = LinkedHashMap)
+
+# Run progress: 33.33% complete, ETA 00:02:15
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 22.349 ns/op
+# Warmup Iteration   2: 21.264 ns/op
+# Warmup Iteration   3: 20.851 ns/op
+Iteration   1: 17.644 ns/op
+Iteration   2: 18.246 ns/op
+Iteration   3: 17.673 ns/op
+Iteration   4: 19.876 ns/op
+Iteration   5: 18.180 ns/op
+
+# Run progress: 37.50% complete, ETA 00:02:07
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 21.850 ns/op
+# Warmup Iteration   2: 22.586 ns/op
+# Warmup Iteration   3: 18.530 ns/op
+Iteration   1: 17.904 ns/op
+Iteration   2: 19.304 ns/op
+Iteration   3: 19.263 ns/op
+Iteration   4: 17.780 ns/op
+Iteration   5: 18.673 ns/op
+
+
+Result "bench.MapOps.get":
+  18.454 ±(99.9%) 1.192 ns/op [Average]
+  (min, avg, max) = (17.644, 18.454, 19.876), stdev = 0.788
+  CI (99.9%): [17.263, 19.646] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.get
+# Parameters: (n = 100000, type = TreeMap)
+
+# Run progress: 41.67% complete, ETA 00:01:59
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 388.201 ns/op
+# Warmup Iteration   2: 351.439 ns/op
+# Warmup Iteration   3: 350.198 ns/op
+Iteration   1: 341.758 ns/op
+Iteration   2: 354.025 ns/op
+Iteration   3: 358.347 ns/op
+Iteration   4: 340.773 ns/op
+Iteration   5: 356.189 ns/op
+
+# Run progress: 45.83% complete, ETA 00:01:50
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 342.022 ns/op
+# Warmup Iteration   2: 360.151 ns/op
+# Warmup Iteration   3: 347.644 ns/op
+Iteration   1: 371.753 ns/op
+Iteration   2: 335.091 ns/op
+Iteration   3: 374.427 ns/op
+Iteration   4: 336.228 ns/op
+Iteration   5: 380.653 ns/op
+
+
+Result "bench.MapOps.get":
+  354.924 ±(99.9%) 24.976 ns/op [Average]
+  (min, avg, max) = (335.091, 354.924, 380.653), stdev = 16.520
+  CI (99.9%): [329.949, 379.900] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.put
+# Parameters: (n = 1000, type = HashMap)
+
+# Run progress: 50.00% complete, ETA 00:01:42
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 21.086 ns/op
+# Warmup Iteration   2: 17.224 ns/op
+# Warmup Iteration   3: 18.438 ns/op
+Iteration   1: 19.333 ns/op
+Iteration   2: 15.446 ns/op
+Iteration   3: 16.190 ns/op
+Iteration   4: 16.421 ns/op
+Iteration   5: 15.521 ns/op
+
+# Run progress: 54.17% complete, ETA 00:01:33
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 20.363 ns/op
+# Warmup Iteration   2: 19.172 ns/op
+# Warmup Iteration   3: 17.075 ns/op
+Iteration   1: 18.457 ns/op
+Iteration   2: 16.120 ns/op
+Iteration   3: 16.535 ns/op
+Iteration   4: 16.453 ns/op
+Iteration   5: 15.564 ns/op
+
+
+Result "bench.MapOps.put":
+  16.604 ±(99.9%) 1.948 ns/op [Average]
+  (min, avg, max) = (15.446, 16.604, 19.333), stdev = 1.289
+  CI (99.9%): [14.656, 18.552] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.put
+# Parameters: (n = 1000, type = LinkedHashMap)
+
+# Run progress: 58.33% complete, ETA 00:01:25
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 22.338 ns/op
+# Warmup Iteration   2: 18.508 ns/op
+# Warmup Iteration   3: 19.269 ns/op
+Iteration   1: 19.591 ns/op
+Iteration   2: 19.012 ns/op
+Iteration   3: 17.035 ns/op
+Iteration   4: 17.847 ns/op
+Iteration   5: 18.890 ns/op
+
+# Run progress: 62.50% complete, ETA 00:01:16
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 20.565 ns/op
+# Warmup Iteration   2: 17.461 ns/op
+# Warmup Iteration   3: 18.356 ns/op
+Iteration   1: 17.730 ns/op
+Iteration   2: 19.955 ns/op
+Iteration   3: 16.805 ns/op
+Iteration   4: 18.048 ns/op
+Iteration   5: 17.045 ns/op
+
+
+Result "bench.MapOps.put":
+  18.196 ±(99.9%) 1.683 ns/op [Average]
+  (min, avg, max) = (16.805, 18.196, 19.955), stdev = 1.113
+  CI (99.9%): [16.513, 19.879] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.put
+# Parameters: (n = 1000, type = TreeMap)
+
+# Run progress: 66.67% complete, ETA 00:01:08
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 44.732 ns/op
+# Warmup Iteration   2: 30.845 ns/op
+# Warmup Iteration   3: 34.243 ns/op
+Iteration   1: 31.751 ns/op
+Iteration   2: 31.499 ns/op
+Iteration   3: 35.686 ns/op
+Iteration   4: 34.379 ns/op
+Iteration   5: 35.175 ns/op
+
+# Run progress: 70.83% complete, ETA 00:00:59
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 40.390 ns/op
+# Warmup Iteration   2: 34.356 ns/op
+# Warmup Iteration   3: 35.239 ns/op
+Iteration   1: 32.520 ns/op
+Iteration   2: 34.135 ns/op
+Iteration   3: 32.341 ns/op
+Iteration   4: 33.741 ns/op
+Iteration   5: 35.192 ns/op
+
+
+Result "bench.MapOps.put":
+  33.642 ±(99.9%) 2.301 ns/op [Average]
+  (min, avg, max) = (31.499, 33.642, 35.686), stdev = 1.522
+  CI (99.9%): [31.341, 35.943] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.put
+# Parameters: (n = 100000, type = HashMap)
+
+# Run progress: 75.00% complete, ETA 00:00:51
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 59.056 ns/op
+# Warmup Iteration   2: 51.398 ns/op
+# Warmup Iteration   3: 54.701 ns/op
+Iteration   1: 54.402 ns/op
+Iteration   2: 54.095 ns/op
+Iteration   3: 52.776 ns/op
+Iteration   4: 43.663 ns/op
+Iteration   5: 60.374 ns/op
+
+# Run progress: 79.17% complete, ETA 00:00:42
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 55.197 ns/op
+# Warmup Iteration   2: 54.553 ns/op
+# Warmup Iteration   3: 50.195 ns/op
+Iteration   1: 47.083 ns/op
+Iteration   2: 52.649 ns/op
+Iteration   3: 47.581 ns/op
+Iteration   4: 56.214 ns/op
+Iteration   5: 43.464 ns/op
+
+
+Result "bench.MapOps.put":
+  51.230 ±(99.9%) 8.421 ns/op [Average]
+  (min, avg, max) = (43.464, 51.230, 60.374), stdev = 5.570
+  CI (99.9%): [42.809, 59.651] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.put
+# Parameters: (n = 100000, type = LinkedHashMap)
+
+# Run progress: 83.33% complete, ETA 00:00:34
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 79.924 ns/op
+# Warmup Iteration   2: 86.687 ns/op
+# Warmup Iteration   3: 69.480 ns/op
+Iteration   1: 56.964 ns/op
+Iteration   2: 59.044 ns/op
+Iteration   3: 79.332 ns/op
+Iteration   4: 62.279 ns/op
+Iteration   5: 60.139 ns/op
+
+# Run progress: 87.50% complete, ETA 00:00:25
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 77.051 ns/op
+# Warmup Iteration   2: 67.526 ns/op
+# Warmup Iteration   3: 71.799 ns/op
+Iteration   1: 54.561 ns/op
+Iteration   2: 81.121 ns/op
+Iteration   3: 56.520 ns/op
+Iteration   4: 75.243 ns/op
+Iteration   5: 76.462 ns/op
+
+
+Result "bench.MapOps.put":
+  66.167 ±(99.9%) 15.936 ns/op [Average]
+  (min, avg, max) = (54.561, 66.167, 81.121), stdev = 10.541
+  CI (99.9%): [50.231, 82.103] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.MapOps.put
+# Parameters: (n = 100000, type = TreeMap)
+
+# Run progress: 91.67% complete, ETA 00:00:17
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 411.046 ns/op
+# Warmup Iteration   2: 322.362 ns/op
+# Warmup Iteration   3: 366.093 ns/op
+Iteration   1: 336.875 ns/op
+Iteration   2: 321.302 ns/op
+Iteration   3: 346.279 ns/op
+Iteration   4: 333.562 ns/op
+Iteration   5: 313.272 ns/op
+
+# Run progress: 95.83% complete, ETA 00:00:08
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 426.555 ns/op
+# Warmup Iteration   2: 334.828 ns/op
+# Warmup Iteration   3: 394.413 ns/op
+Iteration   1: 321.743 ns/op
+Iteration   2: 329.533 ns/op
+Iteration   3: 369.517 ns/op
+Iteration   4: 314.808 ns/op
+Iteration   5: 312.747 ns/op
+
+
+Result "bench.MapOps.put":
+  329.964 ±(99.9%) 26.851 ns/op [Average]
+  (min, avg, max) = (312.747, 329.964, 369.517), stdev = 17.760
+  CI (99.9%): [303.113, 356.815] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:24
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark      (n)         (type)  Mode  Cnt    Score    Error  Units
+MapOps.get    1000        HashMap  avgt   10    5.917 ±  0.256  ns/op
+MapOps.get    1000  LinkedHashMap  avgt   10    6.170 ±  0.238  ns/op
+MapOps.get    1000        TreeMap  avgt   10   26.162 ±  1.348  ns/op
+MapOps.get  100000        HashMap  avgt   10   17.577 ±  1.607  ns/op
+MapOps.get  100000  LinkedHashMap  avgt   10   18.454 ±  1.192  ns/op
+MapOps.get  100000        TreeMap  avgt   10  354.924 ± 24.976  ns/op
+MapOps.put    1000        HashMap  avgt   10   16.604 ±  1.948  ns/op
+MapOps.put    1000  LinkedHashMap  avgt   10   18.196 ±  1.683  ns/op
+MapOps.put    1000        TreeMap  avgt   10   33.642 ±  2.301  ns/op
+MapOps.put  100000        HashMap  avgt   10   51.230 ±  8.421  ns/op
+MapOps.put  100000  LinkedHashMap  avgt   10   66.167 ± 15.936  ns/op
+MapOps.put  100000        TreeMap  avgt   10  329.964 ± 26.851  ns/op
+
+Benchmark result is saved to data/java-collections-04/jmh-MapOps.csv

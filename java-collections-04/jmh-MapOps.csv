@@ -1,0 +1,13 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: n","Param: type"
+"bench.MapOps.get","avgt",1,10,5.917160,0.255530,"ns/op",1000,HashMap
+"bench.MapOps.get","avgt",1,10,6.169645,0.237539,"ns/op",1000,LinkedHashMap
+"bench.MapOps.get","avgt",1,10,26.161510,1.347503,"ns/op",1000,TreeMap
+"bench.MapOps.get","avgt",1,10,17.577266,1.606915,"ns/op",100000,HashMap
+"bench.MapOps.get","avgt",1,10,18.454186,1.191522,"ns/op",100000,LinkedHashMap
+"bench.MapOps.get","avgt",1,10,354.924301,24.975734,"ns/op",100000,TreeMap
+"bench.MapOps.put","avgt",1,10,16.603949,1.948233,"ns/op",1000,HashMap
+"bench.MapOps.put","avgt",1,10,18.195827,1.683248,"ns/op",1000,LinkedHashMap
+"bench.MapOps.put","avgt",1,10,33.641929,2.300848,"ns/op",1000,TreeMap
+"bench.MapOps.put","avgt",1,10,51.230221,8.420824,"ns/op",100000,HashMap
+"bench.MapOps.put","avgt",1,10,66.166569,15.935969,"ns/op",100000,LinkedHashMap
+"bench.MapOps.put","avgt",1,10,329.963828,26.850804,"ns/op",100000,TreeMap

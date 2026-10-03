@@ -1,0 +1,18 @@
+== 1. 終端操作のないストリーム
+  （ストリームを作っただけ。まだ何も出力されない）
+== 2. 終端操作（toList）をつなぐ
+  filter の前: 1
+  filter の前: 2
+  map の前   : 2
+  filter の前: 3
+  filter の前: 4
+  map の前   : 4
+  filter の前: 5
+  filter の前: 6
+  map の前   : 6
+  結果: [20, 40, 60]
+== 3. findFirst（最初の1つが見つかったら終わる）
+  filter の前: 1
+  filter の前: 2
+  filter の前: 3
+  結果: 3

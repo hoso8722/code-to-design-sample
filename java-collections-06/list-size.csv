@@ -1,0 +1,26 @@
+way,size,bytes_per_list
+new ArrayList<>(src),0,24.4
+List.copyOf(src),0,0.0
+unmodifiableList(src),0,48.0
+stream().toList(),0,0.0
+collect(toList()),0,24.0
+new ArrayList<>(src),1,48.5
+List.copyOf(src),1,24.0
+unmodifiableList(src),1,73.8
+stream().toList(),1,48.0
+collect(toList()),1,80.5
+new ArrayList<>(src),2,48.2
+List.copyOf(src),2,24.4
+unmodifiableList(src),2,72.5
+stream().toList(),2,48.0
+collect(toList()),2,80.0
+new ArrayList<>(src),10,80.4
+List.copyOf(src),10,80.0
+unmodifiableList(src),10,104.3
+stream().toList(),10,80.4
+collect(toList()),10,80.0
+new ArrayList<>(src),1000,4093.1
+List.copyOf(src),1000,4040.0
+unmodifiableList(src),1000,4092.4
+stream().toList(),1000,4182.9
+collect(toList()),1000,4976.0

@@ -1,0 +1,13 @@
+要素数,配列の大きさ,キーが入っているバケットの種類
+1,16,Node
+2,16,Node
+3,16,Node
+4,16,Node
+5,16,Node
+6,16,Node
+7,16,Node
+8,16,Node
+9,32,Node
+10,64,Node
+11,64,TreeNode
+12,64,TreeNode

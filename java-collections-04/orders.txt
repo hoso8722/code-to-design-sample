@@ -1,0 +1,10 @@
+HashMap       [banana, date, apple, cherry, elderberry]
+LinkedHashMap [banana, apple, cherry, date, elderberry]
+TreeMap       [apple, banana, cherry, date, elderberry]
+70点以上の最低の点数: 74
+70点未満の最高の点数: 68
+60点以上90点未満: {68=C, 74=B, 88=A}
+最高点: 93=S
+a・b・c を入れた: [a, b, c]
+a を使った:        [b, c, a]
+d を入れた:        [c, a, d]（b が捨てられた）

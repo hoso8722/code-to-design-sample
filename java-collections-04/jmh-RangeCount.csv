@@ -1,0 +1,3 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"bench.RangeCount.hashMapScan","avgt",1,10,801.257058,42.077727,"us/op"
+"bench.RangeCount.treeMapSubMap","avgt",1,10,5.771631,0.284018,"us/op"

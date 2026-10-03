@@ -1,0 +1,17 @@
+== Contract
+equals だけ   : size=2, contains(新しい alice)=false
+両方を実装    : size=1, contains(新しい alice)=true
+record        : size=1, contains(新しい alice)=true
+== MutableKey
+size()                     = 1
+get(user)                  = null
+get(new User("bob"))       = null
+get(new User("alice"))     = null
+containsKey(user)          = false
+remove(user)               = null
+反復して見えるエントリ     = [User(bob)=admin]
+== CompareVsEquals
+x.equals(y)    = false
+x.compareTo(y) = 0
+HashSet: size=2 [1.0, 1.00]
+TreeSet: size=1 [1.0]
