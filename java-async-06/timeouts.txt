@@ -1,0 +1,6 @@
+  23 ms  ForkJoinPool.commonPool-worker-1     A: 開始
+ 127 ms  main                                 main: A は TimeoutException で終わった
+ 352 ms  ForkJoinPool.commonPool-worker-1     A: 最後まで動いて終わった
+ 433 ms  ForkJoinPool.commonPool-worker-1     B: 開始
+ 536 ms  main                                 main: B の結果 = B の代わりの値
+ 736 ms  ForkJoinPool.commonPool-worker-1     B: 最後まで動いて終わった

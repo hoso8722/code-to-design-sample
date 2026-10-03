@@ -1,0 +1,4 @@
+ 126 ms  ForkJoinPool.commonPool-worker-1     A(100ms, 失敗): 失敗した
+ 320 ms  ForkJoinPool.commonPool-worker-2     B(300ms): 成功した
+ 524 ms  ForkJoinPool.commonPool-worker-3     C(500ms): 成功した
+ 527 ms  main                                 main: allOf が例外で終わった: A(100ms, 失敗) で失敗

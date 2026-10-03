@@ -1,0 +1,10 @@
+== 元の処理が成功した場合
+exceptionally : 値 = 成功
+handle        : 値 = 成功（handle で加工）
+    whenComplete が見た: value=成功, e=null
+whenComplete  : 値 = 成功
+== 元の処理が失敗した場合
+exceptionally : 値 = 代わりの値
+handle        : 値 = 代わりの値（handle）
+    whenComplete が見た: value=null, e=java.util.concurrent.CompletionException: java.lang.IllegalStateException: 失敗
+whenComplete  : 例外 = IllegalStateException

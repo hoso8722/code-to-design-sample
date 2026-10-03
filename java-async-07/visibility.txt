@@ -1,0 +1,15 @@
+main: 止まれと伝えた（volatile なし）
+main: 2秒待った。worker は まだ動いている
+main: 止まれと伝えた（volatile なし）
+main: 2秒待った。worker は まだ動いている
+main: 止まれと伝えた（volatile なし）
+main: 2秒待った。worker は まだ動いている
+main: 止まれと伝えた（volatile あり）
+worker: 止まった（846854069 回まわった）
+main: 2秒待った。worker は 止まっている
+main: 止まれと伝えた（volatile あり）
+worker: 止まった（727881048 回まわった）
+main: 2秒待った。worker は 止まっている
+main: 止まれと伝えた（volatile あり）
+worker: 止まった（655910435 回まわった）
+main: 2秒待った。worker は 止まっている

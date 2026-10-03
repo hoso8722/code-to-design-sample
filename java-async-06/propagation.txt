@@ -1,0 +1,11 @@
+== 段2で例外が起きるとき
+  段1 を実行した（入力 0）
+  段2 を実行した（入力 1）
+join() が投げた例外: CompletionException、原因: java.lang.IllegalStateException: 段2で失敗
+get() が投げた例外: ExecutionException、原因: java.lang.IllegalStateException: 段2で失敗
+== 段3の前に exceptionally を入れる
+  段1 を実行した（入力 0）
+  段2 を実行した（入力 1）
+  exceptionally が受け取った例外: java.util.concurrent.CompletionException: java.lang.IllegalStateException: 段2で失敗
+  段3 を実行した（入力 -1）
+結果: 0

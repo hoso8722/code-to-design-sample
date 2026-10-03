@@ -1,0 +1,22 @@
+  12 ms  pool-1-thread-1    slow: 開始
+ 113 ms  main               main: 100ミリ秒で待つのをやめた（TimeoutException）
+ 332 ms  pool-1-thread-1    slow: 最後まで動いて終わった
+ 336 ms  pool-1-thread-2    polite: 開始
+ 337 ms  pool-1-thread-3    stubborn: 開始
+ 435 ms  main               main: 2つとも cancel(true) する
+ 436 ms  pool-1-thread-2    polite: 割り込まれたので止まった
+ 443 ms  main               main: polite の状態 = CANCELLED、stubborn の状態 = CANCELLED
+1338 ms  pool-1-thread-3    stubborn: 最後まで動いた（割り込みを無視した）
+1339 ms  main               main: プールを閉じ終わった
+
+  14 ms  pool-1-thread-1    slow: 開始
+ 115 ms  main               main: 100ミリ秒で待つのをやめた（TimeoutException）
+ 341 ms  pool-1-thread-1    slow: 最後まで動いて終わった
+ 345 ms  pool-1-thread-2    polite: 開始
+ 346 ms  pool-1-thread-3    stubborn: 開始
+ 443 ms  main               main: 2つとも cancel(true) する
+ 445 ms  pool-1-thread-2    polite: 割り込まれたので止まった
+ 453 ms  main               main: polite の状態 = CANCELLED、stubborn の状態 = CANCELLED
+1346 ms  pool-1-thread-3    stubborn: 最後まで動いた（割り込みを無視した）
+1348 ms  main               main: プールを閉じ終わった
+

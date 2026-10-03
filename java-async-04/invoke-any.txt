@@ -1,0 +1,8 @@
+ 142 ms  pool-1-thread-2    B(100ms): 応答した
+ 172 ms  pool-1-thread-3    C(200ms): 割り込まれて止まった
+ 172 ms  pool-1-thread-1    A(300ms): 割り込まれて止まった
+ 174 ms  main               main: invokeAny の結果 = B(100ms)
+ 276 ms  pool-1-thread-3    B(100ms): 応答した
+ 376 ms  pool-1-thread-1    C(200ms): 応答した
+ 475 ms  pool-1-thread-2    A(300ms): 応答した
+ 481 ms  main               main: invokeAll の結果 = [A(300ms), B(100ms), C(200ms)]

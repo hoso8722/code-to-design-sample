@@ -1,0 +1,22 @@
+# Thread.print に vt- を含む行: 0
+    at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+    at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:315)
+    at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+    at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+    at java.base/jdk.internal.vm.ThreadDumper.dumpThreads(ThreadDumper.java:176)
+    at java.base/jdk.internal.vm.ThreadDumper.dumpThreads(ThreadDumper.java:172)
+    at java.base/jdk.internal.vm.ThreadDumper.dumpThreadsToFile(ThreadDumper.java:133)
+    at java.base/jdk.internal.vm.ThreadDumper.dumpThreads(ThreadDumper.java:73)
+
+#35 "vt-0" virtual TIMED_WAITING 2026-09-28T18:52:33.699572562Z
+    at java.base/java.lang.VirtualThread.parkNanos(VirtualThread.java:787)
+    at java.base/java.lang.VirtualThread.sleepNanos(VirtualThread.java:983)
+    at java.base/java.lang.Thread.sleepNanos(Thread.java:507)
+    at java.base/java.lang.Thread.sleep(Thread.java:540)
+    at VtDump.lambda$main$0(VtDump.java:3)
+    at java.base/java.lang.VirtualThread.run(VirtualThread.java:460)
+
+#37 "vt-1" virtual TIMED_WAITING 2026-09-28T18:52:33.699725635Z
+    at java.base/java.lang.VirtualThread.parkNanos(VirtualThread.java:787)
+    at java.base/java.lang.VirtualThread.sleepNanos(VirtualThread.java:983)
+    at java.base/java.lang.Thread.sleepNanos(Thread.java:507)

@@ -1,0 +1,7 @@
+== normal
+main: 終わる（worker はデーモン? false）
+worker: 1秒たったので終わる
+プロセスの実行時間: 1082 ms
+== daemon
+main: 終わる（worker はデーモン? true）
+プロセスの実行時間: 95 ms

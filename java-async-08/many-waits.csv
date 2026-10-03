@@ -1,0 +1,16 @@
+executor,work,tasks,elapsed_ms
+fixed100,wait,10000,10239
+fixed100,wait,10000,10197
+fixed100,wait,10000,10133
+fixed1000,wait,10000,1625
+fixed1000,wait,10000,1491
+fixed1000,wait,10000,1602
+virtual,wait,10000,165
+virtual,wait,10000,156
+virtual,wait,10000,196
+fixed16,cpu,64,422
+fixed16,cpu,64,394
+fixed16,cpu,64,390
+virtual,cpu,64,397
+virtual,cpu,64,399
+virtual,cpu,64,392

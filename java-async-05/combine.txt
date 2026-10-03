@@ -1,0 +1,10 @@
+順番に: user+order 427 ms
+thenCombine: user+order 220 ms
+thenCompose: order-of-user 412 ms
+mode,name,thread,start_ms,end_ms
+sequential,user,main,0,202
+sequential,order,main,226,427
+combine,user,ForkJoinPool.commonPool-worker-1,444,646
+combine,order,ForkJoinPool.commonPool-worker-2,446,646
+compose,user,ForkJoinPool.commonPool-worker-2,665,866
+compose,order-of-user,ForkJoinPool.commonPool-worker-1,874,1074

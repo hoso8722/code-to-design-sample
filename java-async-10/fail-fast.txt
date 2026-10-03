@@ -1,0 +1,38 @@
+== StructuredTaskScope（プレビュー機能）
+  36 ms  B(300ms): 開始
+  36 ms  A(100ms・失敗): 開始
+  36 ms  C(500ms): 開始
+ 165 ms  A(100ms・失敗): 失敗した
+ 173 ms  B(300ms): 割り込まれて止まった
+ 173 ms  C(500ms): 割り込まれて止まった
+ 175 ms  main: join() が FailedException を投げた。原因: A(100ms・失敗) で失敗
+ 179 ms  main: スコープを閉じ終わった（176 ms）
+== CompletableFuture.allOf
+ 785 ms  A(100ms・失敗): 開始
+ 786 ms  B(300ms): 開始
+ 787 ms  C(500ms): 開始
+ 886 ms  A(100ms・失敗): 失敗した
+1088 ms  B(300ms): 成功した
+1290 ms  C(500ms): 成功した
+1292 ms  main: allOf が例外で終わった。原因: A(100ms・失敗) で失敗
+1292 ms  main: allOf の待ちが終わった（512 ms）
+
+== StructuredTaskScope（プレビュー機能）
+  37 ms  B(300ms): 開始
+  37 ms  A(100ms・失敗): 開始
+  37 ms  C(500ms): 開始
+ 173 ms  A(100ms・失敗): 失敗した
+ 180 ms  B(300ms): 割り込まれて止まった
+ 180 ms  C(500ms): 割り込まれて止まった
+ 183 ms  main: join() が FailedException を投げた。原因: A(100ms・失敗) で失敗
+ 187 ms  main: スコープを閉じ終わった（184 ms）
+== CompletableFuture.allOf
+ 793 ms  A(100ms・失敗): 開始
+ 795 ms  B(300ms): 開始
+ 796 ms  C(500ms): 開始
+ 896 ms  A(100ms・失敗): 失敗した
+1098 ms  B(300ms): 成功した
+1297 ms  C(500ms): 成功した
+1298 ms  main: allOf が例外で終わった。原因: A(100ms・失敗) で失敗
+1299 ms  main: allOf の待ちが終わった（511 ms）
+

@@ -1,0 +1,11 @@
+commonPool の並列度: 15
+== A. Executor を渡さない
+  ForkJoinPool.commonPool-worker-1       1. fetch
+  ForkJoinPool.commonPool-worker-1       2. thenApply
+== B. 1段目を io プールで動かし、thenApply と thenApplyAsync をつなぐ
+  io-1                                   1. fetch
+  io-1                                   2. thenApply
+  ForkJoinPool.commonPool-worker-1       3. thenApplyAsync
+  io-2                                   4. thenApplyAsync（io を渡す）
+== C. すでに終わっている CompletableFuture に thenApply をつなぐ
+  main                                   2. thenApply

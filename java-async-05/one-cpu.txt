@@ -1,0 +1,10 @@
+== jdk-21.0.12.1+1 (taskset -c 0)
+CPU: 1、commonPool の並列度: 1
+  Thread-0
+  Thread-1
+  Thread-2
+== jdk-25.0.4.1+1 (taskset -c 0)
+CPU: 1、commonPool の並列度: 1
+  ForkJoinPool.commonPool-worker-1
+  ForkJoinPool.commonPool-worker-1
+  ForkJoinPool.commonPool-worker-1
