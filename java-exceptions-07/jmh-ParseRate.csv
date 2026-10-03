@@ -1,0 +1,9 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: failurePercent"
+"bench.ParseRate.checkFirst","avgt",1,10,11.436780,0.322931,"us/op",0
+"bench.ParseRate.checkFirst","avgt",1,10,13.387362,0.386037,"us/op",1
+"bench.ParseRate.checkFirst","avgt",1,10,11.184110,0.317136,"us/op",10
+"bench.ParseRate.checkFirst","avgt",1,10,8.539094,0.309352,"us/op",50
+"bench.ParseRate.tryAndCatch","avgt",1,10,8.161245,0.205855,"us/op",0
+"bench.ParseRate.tryAndCatch","avgt",1,10,26.236021,1.164583,"us/op",1
+"bench.ParseRate.tryAndCatch","avgt",1,10,191.292685,17.454372,"us/op",10
+"bench.ParseRate.tryAndCatch","avgt",1,10,941.508798,102.987439,"us/op",50

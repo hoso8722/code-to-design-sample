@@ -1,0 +1,429 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.checkFirst
+# Parameters: (failurePercent = 0)
+
+# Run progress: 0.00% complete, ETA 00:02:08
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 11.053 us/op
+# Warmup Iteration   2: 10.261 us/op
+# Warmup Iteration   3: 11.465 us/op
+Iteration   1: 11.485 us/op
+Iteration   2: 11.309 us/op
+Iteration   3: 11.618 us/op
+Iteration   4: 11.357 us/op
+Iteration   5: 11.101 us/op
+
+# Run progress: 6.25% complete, ETA 00:02:10
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 9.797 us/op
+# Warmup Iteration   2: 10.137 us/op
+# Warmup Iteration   3: 11.182 us/op
+Iteration   1: 11.278 us/op
+Iteration   2: 11.477 us/op
+Iteration   3: 11.354 us/op
+Iteration   4: 11.886 us/op
+Iteration   5: 11.503 us/op
+
+
+Result "bench.ParseRate.checkFirst":
+  11.437 ±(99.9%) 0.323 us/op [Average]
+  (min, avg, max) = (11.101, 11.437, 11.886), stdev = 0.214
+  CI (99.9%): [11.114, 11.760] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.checkFirst
+# Parameters: (failurePercent = 1)
+
+# Run progress: 12.50% complete, ETA 00:02:00
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 13.781 us/op
+# Warmup Iteration   2: 13.276 us/op
+# Warmup Iteration   3: 13.310 us/op
+Iteration   1: 13.629 us/op
+Iteration   2: 13.516 us/op
+Iteration   3: 13.135 us/op
+Iteration   4: 13.167 us/op
+Iteration   5: 13.067 us/op
+
+# Run progress: 18.75% complete, ETA 00:01:51
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 13.988 us/op
+# Warmup Iteration   2: 13.816 us/op
+# Warmup Iteration   3: 13.459 us/op
+Iteration   1: 13.395 us/op
+Iteration   2: 13.143 us/op
+Iteration   3: 13.852 us/op
+Iteration   4: 13.450 us/op
+Iteration   5: 13.518 us/op
+
+
+Result "bench.ParseRate.checkFirst":
+  13.387 ±(99.9%) 0.386 us/op [Average]
+  (min, avg, max) = (13.067, 13.387, 13.852), stdev = 0.255
+  CI (99.9%): [13.001, 13.773] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.checkFirst
+# Parameters: (failurePercent = 10)
+
+# Run progress: 25.00% complete, ETA 00:01:42
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 11.182 us/op
+# Warmup Iteration   2: 10.694 us/op
+# Warmup Iteration   3: 11.503 us/op
+Iteration   1: 11.358 us/op
+Iteration   2: 10.984 us/op
+Iteration   3: 11.117 us/op
+Iteration   4: 11.374 us/op
+Iteration   5: 11.014 us/op
+
+# Run progress: 31.25% complete, ETA 00:01:33
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 11.442 us/op
+# Warmup Iteration   2: 10.175 us/op
+# Warmup Iteration   3: 11.312 us/op
+Iteration   1: 10.935 us/op
+Iteration   2: 11.448 us/op
+Iteration   3: 11.346 us/op
+Iteration   4: 11.348 us/op
+Iteration   5: 10.917 us/op
+
+
+Result "bench.ParseRate.checkFirst":
+  11.184 ±(99.9%) 0.317 us/op [Average]
+  (min, avg, max) = (10.917, 11.184, 11.448), stdev = 0.210
+  CI (99.9%): [10.867, 11.501] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.checkFirst
+# Parameters: (failurePercent = 50)
+
+# Run progress: 37.50% complete, ETA 00:01:25
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8.477 us/op
+# Warmup Iteration   2: 7.667 us/op
+# Warmup Iteration   3: 8.452 us/op
+Iteration   1: 8.334 us/op
+Iteration   2: 8.789 us/op
+Iteration   3: 8.554 us/op
+Iteration   4: 8.877 us/op
+Iteration   5: 8.475 us/op
+
+# Run progress: 43.75% complete, ETA 00:01:16
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 8.378 us/op
+# Warmup Iteration   2: 7.898 us/op
+# Warmup Iteration   3: 8.376 us/op
+Iteration   1: 8.720 us/op
+Iteration   2: 8.342 us/op
+Iteration   3: 8.481 us/op
+Iteration   4: 8.259 us/op
+Iteration   5: 8.560 us/op
+
+
+Result "bench.ParseRate.checkFirst":
+  8.539 ±(99.9%) 0.309 us/op [Average]
+  (min, avg, max) = (8.259, 8.539, 8.877), stdev = 0.205
+  CI (99.9%): [8.230, 8.848] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.tryAndCatch
+# Parameters: (failurePercent = 0)
+
+# Run progress: 50.00% complete, ETA 00:01:08
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 7.106 us/op
+# Warmup Iteration   2: 6.692 us/op
+# Warmup Iteration   3: 7.935 us/op
+Iteration   1: 8.348 us/op
+Iteration   2: 8.194 us/op
+Iteration   3: 8.021 us/op
+Iteration   4: 8.199 us/op
+Iteration   5: 8.220 us/op
+
+# Run progress: 56.25% complete, ETA 00:00:59
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 6.989 us/op
+# Warmup Iteration   2: 6.470 us/op
+# Warmup Iteration   3: 8.072 us/op
+Iteration   1: 8.270 us/op
+Iteration   2: 8.170 us/op
+Iteration   3: 7.872 us/op
+Iteration   4: 8.087 us/op
+Iteration   5: 8.232 us/op
+
+
+Result "bench.ParseRate.tryAndCatch":
+  8.161 ±(99.9%) 0.206 us/op [Average]
+  (min, avg, max) = (7.872, 8.161, 8.348), stdev = 0.136
+  CI (99.9%): [7.955, 8.367] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.tryAndCatch
+# Parameters: (failurePercent = 1)
+
+# Run progress: 62.50% complete, ETA 00:00:51
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 36.190 us/op
+# Warmup Iteration   2: 27.077 us/op
+# Warmup Iteration   3: 27.225 us/op
+Iteration   1: 27.042 us/op
+Iteration   2: 25.733 us/op
+Iteration   3: 25.870 us/op
+Iteration   4: 27.157 us/op
+Iteration   5: 26.533 us/op
+
+# Run progress: 68.75% complete, ETA 00:00:42
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 33.928 us/op
+# Warmup Iteration   2: 26.194 us/op
+# Warmup Iteration   3: 26.545 us/op
+Iteration   1: 25.837 us/op
+Iteration   2: 25.453 us/op
+Iteration   3: 27.087 us/op
+Iteration   4: 26.699 us/op
+Iteration   5: 24.949 us/op
+
+
+Result "bench.ParseRate.tryAndCatch":
+  26.236 ±(99.9%) 1.165 us/op [Average]
+  (min, avg, max) = (24.949, 26.236, 27.157), stdev = 0.770
+  CI (99.9%): [25.071, 27.401] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.tryAndCatch
+# Parameters: (failurePercent = 10)
+
+# Run progress: 75.00% complete, ETA 00:00:34
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 236.596 us/op
+# Warmup Iteration   2: 213.425 us/op
+# Warmup Iteration   3: 186.872 us/op
+Iteration   1: 210.664 us/op
+Iteration   2: 184.172 us/op
+Iteration   3: 190.130 us/op
+Iteration   4: 190.039 us/op
+Iteration   5: 183.101 us/op
+
+# Run progress: 81.25% complete, ETA 00:00:25
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 239.303 us/op
+# Warmup Iteration   2: 214.503 us/op
+# Warmup Iteration   3: 184.895 us/op
+Iteration   1: 212.850 us/op
+Iteration   2: 186.617 us/op
+Iteration   3: 193.012 us/op
+Iteration   4: 183.307 us/op
+Iteration   5: 179.035 us/op
+
+
+Result "bench.ParseRate.tryAndCatch":
+  191.293 ±(99.9%) 17.454 us/op [Average]
+  (min, avg, max) = (179.035, 191.293, 212.850), stdev = 11.545
+  CI (99.9%): [173.838, 208.747] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.ParseRate.tryAndCatch
+# Parameters: (failurePercent = 50)
+
+# Run progress: 87.50% complete, ETA 00:00:17
+# Fork: 1 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1194.652 us/op
+# Warmup Iteration   2: 1015.723 us/op
+# Warmup Iteration   3: 972.917 us/op
+Iteration   1: 897.142 us/op
+Iteration   2: 916.485 us/op
+Iteration   3: 964.733 us/op
+Iteration   4: 902.290 us/op
+Iteration   5: 936.541 us/op
+
+# Run progress: 93.75% complete, ETA 00:00:08
+# Fork: 2 of 2
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1272.197 us/op
+# Warmup Iteration   2: 957.507 us/op
+# Warmup Iteration   3: 1049.824 us/op
+Iteration   1: 922.315 us/op
+Iteration   2: 1127.604 us/op
+Iteration   3: 920.298 us/op
+Iteration   4: 920.368 us/op
+Iteration   5: 907.312 us/op
+
+
+Result "bench.ParseRate.tryAndCatch":
+  941.509 ±(99.9%) 102.987 us/op [Average]
+  (min, avg, max) = (897.142, 941.509, 1127.604), stdev = 68.120
+  CI (99.9%): [838.521, 1044.496] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:16
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark              (failurePercent)  Mode  Cnt    Score     Error  Units
+ParseRate.checkFirst                  0  avgt   10   11.437 ±   0.323  us/op
+ParseRate.checkFirst                  1  avgt   10   13.387 ±   0.386  us/op
+ParseRate.checkFirst                 10  avgt   10   11.184 ±   0.317  us/op
+ParseRate.checkFirst                 50  avgt   10    8.539 ±   0.309  us/op
+ParseRate.tryAndCatch                 0  avgt   10    8.161 ±   0.206  us/op
+ParseRate.tryAndCatch                 1  avgt   10   26.236 ±   1.165  us/op
+ParseRate.tryAndCatch                10  avgt   10  191.293 ±  17.454  us/op
+ParseRate.tryAndCatch                50  avgt   10  941.509 ± 102.987  us/op
+
+Benchmark result is saved to data/java-exceptions-07/jmh-ParseRate.csv
