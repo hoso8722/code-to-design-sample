@@ -1,0 +1,6 @@
+# wsl.exe --version（WSL2 の中から実行）
+WSL version: 2.5.9.0
+Kernel version: 6.6.87.2-1
+Windows version: 10.0.26200.9457
+# Windows 全体：メモリ 30.8 GB、論理プロセッサ 16（Get-CimInstance）
+# WSL2 の中：MemTotal 15743164 kB、nproc 16。.wslconfig はない

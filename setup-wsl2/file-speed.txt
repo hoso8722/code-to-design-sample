@@ -1,0 +1,12 @@
+# cd /home/<ユーザー名>/code-to-design-wsltest; java FileSpeed.java（2回）
+/home/<ユーザー名>/code-to-design-wsltest: 小さなファイル1,000個 93 ms、1MBのファイル64個 163 ms
+/home/<ユーザー名>/code-to-design-wsltest: 小さなファイル1,000個 91 ms、1MBのファイル64個 160 ms
+# cd /mnt/c/Users/<ユーザー名>/AppData/Local/Temp/code-to-design-wsltest; java FileSpeed.java（2回）
+/mnt/c/Users/<ユーザー名>/AppData/Local/Temp/code-to-design-wsltest: 小さなファイル1,000個 6649 ms、1MBのファイル64個 3320 ms
+/mnt/c/Users/<ユーザー名>/AppData/Local/Temp/code-to-design-wsltest: 小さなファイル1,000個 6592 ms、1MBのファイル64個 3330 ms
+# 参考：同じ日の1回目の計測（FileSpeed の引数でフォルダを指定した版）
+# ~: 小さなファイル1,000個 99 ms・96 ms、1MBのファイル64個 176 ms・157 ms
+# /mnt/c/Users/<ユーザー名>/AppData/Local/Temp/...: 小さなファイル1,000個 9494 ms・9378 ms、1MBのファイル64個 3617 ms・3452 ms
+# java Check.java の時間（秒、/usr/bin/time の elapsed、3回）
+# ~: 0.97 1.00 0.98
+# /mnt/c/...: 1.01 1.01 0.96

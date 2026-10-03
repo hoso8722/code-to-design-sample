@@ -1,0 +1,49 @@
+$ docker --version
+podman version 4.9.3
+$ docker run --rm -v "$PWD":/work -w /work eclipse-temurin:25-jdk java Check.java
+Javaのバージョン: 25.0.4.1+1-LTS
+JDKの場所（java.home）: /opt/java/openjdk
+$ (junit)
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ PassingRuleTest ✔
+│     ├─ 合計が合格ラインと同じなら合格() ✔
+│     ├─ 合計が合格ラインより低ければ不合格() ✔
+│     └─ 合計が合格ラインより高ければ合格() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 175 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         3 tests successful      ]
+[         0 tests failed          ]
+
+$ docker run --rm -v "$PWD":/work -w /work gcc:13 sh -c "g++ -std=c++20 -o main main.cpp && ./main"
+g++ (GCC) 13.5.0
+[合計180点以上]
+  Aさん: 合格
+  Bさん: 不合格
+  Cさん: 合格
+  Dさん: 合格
+[合計210点以上・各科目40点以上]
+  Aさん: 合格
+  Bさん: 不合格
+  Cさん: 不合格
+  Dさん: 不合格
+[合計180点以上・数学70点以上]
+  Aさん: 合格
+  Bさん: 不合格
+  Cさん: 不合格
+  Dさん: 合格
