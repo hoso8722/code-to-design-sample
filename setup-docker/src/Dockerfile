@@ -1,4 +1,4 @@
-# 記事のコードを動かすためのイメージ。JDKのバージョンは --build-arg JDK=21 のように変えられる
+# Javaのコードを動作させるためのイメージ。JDKのバージョンは --build-arg JDK=21 のように変えられる
 ARG JDK=25
 FROM eclipse-temurin:${JDK}-jdk
 

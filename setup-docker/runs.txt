@@ -1,9 +1,42 @@
+# Docker Engine 29.1.3（WSL2 上の Ubuntu 24.04）で、2026年10月に実行
 $ docker --version
-podman version 4.9.3
+Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
 $ docker run --rm -v "$PWD":/work -w /work eclipse-temurin:25-jdk java Check.java
 Javaのバージョン: 25.0.4.1+1-LTS
 JDKの場所（java.home）: /opt/java/openjdk
-$ (junit)
+提供元: Eclipse Adoptium
+OS: Linux amd64
+既定の文字コード: UTF-8
+使えるCPUの数: 16
+ヒープの上限: 3844 MB
+$ docker run --rm -v "$PWD":/work -w /work eclipse-temurin:21-jdk java Check.java
+Javaのバージョン: 21.0.12.1+1-LTS
+JDKの場所（java.home）: /opt/java/openjdk
+提供元: Eclipse Adoptium
+OS: Linux amd64
+既定の文字コード: UTF-8
+使えるCPUの数: 16
+ヒープの上限: 3844 MB
+$ docker image inspect (25-jdk vs 25.0.4.1_1-jdk)
+docker.io/library/eclipse-temurin:25.0.4.1_1-jdk
+sha256:8c0a84ea11c8f6ed52600fc19f1040121f2a162998e9f50a5faebbbad9172dcc
+sha256:8c0a84ea11c8f6ed52600fc19f1040121f2a162998e9f50a5faebbbad9172dcc
+$ docker build -t code-to-design:25 .
+            https://docs.docker.com/go/buildx/
+
+sha256:dbb0868f24e5af464067bfd2625864df59bfaa5831b9dea9a316c2488beca366
+$ docker build --build-arg JDK=21 -t code-to-design:21 .
+            https://docs.docker.com/go/buildx/
+
+sha256:23be0a85b5ba8ca5c9222a88ec6e09cca6b8b097cc78cba03f2392c0ad2cded0
+$ ls -l /opt/lib (25)
+total 5748
+-rw-r--r-- 1 root root 2213560 Mar 17  2016 commons-math3-3.6.1.jar
+-rw-r--r-- 1 root root  552986 Aug  3  2023 jmh-core-1.37.jar
+-rw-r--r-- 1 root root   30881 Aug  3  2023 jmh-generator-annprocess-1.37.jar
+-rw-r--r-- 1 root root   78146 Jul 13  2017 jopt-simple-5.0.4.jar
+-rw-r--r-- 1 root root 2997949 Aug  7 12:27 junit-platform-console-standalone-6.1.3.jar
+$ docker run junit
 
 Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 
@@ -16,7 +49,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 │     └─ 合計が合格ラインより高ければ合格() ✔
 └─ JUnit Vintage ✔
 
-Test run finished after 175 ms
+Test run finished after 176 ms
 [         4 containers found      ]
 [         0 containers skipped    ]
 [         4 containers started    ]
@@ -30,20 +63,35 @@ Test run finished after 175 ms
 [         3 tests successful      ]
 [         0 tests failed          ]
 
-$ docker run --rm -v "$PWD":/work -w /work gcc:13 sh -c "g++ -std=c++20 -o main main.cpp && ./main"
-g++ (GCC) 13.5.0
-[合計180点以上]
-  Aさん: 合格
-  Bさん: 不合格
-  Cさん: 合格
-  Dさん: 合格
-[合計210点以上・各科目40点以上]
-  Aさん: 合格
-  Bさん: 不合格
-  Cさん: 不合格
-  Dさん: 不合格
-[合計180点以上・数学70点以上]
-  Aさん: 合格
-  Bさん: 不合格
-  Cさん: 不合格
-  Dさん: 合格
+$ ls -ld out
+drwxr-xr-x 2 root root 4096 Oct  4 06:27 out
+total 12
+-rw-r--r-- 1 root root 1224 Oct  4 06:27 PassingRule.class
+-rw-r--r-- 1 root root  961 Oct  4 06:27 PassingRuleTest.class
+$ rm -rf out
+rm: cannot remove 'out/PassingRuleTest.class': Permission denied
+rm: cannot remove 'out/Student.class': Permission denied
+rm: cannot remove 'out/PassingRule.class': Permission denied
+rc=1
+drwxr-xr-x 2 root root 4096 Oct  4 06:27 out
+$ docker run --user junit
+[         3 tests successful      ]
+$ ls -ld out
+drwxr-xr-x 2 hoso hoso 4096 Oct  4 06:28 out
+rm-rc=0
+$ docker run --rm --cpus=2 --memory=1g ... Check.java
+Javaのバージョン: 25.0.4.1+1-LTS
+JDKの場所（java.home）: /opt/java/openjdk
+提供元: Eclipse Adoptium
+OS: Linux amd64
+既定の文字コード: UTF-8
+使えるCPUの数: 2
+ヒープの上限: 247 MB
+$ nproc; taskset
+16
+1
+$ no -v
+Error: Could not find or load main class Check.java
+Caused by: java.lang.ClassNotFoundException: Check.java
+$ /proc
+Name:	head

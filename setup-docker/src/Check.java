@@ -1,7 +1,7 @@
 // 実行: java Check.java
 import java.nio.charset.Charset;
 
-// 記事のコードを動かす前に、使われるJDKと設定を確かめる
+// Javaのコードを動作させる前に、使われるJDKと設定を確かめる
 public class Check {
     public static void main(String[] args) {
         Runtime runtime = Runtime.getRuntime();
