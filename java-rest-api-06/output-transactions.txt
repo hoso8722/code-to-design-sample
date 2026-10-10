@@ -1,0 +1,22 @@
+# 開始時
+  books: 1:吾輩は猫である=3, 2:坊っちゃん=2  / loans: 0 件
+
+# 実行時例外の版(borrower=error で失敗させる)
+POST /api/books/1/loans {"borrower":"error"}  -> 500
+  books: 1:吾輩は猫である=3, 2:坊っちゃん=2  / loans: 0 件
+POST /api/books/1/loans {"borrower":"Sora"}  -> 201
+  books: 1:吾輩は猫である=2, 2:坊っちゃん=2  / loans: 1 件
+
+# 検査例外の版(@Transactional の既定)
+POST /api/books/2/loans-checked {"borrower":"error"}  -> 500
+  books: 1:吾輩は猫である=2, 2:坊っちゃん=1  / loans: 1 件
+
+# 検査例外の版(rollbackFor を指定)
+POST /api/books/1/loans-checked-safe {"borrower":"error"}  -> 500
+  books: 1:吾輩は猫である=2, 2:坊っちゃん=1  / loans: 1 件
+
+# 在庫が足りない場合
+POST /api/books/1/loans {"borrower":"Rin"}  -> 201
+POST /api/books/1/loans {"borrower":"Rin"}  -> 201
+POST /api/books/1/loans {"borrower":"Rin"}  -> 409
+  books: 1:吾輩は猫である=0, 2:坊っちゃん=1  / loans: 3 件

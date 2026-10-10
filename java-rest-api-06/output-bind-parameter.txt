@@ -1,0 +1,7 @@
+$ curl -X POST http://localhost:PORT/api/books -d '{"title":"x'); DROP TABLE books;--","copies":1}'
+  -> 201  {"id":3,"title":"x'); DROP TABLE books;--","copies":1}
+
+# 表は残り、題名は文字列として保存されている
+1: 吾輩は猫である
+2: 坊っちゃん
+3: x'); DROP TABLE books;--

@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    # 接続の情報は、環境変数から読む(値はリポジトリに入れない)
+    url: ${JDBC_URL}
+    username: ${JDBC_USER}
+    password: ${JDBC_PASSWORD}
+  sql:
+    init:
+      mode: always   # 実験用:起動のたびに schema.sql を実行する。本番では使わない
+  lifecycle:
+    timeout-per-shutdown-phase: 20s   # 停止のとき、処理中の要求を待つ時間の上限
+
+server:
+  shutdown: graceful   # 停止の指示を受けても、処理中の要求が終わるまで待つ
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health   # 公開するActuatorのエンドポイントは health だけ
+  endpoint:
+    health:
+      show-details: never   # 内訳(データベースの種類など)は応答に含めない
+      probes:
+        enabled: true   # /actuator/health/liveness と /actuator/health/readiness を使う
+
+app:
+  security:
+    reader-password: ${APP_READER_PASSWORD}   # 環境変数がなければ、起動を止める
+    admin-password: ${APP_ADMIN_PASSWORD}
+  loan:
+    library-name: ${APP_LIBRARY_NAME:町の図書館}   # 環境変数がなければ、:のあとの値を使う
+    default-days: 14

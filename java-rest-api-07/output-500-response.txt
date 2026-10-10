@@ -1,0 +1,6 @@
+$ curl -i http://localhost:PORT/api/books   (表の名前を変えて、SQLを失敗させた状態)
+HTTP/1.1 500 
+Content-Type: application/problem+json
+
+{"detail":"予期しないエラーが発生しました。問い合わせるときは errorId を伝えてください。","instance":"/api/books","status":500,"title":"サーバー内部でエラーが発生しました","type":"https://api.example.com/problems/internal-error","errorId":"e61b6b77-9ae5-44e2-bc7d-bf7006e6f858"}
+

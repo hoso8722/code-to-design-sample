@@ -1,0 +1,6 @@
+$ curl -s http://localhost:PORT/api/leaky/books/1
+{"id":1,"title":"吾輩は猫である","copies":3,"internalMemo":"社内メモ:初版は旧仮名づかい"}
+
+$ curl -s http://localhost:PORT/api/books/1
+{"id":1,"title":"吾輩は猫である","copies":3}
+

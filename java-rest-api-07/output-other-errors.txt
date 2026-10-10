@@ -1,0 +1,4 @@
+DELETE /api/books                  -> 405  Content-Type=application/problem+json
+    本文: {"detail":"Method 'DELETE' is not supported.","instance":"/api/books","status":405,"title":"Method Not Allowed"}
+POST /api/books                    -> 415  Content-Type=application/problem+json
+    本文: {"detail":"Content-Type 'text/plain;charset=UTF-8' is not supported.","instance":"/api/books","status":415,"title":"Unsupported Media Type"}

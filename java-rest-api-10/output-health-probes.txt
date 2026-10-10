@@ -1,0 +1,14 @@
+# データベースが動いているとき
+GET /actuator/health          -> 200  {"groups":["liveness","readiness"],"status":"UP"}
+GET /actuator/health/liveness -> 200  {"status":"UP"}
+GET /actuator/health/readiness -> 200  {"status":"UP"}
+
+# データベースを止めたとき(docker stop)
+GET /actuator/health          -> 503  {"groups":["liveness","readiness"],"status":"DOWN"}
+GET /actuator/health/liveness -> 200  {"status":"UP"}
+GET /actuator/health/readiness -> 200  {"status":"UP"}
+
+# データベースを再び起動したとき(docker start)
+GET /actuator/health          -> 200  {"groups":["liveness","readiness"],"status":"UP"}
+GET /actuator/health/liveness -> 200  {"status":"UP"}
+GET /actuator/health/readiness -> 200  {"status":"UP"}

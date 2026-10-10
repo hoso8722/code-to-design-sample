@@ -1,0 +1,12 @@
+# PUT(置き換え)を、同じ内容で2回
+PUT        /1       -> 204
+PUT        /1       -> 204
+GET        /1       -> 200  {"id":1,"title":"吾輩は猫である","copies":7}
+
+# DELETE(削除)を2回
+DELETE     /2       -> 204
+DELETE     /2       -> 404
+
+# POST(作成)を、同じ内容で2回
+POST       /        -> 201  {"id":3,"title":"こころ","copies":4}
+POST       /        -> 409

@@ -1,0 +1,3 @@
+example.books.BooksApplication           : Starting BooksApplication v1.0 using Java 25.0.4.1 ...
+o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 40459 (http) with context path '/'
+example.books.BooksApplication           : Started BooksApplication in 3.847 seconds (process running for 4.781)

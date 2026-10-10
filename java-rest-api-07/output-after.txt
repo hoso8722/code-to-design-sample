@@ -1,0 +1,12 @@
+GET /api/books/99                  -> 404  Content-Type=application/problem+json
+    本文: {"detail":"本が見つかりません: id=99","instance":"/api/books/99","status":404,"title":"本が見つかりません","type":"https://api.example.com/problems/book-not-found"}
+POST /api/books                    -> 409  Content-Type=application/problem+json
+    本文: {"detail":"題名が登録済みです: 坊っちゃん","instance":"/api/books","status":409,"title":"題名が重複しています","type":"https://api.example.com/problems/duplicate-title"}
+POST /api/books                    -> 400  Content-Type=application/problem+json
+    本文: {"detail":"入力に誤りがあります。errors を確認してください。","instance":"/api/books","status":400,"title":"入力に誤りがあります","type":"https://api.example.com/problems/validation-error","errors":[{"field":"title","message":"題名は必須です"}]}
+POST /api/books                    -> 400  Content-Type=application/problem+json
+    本文: {"detail":"本文がJSONとして正しくないか、項目の型が合っていません。","instance":"/api/books","status":400,"title":"リクエストの本文を読み取れません","type":"https://api.example.com/problems/malformed-request"}
+GET /api/unknown                   -> 404  Content-Type=application/problem+json
+    本文: {"detail":"指定されたURIは存在しません。","instance":"/api/unknown","status":404,"title":"URIが見つかりません","type":"https://api.example.com/problems/uri-not-found"}
+POST /api/books/1/loans            -> 500  Content-Type=application/problem+json
+    本文: {"detail":"予期しないエラーが発生しました。問い合わせるときは errorId を伝えてください。","instance":"/api/books/1/loans","status":500,"title":"サーバー内部でエラーが発生しました","type":"https://api.example.com/problems/internal-error","errorId":"6303ab73-a1ee-4d4a-bc62-d9a18dc1e15a"}

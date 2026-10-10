@@ -1,0 +1,8 @@
+$ curl -i -X POST http://localhost:PORT/api/books -H 'Content-Type: application/json' -d '{"title":"草枕","copies":1}'
+HTTP/1.1 201 
+Location: /api/books/5
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: (実行時刻)
+
+{"id":5,"title":"草枕","copies":1}

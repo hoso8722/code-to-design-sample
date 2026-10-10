@@ -1,0 +1,2 @@
+spring-boot-4.1.1.jar の SpringApplication.class
+  major version: 61(Java 17 のclassファイル)

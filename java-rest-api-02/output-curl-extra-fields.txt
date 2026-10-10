@@ -1,0 +1,6 @@
+$ curl -s -X POST http://localhost:PORT/api/books -H 'Content-Type: application/json' -d '{"title":"三四郎","copies":1,"id":999,"internalMemo":"勝手に書いたメモ"}'
+{"id":4,"title":"三四郎","copies":1}
+
+$ curl -s http://localhost:PORT/api/leaky/books/4  (保存された本)
+{"id":4,"title":"三四郎","copies":1,"internalMemo":""}
+

@@ -1,0 +1,4 @@
+GET /api/books -> 200 application/json
+  [{"id":1,"title":"吾輩は猫である"},{"id":2,"title":"坊っちゃん"}]
+GET /api/books/1 -> 200 application/json
+  {"id":1,"title":"吾輩は猫である"}

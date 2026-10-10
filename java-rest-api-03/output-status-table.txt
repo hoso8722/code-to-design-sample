@@ -1,0 +1,12 @@
+GET /                              -> 200  本文: [{"id":1,"title":"吾輩は猫である","copies":3},{"id":2,"title":"坊っちゃん","copies":2}]
+GET /1                             -> 200  本文: {"id":1,"title":"吾輩は猫である","copies":3}
+GET /99                            -> 404
+POST /                             -> 201  Location: /api/books/3  本文: {"id":3,"title":"こころ","copies":4}
+POST /                             -> 409
+PUT /3                             -> 204
+PUT /99                            -> 404
+PATCH /3                           -> 200  本文: {"id":3,"title":"こころ(改版)","copies":2}
+PATCH /99                          -> 404
+DELETE /3                          -> 204
+DELETE /3                          -> 404
+GET /3                             -> 404

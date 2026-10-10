@@ -1,0 +1,5 @@
+$ curl -v -u reader:(パスワード) http://localhost:PORT/api/books  のうち、送ったヘッダー
+> Authorization: Basic cmVhZGVyOnJlYWRlci1kZW1vLXBhc3M=
+
+$ echo cmVhZGVyOnJlYWRlci1kZW1vLXBhc3M= | base64 -d
+reader:reader-demo-pass

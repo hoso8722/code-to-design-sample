@@ -1,0 +1,9 @@
+$ curl "http://localhost:PORT/api/books?sort=title"
+  -> 200  [{"id":1,"title":"吾輩は猫である","copies":0},{"id":2,"title":"坊っちゃん","copies":1}]
+$ curl "http://localhost:PORT/api/books?sort=copies"
+  -> 200  [{"id":1,"title":"吾輩は猫である","copies":0},{"id":2,"title":"坊っちゃん","copies":1}]
+$ curl "http://localhost:PORT/api/books?sort=title;DROP TABLE books"
+  -> 400
+
+# 表は残っているか
+2 冊

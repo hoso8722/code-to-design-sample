@@ -1,0 +1,7 @@
+# 環境変数なし(application.yaml の値)
+$ curl http://localhost:PORT/api/public/policy
+-> 200  {"libraryName":"町の図書館","defaultDays":14}
+
+# 環境変数 APP_LIBRARY_NAME=海辺の図書館、APP_LOAN_DEFAULT_DAYS=21 を渡して起動
+$ curl http://localhost:PORT/api/public/policy
+-> 200  {"defaultDays":21,"libraryName":"海辺の図書館"}

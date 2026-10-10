@@ -1,0 +1,26 @@
+$ curl -i -X POST http://localhost:PORT/api/books -H 'Content-Type: text/plain' -d 'title=x'
+HTTP/1.1 415 
+Accept: application/json, application/*+json
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: (実行時刻)
+
+{"timestamp":"2026-10-10T20:15:34.134Z","status":415,"error":"Unsupported Media Type","path":"/api/books"}
+
+$ curl -i http://localhost:PORT/api/books/1 -H 'Accept: application/xml'
+HTTP/1.1 406 
+Accept: application/json, application/*+json
+Content-Length: 0
+Date: (実行時刻)
+
+
+
+$ curl -i -X POST http://localhost:PORT/api/books -H 'Content-Type: application/json' -d '{"title":'
+HTTP/1.1 400 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: (実行時刻)
+Connection: close
+
+{"timestamp":"2026-10-10T20:15:34.200Z","status":400,"error":"Bad Request","path":"/api/books"}
+

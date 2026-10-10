@@ -1,0 +1,16 @@
+$ curl -i http://localhost:PORT/api/unknown
+HTTP/1.1 404 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: (実行時刻)
+
+{"timestamp":"2026-10-10T20:13:37.997Z","status":404,"error":"Not Found","path":"/api/unknown"}
+
+$ curl -i -X POST http://localhost:PORT/api/books
+HTTP/1.1 405 
+Allow: GET
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: (実行時刻)
+
+{"timestamp":"2026-10-10T20:13:38.094Z","status":405,"error":"Method Not Allowed","path":"/api/books"}

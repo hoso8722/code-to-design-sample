@@ -1,0 +1,4 @@
+# サーバー側のログ(応答の errorId と同じ値を含む行と、その原因)
+ERROR 114461 --- [o-auto-1-exec-3] example.books.ApiExceptionHandler        : 予期しないエラー errorId=<errorId> path=/api/books
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT id, title, copies FROM books ORDER BY id]
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "books" does not exist

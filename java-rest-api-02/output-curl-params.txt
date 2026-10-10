@@ -1,0 +1,14 @@
+$ curl -s 'http://localhost:PORT/api/books?titleContains=猫&limit=5'
+[{"id":1,"title":"吾輩は猫である","copies":3}]
+
+$ curl -s http://localhost:PORT/api/books
+[{"id":1,"title":"吾輩は猫である","copies":3},{"id":2,"title":"坊っちゃん","copies":2}]
+
+$ curl -i -X POST http://localhost:PORT/api/books -H 'Content-Type: application/json' -d '{"title":"こころ","copies":4}'
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 39
+Date: (実行時刻)
+
+{"id":3,"title":"こころ","copies":4}
+

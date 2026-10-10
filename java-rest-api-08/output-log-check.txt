@@ -1,0 +1,4 @@
+# アプリのログに、パスワードや「生成されたパスワード」の行があるか
+reader-demo-pass : 0 行
+admin-demo-pass  : 0 行
+Using generated security password : 0 行

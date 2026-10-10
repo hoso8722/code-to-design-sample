@@ -1,0 +1,7 @@
+$ curl -i http://localhost:PORT/api/books
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 77
+Date: (実行時刻)
+
+[{"id":1,"title":"吾輩は猫である"},{"id":2,"title":"坊っちゃん"}]

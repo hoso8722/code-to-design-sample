@@ -1,0 +1,5 @@
+# 環境変数 APP_LOAN_DEFAULT_DAYS=0(範囲外)で起動した場合のメッセージ
+Binding to target example.books.LoanProperties failed:
+Property: app.loan.defaultDays
+Value: "0"
+Reason: must be greater than or equal to 1

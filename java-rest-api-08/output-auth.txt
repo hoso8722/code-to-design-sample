@@ -1,0 +1,16 @@
+公開のURI(認証なし)                   -> 200
+    本文: {"status":"ok"}
+保護されたURI(認証なし)             -> 401
+    WWW-Authenticate: Basic realm="books", charset="UTF-8"
+    本文: {"detail":"認証情報が正しくないか、付いていません。","instance":"/api/books","status":401,"title":"認証が必要です","type":"https://api.example.com/problems/unauthorized"}
+reader(パスワードが違う)             -> 401
+    WWW-Authenticate: Basic realm="books", charset="UTF-8"
+    本文: {"detail":"認証情報が正しくないか、付いていません。","instance":"/api/books","status":401,"title":"認証が必要です","type":"https://api.example.com/problems/unauthorized"}
+reader が一覧を取得                    -> 200
+    本文: [{"id":1,"title":"吾輩は猫である","copies":3},{"id":2,"title":"坊っちゃん","copies":2}]
+reader が本を登録                       -> 403
+    本文: {"detail":"必要な権限がありません。","instance":"/api/books","status":403,"title":"この操作は許可されていません","type":"https://api.example.com/problems/forbidden"}
+admin が本を登録                        -> 201
+    本文: {"id":3,"title":"こころ","copies":3}
+admin が定義のないURIを呼ぶ         -> 403
+    本文: {"detail":"必要な権限がありません。","instance":"/api/unknown","status":403,"title":"この操作は許可されていません","type":"https://api.example.com/problems/forbidden"}

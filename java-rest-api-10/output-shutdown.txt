@@ -1,0 +1,22 @@
+## A. server.shutdown=graceful(設定ファイルのとおり)。4秒かかる要求を送り、1秒後に停止を指示
+1010 ms: 停止の指示(SIGTERM)を送る
+1540 ms: 停止の指示のあとに送った新しい要求 -> 000(000は接続できなかった)
+4230 ms: 処理中の要求の結果 -> HTTP 200  curlの終了コード=0(要求は 4秒かかる処理。結果が出た時刻は 4220 ms)
+4520 ms: アプリケーションが終了
+    ログ: o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+    ログ: o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+
+## B. server.shutdown=immediate に変えた場合
+1020 ms: 停止の指示(SIGTERM)を送る
+1550 ms: 停止の指示のあとに送った新しい要求 -> 000(000は接続できなかった)
+1560 ms: 処理中の要求の結果 -> HTTP 000  curlの終了コード=52(要求は 4秒かかる処理。結果が出た時刻は 1050 ms)
+1580 ms: アプリケーションが終了
+
+## C. graceful だが、待つ時間の上限を2秒にし、6秒かかる要求を送った場合
+1020 ms: 停止の指示(SIGTERM)を送る
+1560 ms: 停止の指示のあとに送った新しい要求 -> 000(000は接続できなかった)
+3080 ms: 処理中の要求の結果 -> HTTP 000  curlの終了コード=52(要求は 6秒かかる処理。結果が出た時刻は 3070 ms)
+3360 ms: アプリケーションが終了
+    ログ: o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+    ログ: o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 2000ms: [webServerGracefulShutdown]
+    ログ: o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown aborted with one or more requests still active
