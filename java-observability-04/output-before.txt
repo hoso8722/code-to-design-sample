@@ -1,0 +1,8 @@
+# 同時に3つのリクエスト。requestIdを付けない既定の形式
+$ curl ".../api/demo/work?name=A" (B、Cも同時に)
+INFO [exec-3] : 処理を始める name=A
+INFO [exec-1] : 処理を始める name=C
+INFO [exec-2] : 処理を始める name=B
+INFO [exec-1] : 処理を終える name=C
+INFO [exec-2] : 処理を終える name=B
+INFO [exec-3] : 処理を終える name=A

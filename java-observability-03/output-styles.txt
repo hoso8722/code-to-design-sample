@@ -1,0 +1,16 @@
+# 同じ例外を5つの書き方で記録する(スタックトレースは先頭の3行だけ表示)
+$ curl http://localhost:PORT/api/demo/exception-styles
+ERROR ExceptionDemoController: [1:連結] 失敗: java.lang.IllegalStateException: 在庫の更新に失敗した
+ERROR ExceptionDemoController: [2:getMessage] 失敗: 在庫の更新に失敗した
+ERROR ExceptionDemoController: [3:プレースホルダーに例外] 失敗: {}
+java.lang.IllegalStateException: 在庫の更新に失敗した
+	at example.books.ExceptionDemoController.exceptionStyles(ExceptionDemoController.java:29) ~[!/:1.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+ERROR ExceptionDemoController: [4:例外を最後の引数] 失敗 id=3
+java.lang.IllegalStateException: 在庫の更新に失敗した
+	at example.books.ExceptionDemoController.exceptionStyles(ExceptionDemoController.java:29) ~[!/:1.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+ERROR ExceptionDemoController: [5:例外だけ] 失敗
+java.lang.IllegalStateException: 在庫の更新に失敗した
+	at example.books.ExceptionDemoController.exceptionStyles(ExceptionDemoController.java:29) ~[!/:1.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]

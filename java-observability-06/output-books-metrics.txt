@@ -1,0 +1,9 @@
+# 貸出を5回呼んだあとの、/actuator/prometheus(books_で始まるもの)
+# 呼んだ順の応答: 201 500 201 409 404  (成功2件、システムエラー1件、在庫なし1件、存在しない本1件)
+books_loan_duration_seconds_count 5
+books_loan_duration_seconds_sum 0.007041704
+books_loans_total{result="error"} 1.0
+books_loans_total{result="not_found"} 1.0
+books_loans_total{result="out_of_stock"} 1.0
+books_loans_total{result="success"} 2.0
+books_stock 5.0

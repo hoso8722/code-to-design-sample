@@ -1,0 +1,21 @@
+# DEBUGが無効(INFO)のとき
+$ curl "http://localhost:PORT/api/demo/cost?n=1000"
+{
+ "n": 1000,
+ "プレースホルダー": 0,
+ "プレースホルダー+メソッド呼び出し": 1000,
+ "Supplier": 0,
+ "debugEnabled": false,
+ "連結": 1000
+}
+
+# DEBUGが有効(--logging.level.example.books=DEBUG)のとき
+$ curl "http://localhost:PORT/api/demo/cost?n=1000"
+{
+ "n": 1000,
+ "プレースホルダー": 1000,
+ "プレースホルダー+メソッド呼び出し": 1000,
+ "Supplier": 1000,
+ "debugEnabled": true,
+ "連結": 1000
+}

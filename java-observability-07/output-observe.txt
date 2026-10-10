@@ -1,0 +1,11 @@
+# Observationを包んだ処理を1回呼んだとき(ハンドラーを登録済み、トレースの依存関係なし)
+$ curl -H "X-Request-Id: req-1" ".../api/demo/observe?user=user-123"
+INFO [req-1] [exec-1] : [開始] name=demo.checkout
+INFO [req-1] [exec-1] : [スコープを開いた] name=demo.checkout
+INFO [req-1] [exec-1] : 処理の中のログ
+INFO [req-1] [exec-1] : [終了] name=demo.checkout low=[keyValue(channel=web)] high=[keyValue(user.id=user-123)]
+
+# /actuator/prometheus(demo_checkout_seconds)
+demo_checkout_seconds_count{channel="web",error="none"} 1
+demo_checkout_seconds_sum{channel="web",error="none"} 0.055166845
+(user.id は、メトリクスのタグに含まれない)

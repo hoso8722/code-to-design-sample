@@ -1,0 +1,6 @@
+# 取り除かないMDC(Tomcatのスレッドを1本にして実験)
+$ curl ".../api/demo/mdc-leak/set?value=sora"
+$ curl -H "X-Request-Id: req-other" ".../api/demo/mdc-leak/check"
+{"userId":"sora"}   ← 別のリクエストの応答に、前のリクエストの値が残っていた
+INFO [42b886e0-38cd-410f-8123-3beca9e349d2] [userId=sora] [exec-1] : userIdをMDCに入れた
+INFO [req-other] [userId=sora] [exec-1] : 別のリクエストの処理

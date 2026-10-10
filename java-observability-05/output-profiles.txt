@@ -1,0 +1,27 @@
+# logback-spring.xml のあるアプリで /api/demo/levels を呼んだときに出た行(アプリのlogger = example.books)
+
+## (プロファイルなし)
+INFO [exec-1] : INFO:業務の区切りとなる出来事
+WARN [exec-1] : WARN:異常ではないが、気をつけたい状況
+ERROR [exec-1] : ERROR:処理が失敗した
+println:System.out.printlnで書いた行
+
+## (--spring.profiles.active=prod)
+WARN [exec-1] : WARN:異常ではないが、気をつけたい状況
+ERROR [exec-1] : ERROR:処理が失敗した
+println:System.out.printlnで書いた行
+
+## (--spring.profiles.active=dev)
+DEBUG [exec-1] : DEBUG:開発中に調べたい情報
+INFO [exec-1] : INFO:業務の区切りとなる出来事
+WARN [exec-1] : WARN:異常ではないが、気をつけたい状況
+ERROR [exec-1] : ERROR:処理が失敗した
+println:System.out.printlnで書いた行
+
+## (prod + --logging.level.example.books=TRACE)
+TRACE [exec-1] : TRACE:処理の細かい手順
+DEBUG [exec-1] : DEBUG:開発中に調べたい情報
+INFO [exec-1] : INFO:業務の区切りとなる出来事
+WARN [exec-1] : WARN:異常ではないが、気をつけたい状況
+ERROR [exec-1] : ERROR:処理が失敗した
+println:System.out.printlnで書いた行

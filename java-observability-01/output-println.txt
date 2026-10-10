@@ -1,0 +1,5 @@
+# /api/demo/levels を呼んだときの、コンソールの出力(既定のINFO)
+INFO --- [o-auto-1-exec-1] example.books.LoggingDemoController      : INFO:業務の区切りとなる出来事
+WARN --- [o-auto-1-exec-1] example.books.LoggingDemoController      : WARN:異常ではないが、気をつけたい状況
+ERROR --- [o-auto-1-exec-1] example.books.LoggingDemoController      : ERROR:処理が失敗した
+println:System.out.printlnで書いた行

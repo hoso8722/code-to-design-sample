@@ -1,0 +1,7 @@
+# 境界で1回だけ記録する(改善した例)
+$ curl -X POST "http://localhost:PORT/api/demo/register/boundary-logging?title=Java"
+ERROR ApiExceptionHandler        : 予期しないエラー errorId=5a9d5c57-0ace-422b-911e-65c20c70b277 path=/api/demo/register/boundary-logging
+example.books.BookRegistrationException: 本の登録に失敗した title=Java
+Caused by: example.books.DemoStorageException: 保存に失敗した
+Caused by: java.io.IOException: ディスクの空きがありません
+(ERRORの記録 1件 / ログの行数 56行)

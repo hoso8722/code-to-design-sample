@@ -1,0 +1,10 @@
+# 3秒かかるリクエストを送った直後に、アプリへSIGTERMを送った
+$ curl .../api/demo/slow &
+$ kill <PID>
+$ curl .../actuator/health/readiness     ← 終了処理中に呼んだ
+curl: (7) Failed to connect              ← 接続できなかった(終了コード7)
+{"done":true} [200]                      ← 処理中だったリクエストは、最後まで処理されて応答が返った
+
+INFO AvailabilityLogger : 可用性の状態が変わった: REFUSING_TRAFFIC
+INFO GracefulShutdown   : Commencing graceful shutdown. Waiting for active requests to complete
+INFO GracefulShutdown   : Graceful shutdown complete

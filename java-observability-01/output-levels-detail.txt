@@ -1,0 +1,22 @@
+# example.books=DEBUG のときの、BookServiceのログ
+INFO --- [o-auto-1-exec-2] example.books.BookService                : 本を登録した id=3 copies=4
+WARN --- [o-auto-1-exec-3] example.books.BookService                : 題名が重複しているため、登録しない title=こころ
+DEBUG --- [o-auto-1-exec-4] example.books.BookService                : 本を探す id=99
+DEBUG --- [o-auto-1-exec-4] example.books.BookService                : 本が見つからない id=99
+
+# example.books=TRACE のときの、BookServiceのログ(TRACEが加わる)
+TRACE --- [o-auto-1-exec-2] example.books.BookService                : 登録の処理を始める
+INFO --- [o-auto-1-exec-2] example.books.BookService                : 本を登録した id=3 copies=4
+TRACE --- [o-auto-1-exec-3] example.books.BookService                : 登録の処理を始める
+WARN --- [o-auto-1-exec-3] example.books.BookService                : 題名が重複しているため、登録しない title=こころ
+DEBUG --- [o-auto-1-exec-4] example.books.BookService                : 本を探す id=99
+DEBUG --- [o-auto-1-exec-4] example.books.BookService                : 本が見つからない id=99
+
+# example.books.BookService だけ DEBUG のときの、アプリのログ(他のクラスはINFOのまま)
+INFO --- [o-auto-1-exec-1] example.books.LoggingDemoController      : INFO:業務の区切りとなる出来事
+WARN --- [o-auto-1-exec-1] example.books.LoggingDemoController      : WARN:異常ではないが、気をつけたい状況
+ERROR --- [o-auto-1-exec-1] example.books.LoggingDemoController      : ERROR:処理が失敗した
+INFO --- [o-auto-1-exec-2] example.books.BookService                : 本を登録した id=3 copies=4
+WARN --- [o-auto-1-exec-3] example.books.BookService                : 題名が重複しているため、登録しない title=こころ
+DEBUG --- [o-auto-1-exec-4] example.books.BookService                : 本を探す id=99
+DEBUG --- [o-auto-1-exec-4] example.books.BookService                : 本が見つからない id=99

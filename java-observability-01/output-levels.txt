@@ -1,0 +1,6 @@
+# 起動後に4回の要求を送ったときの、アプリのログ(example.books...)の行数。レベルごと
+設定                              TRACE  DEBUG   INFO   WARN  ERROR
+既定(logging.level なし)            0      0      6      2      1
+example.books=DEBUG                     0      4      6      2      1
+example.books=TRACE                     3      4      6      2      1
+example.books.BookService=DEBUG         0      2      6      2      1

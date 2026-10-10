@@ -1,0 +1,4 @@
+# POST /api/demo/login に {"user":"sora","password":"secret-pass-123"} を送ったときのログ
+INFO --- [o-auto-1-exec-1] example.books.LoggingDemoController      : [悪い例] ログイン要求 LoginRequest[user=sora, password=secret-pass-123]
+INFO --- [o-auto-1-exec-1] example.books.LoggingDemoController      : [IDだけ] ログイン要求 user=sora
+INFO --- [o-auto-1-exec-1] example.books.LoggingDemoController      : [伏せる] ログイン要求 MaskedLoginRequest[user=sora, password=****]

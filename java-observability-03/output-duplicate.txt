@@ -1,0 +1,11 @@
+# 各層で記録して投げ直す(よくない例)
+$ curl -X POST "http://localhost:PORT/api/demo/register/duplicate-logging?title=Java"
+ERROR DemoStore                  : 保存に失敗した title=Java
+java.io.IOException: ディスクの空きがありません
+ERROR DuplicateLoggingService    : 本の登録に失敗した title=Java
+example.books.DemoStorageException: 保存に失敗した
+Caused by: java.io.IOException: ディスクの空きがありません
+ERROR ApiExceptionHandler        : 予期しないエラー errorId=b7117794-4ce6-4ec5-b565-292886c8ec48 path=/api/demo/register/duplicate-logging
+example.books.DemoStorageException: 保存に失敗した
+Caused by: java.io.IOException: ディスクの空きがありません
+(ERRORの記録 3件 / ログの行数 156行)

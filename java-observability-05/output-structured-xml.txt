@@ -1,0 +1,3 @@
+# console-appender.xml の代わりに structured-console-appender.xml を取り込んだ logback-spring.xml(logback-structured.xml)で、
+# --logging.structured.format.console=logstash を指定して起動したとき
+{"@timestamp":"2026-10-11T08:41:20.824644417+09:00","@version":"1","message":"貸し出した","logger_name":"example.books.BookService","thread_name":"http-nio-auto-1-exec-1","level":"INFO","level_value":20000,"requestId":"req-2","bookId":1,"copiesLeft":2}

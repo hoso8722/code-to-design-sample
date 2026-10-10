@@ -1,0 +1,14 @@
+# 通常の状態
+/actuator/health -> {"groups":["liveness","readiness"],"status":"UP"} [200]
+/actuator/health/liveness -> {"status":"UP"} [200]
+/actuator/health/readiness -> {"status":"UP"} [200]
+
+# 保存先の故障を模擬(/api/demo/store-down?value=true)
+/actuator/health -> {"groups":["liveness","readiness"],"status":"DOWN"} [503]
+/actuator/health/liveness -> {"status":"UP"} [200]
+/actuator/health/readiness -> {"status":"UP"} [200]
+
+# トラフィックの受け付けを止める(/api/demo/refuse-traffic?value=true)
+/actuator/health -> {"groups":["liveness","readiness"],"status":"OUT_OF_SERVICE"} [503]
+/actuator/health/liveness -> {"status":"UP"} [200]
+/actuator/health/readiness -> {"status":"OUT_OF_SERVICE"} [503]

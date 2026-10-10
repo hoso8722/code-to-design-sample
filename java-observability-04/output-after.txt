@@ -1,0 +1,14 @@
+# requestIdを付けた形式(X-Request-Idヘッダーを付けて同時に送信)
+$ curl -H "X-Request-Id: req-A" ".../api/demo/work?name=A" (B、Cも同時に)
+INFO [req-C] [exec-2] : 処理を始める name=C
+INFO [req-A] [exec-1] : 処理を始める name=A
+INFO [req-B] [exec-3] : 処理を始める name=B
+INFO [req-B] [exec-3] : 処理を終える name=B
+INFO [req-C] [exec-2] : 処理を終える name=C
+INFO [req-A] [exec-1] : 処理を終える name=A
+
+# ヘッダーなしと、不正な値のとき(応答のヘッダー)
+$ curl -i ".../api/demo/work?name=D"
+X-Request-Id: 5c737cd1-dbbf-4691-bbf3-551194d6c9dc  (生成されたUUID)
+$ curl -i -H "X-Request-Id: bad id<TAB>x" ".../api/demo/work?name=E"
+X-Request-Id: 69501692-f773-4842-bb36-f33ac04d15f8  (不正な値は捨て、UUIDを生成)

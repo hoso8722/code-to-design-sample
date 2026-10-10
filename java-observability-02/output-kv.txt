@@ -1,0 +1,7 @@
+# 既定のログの形式(Spring Boot)で、貸出を記録したとき
+INFO --- [o-auto-1-exec-1] example.books.BookService                : 本を登録した id=3 copies=4
+INFO --- [o-auto-1-exec-2] example.books.BookService                : 貸し出した
+
+# 形式に %kvp を加えたとき(--logging.pattern.console="%d{HH:mm:ss.SSS} %-5level %logger{22} - %msg %kvp%n")
+INFO  e.books.BookService - 本を登録した id=3 copies=4 
+INFO  e.books.BookService - 貸し出した bookId="3" copiesLeft="3"

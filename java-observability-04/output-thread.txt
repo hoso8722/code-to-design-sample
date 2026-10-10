@@ -1,0 +1,5 @@
+# 別のスレッドに処理を渡したとき
+$ curl -H "X-Request-Id: req-T" http://localhost:PORT/api/demo/mdc-thread
+INFO [req-T] [exec-8] : リクエストのスレッドで処理する
+INFO [] [pool-2-thread-1] : 別のスレッドで処理する(そのまま)
+INFO [req-T] [pool-2-thread-1] : 別のスレッドで処理する(MDCを引き継ぐ)

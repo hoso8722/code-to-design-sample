@@ -1,0 +1,4 @@
+# 公開するエンドポイントを * にしたとき
+/actuator に並んだエンドポイント: beans, conditions, configprops, configprops-prefix, env, env-toMatch, health, health-path, info, loggers, loggers-name, mappings, metrics, metrics-requiredMetricName, prometheus, sbom, sbom-id, scheduledtasks, self, threaddump
+/actuator/env/demo.name -> {"property":{"source":"commandLineArgs","value":"******"}, ...} [200]
+/actuator/env/demo.db.password -> {"property":{"source":"commandLineArgs","value":"******"}, ...} [200]

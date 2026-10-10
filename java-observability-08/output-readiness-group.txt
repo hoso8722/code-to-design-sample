@@ -1,0 +1,3 @@
+# readinessのグループに bookStore を含めた(management.endpoint.health.group.readiness.include=readinessState,bookStore)
+/actuator/health/liveness -> {"status":"UP"} [200]
+/actuator/health/readiness -> {"status":"DOWN"} [503]

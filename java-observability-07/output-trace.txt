@@ -1,0 +1,19 @@
+# トレースの依存関係を加えたあと(sampling.probability=1.0)。形式に traceId と spanId を加えた
+$ curl -H "X-Request-Id: req-1" ".../api/demo/observe?user=u1"
+INFO [req-1] [traceId=6acace2b6d48970e150e2cbc58b7676c spanId=150e2cbc58b7676c] [exec-1] : [開始] name=demo.checkout
+INFO [req-1] [traceId=6acace2b6d48970e150e2cbc58b7676c spanId=52095b407034209f] [exec-1] : [スコープを開いた] name=demo.checkout
+INFO [req-1] [traceId=6acace2b6d48970e150e2cbc58b7676c spanId=52095b407034209f] [exec-1] : 処理の中のログ
+INFO [req-1] [traceId=6acace2b6d48970e150e2cbc58b7676c spanId=150e2cbc58b7676c] [exec-1] : [終了] name=demo.checkout low=[keyValue(channel=web)] high=[keyValue(user.id=u1)]
+
+$ curl -H "X-Request-Id: req-2" -H "traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01" ".../api/demo/observe?user=u2"
+INFO [req-2] [traceId=4bf92f3577b34da6a3ce929d0e0e4736 spanId=00263464cfdf5d08] [exec-2] : [開始] name=demo.checkout
+INFO [req-2] [traceId=4bf92f3577b34da6a3ce929d0e0e4736 spanId=0c66d452f37200dc] [exec-2] : [スコープを開いた] name=demo.checkout
+INFO [req-2] [traceId=4bf92f3577b34da6a3ce929d0e0e4736 spanId=0c66d452f37200dc] [exec-2] : 処理の中のログ
+INFO [req-2] [traceId=4bf92f3577b34da6a3ce929d0e0e4736 spanId=00263464cfdf5d08] [exec-2] : [終了] name=demo.checkout low=[keyValue(channel=web)] high=[keyValue(user.id=u2)]
+
+# サンプリングの割合を変えて、10回呼んだとき("処理の中のログ" の行に traceId が付いた数)
+既定(0.1): 10 / 10
+0.0      : 10 / 10
+
+# micrometer-tracing-bridge-brave だけを加えたとき
+traceId= spanId=   (空のまま)

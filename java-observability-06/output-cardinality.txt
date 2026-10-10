@@ -1,0 +1,7 @@
+# タグの値の種類と、メトリクスの数
+$ curl ".../api/demo/cardinality?mode=good&n=1000"   (タグ result: 値は2種類)
+{"mode":"good","metersAfter":105,"metersBefore":103,"requests":1000}
+$ curl ".../api/demo/cardinality?mode=bad&n=1000"    (タグ userId: 1,000人分)
+{"mode":"bad","metersAfter":1106,"metersBefore":106,"requests":1000}
+/actuator/prometheus の大きさ: 17582 バイト → 65141 バイト
+demo_requests_bad_total の行数: 1000

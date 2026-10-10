@@ -1,0 +1,13 @@
+# --logging.structured.format.console=logstash (requestIdはMDC、bookIdとcopiesLeftはkey-value)
+$ curl -X POST -H "X-Request-Id: req-2" -H "Content-Type: application/json" -d '{"borrower":"sora"}' .../api/books/1/loans
+{"@timestamp":"2026-10-11T07:36:49.612564588+09:00","@version":"1","message":"貸し出した","logger_name":"example.books.BookService","thread_name":"http-nio-auto-1-exec-2","level":"INFO","level_value":20000,"requestId":"req-2","bookId":1,"copiesLeft":2}
+
+# --logging.structured.format.console=ecs
+{"@timestamp":"2026-10-10T22:36:57.506176053Z","log":{"level":"INFO","logger":"example.books.BookService"},"process":{"pid":152965,"thread":{"name":"http-nio-auto-1-exec-2"}},"service":{"version":"1.0","node":{}},"message":"貸し出した","requestId":"req-2","bookId":1,"copiesLeft":2,"ecs":{"version":"8.11"}}
+
+# 例外を記録したとき(logstash)。stack_trace に、スタックトレースが1つの文字列で入る
+追加の項目: stack_trace = "example.books.BookRegistrationException: 本の登録に失敗した title=x\n\tat example.books.BoundaryLoggingService.register(BoundaryLoggingService.java:19)\n\t..."
+
+# logback-spring.xml が console-appender.xml を取り込んでいるアプリに、同じ指定を加えると
+$ java -jar app.jar --logging.structured.format.console=logstash
+(JSONにならず、これまでと同じ文字の形式で出力された。JSONの行は0件)

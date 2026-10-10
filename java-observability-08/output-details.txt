@@ -1,0 +1,2 @@
+# 詳細を表示する設定(management.endpoint.health.show-details=always)
+/actuator/health -> {"components": {"bookStore": {"details": {"reason": "保存先に接続できない(模擬)"}, "status": "DOWN"}, "diskSpace": {"details": {"total": 1081101176832, "free": 981017993216, "threshold": 10485760, "path": "(省略)", "exists": true}, "status": "UP"}, "livenessState": {"status": "UP"}, "ping": {"status": "UP"}, "readinessState": {"status": "UP"}, "ssl": {"status": "UP", "details": "(省略)"}}, "groups": ["liveness", "readiness"], "status": "DOWN"}
