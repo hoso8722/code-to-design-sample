@@ -18,7 +18,10 @@ public class ForceCost {
                 StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING)) {
             for (int i = 1; i <= RECORDS; i++) {
                 byte[] line = String.format("受験者%07d,70,65,80,合格%n", i).getBytes(StandardCharsets.UTF_8);
-                channel.write(ByteBuffer.wrap(line));
+                ByteBuffer buffer = ByteBuffer.wrap(line);
+                while (buffer.hasRemaining()) {
+                    channel.write(buffer);
+                }
                 if (forceEvery > 0 && i % forceEvery == 0) {
                     channel.force(false);  // このファイルの内容が、ディスクに書かれるまで待つ
                 }

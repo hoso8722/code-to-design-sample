@@ -31,7 +31,7 @@ public class ReadText {
         String text = Files.readString(file);
         report("readString");
         long sum = 0;
-        for (String line : text.split("\n")) {
+        for (String line : text.split("\\R")) {
             sum += totalOf(line);
         }
         return sum;

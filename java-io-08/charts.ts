@@ -8,7 +8,7 @@ const OUT = "site/public/images/java-io-08";
 
 // 1回目の実行の結果を読む
 const first = readFileSync(join(DATA, "waiting.txt"), "utf-8").split("# 2回目")[0];
-const rows = [...first.matchAll(/^(.+?): (\d+) ms（成功 \d+ 件、OSのスレッドの最大数 (\d+)、サーバーの同時処理の最大数 (\d+)）$/gm)].map((m) => ({
+const rows = [...first.matchAll(/^(.+?): (\d+) ms（成功 \d+ 件、JVM内プラットフォームスレッドのピーク (\d+)、サーバーの同時処理の最大数 (\d+)）$/gm)].map((m) => ({
   name: m[1],
   ms: Number(m[2]),
   threads: Number(m[3]),
@@ -28,11 +28,11 @@ writeSvg(
   })
 );
 
-// 2. クライアントのプロセスが使った OS のスレッドの最大数
+// 2. JVM全体で観測したプラットフォームスレッドのピーク数
 writeSvg(
   join(OUT, "threads.svg"),
   hBarChart({
-    title: "クライアントが使ったOSのスレッドの最大数",
+    title: "クライアントとサーバーを含むJVM内プラットフォームスレッドのピーク",
     unit: "本",
     labelWidth: 250,
     xTicks: [0, 100, 200, 300],

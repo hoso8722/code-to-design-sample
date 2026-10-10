@@ -8,6 +8,7 @@ import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Async {
@@ -16,7 +17,8 @@ public class Async {
     public static void main(String[] args) throws Exception {
         // 応答までに100ミリ秒かかるサーバー。複数の要求を、同時に処理できる
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
-        server.setExecutor(Executors.newCachedThreadPool());
+        ExecutorService serverExecutor = Executors.newCachedThreadPool();
+        server.setExecutor(serverExecutor);
         server.createContext("/", exchange -> {
             try {
                 Thread.sleep(100);
@@ -58,6 +60,7 @@ public class Async {
             }
         } finally {
             server.stop(0);
+            serverExecutor.shutdownNow();
         }
     }
 }

@@ -43,7 +43,11 @@ public class Copy {
             long position = 0;
             long size = in.size();
             while (position < size) {
-                position += in.transferTo(position, size - position, out);
+                long transferred = in.transferTo(position, size - position, out);
+                if (transferred == 0) {
+                    throw new IOException("ファイル転送が進みませんでした: " + position + " / " + size);
+                }
+                position += transferred;
             }
         }
     }

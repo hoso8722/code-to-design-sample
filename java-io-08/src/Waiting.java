@@ -51,7 +51,7 @@ public class Waiting {
                     ok++;
                 }
             }
-            System.out.printf("%s: %.0f ms（成功 %d 件、OSのスレッドの最大数 %d、サーバーの同時処理の最大数 %d）%n",
+            System.out.printf("%s: %.0f ms（成功 %d 件、JVM内プラットフォームスレッドのピーク %d、サーバーの同時処理の最大数 %d）%n",
                 name, (System.nanoTime() - start) / 1e6, ok, threads.getPeakThreadCount(), maxActive.get());
         }
     }
@@ -59,7 +59,8 @@ public class Waiting {
     public static void main(String[] args) throws Exception {
         // 応答までに200ミリ秒かかるサーバー。要求ごとに仮想スレッドを使うので、多くの要求を同時に処理できる
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 2_000);
-        server.setExecutor(Executors.newVirtualThreadPerTaskExecutor());
+        ExecutorService serverExecutor = Executors.newVirtualThreadPerTaskExecutor();
+        server.setExecutor(serverExecutor);
         server.createContext("/", exchange -> {
             int now = active.incrementAndGet();
             maxActive.accumulateAndGet(now, Math::max);
@@ -87,6 +88,7 @@ public class Waiting {
             run("仮想スレッド（同時に100件まで）", Executors.newVirtualThreadPerTaskExecutor(), 100, client, request);
         } finally {
             server.stop(0);
+            serverExecutor.shutdownNow();
         }
     }
 }
