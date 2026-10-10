@@ -1,0 +1,1 @@
+Exception in thread "main" java.lang.IllegalStateException: 環境変数が設定されていません: JDBC_URL

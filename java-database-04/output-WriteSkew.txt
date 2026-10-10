@@ -1,0 +1,3 @@
+READ COMMITTED   t1は2人と見てcommit成功 / t2は2人と見てcommit成功 / 最終的な当直 0人
+REPEATABLE READ  t1は2人と見てcommit成功 / t2は2人と見てcommit成功 / 最終的な当直 0人
+SERIALIZABLE     t1は2人と見てcommit成功 / t2は2人と見て更新で失敗(SQLState=40001) / 最終的な当直 1人

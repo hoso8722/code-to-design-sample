@@ -1,0 +1,5 @@
+返す場合 : 5回借りても問題なし。使用中=0
+返さない場合 1回目: 借りられた。使用中=1
+返さない場合 2回目: 借りられた。使用中=2
+返さない場合 3回目: SQLTransientConnectionException(約1009ms 待って失敗)
+  HikariPool-2 - Connection is not available, request timed out after 1003ms (total=2, active=2, idle=0, waiting=0)

@@ -1,0 +1,5 @@
+[ERROR] Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.368 s <<< FAILURE! -- in MemberRepositoryTest
+DuplicateEmailException: メールアドレスが登録済みです:   Sora@Example.com 
+[ERROR]   MemberRepositoryTest.登録した会員を_正規化したメールアドレスで探せる:61 » DuplicateEmail メールアドレスが登録済みです:   Sora@Example.com 
+[ERROR] Tests run: 5, Failures: 0, Errors: 1, Skipped: 0
+[INFO] BUILD FAILURE

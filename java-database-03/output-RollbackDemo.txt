@@ -1,0 +1,7 @@
+開始前: Sora=10000.00 Rin=5000.00 合計=15000.00
+制約違反  : SQLState=23514
+失敗のあと: Sora=10000.00 Rin=5000.00 合計=15000.00
+autoCommit: true(元の状態に戻っている)
+投げられた例外: 処理の途中で失敗した
+rollbackの失敗: 1件を抑制して保持
+  その内容    : This connection has been closed.

@@ -1,0 +1,4 @@
+PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu / 既定の分離レベル: read committed
+READ COMMITTED   残高 10000.00 -> 11000.00 / 口座数 2 -> 3 / 未確定の更新を読むと 10000.00
+REPEATABLE READ  残高 10000.00 -> 10000.00 / 口座数 2 -> 2 / 未確定の更新を読むと 10000.00
+SERIALIZABLE     残高 10000.00 -> 10000.00 / 口座数 2 -> 2 / 未確定の更新を読むと 10000.00

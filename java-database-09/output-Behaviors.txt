@@ -1,0 +1,24 @@
+1. 'Apple' を 'apple' で探す
+  PostgreSQL 18: 0件
+  MySQL 8.4: 1件
+  SQLite: 0件
+2. DDLを rollback
+  PostgreSQL 18: 表は消えた
+  MySQL 8.4: 表が残った
+  SQLite: 表は消えた
+3. 別の行を、主キーで指定して同時に更新
+  PostgreSQL 18: 成功(3ms)
+  MySQL 8.4: 成功(4ms)
+  SQLite: 失敗(約513ms) [SQLITE_BUSY] The database file is locked (database is locked)
+4. 別の行を、索引のない列で指定して同時に更新
+  PostgreSQL 18: 成功(3ms)
+  MySQL 8.4: 失敗(約2024ms) Lock wait timeout exceeded; try restarting transaction
+  SQLite: 失敗(約518ms) [SQLITE_BUSY] The database file is locked (database is locked)
+5. INSERT ... RETURNING
+  PostgreSQL 18: 使える(id=3)
+  MySQL 8.4: 使えない(SQLState=S1009)
+  SQLite: 使える(id=3)
+6. 既定の分離レベル
+  PostgreSQL 18: READ COMMITTED
+  MySQL 8.4: REPEATABLE READ
+  SQLite: SERIALIZABLE

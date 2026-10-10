@@ -1,0 +1,11 @@
+# A. 待たされる(ロック待ちの上限なし)
+t1,SELECT FOR UPDATEで行をロック,0
+reader,通常のSELECTは待たされない 残高=10000.00,325,329
+t1,commitしてロックを解放,0,1234
+t2,UPDATEが待たされた,223,1237
+最終残高 10100.00
+# B. lock_timeout を 300ms にした場合
+t1,SELECT FOR UPDATEで行をロック,0
+t2,UPDATEが失敗(SQLState=55P03),203,513
+t1,commitしてロックを解放,0,1203
+最終残高 10000.00

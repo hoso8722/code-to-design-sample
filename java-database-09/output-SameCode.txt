@@ -1,0 +1,6 @@
+PostgreSQL 18: 採番されたID=1
+  name=Apple price=1980.50 active=true (priceのJDBC型=numeric)
+MySQL 8.4: 採番されたID=1
+  name=Apple price=1980.50 active=true (priceのJDBC型=DECIMAL)
+SQLite: 採番されたID=1
+  name=Apple price=1980.5 active=true (priceのJDBC型=NUMERIC)

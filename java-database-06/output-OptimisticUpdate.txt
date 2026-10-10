@@ -1,0 +1,7 @@
+1. versionなし  : 2つ売ったのに在庫 9(8になるはず)
+2. AもBも読んだ : stock=10 version=0
+   Aの更新      : 1行
+   Bの更新      : 0行 → 競合を検出
+   Bが読み直す  : stock=9 version=1
+   Bの再更新    : 1行
+   最終         : stock=8 version=2

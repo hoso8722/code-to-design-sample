@@ -1,0 +1,4 @@
+2件目のINSERT: 成功(検査はcommitまで遅れる)
+commit: 失敗 SQLState=23505
+そのあとのrollback: 例外なし
+deferred_demo の行数: 0

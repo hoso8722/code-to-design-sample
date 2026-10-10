@@ -1,0 +1,7 @@
+1. 本来の失敗      : 集計の途中で失敗した
+   投げられた例外  : PSQLException / This connection has been closed.
+2. 投げられた例外: 途中の処理で失敗した
+   autoCommit             : false
+   同じ接続で読む         : Sora=9000.00 Rin=5000.00 合計=14000.00
+   別の接続で読む         : Sora=10000.00 Rin=5000.00 合計=15000.00
+   あとからcommitした後   : Sora=9000.00 Rin=5000.00 合計=14000.00

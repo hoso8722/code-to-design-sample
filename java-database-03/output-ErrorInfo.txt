@@ -1,0 +1,6 @@
+1. CHECK制約違反
+  getMessage : ERROR: new row for relation "accounts" violates check constraint "accounts_balance_check" /   Detail: Failing row contains (1, Sora, -10000.00).
+  ログ用     : SQLState=23514 vendorCode=0 constraint=accounts_balance_check
+2. 主キーの重複
+  getMessage : ERROR: duplicate key value violates unique constraint "accounts_pkey" /   Detail: Key (id)=(1) already exists.
+  ログ用     : SQLState=23505 vendorCode=0 constraint=accounts_pkey

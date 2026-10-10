@@ -1,0 +1,5 @@
+deadlock_timeout: 1s
+t1(口座1→2): 成功
+t2(口座2→1): 失敗 SQLState=40P01 ERROR: deadlock detected
+所要時間   : 約1066 ms
+最終残高   : Sora=9900.00 Rin=5100.00 合計=15000.00

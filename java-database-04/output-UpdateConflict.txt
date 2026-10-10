@@ -1,0 +1,3 @@
+READ COMMITTED   t1が読んだ値=10000.00 / t1の更新: 更新に成功 / 最終残高=11100.00
+REPEATABLE READ  t1が読んだ値=10000.00 / t1の更新: SQLState=40001 ERROR: could not serialize access due to concurrent update / 最終残高=11000.00
+SERIALIZABLE     t1が読んだ値=10000.00 / t1の更新: SQLState=40001 ERROR: could not serialize access due to concurrent update / 最終残高=11000.00

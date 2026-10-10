@@ -1,0 +1,7 @@
+  348 ms  A: SELECT FOR UPDATE を発行
+  368 ms  A: ロックを取って在庫 10 を読んだ
+  449 ms  B: SELECT FOR UPDATE を発行
+  985 ms  A: 在庫を 9 にして commit
+  985 ms  B: ロックを取って在庫 9 を読んだ
+  990 ms  B: 在庫を 8 にして commit
+  995 ms  最終: 在庫 8

@@ -1,0 +1,3 @@
+max_connections=100 superuser_reserved_connections=3
+開けた接続: 100本
+失敗: SQLState=53300 FATAL: sorry, too many clients already

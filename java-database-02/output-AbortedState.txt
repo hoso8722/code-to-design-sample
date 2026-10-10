@@ -1,0 +1,3 @@
+1つ目の失敗 : SQLState=23514
+そのあとのSQL: SQLState=25P02
+rollbackのあと: Sora=10000.00 Rin=5100.00 合計=15100.00

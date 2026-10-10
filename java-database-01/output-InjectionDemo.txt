@@ -1,0 +1,14 @@
+入力: sora@example.com
+  文字列連結     : [空]
+  PreparedStatement: [空]
+入力: ' OR '1'='1' -- 
+  文字列連結     : [空, 凛, 管理者]
+  PreparedStatement: []
+入力: o'brien@example.com
+  文字列連結     : SQLException(SQLState=42601)
+  PreparedStatement: []
+入力: x'; UPDATE customers SET display_name = 'hacked' WHERE 'a' = 'a
+  文字列連結     : SQLException(SQLState=0100E)
+  PreparedStatement: []
+
+実験のあとの表示名: [hacked, hacked, hacked]

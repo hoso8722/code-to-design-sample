@@ -1,0 +1,7 @@
+[INFO] Running MemberRepositoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.601 s -- in MemberRepositoryTest
+[INFO] Running H2CompatibilityTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.280 s -- in H2CompatibilityTest
+[INFO] Running EmailsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in EmailsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
