@@ -1,0 +1,2 @@
+Exception in thread "main" java.lang.IllegalStateException: 環境変数 API_TOKEN が設定されていません
+	at BearerBasic.main(BearerBasic.java:15)

@@ -1,0 +1,3 @@
+/declared ofString()=日本語  ofString(UTF_8)=日本語
+/none     ofString()=日本語  ofString(UTF_8)=日本語
+/wrong    ofString()=æ¥æ¬èª  ofString(UTF_8)=日本語

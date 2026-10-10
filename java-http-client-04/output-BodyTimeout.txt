@@ -1,0 +1,2 @@
+例外なし。status=200 本文=part1 part2 part3 part4 part5
+send が戻るまで: 約5167 ms(要求のタイムアウトは500ms)

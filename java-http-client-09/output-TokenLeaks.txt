@@ -1,0 +1,9 @@
+1. トークンをURLに入れた場合
+  [クライアントの request.toString()] http://localhost:43849/data?access_token=demo-token-8f3a GET
+  [サーバーのアクセスログ] GET /data?access_token=demo-token-8f3a
+2. トークンをAuthorizationヘッダーに入れた場合
+  [クライアントの request.toString()] http://localhost:43849/data GET
+  [サーバーのアクセスログ] GET /data
+3. ヘッダーを、そのままログに出した場合と、伏せて出した場合
+  そのまま: {Authorization=[Bearer demo-token-8f3a]}
+  伏せる  : {Authorization=[伏せた]}

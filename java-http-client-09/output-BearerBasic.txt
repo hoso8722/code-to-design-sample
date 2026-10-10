@@ -1,0 +1,3 @@
+正しいトークン: status=200 body=hello
+トークンなし  : status=401 WWW-Authenticate=Bearer
+違うトークン  : status=401

@@ -1,0 +1,7 @@
+URLEncoder の結果        : my+file%2Bv2.txt
+空白を %20 に直した結果  : my%20file%2Bv2.txt
+
+送った /files/my+file%2Bv2.txt
+  rawPath=/files/my+file%2Bv2.txt  path=/files/my+file+v2.txt
+送った /files/my%20file%2Bv2.txt
+  rawPath=/files/my%20file%2Bv2.txt  path=/files/my file+v2.txt

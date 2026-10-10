@@ -1,0 +1,3 @@
+/missing -> 例外なしで戻った。status=404 body=not found
+/broken -> 例外なしで戻った。status=503 body=boom
+サーバー停止後 -> java.net.ConnectException

@@ -1,0 +1,3 @@
+1回だけ  : q=cafe%20%26%20tea&lang=ja&note=a%3Db
+2回      : q=cafe%2520%2526%2520tea
+1回復号  : cafe%20%26%20tea

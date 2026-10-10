@@ -1,0 +1,9 @@
+未知のプロパティがある       -> UnrecognizedPropertyException
+未知のプロパティを許す(注釈) -> LenientProduct[id=42, name=キーボード]
+未知のプロパティを許す(設定) -> Product[id=42, name=キーボード]
+プロパティが欠けている       -> Product[id=42, name=null]
+数値のプロパティが欠けている -> WithStock[id=42, stock=0]
+名前が違う(product_id)       -> UnrecognizedPropertyException
+@JsonPropertyで対応づけ      -> Renamed[id=42, name=キーボード]
+型が違う(stockが文字列)      -> InvalidFormatException
+JSONとして不正               -> JsonParseException

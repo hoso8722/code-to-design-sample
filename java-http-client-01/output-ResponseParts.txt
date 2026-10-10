@@ -1,0 +1,14 @@
+status  : 200
+version : HTTP_1_1
+method  : GET
+path    : /items/42
+body    : キーボード
+headers :
+  content-length = [15]
+  content-type = [text/plain; charset=utf-8]
+  date = [Sat, 10 Oct 2026 18:15:57 GMT]
+  x-stock = [12]
+X-Stock : 12
+x-stock : 12
+X-STOCK : 12
+X-Absent: なし

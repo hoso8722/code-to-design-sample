@@ -1,0 +1,4 @@
+/ok -> Reply[status=200]
+/unavailable -> Reply[status=503]
+/slow -> TimedOut[]
+(サーバー停止後) /ok -> Unreachable[reason=接続できない]

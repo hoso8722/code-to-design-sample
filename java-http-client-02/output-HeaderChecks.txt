@@ -1,0 +1,5 @@
+GET : method=GET Accept=text/plain Content-Type=null X-Request-Source=catalog-search
+POST: method=POST Accept=text/plain Content-Type=application/json; charset=utf-8 X-Request-Source=null
+改行を含む値 -> IllegalArgumentException: invalid header value: "web
+X-Admin: true"
+空白を含む名前 -> IllegalArgumentException: invalid header name: "X Bad Name"

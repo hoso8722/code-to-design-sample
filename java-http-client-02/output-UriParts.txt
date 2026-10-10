@@ -1,0 +1,9 @@
+scheme   : https
+host     : api.example.com
+port     : 8443
+path     : /v1/items/42
+query    : lang=ja&sort=price
+fragment : reviews
+空白を含むURI -> IllegalArgumentException: Illegal character in query at index 30: http://localhost/search?q=cafe & tea
+日本語のまま  -> getQuery=q=日本語 / getRawQuery=q=日本語
+               toASCIIString=http://localhost/search?q=%E6%97%A5%E6%9C%AC%E8%AA%9E

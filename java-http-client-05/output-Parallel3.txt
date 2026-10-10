@@ -1,0 +1,12 @@
+sequential,A,0,307
+sequential,B,312,619
+sequential,C,619,927
+# sequential 全体: 927 ms
+async-parallel-server,A,0,307
+async-parallel-server,B,3,312
+async-parallel-server,C,4,312
+# async-parallel-server 全体: 313 ms
+async-single-thread-server,A,0,305
+async-single-thread-server,C,0,607
+async-single-thread-server,B,0,909
+# async-single-thread-server 全体: 909 ms

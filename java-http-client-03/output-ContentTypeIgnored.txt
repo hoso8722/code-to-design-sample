@@ -1,0 +1,6 @@
+/mislabeled Content-Type=text/html; charset=utf-8
+  Jacksonで読む -> Product[id=42, name=キーボード]
+  JSONと宣言されているか -> false
+/errorpage Content-Type=text/html; charset=utf-8
+  Jacksonで読む -> JsonParseException
+  JSONと宣言されているか -> false

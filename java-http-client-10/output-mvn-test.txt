@@ -1,0 +1,3 @@
+[INFO] Running CatalogApiTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 s -- in CatalogApiTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0

@@ -1,0 +1,5 @@
+thenCompose : 3 orders for user=u-7
+exceptionally に届いた例外 : CompletionException / 原因 : HttpTimeoutException
+exceptionally の結果 : 代わりの値
+join が投げた例外 : CompletionException / 原因 : HttpTimeoutException
+get が投げた例外  : ExecutionException / 原因 : HttpTimeoutException

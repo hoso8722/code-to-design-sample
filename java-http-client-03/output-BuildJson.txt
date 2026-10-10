@@ -1,0 +1,7 @@
+文字列連結:
+{"note":""急ぎ"でお願いします
+2階の事務所へ","quantity":1}
+  -> JsonParseException
+ObjectMapperで書き出し:
+{"note":"\"急ぎ\"でお願いします\n2階の事務所へ","quantity":1}
+  -> 読み戻した値が元と同じか: true

@@ -1,0 +1,2 @@
+既定のクライアント: SSLHandshakeException
+この証明書を信頼したクライアント: status=200 body=secure hello

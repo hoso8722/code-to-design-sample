@@ -1,0 +1,4 @@
+https://api.example.com/v1/items                   host=api.example.com                startsWith=true  検査=true
+https://api.example.com.evil.example/v1/items      host=api.example.com.evil.example   startsWith=true  検査=false
+https://api.example.com@evil.example/v1/items      host=evil.example                   startsWith=true  検査=false
+http://api.example.com/v1/items                    host=api.example.com                startsWith=false 検査=false

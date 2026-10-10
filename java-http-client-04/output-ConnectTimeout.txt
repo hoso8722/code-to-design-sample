@@ -1,0 +1,4 @@
+待ち行列を埋めるために開いた接続: 2 本
+例外: HttpConnectTimeoutException "HTTP connect timed out" (約568 ms)
+HttpTimeoutExceptionの一種か: true
+IOExceptionの一種か: true

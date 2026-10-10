@@ -1,0 +1,5 @@
+send       : 戻るまで 312 ms
+sendAsync  : 戻るまで 1 ms, isDone=false
+main       : 呼び出したスレッド = main
+thenApply  : 実行したスレッド = ForkJoinPool.commonPool-worker-1
+join       : 結果 KEYBOARD (呼び出しから 309 ms)

@@ -1,0 +1,8 @@
+/ok -> Ok[body=keyboard]
+/missing -> ClientError[status=404, requestId=req-404]
+    保持した本文の先頭: 26 文字(上限 200 バイト)
+/limited -> RateLimited[retryAfter=Optional[PT30S], requestId=req-429]
+/bad -> ClientError[status=400, requestId=req-400]
+    保持した本文の先頭: 200 文字(上限 200 バイト)
+/broken -> ServerError[status=503, requestId=req-503]
+サーバー停止後 -> IOException: ConnectException

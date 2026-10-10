@@ -1,0 +1,4 @@
+応答の本文: {"id":"42","name":"キーボード"}
+record: Product[id=42, name=キーボード]
+サーバーが受け取った本文: {"productId":"42","quantity":2}
+record: Receipt[result=accepted 42 x 2]

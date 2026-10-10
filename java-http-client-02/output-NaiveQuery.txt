@@ -1,0 +1,8 @@
+送ったURI: /search?q=tea&admin=true
+raw=q=tea&admin=true
+params={q=tea, admin=true}
+
+送ったURI: /search?q=tea%26admin%3Dtrue
+raw=q=tea%26admin%3Dtrue
+params={q=tea&admin=true}
+

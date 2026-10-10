@@ -1,0 +1,7 @@
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.058 s <<< FAILURE! -- in CatalogApiTest
+[ERROR] CatalogApiTest.注文はPOSTで本文とContentTypeを送る -- Time elapsed: 0.031 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <application/x-www-form-urlencoded> but was: <text/plain>
+	at CatalogApiTest.注文はPOSTで本文とContentTypeを送る(CatalogApiTest.java:56)
+[ERROR]   CatalogApiTest.注文はPOSTで本文とContentTypeを送る:56 expected: <application/x-www-form-urlencoded> but was: <text/plain>
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
+[INFO] BUILD FAILURE

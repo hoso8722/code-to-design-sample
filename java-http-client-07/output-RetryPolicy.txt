@@ -1,0 +1,31 @@
+  318 ms  /flaky(503が2回、そのあと成功)
+  485 ms    試行1: status=503
+  486 ms    100 ms 待ってから再試行
+  593 ms    試行2: status=503
+  594 ms    200 ms 待ってから再試行
+  802 ms    試行3: status=200
+  803 ms    -> 結果: flaky-ok
+  803 ms  /limited(429 Retry-After: 1、そのあと成功)
+  808 ms    試行1: status=429
+  809 ms    1000 ms 待ってから再試行
+ 1816 ms    試行2: status=200
+ 1816 ms    -> 結果: limited-ok
+ 1817 ms  /always503(ずっと503、回数の上限4回)
+ 1823 ms    試行1: status=503
+ 1823 ms    100 ms 待ってから再試行
+ 1930 ms    試行2: status=503
+ 1930 ms    200 ms 待ってから再試行
+ 2137 ms    試行3: status=503
+ 2138 ms    400 ms 待ってから再試行
+ 2545 ms    試行4: status=503
+ 2545 ms    -> 失敗: 回数の上限(4回)に達した
+ 2546 ms  /always503(ずっと503、総期限500ms)
+ 2551 ms    試行1: status=503
+ 2551 ms    100 ms 待ってから再試行
+ 2659 ms    試行2: status=503
+ 2659 ms    200 ms 待ってから再試行
+ 2865 ms    試行3: status=503
+ 2865 ms    -> 失敗: 総期限(500ms)を超えるので打ち切る
+ 2866 ms  /missing(404)
+ 2870 ms    試行1: status=404
+ 2871 ms    -> 失敗: 再試行しない応答: status=404

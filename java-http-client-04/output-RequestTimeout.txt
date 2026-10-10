@@ -1,0 +1,4 @@
+  373 ms  クライアント: 送信(要求のタイムアウトは500ms)
+  463 ms  サーバー: 処理を始めた(2秒かかる)
+  901 ms  クライアント: HttpTimeoutException "request timed out"
+ 2463 ms  サーバー: 処理を終えた
