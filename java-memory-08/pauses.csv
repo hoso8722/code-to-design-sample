@@ -1,4 +1,4 @@
-gc,run,pauses,total_ms,max_ms,p50_ms
+gc,run,safepoints,total_safepoint_ms,max_safepoint_ms,p50_safepoint_ms
 g1,1,35,1777.2,157.70,55.116
 g1,2,36,1689.9,110.49,45.801
 g1,3,35,1697.4,133.99,48.209

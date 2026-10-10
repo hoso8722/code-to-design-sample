@@ -5,6 +5,7 @@ public class EscapeAnalysis {
     record Point(int x, int y) {}
 
     static Point last;  // escape() で作った Point を入れておくフィールド
+    static volatile long result;  // noEscape() の計算結果を観測可能にする
 
     // Point はこのメソッドの外に出ない
     static long noEscape(int n) {
@@ -38,7 +39,7 @@ public class EscapeAnalysis {
         System.out.println("round,noEscape_MB,escape_MB");
         for (int round = 1; round <= 10; round++) {
             long before = allocatedBytes();
-            noEscape(n);
+            result = noEscape(n);
             long middle = allocatedBytes();
             escape(n);
             long after = allocatedBytes();

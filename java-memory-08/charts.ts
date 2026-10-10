@@ -27,8 +27,8 @@ const stallText = readFileSync(join(DATA, "stalls.txt"), "utf-8");
 export const summary = gcs.map((g) => {
   const elapsed = avg(bench.filter((r) => r.gc === g.id).map((r) => Number(r.elapsed_ms)));
   const p = pauses.filter((r) => r.gc === g.id);
-  const pauseTotal = avg(p.map((r) => Number(r.total_ms)));
-  const pauseMax = avg(p.map((r) => Number(r.max_ms)));
+  const pauseTotal = avg(p.map((r) => Number(r.total_safepoint_ms)));
+  const pauseMax = avg(p.map((r) => Number(r.max_safepoint_ms)));
   const stalls = [...stallText.matchAll(new RegExp(`^${g.id}-\\d stall_total_ms=(\\d+)`, "gm"))].map((m) => Number(m[1]));
   const stall = stalls.length ? avg(stalls) : 0;
   return { ...g, elapsed, pauseTotal, pauseMax, stall };
@@ -43,7 +43,7 @@ writeSvg(
     labelWidth: 130,
     format: (v) => fmt(v),
     segments: [
-      { name: "GCの停止", slot: 2 },
+      { name: "Safepoint停止", slot: 2 },
       { name: "確保待ち（Allocation Stall）", slot: 4 },
       { name: "それ以外", slot: 1 },
     ],
@@ -59,7 +59,7 @@ writeSvg(
 writeSvg(
   join(OUT, "gc-max-pause.svg"),
   hBarChart({
-    title: "1回の停止の最大（3回の平均）",
+    title: "1回のSafepoint停止の最大（3回の平均）",
     unit: "ミリ秒",
     labelWidth: 130,
     xTicks: [0, 100, 200, 300, 400, 500],
