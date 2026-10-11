@@ -1,0 +1,30 @@
+# 空のローカルリポジトリで mvn package を初めて実行した(ダウンロードの行は省略。プラグインとその依存を含めて、jar 47個、pom 120個、約23MBが保存された)
+$ mvn package
+[INFO] Scanning for projects...
+[INFO] ------------------------< example:hello-maven >-------------------------
+[INFO] Building hello-maven 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] --- resources:3.4.0:resources (default-resources) @ hello-maven ---
+[INFO] skip non existing resourceDirectory <プロジェクト>/src/main/resources
+[INFO] --- compiler:3.15.0:compile (default-compile) @ hello-maven ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 25] to target/classes
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ hello-maven ---
+[INFO] skip non existing resourceDirectory <プロジェクト>/src/test/resources
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ hello-maven ---
+[INFO] No sources to compile
+[INFO] --- surefire:3.5.4:test (default-test) @ hello-maven ---
+[INFO] No tests to run.
+[INFO] --- jar:3.5.0:jar (default-jar) @ hello-maven ---
+[INFO] Building jar: <プロジェクト>/target/hello-maven-1.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.118 s
+[INFO] Finished at: 2026-10-11T08:56:44+09:00
+[INFO] ------------------------------------------------------------------------
+
+# 取得済みの状態で、同じ mvn package をもう一度実行したとき(ダウンロードなし)
+[INFO] BUILD SUCCESS
+[INFO] Total time:  5.487 s

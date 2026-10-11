@@ -1,0 +1,28 @@
+# 失敗するテストを指定して実行する(-Dtest は、pom.xml の excludes より優先される)
+$ mvn clean test -Dtest=BrokenTest
+[INFO] Running example.broken.BrokenTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0 <<< FAILURE! -- in example.broken.BrokenTest
+[ERROR] example.broken.BrokenTest.誤った期待値 -- Time elapsed: 0.070 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 2 + 3 の結果 ==> expected: <6> but was: <5>
+	at example.broken.BrokenTest.誤った期待値(BrokenTest.java:12)
+[ERROR] Failures: 
+[ERROR]   BrokenTest.誤った期待値:12 2 + 3 の結果 ==> expected: <6> but was: <5>
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project profile-demo: There are test failures.
+[ERROR] 
+[ERROR] See <プロジェクト>/target/surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+
+$ ls target/surefire-reports
+TEST-example.broken.BrokenTest.xml
+example.broken.BrokenTest.txt
+
+$ cat target/surefire-reports/example.broken.BrokenTest.txt
+-------------------------------------------------------------------------------
+Test set: example.broken.BrokenTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: (省略) <<< FAILURE! -- in example.broken.BrokenTest
+example.broken.BrokenTest.誤った期待値 -- Time elapsed: (省略) <<< FAILURE!
+org.opentest4j.AssertionFailedError: 2 + 3 の結果 ==> expected: <6> but was: <5>

@@ -1,0 +1,11 @@
+# 選ばれた slf4j-api で、アプリを実行したとき
+
+## pom-a.xml (slf4j-api の選ばれたバージョン: 1.7.36)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4Jの実装: org.slf4j.helpers.NOPLoggerFactory
+
+## pom-b.xml (slf4j-api の選ばれたバージョン: 2.0.17)
+09:24:54.339 [main] INFO example.Main -- ログを書く
+SLF4Jの実装: ch.qos.logback.classic.LoggerContext

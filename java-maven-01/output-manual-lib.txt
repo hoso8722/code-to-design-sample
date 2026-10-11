@@ -1,0 +1,15 @@
+$ javac -d out src/example/Main.java
+src/example/Main.java:3: error: package org.apache.commons.lang3 does not exist
+import org.apache.commons.lang3.StringUtils;
+                               ^
+src/example/Main.java:7: error: cannot find symbol
+$ curl -sO https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.21.0/commons-lang3-3.21.0.jar  (lib/ に保存)
+749083 commons-lang3-3.21.0.jar
+$ javac -cp lib/commons-lang3-3.21.0.jar -d out src/example/Main.java
+$ java -cp out example.Main
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/commons/lang3/StringUtils
+	at example.Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.StringUtils
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+$ java -cp out:lib/commons-lang3-3.21.0.jar example.Main
+Maven cba

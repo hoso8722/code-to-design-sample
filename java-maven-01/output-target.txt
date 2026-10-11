@@ -1,0 +1,19 @@
+$ ls target
+classes
+generated-sources
+hello-maven-1.0.jar
+maven-archiver
+maven-status
+$ unzip -l target/hello-maven-1.0.jar
+META-INF/
+META-INF/MANIFEST.MF
+example/
+META-INF/maven/
+META-INF/maven/example/
+META-INF/maven/example/hello-maven/
+example/Main.class
+META-INF/maven/example/hello-maven/pom.xml
+META-INF/maven/example/hello-maven/pom.properties
+$ java -cp target/classes example.Main (commons-lang3 を足さずに実行)
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/commons/lang3/StringUtils
+	at example.Main.main(Main.java:7)

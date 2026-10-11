@@ -1,0 +1,24 @@
+# shade プラグインで、依存を1つにまとめた jar(fat jar)を作る(pom-shade.xml)
+$ mvn -f pom-shade.xml package   (警告のうち、MySQLとPostgreSQLに関するもの)
+[WARNING] mysql-connector-j-26.7.0.jar, postgresql-42.7.14.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/services/java.sql.Driver
+[INFO] BUILD SUCCESS
+$ java -jar target/app-1.0.jar
+{"app":"maven"}
+JDBCドライバー: [org.postgresql.Driver]
+$ ls -l target/*.jar
+8340492 target/app-1.0.jar
+2950 target/original-app-1.0.jar
+
+$ unzip -p target/app-1.0.jar META-INF/services/java.sql.Driver
+org.postgresql.Driver
+
+# ServicesResourceTransformer を加えた(pom-shade-services.xml)
+$ mvn -f pom-shade-services.xml package
+[INFO] BUILD SUCCESS
+$ java -jar target/app-1.0.jar
+{"app":"maven"}
+JDBCドライバー: [org.postgresql.Driver, com.mysql.cj.jdbc.Driver]
+$ unzip -p target/app-1.0.jar META-INF/services/java.sql.Driver
+org.postgresql.Driver
+com.mysql.cj.jdbc.Driver

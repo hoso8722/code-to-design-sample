@@ -1,0 +1,45 @@
+# 各phaseを指定して実行したときに動いたgoal(ログから「--- プラグイン:バージョン:goal」の行と、結果だけを抜き出した)
+## mvn compile
+resources:3.4.0:resources (default-resources)
+compiler:3.15.0:compile (default-compile)
+[INFO] BUILD SUCCESS
+## mvn test
+resources:3.4.0:resources (default-resources)
+compiler:3.15.0:compile (default-compile)
+resources:3.4.0:testResources (default-testResources)
+compiler:3.15.0:testCompile (default-testCompile)
+surefire:3.5.4:test (default-test)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s -- in example.CalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+## mvn package
+resources:3.4.0:resources (default-resources)
+compiler:3.15.0:compile (default-compile)
+resources:3.4.0:testResources (default-testResources)
+compiler:3.15.0:testCompile (default-testCompile)
+surefire:3.5.4:test (default-test)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in example.CalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+jar:3.5.0:jar (default-jar)
+[INFO] BUILD SUCCESS
+## mvn verify
+resources:3.4.0:resources (default-resources)
+compiler:3.15.0:compile (default-compile)
+resources:3.4.0:testResources (default-testResources)
+compiler:3.15.0:testCompile (default-testCompile)
+surefire:3.5.4:test (default-test)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s -- in example.CalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+jar:3.5.0:jar (default-jar)
+[INFO] BUILD SUCCESS
+## mvn install
+resources:3.4.0:resources (default-resources)
+compiler:3.15.0:compile (default-compile)
+resources:3.4.0:testResources (default-testResources)
+compiler:3.15.0:testCompile (default-testCompile)
+surefire:3.5.4:test (default-test)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s -- in example.CalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+jar:3.5.0:jar (default-jar)
+install:3.1.4:install (default-install)
+[INFO] BUILD SUCCESS

@@ -1,0 +1,12 @@
+# SNAPSHOT を、ファイルのリポジトリに2回 deploy した(file:// のリポジトリ)
+$ find <リポジトリ>/example -type f | sort
+example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-20261011.004241-1.jar
+example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-20261011.004241-1.pom
+example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-20261011.004318-2.jar
+example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-20261011.004318-2.pom
+example/greeting-lib/1.0-SNAPSHOT/maven-metadata.xml
+example/greeting-lib/maven-metadata.xml
+
+$ cat <リポジトリ>/example/greeting-lib/1.0-SNAPSHOT/maven-metadata.xml  (抜粋)
+<timestamp>20261011.004318</timestamp>
+<buildNumber>2</buildNumber>

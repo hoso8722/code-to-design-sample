@@ -1,0 +1,21 @@
+# ルートで mvn package(modules の宣言順は app、domain、common)
+$ mvn package
+[INFO] Reactor Build Order:
+[INFO] shop-parent                                                        [pom]
+[INFO] common                                                             [jar]
+[INFO] domain                                                             [jar]
+[INFO] app                                                                [jar]
+[INFO] Building shop-parent 1.0                                           [1/4]
+[INFO] Building common 1.0                                                [2/4]
+[INFO] Building jar: <プロジェクト>/common/target/common-1.0.jar
+[INFO] Building domain 1.0                                                [3/4]
+[INFO] Building jar: <プロジェクト>/domain/target/domain-1.0.jar
+[INFO] Building app 1.0                                                   [4/4]
+[INFO] Building jar: <プロジェクト>/app/target/app-1.0.jar
+[INFO] Reactor Summary for shop-parent 1.0:
+[INFO] shop-parent ........................................ SUCCESS
+[INFO] common ............................................. SUCCESS
+[INFO] domain ............................................. SUCCESS
+[INFO] app ................................................ SUCCESS
+[INFO] BUILD SUCCESS
+[INFO] Total time: (省略)

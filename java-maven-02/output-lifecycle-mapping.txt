@@ -1,0 +1,24 @@
+$ mvn help:describe -Dcmd=package  (jar パッケージングの phase とプラグインの対応。抜粋)
+* validate: Not defined
+* initialize: Not defined
+* generate-sources: Not defined
+* process-sources: Not defined
+* generate-resources: Not defined
+* process-resources: org.apache.maven.plugins:maven-resources-plugin:3.4.0:resources
+* compile: org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile
+* process-classes: Not defined
+* generate-test-sources: Not defined
+* process-test-sources: Not defined
+* generate-test-resources: Not defined
+* process-test-resources: org.apache.maven.plugins:maven-resources-plugin:3.4.0:testResources
+* test-compile: org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile
+* process-test-classes: Not defined
+* test: org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test
+* prepare-package: Not defined
+* package: org.apache.maven.plugins:maven-jar-plugin:3.5.0:jar
+* pre-integration-test: Not defined
+* integration-test: Not defined
+* post-integration-test: Not defined
+* verify: Not defined
+* install: org.apache.maven.plugins:maven-install-plugin:3.1.4:install
+* deploy: org.apache.maven.plugins:maven-deploy-plugin:3.1.4:deploy

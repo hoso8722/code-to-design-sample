@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>example</groupId>
+    <artifactId>profile-demo</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.release>25</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>6.1.3</junit.version>
+        <!-- 既定では、slow タグのテストを除く -->
+        <test.excluded.groups>slow</test.excluded.groups>
+        <greeting.text>こんにちは(開発)</greeting.text>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.4</version>
+                <configuration>
+                    <excludedGroups>${test.excluded.groups}</excludedGroups>
+                    <excludes>
+                        <exclude>**/broken/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- -P all-tests で、slow タグのテストも動かす -->
+        <profile>
+            <id>all-tests</id>
+            <properties>
+                <test.excluded.groups>none</test.excluded.groups>
+            </properties>
+        </profile>
+        <!-- -P prod で、リソースに埋め込む文言を切り替える -->
+        <profile>
+            <id>prod</id>
+            <properties>
+                <greeting.text>Hello (production)</greeting.text>
+            </properties>
+        </profile>
+        <!-- JDK 25以上で、自動的に有効になる -->
+        <profile>
+            <id>new-jdk</id>
+            <activation>
+                <jdk>[25,)</jdk>
+            </activation>
+            <properties>
+                <built.on>JDK 25以上</built.on>
+            </properties>
+        </profile>
+    </profiles>
+</project>

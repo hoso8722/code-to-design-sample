@@ -1,0 +1,22 @@
+$ mvn dependency:tree
+example:dependency-demo:jar:1.0
++- com.fasterxml.jackson.core:jackson-databind:jar:2.22.3:compile
+|  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.22:compile
+|  \- com.fasterxml.jackson.core:jackson-core:jar:2.22.3:compile
++- org.apache.httpcomponents.client5:httpclient5:jar:5.6.5:compile
+|  +- org.apache.httpcomponents.core5:httpcore5:jar:5.4.4:compile
+|  +- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.4.4:compile
+|  \- org.slf4j:slf4j-api:jar:1.7.36:compile
++- jakarta.servlet:jakarta.servlet-api:jar:6.1.0:provided
++- org.postgresql:postgresql:jar:42.7.14:runtime
+|  \- org.checkerframework:checker-qual:jar:3.55.1:runtime
+\- org.junit.jupiter:junit-jupiter:jar:6.1.3:test
+   +- org.junit.jupiter:junit-jupiter-api:jar:6.1.3:test
+   |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+   |  +- org.junit.platform:junit-platform-commons:jar:6.1.3:test
+   |  +- org.apiguardian:apiguardian-api:jar:1.1.2:test
+   |  \- org.jspecify:jspecify:jar:1.0.0:test
+   +- org.junit.jupiter:junit-jupiter-params:jar:6.1.3:test
+   \- org.junit.jupiter:junit-jupiter-engine:jar:6.1.3:test
+      \- org.junit.platform:junit-platform-engine:jar:6.1.3:test
+------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+# runtime スコープの依存のクラス(org.postgresql.Driver)をコードで使うと
+$ mvn compile  (experiments/UsePostgres.java を src/main/java に置いた)
+[ERROR] <プロジェクト>/src/main/java/example/UsePostgres.java:[6,46] package org.postgresql does not exist
+[INFO] BUILD FAILURE
+
+# 宣言していない依存(jackson-core)のクラスを使う App.java は、そのままコンパイルが通る
+$ mvn compile
+[INFO] BUILD SUCCESS

@@ -1,0 +1,25 @@
+# プラグインのgoalを、phase(validate)にひもづける(pom-enforcer.xml)
+$ mvn -f pom-enforcer.xml package
+[INFO] --- clean:3.2.0:clean (default-clean) ---
+[INFO] --- enforcer:3.6.3:enforce (enforce-java) ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] --- resources:3.4.0:resources (default-resources) ---
+[INFO] --- compiler:3.15.0:compile (default-compile) ---
+[INFO] Compiling 1 source file with javac [debug release 25] to target/classes
+[INFO] --- resources:3.4.0:testResources (default-testResources) ---
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) ---
+[INFO] Compiling 1 source file with javac [debug release 25] to target/test-classes
+[INFO] --- surefire:3.5.4:test (default-test) ---
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s -- in example.CalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] --- jar:3.5.0:jar (default-jar) ---
+[INFO] BUILD SUCCESS
+
+# 条件を満たさないとき(pom-enforcer-fail.xml、Java 26以上を要求)
+$ mvn -f pom-enforcer-fail.xml package
+[INFO] --- clean:3.2.0:clean (default-clean) ---
+[INFO] --- enforcer:3.6.3:enforce (enforce-java) ---
+[INFO] BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-enforcer-plugin:3.6.3:enforce (enforce-java) on project lifecycle-demo: 
+[ERROR] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion failed with message:
+[ERROR] Detected JDK <JDKのパス> is version 25.0.4-1 which is not in the allowed range [26,).

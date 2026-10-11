@@ -1,0 +1,12 @@
+# 子モジュール app の pom.xml には、groupId、version、properties を書いていない。実効のpom(help:effective-pom -pl app)では
+groupId: example
+artifactId: app
+version: 1.0
+packaging: (なし)
+properties:
+   <maven.compiler.release>25</maven.compiler.release>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+dependencies:
+   <dependency> <groupId>example</groupId> <artifactId>domain</artifactId> <version>1.0</version> <scope>compile</scope> </dependency>
+
+(app/pom.xml の dependencies では、domain の version を書いていない。親の dependencyManagement の ${project.version} が適用された)

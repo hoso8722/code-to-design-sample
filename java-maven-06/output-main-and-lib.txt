@@ -1,0 +1,38 @@
+# Main-Class だけを設定した jar(pom-main.xml)
+$ mvn -f pom-main.xml package
+$ java -jar target/app-1.0.jar
+Exception in thread "main" java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at example.App.main(App.java:14)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+
+# Class-Path を設定し、依存を target/lib にコピーした jar(pom-lib.xml)
+$ mvn -f pom-lib.xml package
+$ java -jar target/app-1.0.jar
+{"app":"maven"}
+JDBCドライバー: [org.postgresql.Driver, com.mysql.cj.jdbc.Driver]
+
+$ unzip -p target/app-1.0.jar META-INF/MANIFEST.MF  (72文字を超える行は、次の行の先頭の空白で続く)
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.5.0
+Java-Version: 25
+Build-Jdk-Spec: 25
+Class-Path: lib/jackson-databind-2.22.3.jar lib/jackson-annotations-2.22
+ .jar lib/jackson-core-2.22.3.jar lib/postgresql-42.7.14.jar lib/checker
+ -qual-3.55.1.jar lib/mysql-connector-j-26.7.0.jar lib/protobuf-java-4.3
+ 1.1.jar
+Main-Class: example.App
+
+$ ls target/lib
+checker-qual-3.55.1.jar
+jackson-annotations-2.22.jar
+jackson-core-2.22.3.jar
+jackson-databind-2.22.3.jar
+mysql-connector-j-26.7.0.jar
+postgresql-42.7.14.jar
+protobuf-java-4.31.1.jar
+
+$ java -jar target/app-1.0.jar を、target/lib を除いた場所(jarだけコピー)で実行
+Exception in thread "main" java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at example.App.main(App.java:14)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper

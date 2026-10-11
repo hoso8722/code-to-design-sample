@@ -1,0 +1,11 @@
+# 通常の jar(依存を含まない)を java -jar で実行する
+$ mvn package
+$ java -jar target/app-1.0.jar
+no main manifest attribute, in target/app-1.0.jar
+
+$ unzip -p target/app-1.0.jar META-INF/MANIFEST.MF
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.5.0
+Java-Version: 25
+Build-Jdk-Spec: 25
+

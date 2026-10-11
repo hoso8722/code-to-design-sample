@@ -1,0 +1,17 @@
+# 一部のモジュールだけをビルドする
+$ mvn -pl app package  (appだけ。domain と common は、ローカルリポジトリにない状態)
+[INFO] BUILD FAILURE
+[ERROR] Failed to execute goal on project app: Could not resolve dependencies for project example:app:jar:1.0
+[ERROR] dependency: example:domain:jar:1.0 (compile)
+
+$ mvn -pl app -am package  (appと、appが依存するモジュール)
+[INFO] shop-parent                                                        [pom]
+[INFO] common                                                             [jar]
+[INFO] domain                                                             [jar]
+[INFO] app                                                                [jar]
+[INFO] BUILD SUCCESS
+
+$ mvn -pl common -amd package  (commonと、commonに依存するモジュール)
+[INFO] common                                                             [jar]
+[INFO] domain                                                             [jar]
+[INFO] app                                                                [jar]

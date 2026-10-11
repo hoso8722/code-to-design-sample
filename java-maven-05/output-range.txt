@@ -1,0 +1,9 @@
+# 版の範囲 [1.0,) で依存を宣言したとき(consumer/pom-range.xml)。リポジトリには 1.0 と 1.1 がある
+$ mvn compile → 実行
+release 1.1
+greeting-lib-1.1.jar
+
+# リポジトリに 1.2 を追加した(consumer の pom.xml は変えていない)
+$ mvn -U compile → 実行
+release 1.2
+greeting-lib-1.2.jar

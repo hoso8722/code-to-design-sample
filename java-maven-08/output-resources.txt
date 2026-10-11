@@ -1,0 +1,20 @@
+# リソースの置き換え(フィルタリング)とプロファイル
+$ cat src/main/resources/app.properties
+greeting=${greeting.text}
+version=${project.version}
+built.on=${built.on}
+
+$ mvn clean process-resources && cat target/classes/app.properties
+greeting=こんにちは(開発)
+version=1.0
+built.on=JDK 25以上
+
+$ mvn clean process-resources -P prod && cat target/classes/app.properties
+greeting=Hello (production)
+version=1.0
+built.on=JDK 25以上
+
+$ mvn clean process-resources -Dgreeting.text="こんにちは(コマンドライン)" && cat target/classes/app.properties
+greeting=こんにちは(コマンドライン)
+version=1.0
+built.on=JDK 25以上

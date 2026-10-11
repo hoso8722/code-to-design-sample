@@ -1,0 +1,2 @@
+$ java -cp app/target/classes:domain/target/classes:common/target/classes example.app.Main
+合計: 750円

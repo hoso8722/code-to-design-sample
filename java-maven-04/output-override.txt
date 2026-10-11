@@ -1,0 +1,11 @@
+# BOMをimportしたうえで、(1) dependencyManagement に slf4j-api 2.0.17 を書き、(2) logback-classic に 1.5.37 を直接書いたとき(pom-f.xml)
+$ mvn dependency:tree -Dverbose
+example:conflict-demo:jar:1.0
++- org.apache.httpcomponents.client5:httpclient5:jar:5.6.4:compile
+|  +- org.apache.httpcomponents.core5:httpcore5:jar:5.4.3:compile (version managed from 5.4.3)
+|  +- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.4.3:compile (version managed from 5.4.3)
+|  |  \- (org.apache.httpcomponents.core5:httpcore5:jar:5.4.3:compile - version managed from 5.4.3; omitted for duplicate)
+|  \- org.slf4j:slf4j-api:jar:2.0.17:compile (version managed from 1.7.36)
+\- ch.qos.logback:logback-classic:jar:1.5.37:compile
+   +- ch.qos.logback:logback-core:jar:1.5.38:compile (version managed from 1.5.37)
+   \- (org.slf4j:slf4j-api:jar:2.0.17:compile - version managed from 2.0.17; omitted for duplicate)

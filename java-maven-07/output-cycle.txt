@@ -1,0 +1,4 @@
+# common が app に依存するようにして、循環を作った(common → app → domain → common)
+$ mvn package
+[ERROR] The projects in the reactor contain a cyclic reference: Edge between 'Vertex{label='example:common:1.0'}' and 'Vertex{label='example:app:1.0'}' introduces to cycle in the graph example:app:1.0 --> example:domain:1.0 --> example:common:1.0 --> example:app:1.0 @ 
+(後ろの行は、同じ内容の繰り返しのため省略)

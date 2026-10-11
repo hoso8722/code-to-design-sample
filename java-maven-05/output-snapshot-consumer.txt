@@ -1,0 +1,10 @@
+# 消費側(consumer)が、HTTPのリポジトリ(python3 -m http.server)から 1.0-SNAPSHOT を取得する。ローカルリポジトリは空から
+$ mvn compile → 実行
+version B
+
+# ライブラリを version C に書き換えて deploy したあと、同じ日のうちに再ビルド
+$ mvn compile  (-U なし)
+version B
+
+$ mvn -U compile  (更新を強制)
+version C

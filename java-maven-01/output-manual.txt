@@ -1,0 +1,16 @@
+$ javac -d out src/example/Greeter.java src/example/Main.java
+(出力なし = 成功)
+$ find out -type f
+out/example/Greeter.class
+out/example/Main.class
+$ java -cp out example.Main
+こんにちは、Mavenさん
+$ jar --create --file app.jar --main-class example.Main -C out .
+$ jar tf app.jar
+META-INF/
+META-INF/MANIFEST.MF
+example/
+example/Greeter.class
+example/Main.class
+$ java -jar app.jar
+こんにちは、Mavenさん

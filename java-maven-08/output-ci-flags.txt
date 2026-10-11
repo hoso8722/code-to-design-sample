@@ -1,0 +1,5 @@
+# 空のローカルリポジトリで mvn clean test を実行したときの、標準出力+標準エラーの行数
+$ mvn clean test                : 378 行
+$ mvn -ntp clean test           : 44 行
+$ mvn -B -ntp clean test        : 44 行
+$ mvn -q clean test             : 0 行

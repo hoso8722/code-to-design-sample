@@ -1,0 +1,14 @@
+# 依存の使われ方を調べる dependency:analyze
+$ mvn dependency:analyze  (Super POMのバージョン: dependency 3.7.0)
+Execution default-cli of goal org.apache.maven.plugins:maven-dependency-plugin:3.7.0:analyze failed: Byte code of 'example.App' is corrupt from directory = <プロジェクト>/target/classes, path = <プロジェクト>/target/classes/example/App.class: Unsupported class file major version 69
+
+$ mvn org.apache.maven.plugins:maven-dependency-plugin:3.9.0:analyze
+Used undeclared dependencies found:
+   com.fasterxml.jackson.core:jackson-core:jar:2.22.3:compile
+   org.junit.jupiter:junit-jupiter-api:jar:6.1.3:test
+Unused declared dependencies found:
+   org.apache.httpcomponents.client5:httpclient5:jar:5.6.5:compile
+   jakarta.servlet:jakarta.servlet-api:jar:6.1.0:provided
+   org.postgresql:postgresql:jar:42.7.14:runtime
+   org.junit.jupiter:junit-jupiter:jar:6.1.3:test
+BUILD SUCCESS

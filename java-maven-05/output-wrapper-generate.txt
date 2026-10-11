@@ -1,0 +1,13 @@
+$ mvn wrapper:wrapper -Dmaven=3.9.16
+[INFO] --- wrapper:3.3.4:wrapper (default-cli) ---
+[INFO] Unpacked only-script type wrapper distribution org.apache.maven.wrapper:maven-wrapper-distribution:zip:only-script:3.3.4
+[INFO] BUILD SUCCESS
+$ find . -path ./target -prune -o -type f -print | sort
+./.mvn/wrapper/maven-wrapper.properties
+./mvnw
+./mvnw.cmd
+./pom.xml
+$ cat .mvn/wrapper/maven-wrapper.properties
+wrapperVersion=3.3.4
+distributionType=only-script
+distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.16/apache-maven-3.9.16-bin.zip

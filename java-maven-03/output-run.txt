@@ -1,0 +1,11 @@
+# 実行時のクラスパス(target/classes と runtime スコープの依存)で App を実行する
+$ java -cp target/classes:<runtimeの依存のjar> example.App
+com.fasterxml.jackson.core.JsonFactory
+{"name":"maven"}
+
+# runtime スコープの依存は、コンパイルでは使えなくても、実行のときにはクラスとして読み込める
+$ java -cp <runtimeの依存のjar> experiments/LoadDriver.java  (Class.forName("org.postgresql.Driver"))
+実行時に読み込めた: org.postgresql.Driver
+
+# 実行時のクラスパスに、provided の jakarta.servlet-api と test の junit は含まれない
+含まれる数: 0

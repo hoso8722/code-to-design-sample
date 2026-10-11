@@ -1,0 +1,13 @@
+# オフラインモード(-o)
+$ mvn -o package  (初回に mvn package で取得した、ローカルリポジトリ)
+[INFO] BUILD SUCCESS
+
+$ mvn -o clean package  (同じローカルリポジトリ。clean は初回に使っていない)
+[INFO] BUILD FAILURE
+[ERROR] Plugin org.apache.maven.plugins:maven-clean-plugin:3.2.0 or one of its dependencies could not be resolved:
+[ERROR] 	Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0 has not been downloaded from it before.
+
+$ mvn -o package  (空のローカルリポジトリ)
+[INFO] BUILD FAILURE
+[ERROR] Plugin org.apache.maven.plugins:maven-resources-plugin:3.4.0 or one of its dependencies could not be resolved:
+[ERROR] 	Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-resources-plugin:jar:3.4.0 has not been downloaded from it before.

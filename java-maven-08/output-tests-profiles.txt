@@ -1,0 +1,21 @@
+# テストの実行: 既定 / -P all-tests
+$ mvn clean test
+[INFO] --- surefire:3.5.4:test (default-test) @ profile-demo ---
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0 -- in example.FastTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+
+$ mvn clean test -P all-tests
+[INFO] --- surefire:3.5.4:test (default-test) @ profile-demo ---
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0 -- in example.SlowTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0 -- in example.FastTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+
+# 有効なプロファイル
+$ mvn help:active-profiles
+ - new-jdk (source: example:profile-demo:1.0)
+
+$ mvn help:active-profiles -P prod
+ - prod (source: example:profile-demo:1.0)
+ - new-jdk (source: example:profile-demo:1.0)

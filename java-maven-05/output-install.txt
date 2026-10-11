@@ -1,0 +1,17 @@
+# 自作のライブラリを mvn install して、別のプロジェクトから使う
+$ (greeting-lib) mvn install
+[INFO] Installing <プロジェクト>/greeting-lib/pom.xml to <ローカルリポジトリ>/example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-SNAPSHOT.pom
+[INFO] Installing <プロジェクト>/greeting-lib/target/greeting-lib-1.0-SNAPSHOT.jar to <ローカルリポジトリ>/example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-SNAPSHOT.jar
+[INFO] BUILD SUCCESS
+$ find <ローカルリポジトリ>/example -type f
+example/greeting-lib/1.0-SNAPSHOT/_remote.repositories
+example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-SNAPSHOT.jar
+example/greeting-lib/1.0-SNAPSHOT/greeting-lib-1.0-SNAPSHOT.pom
+example/greeting-lib/1.0-SNAPSHOT/maven-metadata-local.xml
+example/greeting-lib/maven-metadata-local.xml
+$ (consumer) 実行
+version 1
+
+# ライブラリを書き換えて、もう一度 install する(メッセージを version 2 にした)
+$ (consumer) 再実行(consumerのpom.xmlは変えていない)
+version 2

@@ -1,0 +1,23 @@
+# 宣言の順序で、選ばれるバージョンが変わる
+
+## pom-a.xml  $ mvn dependency:tree -Dverbose
+example:conflict-demo:jar:1.0
++- org.apache.httpcomponents.client5:httpclient5:jar:5.6.5:compile
+|  +- org.apache.httpcomponents.core5:httpcore5:jar:5.4.4:compile
+|  +- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.4.4:compile
+|  |  \- (org.apache.httpcomponents.core5:httpcore5:jar:5.4.4:compile - omitted for duplicate)
+|  \- org.slf4j:slf4j-api:jar:1.7.36:compile
+\- ch.qos.logback:logback-classic:jar:1.5.38:compile
+   +- ch.qos.logback:logback-core:jar:1.5.38:compile
+   \- (org.slf4j:slf4j-api:jar:2.0.17:compile - omitted for conflict with 1.7.36)
+
+## pom-b.xml  $ mvn dependency:tree -Dverbose
+example:conflict-demo:jar:1.0
++- ch.qos.logback:logback-classic:jar:1.5.38:compile
+|  +- ch.qos.logback:logback-core:jar:1.5.38:compile
+|  \- org.slf4j:slf4j-api:jar:2.0.17:compile
+\- org.apache.httpcomponents.client5:httpclient5:jar:5.6.5:compile
+   +- org.apache.httpcomponents.core5:httpcore5:jar:5.4.4:compile
+   +- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.4.4:compile
+   |  \- (org.apache.httpcomponents.core5:httpcore5:jar:5.4.4:compile - omitted for duplicate)
+   \- (org.slf4j:slf4j-api:jar:1.7.36:compile - omitted for conflict with 2.0.17)
