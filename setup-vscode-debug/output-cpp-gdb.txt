@@ -1,0 +1,17 @@
+# -g -O0 でビルドしたものを gdb で止める(8行目 sum += scores[i] に break)
+$ gdb -batch -ex "break average.cpp:8" -ex run -ex "info locals" -ex "print i" -ex "print scores" -ex continue -ex "info locals" -ex bt -ex "delete" -ex continue ./average_g
+Breakpoint 1 at 0x…: file average.cpp, line 8.
+Breakpoint 1, average (scores=...) at average.cpp:8
+8	        sum += scores[i];
+i = 1
+sum = 0
+$1 = 1
+$2 = (const std::vector<int, std::allocator<int> > &) @0x…: {<std::_Vector_base<int, std::allocator<int> >> = {_M_impl = {<std::allocator<int>> = {<std::__new_allocator<int>> = {<No data fields>}, <No data fields>}, <std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data> = {_M_start = 0x…, _M_finish = 0x…, _M_end_of_storage = 0x…}, <No data fields>}}, <No data fields>}
+Breakpoint 1, average (scores=...) at average.cpp:8
+8	        sum += scores[i];
+i = 2
+sum = 70
+#0  average (scores=...) at average.cpp:8
+#1  0x… in main () at average.cpp:15
+平均: 53.3333
+[Inferior 1 (process 308493) exited normally]

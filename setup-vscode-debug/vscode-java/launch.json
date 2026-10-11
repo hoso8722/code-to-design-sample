@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Java: Average を起動する",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "Average",
+      "args": [],
+      "vmArgs": "-ea"
+    },
+    {
+      "name": "Java: 起動済みのJVMにアタッチする(5005)",
+      "type": "java",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005
+    }
+  ]
+}
