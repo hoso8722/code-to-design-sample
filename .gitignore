@@ -1,0 +1,5 @@
+# ビルドの出力
+target/
+out/
+*.class
+*.jar
