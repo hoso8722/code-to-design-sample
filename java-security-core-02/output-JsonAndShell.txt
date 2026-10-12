@@ -1,0 +1,8 @@
+$ java -cp target/classes:<依存のjar> example.JsonAndShell
+## JSONを文字列の連結で作る
+  連結:     {"name":"sora","admin":true,"x":""}
+  読み戻すと、項目が増えている: {name=sora, admin=true, x=}
+  Jackson:  {"name":"sora\",\"admin\":true,\"x\":\""}
+## 外部コマンドに入力を渡す
+  シェルの文字列に連結: 入力は hello / 追加で実行された
+  引数のリストで渡す:   入力は hello; echo 追加で実行された

@@ -1,0 +1,12 @@
+$ java -cp target/classes:<依存のjar> example.LogInjection   (文字の形式)
+INFO  e.LogInjection - ログイン失敗: user=sora
+INFO  e.LogInjection - ログイン失敗: user=guest
+2026-10-12 10:00:00.000 INFO  example.Admin - 管理者 admin がログインした
+INFO  e.LogInjection - ログイン失敗: user=guest\n2026-10-12 10:00:00.000 INFO  example.Admin - 管理者 admin がログインした (改行を置き換えた)
+
+$ LOG_APPENDER=JSON java -cp target/classes:<依存のjar> example.LogInjection   (JSON形式。message と arguments の項目だけを示す)
+{"message": "ログイン失敗: user={}", "arguments": ["sora"]}
+{"message": "ログイン失敗: user={}", "arguments": ["guest\n2026-10-12 10:00:00.000 INFO  example.Admin - 管理者 admin がログインした"]}
+{"message": "ログイン失敗: user={} (改行を置き換えた)", "arguments": ["guest\\n2026-10-12 10:00:00.000 INFO  example.Admin - 管理者 admin がログインした"]}
+
+(3件のログが、3行で出力された。改行は、JSONの文字列の中の \n として出力された)

@@ -1,0 +1,9 @@
+$ java -cp target/classes:<依存のjar> example.HtmlEscaping
+## HTMLの本文に出す
+  そのまま:          <p><script>alert('XSS')</script></p>
+  < と > だけ置換:   <p>&lt;script&gt;alert('XSS')&lt;/script&gt;</p>
+  HtmlUtils:         <p>&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;</p>
+## HTMLの属性の値に出す
+  そのまま:          <input value="x" onmouseover="alert(1)">
+  < と > だけ置換:   <input value="x" onmouseover="alert(1)">
+  HtmlUtils:         <input value="x&quot; onmouseover=&quot;alert(1)">
