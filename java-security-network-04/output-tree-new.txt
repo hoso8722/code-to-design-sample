@@ -1,0 +1,9 @@
+$ mvn dependency:tree
+example:new-deps:jar:1.0
++- org.apache.logging.log4j:log4j-core:jar:2.25.5:compile
+|  \- org.apache.logging.log4j:log4j-api:jar:2.25.5:compile
+\- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.11:compile
+   +- com.fasterxml.jackson.core:jackson-databind:jar:2.18.11:compile
+   |  \- com.fasterxml.jackson.core:jackson-annotations:jar:2.18.11:compile
+   +- org.yaml:snakeyaml:jar:2.3:compile
+   \- com.fasterxml.jackson.core:jackson-core:jar:2.18.11:compile

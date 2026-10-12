@@ -1,0 +1,31 @@
+$ osv-scanner scan source -L pom.xml
+Scanned old/pom.xml file and found 2 packages
+Warning: enricher transitivedependency/pomxml may be risky when run on untrusted artifacts. Please ensure you trust the source code and artifacts.
+
+Total 4 packages affected by 20 known vulnerabilities (2 Critical, 7 High, 11 Medium, 0 Low, 0 Unknown) from 1 ecosystem.
+20 vulnerabilities can be fixed.
+
++-------------------------------------+------+-----------+-----------------------------------------+---------+---------------+---------+
+| OSV URL                             | CVSS | ECOSYSTEM | PACKAGE                                 | VERSION | FIXED VERSION | SOURCE  |
++-------------------------------------+------+-----------+-----------------------------------------+---------+---------------+---------+
+| https://osv.dev/GHSA-3pxv-7cmr-fjr4 | 6.9  | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.25.4        | pom.xml |
+| https://osv.dev/GHSA-6hg6-v5c8-fphq | 6.3  | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.25.4        | pom.xml |
+| https://osv.dev/GHSA-7rjr-3q55-vv33 | 9.0  | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.16.0        | pom.xml |
+| https://osv.dev/GHSA-8489-44mv-ggj8 | 6.6  | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.17.1        | pom.xml |
+| https://osv.dev/GHSA-jfh8-c2jp-5v3q | 10.0 | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.15.0        | pom.xml |
+| https://osv.dev/GHSA-p6xc-xr62-6r2g | 8.6  | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.17.0        | pom.xml |
+| https://osv.dev/GHSA-vc5p-v9hr-52mj | 6.3  | Maven     | org.apache.logging.log4j:log4j-core     | 2.14.1  | 2.25.3        | pom.xml |
+| https://osv.dev/GHSA-7hhh-6rmp-j9qf | 7.5  | Maven     | com.fasterxml.jackson.core:jackson-core | 2.9.8   | 2.18.11       | pom.xml |
+| https://osv.dev/GHSA-h46c-h94j-95f3 | 8.7  | Maven     | com.fasterxml.jackson.core:jackson-core | 2.9.8   | 2.15.0        | pom.xml |
+| https://osv.dev/GHSA-r7wm-3cxj-wff9 | 8.7  | Maven     | com.fasterxml.jackson.core:jackson-core | 2.9.8   | 2.18.8        | pom.xml |
+| https://osv.dev/GHSA-wf8f-6423-gfxg | 4.0  | Maven     | com.fasterxml.jackson.core:jackson-core | 2.9.8   | 2.13.0        | pom.xml |
+| https://osv.dev/GHSA-qv9r-c865-cp47 | 6.3  | Maven     | org.apache.logging.log4j:log4j-api      | 2.14.1  | 2.25.5        | pom.xml |
+| https://osv.dev/GHSA-3mc7-4q67-w48m | 7.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.31          | pom.xml |
+| https://osv.dev/GHSA-98wm-3w3q-mw94 | 6.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.31          | pom.xml |
+| https://osv.dev/GHSA-9w3m-gqgf-c4p9 | 6.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.32          | pom.xml |
+| https://osv.dev/GHSA-c4r9-r8fh-9vj2 | 6.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.31          | pom.xml |
+| https://osv.dev/GHSA-hhhw-99gj-p3c3 | 5.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.31          | pom.xml |
+| https://osv.dev/GHSA-mjmj-j48q-9wg2 | 8.3  | Maven     | org.yaml:snakeyaml                      | 1.23    | 2.0           | pom.xml |
+| https://osv.dev/GHSA-rvwf-54qp-4r6v | 7.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.26          | pom.xml |
+| https://osv.dev/GHSA-w37g-rhq8-7m4j | 6.5  | Maven     | org.yaml:snakeyaml                      | 1.23    | 1.32          | pom.xml |
++-------------------------------------+------+-----------+-----------------------------------------+---------+---------------+---------+

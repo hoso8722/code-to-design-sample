@@ -1,0 +1,2 @@
+$ java -cp target/classes:<依存のjar> example.LookupDemo   (new/)
+2026-10-12T03:05:50.378288662Z main ERROR 利用者の入力: ${java:version}

@@ -1,0 +1,8 @@
+$ osv-scanner scan source -L pom.xml --offline-vulnerabilities --download-offline-databases
+Scanned old/pom.xml file and found 2 packages
+Warning: enricher transitivedependency/pomxml may be risky when run on untrusted artifacts. Please ensure you trust the source code and artifacts.
+Loaded Maven local db from <キャッシュ>/osv-scalibr/Maven/all.zip
+
+Total 4 packages affected by 20 known vulnerabilities (2 Critical, 7 High, 11 Medium, 0 Low, 0 Unknown) from 1 ecosystem.
+20 vulnerabilities can be fixed.
+

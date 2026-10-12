@@ -1,0 +1,2 @@
+$ java -cp target/classes:<依存のjar> example.LookupDemo   (old/)
+12:04:59.045 [main] ERROR example.LookupDemo - 利用者の入力: Java version 25.0.4.1

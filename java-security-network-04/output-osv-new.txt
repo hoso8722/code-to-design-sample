@@ -1,0 +1,5 @@
+$ osv-scanner scan source -L pom.xml
+Scanned new/pom.xml file and found 2 packages
+Warning: enricher transitivedependency/pomxml may be risky when run on untrusted artifacts. Please ensure you trust the source code and artifacts.
+
+No issues found
