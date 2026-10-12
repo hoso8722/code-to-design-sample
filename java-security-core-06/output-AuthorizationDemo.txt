@@ -1,0 +1,18 @@
+$ java -cp target/classes:<依存のjar> example.AuthorizationDemo
+## 認証(誰か)と、URL単位の認可
+  認証なしで /v1/orders/1                 401
+  aliceが /v1/orders/1                200  {"id":1,"owner":"alice","item":"こころ"}
+  aliceが /admin/x (URL単位で制限)         403  {"timestamp":"2026-10-12T02:47:12.044Z","status":403,"error":"Forbidden","path":"/admin/x"}
+## 他人のデータ(IDOR): aliceが、bobの注文(id=2)を読む
+  1. 持ち主を確かめない /v1                   200  {"id":2,"owner":"bob","item":"坊っちゃん"}
+  2. 自前のチェック /v2                     404
+  3. @PostAuthorize /v3              403  {"timestamp":"2026-10-12T02:47:12.467Z","status":403,"error":"Forbidden","path":"/v3/orders/2"}
+## 自分の注文(id=1)は、読める
+  2. 自前のチェック /v2                     200  {"id":1,"owner":"alice","item":"こころ"}
+  3. @PostAuthorize /v3              200  {"id":1,"owner":"alice","item":"こころ"}
+## @PreAuthorize(hasRole('ADMIN')) のメソッド
+  aliceが、直接呼ぶ                        403  {"timestamp":"2026-10-12T02:47:12.852Z","status":403,"error":"Forbidden","path":"/direct/purge"}
+  adminが、直接呼ぶ                        200  全注文を消去した(模擬)
+  aliceが、自己呼び出しの入口から                 200  全注文を消去した(模擬)
+  aliceが、別Beanを経由する入口から              403  {"timestamp":"2026-10-12T02:47:13.213Z","status":403,"error":"Forbidden","path":"/other/purge"}
+  adminが、別Beanを経由する入口から              200  全注文を消去した(模擬)
