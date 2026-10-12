@@ -1,0 +1,16 @@
+$ java -cp target/classes:<依存のjar> example.AuthorizationCodeFlow
+## 1. 認可コードフロー(web-app: 秘密を持つクライアント + PKCE)
+  認可サーバーの応答(Location): http://127.0.0.1:9999/callback?code=<認可コード>&state=<state>
+  state が一致: true
+  トークンの取得: 200 {"access_token":"eyJraWQiOiJh…","scope":"read","token_type":"Bearer","expires_in":299}
+  アクセストークンのヘッダー  : {"kid":"…","alg":"RS256"}
+  アクセストークンのペイロード: {"sub":"alice","aud":"web-app","nbf":…,"scope":["read"],"iss":"http://localhost:<ポート>","exp":…,"iat":…,"jti":"…"}
+## 2. 認可コードは1回しか使えない
+  [認可サーバーのログ] Invalidated authorization token(s) previously issued to registered client 'web-app'
+  同じコードをもう一度: 400 {"error":"invalid_grant"}
+## 3. PKCEを必須にしたクライアントで、code_challenge を付けない認可リクエスト
+  http://127.0.0.1:9999/callback?error=invalid_request&error_description=OAuth%202.0%20Parameter%3A%20code_challenge&error_uri=https%3A%2F%2Fdatatracker.ietf.org%2Fdoc%2Fhtml%2Frfc7636%23section-4.4.1&state=<state>
+## 4. 認可コードが盗まれた場合(mobile-app: 秘密を持たないクライアント)
+  攻撃者が code_verifier なしで交換: 401 
+  攻撃者が別の code_verifier で交換 : 400 {"error":"invalid_grant"}
+  正規のクライアントが交換          : 200 {"access_token":"eyJraWQiOiJh…","scope":"read","token_type":"Bearer","expires_in":299}

@@ -1,0 +1,8 @@
+$ mvn dependency:tree | grep -E "security|nimbus"
+\- org.springframework.boot:spring-boot-starter-security-oauth2-authorization-server:jar:4.1.1:compile
+   |  |  |  \- org.springframework.security:spring-security-core:jar:7.1.1:compile
+   |  |  \- org.springframework.security:spring-security-web:jar:7.1.1:compile
+   \- org.springframework.boot:spring-boot-security-oauth2-authorization-server:jar:4.1.1:compile
+      \- org.springframework.security:spring-security-oauth2-authorization-server:jar:7.1.1:compile
+         +- org.springframework.security:spring-security-oauth2-core:jar:7.1.1:compile
+         \- com.nimbusds:nimbus-jose-jwt:jar:10.9.1:compile
