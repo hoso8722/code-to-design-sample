@@ -1,0 +1,12 @@
+$ java -cp target/classes:<依存のjar> example.JavaSerialization
+## フィルターなし
+  Expected のバイト列
+    成功: expected
+  Surprise のバイト列(想定外のクラス)
+    [Surprise.readObject が実行された]
+    失敗: ClassCastException: class example.Surprise cannot be cast to class example.Expected (example.Surprise and example.Expected are in unnamed module of loader 'app')
+## フィルターあり(example.Expected だけを許可)
+  Expected のバイト列
+    成功: expected
+  Surprise のバイト列(想定外のクラス)
+    失敗: InvalidClassException: filter status: REJECTED

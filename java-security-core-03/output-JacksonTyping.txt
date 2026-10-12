@@ -1,0 +1,15 @@
+$ java -cp target/classes:<依存のjar> example.JacksonTyping
+## 型指定を制限なしで有効にした ObjectMapper
+  example.safe.Note を指定
+    成功: 復元されたクラス = example.safe.Note
+  example.Gadget を指定
+    [Gadget.setCommand が呼ばれた] echo hello
+    成功: 復元されたクラス = example.Gadget
+## 許可するパッケージを example.safe. に限った ObjectMapper
+  example.safe.Note を指定
+    成功: 復元されたクラス = example.safe.Note
+  example.Gadget を指定
+    失敗: InvalidTypeIdException: Could not resolve type id 'example.Gadget' as a subtype of `java.lang.Object`: Configured `PolymorphicTypeVali ...
+## 型指定を使わない既定の ObjectMapper
+  同じJSON(Gadget)
+    成功: 復元されたクラス = java.util.ArrayList

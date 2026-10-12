@@ -1,0 +1,6 @@
+$ java -cp target/classes:<依存のjar> example.Xxe
+既定のパーサー                        → 読めた: ★ローカルの秘密のファイルの内容★
+[Fatal Error] :2:10: DOCTYPE is disallowed when the feature "http://apache.org/xml/features/disallow-doctype-decl" set to true.
+DOCTYPEを禁止した設定                 → 拒否: SAXParseException: DOCTYPE is disallowed when the feature "http://apache.org/xml/features/disallow-doctype-decl" set to true.
+[Fatal Error] :3:19: External Entity: Failed to read external document 'xxe-secret3353108530271584044.txt', because 'file' access is not allowed due to restriction set by the accessExternalDTD property.
+外部アクセスを禁止した設定(属性)      → 拒否: SAXParseException: External Entity: Failed to read external document 'xxe-secret3353108530271584044.txt', because 'file' access is not allowed due to restriction set by the accessExternalDTD property.
