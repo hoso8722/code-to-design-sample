@@ -10,10 +10,10 @@ public class AuthChecklistScan {
     record Rule(String id, String owasp, Pattern pattern, String advice) {}
 
     static final List<Rule> RULES = List.of(
-            new Rule("#02", "A04", Pattern.compile("\"none\"\\.equalsIgnoreCase|equalsIgnoreCase\\(\"none\"\\)"), "alg=none を受け入れていないか。アルゴリズムは受け取る側が固定する"),
-            new Rule("#02", "A07", Pattern.compile("JwtValidators\\.createDefault\\(\\)"), "期限などの検証だけで、iss と aud を検証しない。createDefaultWithIssuer を使い、aud の検証も足す"),
+            new Rule("#02", "A07", Pattern.compile("\"none\"\\.equalsIgnoreCase|equalsIgnoreCase\\(\"none\"\\)"), "alg=none を受け入れていないか。アルゴリズムは受け取る側が固定する"),
+            new Rule("#04", "A07", Pattern.compile("JwtValidators\\.createDefault\\(\\)"), "期限などの検証だけで、iss と aud を検証しない。createDefaultWithIssuer を使い、aud の検証も足す"),
             new Rule("#02", "A07", Pattern.compile("getHeader\\(\\).*getAlgorithm\\(\\).*(decoder|Decoder|verify)"), "トークンのalgで検証の方法を選んでいないか確かめる"),
-            new Rule("#04", "A07", Pattern.compile("setClockSkew\\(Duration\\.of(Minutes|Hours)"), "時計のずれの許容が長すぎないか。短い有効期間のトークンでは期限の意味が薄れる"),
+            new Rule("#04", "A07", Pattern.compile("new JwtTimestampValidator\\(Duration\\.of(Minutes|Hours)"), "時計のずれの許容が長すぎないか。短い有効期間のトークンでは期限の意味が薄れる"),
             new Rule("#06", "A07", Pattern.compile("reuseRefreshTokens\\(true\\)"), "リフレッシュトークンを使い回している。ローテーションを検討する"),
             new Rule("#07", "A07", Pattern.compile("(redirect\\w*|requested\\w*)\\.startsWith\\(|\\.startsWith\\(\\w*[Rr]edirect"), "redirect_uri を前方一致で検証していないか。完全一致にする"),
             new Rule("#07", "A04", Pattern.compile("[?&]access_token=|\"/\\*\\*\"\\)\\.permitAll"), "トークンをURLに付けていないか、全部のURLを許可していないか確かめる"),
@@ -32,7 +32,7 @@ public class AuthChecklistScan {
 
                     JwtDecoder decoder() {
                         decoder.setJwtValidator(JwtValidators.createDefault());
-                        validator.setClockSkew(Duration.ofMinutes(10));
+                        validator = new JwtTimestampValidator(Duration.ofMinutes(10));
                         return decoder;
                     }
 

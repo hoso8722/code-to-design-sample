@@ -19,7 +19,7 @@ public class TokenLeakDemo {
     public static void main(String[] args) throws Exception {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
         server.createContext("/", exchange -> {
-            // よくあるアクセスログ: リクエストの1行目(メソッドとURI)を、そのまま記録する
+            // リクエストの1行目(メソッドとURI)を、そのまま記録するアクセスログ
             String requestLine = exchange.getRequestMethod() + " " + exchange.getRequestURI();
             System.out.println("  アクセスログ(そのまま)   : " + requestLine);
             System.out.println("  アクセスログ(伏せたあと) : " + mask(requestLine));
