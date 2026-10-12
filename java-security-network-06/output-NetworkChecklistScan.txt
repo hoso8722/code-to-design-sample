@@ -1,0 +1,13 @@
+$ java NetworkChecklistScan.java
+BadClient.java:9 [#01/A04] 証明書を検証しないTrustManager。信頼ストアに証明書を加える
+    public void checkServerTrusted(X509Certificate[] c, String t) {}
+BadClient.java:14 [#01/A04] ホスト名の検証を差し替えている。無効にしていないか確かめる
+    HttpsURLConnection.setDefaultHostnameVerifier((host, session) -> true);
+BadClient.java:16 [#02/A01] リダイレクトを自動で辿っている。転送先も検査しているか確かめる
+    .followRedirects(HttpClient.Redirect.ALWAYS).build();
+pom.xml:4 [#05/A03] 版が範囲、最新、SNAPSHOTで指定されている。固定した版にする
+    <version>[2.25.0,2.26)</version>
+pom.xml:8 [#05/A03] 版が範囲、最新、SNAPSHOTで指定されている。固定した版にする
+    <version>1.0-SNAPSHOT</version>
+pom.xml:13 [#05/A03] 暗号化されないリポジトリのURL。httpsにする
+    <url>http://repo.internal.example/maven</url>
