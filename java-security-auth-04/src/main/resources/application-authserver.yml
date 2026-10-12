@@ -1,0 +1,28 @@
+spring:
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          orders-client:
+            registration:
+              client-id: orders-client
+              client-secret: "{noop}orders-secret"   # 実験用の仮の値
+              client-authentication-methods: client_secret_basic
+              authorization-grant-types: client_credentials
+              scopes: read,write
+          short-client:      # アクセストークンの有効期間が2秒のクライアント
+            registration:
+              client-id: short-client
+              client-secret: "{noop}short-secret"
+              client-authentication-methods: client_secret_basic
+              authorization-grant-types: client_credentials
+              scopes: read
+            token:
+              access-token-time-to-live: PT2S
+          billing-client:    # 別のAPI(billing-api)向けのトークンを受け取るクライアント
+            registration:
+              client-id: billing-client
+              client-secret: "{noop}billing-secret"
+              client-authentication-methods: client_secret_basic
+              authorization-grant-types: client_credentials
+              scopes: read

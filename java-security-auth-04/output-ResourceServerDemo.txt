@@ -1,0 +1,17 @@
+$ java -cp target/classes:<依存のjar> example.ResourceServerDemo
+## 1. 正しいトークン
+  トークンなし GET /api/orders             401 
+  read    GET  /api/orders           200 ["注文1","注文2"]
+  read    POST /api/orders           403   [insufficient_scope: The request requires higher privileges than provided by the access token.]
+  read+write POST /api/orders        200 注文を作成した
+  read    POST /api/orders/cancel    403   [insufficient_scope: The request requires higher privileges than provided by the access token.]
+  read+write POST /api/orders/cancel 200 注文を取り消した
+## 2. 細工したトークン(すべて read のトークンをもとにしている)
+  scope を書き換えた                       401   [invalid_token: Signed JWT rejected: Invalid signature]
+  alg=none                           401   [invalid_token: Unsupported algorithm of none]
+  別の鍵で署名(kidは同じ)                     401   [invalid_token: Signed JWT rejected: Invalid signature]
+  別のAPI(billing-api)向け               401   [invalid_token: Invalid token]
+## 3. 有効期限(有効期間2秒のトークンを、3秒後に使う)
+  2秒以内                               200 ["注文1","注文2"]
+  3秒後(許容する時計のずれ 0秒)                  401   [invalid_token: Jwt expired at <時刻>]
+  3秒後(JwtValidators の既定の設定): 受理された
