@@ -1,0 +1,4 @@
+$ java -cp target/classes:<依存のjar> example.override.OverrideMain
+同じ名前のBeanを後から登録した結果: [テスト用の偽物] sora
+上書きを禁止すると: BeanDefinitionOverrideException
+  Invalid bean definition with name 'notifier' defined in example.override.OverrideMain$TestOverride: Cannot register be ...

@@ -1,0 +1,10 @@
+$ java -cp target/classes:<依存のjar> example.cond.ConditionalMain
+設定なし
+  RankingFeatureが登録されたか: false
+  ランキングなしのホーム
+app.feature.ranking=true
+  RankingFeatureが登録されたか: true
+  ホーム + 1位: こころ
+app.feature.ranking=false
+  RankingFeatureが登録されたか: false
+  ランキングなしのホーム

@@ -1,0 +1,10 @@
+$ java -cp target/classes:<依存のjar> example.props.ConfigPropsMain
+設定が正しい(max-count は、ハイフン区切り)
+  LoanProperties[days=14, maxCount=5]
+max-count を camelCase で書いた
+  LoanProperties[days=14, maxCount=5]
+days が数値でない
+  起動に失敗: ConfigurationPropertiesBindException
+  根本の原因: NumberFormatException: For input string: "abc"
+設定が足りない
+  LoanProperties[days=14, maxCount=0]

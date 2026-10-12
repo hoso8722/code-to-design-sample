@@ -1,0 +1,10 @@
+$ java -cp target/classes:<依存のjar> example.profile.ProfileMain
+有効なプロファイル: (なし)
+  Notifierの実装: LogNotifier
+  [ログ] sora / こころ
+有効なプロファイル: dev
+  Notifierの実装: LogNotifier
+  [ログ] sora / こころ
+有効なプロファイル: prod
+  Notifierの実装: MailNotifier
+  [メール] sora へ: 「こころ」を貸し出しました
