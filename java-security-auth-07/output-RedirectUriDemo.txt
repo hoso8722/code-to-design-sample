@@ -1,0 +1,21 @@
+$ java -cp target/classes:<依存のjar> example.RedirectUriDemo
+## 1. 検証のしかたによる違い(登録された値: https://client.example/callback)
+  リクエストの redirect_uri                                  前方一致     完全一致
+  https://client.example/callback                      許す       許す
+  https://client.example/callback.evil.example         許す       拒否
+  https://client.example/callback/../evil              許す       拒否
+  https://client.example/callback?next=https://evil.example 許す       拒否
+  https://client.example/callback#x                    許す       拒否
+  https://client.example.evil.example/callback         拒否       拒否
+## 2. Spring Authorization Server に、同じ redirect_uri を送る(web-app)
+  https://client.example/callback                      302 → https://client.example/callback?code=<認可コード>&state=<state>
+  https://client.example/callback.evil.example         400 (リダイレクトしない)
+  https://client.example/callback/../evil              400 (リダイレクトしない)
+  https://client.example/callback?next=https://evil.example 400 (リダイレクトしない)
+  https://client.example/callback#x                    400 (リダイレクトしない)
+  https://client.example.evil.example/callback         400 (リダイレクトしない)
+## 3. ループバックのアドレス(127.0.0.1)を登録したクライアント(local-app)
+  http://127.0.0.1:9999/callback                       302 → http://127.0.0.1:9999/callback?code=<認可コード>&state=<state>
+  http://127.0.0.1:12345/callback                      302 → http://127.0.0.1:12345/callback?code=<認可コード>&state=<state>
+  http://127.0.0.1:9999/other                          400 (リダイレクトしない)
+  http://localhost:9999/callback                       400 (リダイレクトしない)

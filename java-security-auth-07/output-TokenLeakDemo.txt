@@ -1,0 +1,9 @@
+$ java TokenLeakDemo.java
+## 1. トークンを、URLのクエリに付けた場合
+  アクセスログ(そのまま)   : GET /api/orders?access_token=eyJhbGciOiJSUzI1NiJ9.demo-payload.demo-signature
+  アクセスログ(伏せたあと) : GET /api/orders?access_token=****
+## 2. トークンを、Authorizationヘッダーに付けた場合
+  アクセスログ(そのまま)   : GET /api/orders
+  アクセスログ(伏せたあと) : GET /api/orders
+  全ヘッダーのログ(そのまま)  : Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.demo-payload.demo-signature
+  全ヘッダーのログ(伏せたあと): Authorization: Bearer ****

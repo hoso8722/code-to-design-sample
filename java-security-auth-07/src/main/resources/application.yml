@@ -1,0 +1,26 @@
+spring:
+  security:
+    user:
+      name: alice
+      password: alice-pw   # 実験用の仮の利用者
+    oauth2:
+      authorizationserver:
+        client:
+          web-app:
+            registration:
+              client-id: web-app
+              client-secret: "{noop}web-secret"   # 実験用の仮の値
+              client-authentication-methods: client_secret_basic
+              authorization-grant-types: authorization_code
+              redirect-uris: https://client.example/callback   # 実在しないホスト。リダイレクトは辿らない
+              scopes: read
+            require-authorization-consent: false
+            require-proof-key: true
+          local-app:
+            registration:
+              client-id: local-app
+              client-authentication-methods: none
+              authorization-grant-types: authorization_code
+              redirect-uris: http://127.0.0.1:9999/callback
+              scopes: read
+            require-authorization-consent: false
