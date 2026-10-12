@@ -1,0 +1,11 @@
+$ java -cp target/classes:<依存のjar> example.JwtPitfalls
+## 甘い検証
+  正しいトークン       : 受理: {"iss":"https://auth.example","sub":"alice","aud":"api-orders","role":"user","exp":…}
+  alg=none            : 受理: {"sub":"mallory","role":"admin","iss":"https://auth.example","aud":"api-orders","exp":9999999999}
+  アルゴリズムの混同  : 受理: {"sub":"mallory","role":"admin","iss":"https://auth.example","aud":"api-orders","exp":9999999999}
+  別のiss/aud向け     : 受理: {"iss":"https://other-issuer.example","sub":"alice","aud":"api-billing","role":"user","exp":…}
+## ライブラリ(Nimbus JOSE+JWT)で、アルゴリズム・鍵・iss・audを固定
+  正しいトークン       : 受理: sub=alice role=user
+  alg=none            : 拒否: Unsecured (plain) JWTs are rejected, extend class to handle
+  アルゴリズムの混同  : 拒否: Signed JWT rejected: Another algorithm expected, or no matching key(s) found
+  別のiss/aud向け     : 拒否: JWT aud claim rejected
