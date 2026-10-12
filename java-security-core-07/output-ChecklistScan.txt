@@ -1,0 +1,15 @@
+$ java ChecklistScan.java
+BadExample.java:7 [#05/A04] 秘密が、ソースに書かれている。環境変数などから渡す
+    static final String password = "abc123";
+BadExample.java:10 [#03/A08] Javaのデシリアライズ。ObjectInputFilterで許可する型を絞る
+    return new ObjectInputStream(in).readObject();
+BadExample.java:14 [#05/A04] トークンや鍵に使うなら、SecureRandomにする
+    return Long.toHexString(new Random().nextLong());
+BadExample.java:18 [#04/A04] パスワードのハッシュなら、速い関数は不向き。bcryptなどを使う
+    return MessageDigest.getInstance("SHA-256").digest(pw);
+BadExample.java:22 [#01/A01] ユーザー入力でパスを組み立てている。normalizeして基準のフォルダの下か確かめる
+    return new File("/data/" + name);
+BadExample.java:26 [#02/A05] シェルに文字列を渡している。引数のリストで渡す
+    Runtime.getRuntime().exec(new String[] {"sh", "-c", "ping " + host});
+BadExample.java:30 [#03/A02] XMLパーサーの設定を確かめる(外部エンティティの無効化)
+    return DocumentBuilderFactory.newInstance();
