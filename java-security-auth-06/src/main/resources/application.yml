@@ -1,0 +1,5 @@
+spring:
+  security:
+    user:
+      name: alice
+      password: alice-pw   # 実験用の仮の利用者

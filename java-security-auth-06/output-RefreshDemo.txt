@@ -1,0 +1,22 @@
+$ java -cp target/classes:<依存のjar> example.RefreshDemo
+## 1. 既定の有効期間
+  アクセストークン      : PT5M
+  リフレッシュトークン  : PT1H
+  認可コード            : PT5M
+  リフレッシュトークンの使い回し(既定): true
+## 2. reuse-client(リフレッシュトークンを使い回す)
+  最初の取得                  : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…)
+  refresh1 で更新             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…) [同じ値]
+  refresh1 をもう一度使う     : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…)
+  refresh2 を使う             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…)
+## 2. rotate-client(リフレッシュトークンをローテーションする)
+  最初の取得                  : 成功(アクセストークン eyJraWQi…, リフレッシュトークン q4axNYHV…)
+  refresh1 で更新             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン X5txv4Jm…) [新しい値]
+  refresh1 をもう一度使う     : 拒否 {"error":"invalid_grant"}
+  refresh2 を使う             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン XYFopiTz…)
+## 3. 失効(revocation)
+  失効前: introspection で active        : true
+  リフレッシュトークンを失効した後
+    リフレッシュトークンで更新           : 拒否 {"error":"invalid_grant"}
+    アクセストークンの introspection     : active=false
+    アクセストークンの署名と期限だけを検証: 受理された
