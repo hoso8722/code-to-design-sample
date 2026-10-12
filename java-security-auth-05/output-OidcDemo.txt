@@ -1,0 +1,19 @@
+$ java -cp target/classes:<依存のjar> example.OidcDemo
+## 1. ディスカバリー(/.well-known/openid-configuration)
+  issuer: http://localhost:<ポート>
+  authorization_endpoint: http://localhost:<ポート>/oauth2/authorize
+  token_endpoint: http://localhost:<ポート>/oauth2/token
+  jwks_uri: http://localhost:<ポート>/oauth2/jwks
+  userinfo_endpoint: http://localhost:<ポート>/userinfo
+## 2. scope=openid profile で認可コードフロー
+  応答のキー: access_token scope id_token token_type expires_in
+  IDトークンのペイロード      : {"sub":"alice","aud":"web-app","azp":"web-app","auth_time":…,"iss":"http://localhost:<ポート>","exp":…,"iat":…,"nonce":"<nonce>","jti":"…","sid":"…"}
+  アクセストークンのペイロード: {"sub":"alice","aud":"web-app","nbf":…,"scope":["openid","profile"],"iss":"http://localhost:<ポート>","exp":…,"iat":…,"jti":"…"}
+## 3. IDトークンの検証
+  正しい nonce          : 受理: sub=alice
+  別の nonce を期待     : 拒否: nonce が送ったものと違う
+  別のログインのIDトークン(リプレイ): 拒否: nonce が送ったものと違う
+  アクセストークンをIDトークンとして: 拒否: nonce が送ったものと違う
+## 4. UserInfoエンドポイント
+  アクセストークン付き: 200 {"sub":"alice"}
+  IDトークンを渡した場合: 401
