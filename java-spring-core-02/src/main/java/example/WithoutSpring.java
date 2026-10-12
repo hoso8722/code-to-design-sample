@@ -19,7 +19,7 @@ public class WithoutSpring {
         try {
             field.notifyLoan("sora");
         } catch (NullPointerException e) {
-            System.out.println("フィールド: Springなしでは、依存を渡す方法がなく、NullPointerException");
+            System.out.println("フィールド: Springなしでは、ふつうの方法で依存を渡せず、NullPointerException");
         }
     }
 }

@@ -2,4 +2,4 @@ $ java -cp target/classes:<依存のjar> example.WithoutSpring
 コンストラクタ: sora: 貸し出しました
 setter: setMailer を呼び忘れると NullPointerException
 setter(呼んだあと): sora: 貸し出しました
-フィールド: Springなしでは、依存を渡す方法がなく、NullPointerException
+フィールド: Springなしでは、ふつうの方法で依存を渡せず、NullPointerException

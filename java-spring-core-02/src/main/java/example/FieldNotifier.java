@@ -2,7 +2,7 @@ package example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-// フィールド注入:Springなしでは、依存を渡す方法がない(privateのフィールドに、リフレクション以外では入れられない)
+// フィールド注入:Springなしでは、ふつうの方法で依存を渡せない(privateのフィールドに、リフレクション以外では入れられない)
 public class FieldNotifier {
     @Autowired
     private Mailer mailer;

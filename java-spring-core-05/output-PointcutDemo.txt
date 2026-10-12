@@ -5,3 +5,5 @@ lend を呼ぶ
 giveBack を呼ぶ
   (B) LoanService の全メソッドを対象: giveBack
   (C) give で始まるメソッドを対象: giveBack
+ReportService.report を呼ぶ
+  (D) ReportService を対象: report

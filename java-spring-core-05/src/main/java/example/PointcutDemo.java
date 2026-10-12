@@ -43,6 +43,11 @@ public class PointcutDemo {
         }
 
         @Bean
+        ReportService reportService() {
+            return new ReportService();
+        }
+
+        @Bean
         Probe probe() {
             return new Probe();
         }
@@ -55,6 +60,8 @@ public class PointcutDemo {
             service.lend("sora", "こころ");
             System.out.println("giveBack を呼ぶ");
             service.giveBack("sora", "こころ");
+            System.out.println("ReportService.report を呼ぶ");
+            context.getBean(ReportService.class).report();
         }
     }
 }
