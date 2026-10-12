@@ -1,0 +1,4 @@
+$ java -cp target/classes:<依存のjar> example.StackDepth
+例外のスタックトレースのフレーム数
+  アスペクトなし(newしたオブジェクトを直接呼ぶ): 4 (SpringとAspectJのフレーム: 0)
+  アスペクトあり(プロキシ経由):                 21 (SpringとAspectJのフレーム: 11)
