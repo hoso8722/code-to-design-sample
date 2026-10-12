@@ -1,0 +1,19 @@
+$ java JwtDemo.java
+## 1. HS256のトークンの構造
+  トークン  : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzAwMDAwMzAwfQ.zBA5vAUWioM7619z3bvE6L6bN1AAnsLK2qH0161vuUA
+  ヘッダー  : {"alg":"HS256","typ":"JWT"}
+  ペイロード: {"sub":"alice","role":"user","exp":1700000300}
+  署名の長さ: 32 バイト
+## 2. 鍵がなくても、ペイロードは読める
+  {"sub":"alice","role":"user","exp":1700000300}
+## 3. 検証
+  正しいトークン        : 受理: {"sub":"alice","role":"user","exp":1700000300}
+  roleを書き換えたもの  : 拒否: 署名が一致しない
+  期限切れ(署名は正しい): 拒否: 期限切れ
+  expがないもの         : 拒否: exp がない
+## 4. RS256: 秘密鍵で署名し、公開鍵で検証する
+  ヘッダー        : {"alg":"RS256","typ":"JWT"}
+  署名の長さ      : 256 バイト
+  公開鍵で検証    : true
+  書き換えたもの  : false
+  別の鍵で検証    : false

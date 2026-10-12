@@ -1,0 +1,4 @@
+$ python3 verify-hs256.py
+Javaが作った署名  : zBA5vAUWioM7619z3bvE6L6bN1AAnsLK2qH0161vuUA
+Pythonで計算した値: zBA5vAUWioM7619z3bvE6L6bN1AAnsLK2qH0161vuUA
+一致: True
