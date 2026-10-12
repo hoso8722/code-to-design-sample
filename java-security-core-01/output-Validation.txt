@@ -1,0 +1,13 @@
+$ java Validation.java
+## 拒否リスト("../" を取り除く)
+  notice.txt → notice.txt
+  ../secret.txt → secret.txt
+  ....//secret.txt → ../secret.txt
+  a/../../secret.txt → a/secret.txt
+  report.png → report.png
+## 許可リスト(英数字とハイフンとアンダースコア、拡張子は txt か png)
+  notice.txt → notice.txt
+  ../secret.txt → 拒否
+  ....//secret.txt → 拒否
+  a/../../secret.txt → 拒否
+  report.png → report.png

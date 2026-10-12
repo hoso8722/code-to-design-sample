@@ -1,0 +1,11 @@
+$ java PathTraversal.java
+## 連結しただけのコード
+notice.txt         → 公開のお知らせ
+../secret.txt      → ★フォルダの外の秘密★
+## normalize と startsWith で確かめるコード
+notice.txt         → 公開のお知らせ
+../secret.txt      → 拒否: SecurityException: フォルダの外は読めない: ../secret.txt
+link.txt (リンク)  → ★フォルダの外の秘密★
+## toRealPath で確かめるコード
+link.txt (リンク)  → 拒否: SecurityException: フォルダの外は読めない: link.txt
+../secret.txt      → 拒否: SecurityException: フォルダの外は読めない: ../secret.txt

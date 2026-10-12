@@ -1,0 +1,8 @@
+$ java ZipSlip.java
+## エントリ名をそのまま連結して展開した(root 以下のファイル)
+  evil.txt
+  extract/docs/readme.txt
+## 展開先の中かを確かめて展開した
+  拒否: 展開先の外に書こうとした: ../evil.txt
+  書かれたファイル:
+  extract/docs/readme.txt
