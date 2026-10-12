@@ -1,0 +1,12 @@
+$ java -cp target/classes:<依存のjar> example.SelfInvocation
+1. 外から audit を直接呼ぶ
+    [アスペクト] OrderService.audit を記録
+  audit が実行された(外から直接)
+2. process の中から this で audit を呼ぶ(自己呼び出し)
+  audit が実行された(this経由)
+3. 別のBeanから audit を呼ぶ
+    [アスペクト] OrderService.audit を記録
+  audit が実行された(別のBean経由)
+4. 自分のプロキシ(ObjectProvider)から audit を呼ぶ
+    [アスペクト] SelfAwareService.audit を記録
+  audit が実行された(自分のプロキシ経由)

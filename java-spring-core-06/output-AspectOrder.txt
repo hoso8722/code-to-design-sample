@@ -1,0 +1,7 @@
+$ java -cp target/classes:<依存のjar> example.AspectOrder
+Service.run を呼ぶ
+  Outer(@Order(1)): 前
+  Inner(@Order(2)): 前
+    本体
+  Inner(@Order(2)): 後
+  Outer(@Order(1)): 後

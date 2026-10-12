@@ -1,0 +1,10 @@
+$ java -cp target/classes:<依存のjar> example.TxSelfInvocation
+1. 外から @Transactional のメソッドを直接呼ぶ
+  例外が投げられた: 挿入のあとで失敗
+  insertThenFail のあと、表に残っている行: 0
+2. 同じクラスの中から呼ぶ(自己呼び出し)
+  例外が投げられた: 挿入のあとで失敗
+  outer のあと、表に残っている行: 1
+3. 別のBeanから呼ぶ
+  例外が投げられた: 挿入のあとで失敗
+  call のあと、表に残っている行: 0

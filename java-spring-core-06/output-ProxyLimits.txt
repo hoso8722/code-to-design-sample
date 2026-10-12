@@ -1,0 +1,14 @@
+$ java -cp target/classes:<依存のjar> example.ProxyLimits   (Springが標準エラーに出す警告は、日時の行を省いて示す)
+WARNING: Public final method [public final java.lang.String example.ProxyLimits$Visibility.auditFinal()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+public メソッド:
+    [アスペクト] Visibility.auditPublic を記録
+protected メソッド(同じパッケージから呼ぶ):
+    [アスペクト] Visibility.auditProtected を記録
+package-private メソッド(同じパッケージから呼ぶ):
+    [アスペクト] Visibility.auditPackage を記録
+private メソッド(callPrivate の中から呼ばれる):
+final メソッド:
+final クラスをBeanにして、アスペクトを適用する:
+WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'finalClass' defined in example.ProxyLimits$FinalClassConfig: Could not generate CGLIB subclass of class example.ProxyLimits$FinalClass: Common causes of this problem include using a final class or a non-visible class
+  起動に失敗: BeanCreationException
+  根本の原因: IllegalArgumentException: Cannot subclass final class example.ProxyLimits$FinalClass
