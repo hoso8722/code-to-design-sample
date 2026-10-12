@@ -1,0 +1,13 @@
+$ java TlsDemo.java
+## 1. 既定のクライアント(自己署名の証明書は、信頼されていない)
+  既定のHttpClient → 本物                 失敗 SSLHandshakeException
+      unable to find valid certification path to requested target
+## 2. 信頼ストアに、本物の証明書を入れる
+  本物の証明書を信頼 → 本物                     成功 200 本物のサーバー
+  本物の証明書を信頼 → 偽                      失敗 SSLHandshakeException
+      unable to find valid certification path to requested target
+## 3. すべてを信頼する(危険)
+  trust-all → 偽                      成功 200 偽のサーバー
+## 4. ホスト名の検証(証明書のホスト名は other.example)
+  証明書を信頼 → localhost宛て               失敗 SSLHandshakeException
+      No subject alternative DNS name matching localhost found.

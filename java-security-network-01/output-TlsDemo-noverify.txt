@@ -1,0 +1,3 @@
+$ java -Djdk.internal.httpclient.disableHostnameVerification=true TlsDemo.java
+## 4. ホスト名の検証(証明書のホスト名は other.example)
+  証明書を信頼 → localhost宛て               成功 200 別のホスト名の証明書のサーバー
