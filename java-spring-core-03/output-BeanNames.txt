@@ -1,0 +1,12 @@
+# Beanの一覧(設定クラスなし)。jakarta.annotation-api ありと、なし
+$ java -cp target/classes:<jakarta.annotation-api を含む依存のjar> example.BeanNames
+  internalConfigurationAnnotationProcessor
+  internalAutowiredAnnotationProcessor
+  internalCommonAnnotationProcessor
+  internalEventListenerProcessor
+  internalEventListenerFactory
+$ java -cp target/classes:<jakarta.annotation-api を除いた依存のjar> example.BeanNames
+  internalConfigurationAnnotationProcessor
+  internalAutowiredAnnotationProcessor
+  internalEventListenerProcessor
+  internalEventListenerFactory

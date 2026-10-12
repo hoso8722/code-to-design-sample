@@ -1,0 +1,4 @@
+$ java -cp target/classes:<依存のjar> example.PrototypeInSingleton
+直接注入(3回呼ぶ):    session#1 session#1 session#1 
+ObjectProvider(3回):  session#2 session#3 session#4 
+作られたSessionの数: 4

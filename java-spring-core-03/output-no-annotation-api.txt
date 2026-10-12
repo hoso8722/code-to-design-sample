@@ -1,0 +1,14 @@
+# jakarta.annotation-api をクラスパスから外して、同じLifecycleを実行した(コンパイルは、jarがある状態で済ませた)
+$ java -cp target/classes:<jakarta.annotation-api を除いた依存のjar> example.Lifecycle
+コンテナを起動する
+  [singleton] コンストラクタ
+コンテナの起動が終わった
+-- singleton を2回取り出す
+  同じインスタンスか: true
+-- lazy を初めて取り出す
+  [lazy] コンストラクタ
+-- prototype を2回取り出す
+  [prototype] コンストラクタ
+  [prototype] コンストラクタ
+  同じインスタンスか: false
+コンテナを閉じる

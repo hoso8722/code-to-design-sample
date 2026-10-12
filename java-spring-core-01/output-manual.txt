@@ -1,0 +1,6 @@
+$ java -cp target/classes:<依存のjar> example.manual.ManualMain
+[SMTP] sora へ送信: 「こころ」を貸し出しました
+本物の送信の回数: 1
+テスト用の送信箱: [sora: 「こころ」を貸し出しました]
+本物の送信の回数: 1
+[SMTP] riku へ送信: 「坊っちゃん」を貸し出しました

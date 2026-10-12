@@ -1,0 +1,7 @@
+$ java -cp target/classes:<依存のjar> example.spring.SpringMain
+Beanの数: 7
+Beanの名前: [org.springframework.context.annotation.internalConfigurationAnnotationProcessor, org.springframework.context.annotation.internalAutowiredAnnotationProcessor, org.springframework.context.event.internalEventListenerProcessor, org.springframework.context.event.internalEventListenerFactory, appConfig, mailer, notifier]
+example のBean: [appConfig, mailer, notifier]
+[SMTP] sora へ送信: 「こころ」を貸し出しました
+同じインスタンスか: true
+Mailerの実装: example.SmtpMailer

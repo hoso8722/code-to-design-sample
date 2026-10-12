@@ -1,0 +1,3 @@
+$ java -cp target/classes:<依存のjar> example.scan.ScanMain
+スキャンで登録されたBean: [scanMain.ScannedMailer, scanMain.ScannedNotifier]
+[scan] sora へ送信: 「こころ」を貸し出しました

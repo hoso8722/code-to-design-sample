@@ -1,0 +1,20 @@
+$ java -cp target/classes:<依存のjar> example.Lifecycle
+コンテナを起動する
+  [singleton] コンストラクタ
+  [singleton] @PostConstruct(初期化)
+コンテナの起動が終わった
+-- singleton を2回取り出す
+  同じインスタンスか: true
+-- lazy を初めて取り出す
+  [lazy] コンストラクタ
+  [lazy] @PostConstruct(初期化)
+-- prototype を2回取り出す
+  [prototype] コンストラクタ
+  [prototype] @PostConstruct(初期化)
+  [prototype] コンストラクタ
+  [prototype] @PostConstruct(初期化)
+  同じインスタンスか: false
+コンテナを閉じる
+  [lazy] @PreDestroy(破棄)
+  [singleton] @PreDestroy(破棄)
+コンテナを閉じ終わった

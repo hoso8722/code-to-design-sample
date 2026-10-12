@@ -1,0 +1,22 @@
+$ java -cp target/classes:<依存のjar> example.Scenarios   (Springが標準エラーに出す警告の行は省略した)
+## 1. 依存するBeanが登録されていない
+起動に失敗: UnsatisfiedDependencyException
+根本の原因: NoSuchBeanDefinitionException
+メッセージ: No qualifying bean of type 'example.Mailer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+## 2. 同じ型のBeanが2つある
+起動に失敗: UnsatisfiedDependencyException
+根本の原因: NoUniqueBeanDefinitionException
+メッセージ: No qualifying bean of type 'example.Mailer' available: expected single matching bean but found 2: smtpMailer,fakeMailer
+## 2-1. @Primaryで決める
+起動できた
+smtp が使われた: sora
+## 2-2. @Qualifierで決める
+起動できた
+sora: 貸し出しました
+## 3. 循環参照(コンストラクタ注入)
+起動に失敗: UnsatisfiedDependencyException
+根本の原因: BeanCurrentlyInCreationException
+メッセージ: Error creating bean with name 'ctorA': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+## 3-1. 循環参照(フィールド注入)
+起動できた
+FieldAのbとFieldBのaが、互いを指している: true
