@@ -1,0 +1,31 @@
+$ mvn -f consumer/pom.xml dependency:resolve 
+[WARNING] Could not validate integrity of download from http://localhost:8099/example/fake-lib/1.0/fake-lib-1.0.jar
+org.eclipse.aether.transfer.ChecksumFailureException: Checksum validation failed, expected '3a416b6f557d0f045a3357c24e829f24b9673cf7' (REMOTE_EXTERNAL) but is actually '6080aac0155671a2e60f8e6b6b69b2341466ffce'
+[INFO]    example:fake-lib:jar:1.0:compile -- module fake.lib (auto)
+[INFO] BUILD SUCCESS
+$ mvn -f consumer/pom.xml dependency:resolve -C
+[INFO] BUILD FAILURE
+[ERROR] Failed to execute goal on project consumer: Could not resolve dependencies for project example:consumer:jar:1.0
+[ERROR] dependency: example:fake-lib:jar:1.0 (compile)
+[ERROR] 	Could not transfer artifact example:fake-lib:jar:1.0 from/to local-fake (http://localhost:8099): Checksum validation failed, expected '3a416b6f557d0f045a3357c24e829f24b9673cf7' (REMOTE_EXTERNAL) but is actually '6080aac0155671a2e60f8e6b6b69b2341466ffce'
+[ERROR] 	Could not find artifact example:fake-lib:jar:1.0 in central (https://repo.maven.apache.org/maven2)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+$ サーバーのログ
+GET /example/fake-lib/1.0/fake-lib-1.0.pom -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.pom.sha1 -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar.sha1 -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar.sha1 -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.pom -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.pom.sha1 -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar.sha1 -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar -> 200
+GET /example/fake-lib/1.0/fake-lib-1.0.jar.sha1 -> 200

@@ -1,0 +1,3 @@
+$ mvn dependency:tree
+example:range-demo:jar:1.0
+\- org.apache.logging.log4j:log4j-api:jar:2.25.5:compile

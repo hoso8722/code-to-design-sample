@@ -1,0 +1,14 @@
+$ mvn org.cyclonedx:cyclonedx-maven-plugin:2.9.3:makeBom -DoutputFormat=json -DoutputName=bom
+$ jq -c ".components[] | {name, version, purl}" target/bom.json
+{"name":"log4j-core","version":"2.25.5","purl":"pkg:maven/org.apache.logging.log4j/log4j-core@2.25.5?type=jar"}
+{"name":"log4j-api","version":"2.25.5","purl":"pkg:maven/org.apache.logging.log4j/log4j-api@2.25.5?type=jar"}
+{"name":"jackson-dataformat-yaml","version":"2.18.11","purl":"pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.18.11?type=jar"}
+{"name":"jackson-databind","version":"2.18.11","purl":"pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.18.11?type=jar"}
+{"name":"jackson-annotations","version":"2.18.11","purl":"pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.18.11?type=jar"}
+{"name":"snakeyaml","version":"2.3","purl":"pkg:maven/org.yaml/snakeyaml@2.3?type=jar"}
+{"name":"jackson-core","version":"2.18.11","purl":"pkg:maven/com.fasterxml.jackson.core/jackson-core@2.18.11?type=jar"}
+$ jq -r ".components[0] | .name, (.hashes[] | select(.alg==\"SHA-1\") | .content)" target/bom.json
+log4j-core
+c194a13e18b0a36014e867d2d323b989bf212151
+$ curl -s https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.25.5/log4j-core-2.25.5.jar.sha1
+c194a13e18b0a36014e867d2d323b989bf212151
