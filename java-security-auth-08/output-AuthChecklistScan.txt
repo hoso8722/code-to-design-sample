@@ -1,0 +1,15 @@
+$ java AuthChecklistScan.java
+BadAuth.java:3 [#02/A04] alg=none を受け入れていないか。アルゴリズムは受け取る側が固定する
+    if ("none".equalsIgnoreCase(alg)) {
+BadAuth.java:6 [#07/A07] redirect_uri を前方一致で検証していないか。完全一致にする
+    return redirectUri.startsWith("https://client.example/callback");
+BadAuth.java:10 [#02/A07] 期限などの検証だけで、iss と aud を検証しない。createDefaultWithIssuer を使い、aud の検証も足す
+    decoder.setJwtValidator(JwtValidators.createDefault());
+BadAuth.java:11 [#04/A07] 時計のずれの許容が長すぎないか。短い有効期間のトークンでは期限の意味が薄れる
+    validator.setClockSkew(Duration.ofMinutes(10));
+BadAuth.java:16 [#07/A04] トークンをURLに付けていないか、全部のURLを許可していないか確かめる
+    return "https://api.example/orders?access_token=" + token;
+BadAuth.java:20 [#06/A07] リフレッシュトークンを使い回している。ローテーションを検討する
+    TokenSettings.builder().reuseRefreshTokens(true).build();
+BadAuth.java:21 [#07/A02] 平文のシークレット({noop})。実験用の値で、本番ではハッシュ化し、環境変数などから渡す
+    builder.clientSecret("{noop}secret");
