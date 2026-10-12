@@ -1,0 +1,12 @@
+$ cat application.properties   (今のファイル)
+db.password=${DB_PASSWORD}
+
+$ git grep abc123 (今の作業ツリー)
+(見つからない)
+
+$ git log -p --all -S abc123 -- application.properties   (履歴を検索する)
+commit 65c47e9 パスワードを環境変数に変える
+-db.password=abc123-demo-secret
++db.password=${DB_PASSWORD}
+commit 8e27c59 設定を追加する
++db.password=abc123-demo-secret
