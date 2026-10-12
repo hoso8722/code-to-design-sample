@@ -1,0 +1,7 @@
+$ java -cp target/classes:<依存のjar> example.Migration
+新しく作るハッシュの先頭: {bcrypt}$2a$10$MEy ...
+古いハッシュ(strength 4)の先頭: {bcrypt}$2a$04$Li4 ...
+古いハッシュでも、検証できるか: true
+古いハッシュは、作り直すべきか(upgradeEncoding): true
+新しいハッシュは、作り直すべきか: false
+方式の名前がないハッシュ: IllegalArgumentException: Given that there is no default password encoder configured, each password must have a password encoding prefix. Please either prefix this password with '{noop}' or set a default password encoder in `DelegatingPasswordEncoder`.

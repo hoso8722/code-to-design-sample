@@ -1,0 +1,15 @@
+$ java -cp target/classes:<依存のjar> example.SlowHashes
+## PBKDF2-HMAC-SHA256(JDKの標準)の、1回の計算時間
+  反復     1,000 回:    7 ms
+  反復   100,000 回:   60 ms
+  反復   600,000 回:  276 ms
+## bcrypt(Spring Securityのcrypto)の、1回の計算時間
+  strength  4:    2 ms
+  strength 10:  104 ms
+  strength 12:  421 ms
+## bcryptは、ソルトを、ハッシュの文字列に含める
+  1回目: $2a$10$DYFaDgJCDGx.aHK.ErHQHeRG7D.cX73eCVmvYhnprW3uCZbHaSrEe
+  2回目: $2a$10$N0PdGTC6nC8BYX/FOScqqOpdbsWOzh7QP/uVmTVvI9VMh7PpKP98.
+  同じ文字列か: false
+  どちらも、元のパスワードと一致するか: true, true
+  誤ったパスワードと一致するか: false
