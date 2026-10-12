@@ -1,0 +1,10 @@
+$ java -cp target/classes:<依存のjar> example.SpringAop
+  [計測] lend: 33 ms
+sora が「こころ」を借りた
+  [計測] giveBack: 10 ms
+sora が「こころ」を返した
+取り出したBeanのクラス: jdk.proxy2.$Proxy18
+  JDKの動的プロキシか: true
+  CGLIBのプロキシか:   false
+  元のクラス:           example.LoanServiceImpl
+実装のクラス(LoanServiceImpl)で取り出すと: NoSuchBeanDefinitionException

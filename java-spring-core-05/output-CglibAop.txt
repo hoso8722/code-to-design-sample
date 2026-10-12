@@ -1,0 +1,8 @@
+$ java -cp target/classes:<依存のjar> example.CglibAop
+proxyTargetClass = true のとき、LoanService のBean:
+  クラス: example.LoanServiceImpl$$SpringCGLIB$$0
+  CGLIB: true
+  実装のクラスで取り出せるか: true
+interface を持たないクラスのBean(既定の設定):
+  クラス: example.ReportService$$SpringCGLIB$$0
+  CGLIB: true

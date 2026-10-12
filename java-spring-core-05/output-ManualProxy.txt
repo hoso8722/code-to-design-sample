@@ -1,0 +1,7 @@
+$ java -cp target/classes:<依存のjar> example.ManualProxy
+  [計測] lend: 45 ms
+sora が「こころ」を借りた
+  [計測] giveBack: 11 ms
+sora が「こころ」を返した
+呼び出し側が持つオブジェクトのクラス: jdk.proxy1.$Proxy0
+元のオブジェクトのクラス:             example.LoanServiceImpl

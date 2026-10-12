@@ -1,0 +1,7 @@
+$ java -cp target/classes:<依存のjar> example.PointcutDemo
+lend を呼ぶ
+  (B) LoanService の全メソッドを対象: lend
+  (A) lend だけを対象: lend
+giveBack を呼ぶ
+  (B) LoanService の全メソッドを対象: giveBack
+  (C) give で始まるメソッドを対象: giveBack
