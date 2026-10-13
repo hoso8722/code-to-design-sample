@@ -1,0 +1,6 @@
+$ java ReferenceAssign.java
+基本型: x = 10、y = 99
+参照型: a.score = 0、b.score = 0
+a == b : true
+同じ内容の別のオブジェクト: a == c : false
+b を向け直したあと: a.name = 田中、b.name = 鈴木

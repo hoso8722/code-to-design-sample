@@ -1,0 +1,2 @@
+$ java NpeMessage.java
+Cannot read field "city" because "<local1>.address" is null

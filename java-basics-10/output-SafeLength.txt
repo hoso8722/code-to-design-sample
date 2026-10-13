@@ -1,0 +1,4 @@
+$ java SafeLength.java
+2
+0
+0

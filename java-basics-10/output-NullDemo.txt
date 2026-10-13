@@ -1,0 +1,8 @@
+$ java NullDemo.java
+null を表示: null
+null と比べる: true
+配列の要素の初期値: null
+NullPointerException: Cannot invoke "String.length()" because "<local1>" is null
+名前なし
+定数側から equals: false
+Objects.equals: true

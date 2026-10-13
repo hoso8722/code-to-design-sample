@@ -1,0 +1,5 @@
+$ java EqualsDemo.java
+equals を書いていない: p1.equals(p2) = false
+equals を書いた: s1.equals(s2) = true
+equals を書いても、s1 == s2 は false
+equals に null を渡す: false

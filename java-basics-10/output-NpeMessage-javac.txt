@@ -1,0 +1,3 @@
+$ javac -g NpeMessage.java
+$ java NpeMessage
+Cannot read field "city" because "person.address" is null

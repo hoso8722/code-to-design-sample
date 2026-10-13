@@ -1,0 +1,6 @@
+$ java NullSafe.java
+そのまま使うと NullPointerException になる値: null
+null の確認: (なし)
+Optional: たなっち
+Optional(なし): (なし)
+requireNonNull: nickname は必須です

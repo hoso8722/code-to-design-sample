@@ -1,0 +1,4 @@
+$ java SameStudent.java
+a と b: true
+a と c: false
+a と null: false
