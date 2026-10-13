@@ -1,0 +1,21 @@
+$ java ConcurrencyChecklistScan.java
+BadConcurrent.java:2 [#05] SimpleDateFormat はスレッドセーフではない。DateTimeFormatter にする
+    static final SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+BadConcurrent.java:3 [#02] 別のスレッドから読み書きするフラグなら、volatile が必要
+    private boolean running = true;
+BadConcurrent.java:5 [#06] 容量が Integer.MAX_VALUE。生産が速いと伸び続ける。容量を決める
+    private final BlockingQueue<Task> queue = new LinkedBlockingQueue<>();
+BadConcurrent.java:7 [#01] 走査するときは、手動でロックしているか。複合操作を1つのロックにまとめているか
+    private final List<Integer> list = Collections.synchronizedList(new ArrayList<>());
+BadConcurrent.java:8 [#05] スレッドプールで使うなら、finally で remove() しているか。ScopedValue にできないか
+    static final ThreadLocal<User> CURRENT = new ThreadLocal<>();
+BadConcurrent.java:11 [#03] コンストラクタの中で this を外に出していないか
+    registry.add(this);
+BadConcurrent.java:15 [#01] 確かめてから行う(check-then-act)の疑い。putIfAbsent や compute に置き換えられないか
+    if (!cache.containsKey(key)) {
+BadConcurrent.java:21 [#03] ダブルチェックドロッキングの疑い。instance は volatile か。ホルダーイディオムにできないか
+    if (instance == null) {
+BadConcurrent.java:28 [#04] ロックを持ったまま、コールバックを呼んでいないか
+    synchronized (this) { listener.onChange(v); }
+BadConcurrent.java:32 [#06] 関数の中で同じマップを更新していないか(Recursive update)
+    return cache.computeIfAbsent(n, k -> cache.put(n, 0));
