@@ -1,0 +1,2 @@
+$ java PassedList.java
+合格者: [田中, 佐藤]

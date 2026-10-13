@@ -1,0 +1,5 @@
+$ java ParseOrDefault.java
+75
+80
+-1
+-1

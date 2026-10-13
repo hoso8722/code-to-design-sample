@@ -1,0 +1,7 @@
+$ java UncheckedException.java
+UncheckedException.java:7: error: unreported exception IOException; must be caught or declared to be thrown
+        String text = Files.readString(Path.of("scores.txt"));
+                                      ^
+1 error
+error: compilation failed
+(終了コード: 1)

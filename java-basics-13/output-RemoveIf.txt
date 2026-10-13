@@ -1,0 +1,2 @@
+$ java RemoveIf.java
+[鈴木, 佐藤]

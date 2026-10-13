@@ -1,0 +1,9 @@
+$ java ListMapBasics.java
+List: [高橋, 田中, 佐藤]、件数 3、先頭 高橋
+contains("田中"): true
+田中の点数: 80
+いないキー: null
+getOrDefault: 0
+  田中 → 80
+  佐藤 → 90
+Set の件数: 3

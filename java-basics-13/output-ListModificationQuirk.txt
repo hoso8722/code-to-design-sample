@@ -1,0 +1,2 @@
+$ java ListModificationQuirk.java
+[田中, 佐藤]

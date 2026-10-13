@@ -1,0 +1,7 @@
+$ java CatchOrder.java
+CatchOrder.java:8: error: exception NumberFormatException has already been caught
+        } catch (NumberFormatException e) {
+          ^
+1 error
+error: compilation failed
+(終了コード: 1)

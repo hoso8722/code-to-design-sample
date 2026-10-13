@@ -1,0 +1,4 @@
+$ java TryWithResources.java
+読んだ行: 田中,75
+読んだ行: 鈴木,55
+行数: 2

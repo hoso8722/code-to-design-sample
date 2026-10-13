@@ -1,0 +1,6 @@
+$ java ExceptionBasics.java
+0で割った: / by zero
+数値ではない: For input string: "abc"
+ファイルがない: 存在しないファイル.txt
+finally は必ず実行される
+例外を処理したので、ここまで進める
