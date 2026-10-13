@@ -1,0 +1,2 @@
+$ java Multiply.java
+合計: 3000000000

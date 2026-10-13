@@ -1,0 +1,7 @@
+$ java TypeInference.java
+java.lang.Integer
+java.lang.Double
+java.lang.String
+int[]
+10 10.0
+3

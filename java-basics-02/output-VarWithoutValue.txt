@@ -1,0 +1,8 @@
+$ java VarWithoutValue.java
+VarWithoutValue.java:3: error: cannot infer type for local variable count
+    var count;
+        ^
+  (cannot use 'var' on variable without initializer)
+1 error
+error: compilation failed
+(終了コード: 1)

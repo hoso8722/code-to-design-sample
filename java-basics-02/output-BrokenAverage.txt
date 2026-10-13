@@ -1,0 +1,2 @@
+$ java BrokenAverage.java
+平均点: 78

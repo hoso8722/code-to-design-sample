@@ -1,0 +1,2 @@
+$ java BrokenMultiply.java
+合計: -1294967296

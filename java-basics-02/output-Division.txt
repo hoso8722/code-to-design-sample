@@ -1,0 +1,9 @@
+$ java Division.java
+7 / 2 = 3
+7 % 2 = 1
+7 / 2.0 = 3.5
+(double) 7 / 2 = 3.5
+(double) (7 / 2) = 3.0
+int で求めた税額: 100
+double で求めた税額: 100.5
+1.0 / 0 = Infinity

@@ -1,0 +1,7 @@
+$ java Overflow.java
+Integer.MAX_VALUE + 1 = -2147483648
+Integer.MIN_VALUE - 1 = 2147483647
+long にして足すと = 2147483648
+2000000000 * 2 = -294967296
+2000000000L * 2 = 4000000000
+Math.addExact は例外にする: integer overflow

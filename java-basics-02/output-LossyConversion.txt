@@ -1,0 +1,7 @@
+$ java LossyConversion.java
+LossyConversion.java:3: error: incompatible types: possible lossy conversion from double to int
+    int score = 85.5;
+                ^
+1 error
+error: compilation failed
+(終了コード: 1)
