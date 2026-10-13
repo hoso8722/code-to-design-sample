@@ -1,0 +1,7 @@
+$ java FixedLength.java
+FixedLength.java:4: error: cannot assign a value to final variable length
+    scores.length = 5;
+          ^
+1 error
+error: compilation failed
+(終了コード: 1)

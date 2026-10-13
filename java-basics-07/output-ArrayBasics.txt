@@ -1,0 +1,8 @@
+$ java ArrayBasics.java
+scores.length = 3
+scores[0] = 80、scores[2] = 90
+empty = [0, 0, 0, 0, 0]
+names = [null, null, null]
+flags = [false, false]
+書き換え後 = [80, 70, 90]
+配列をそのまま println すると = true

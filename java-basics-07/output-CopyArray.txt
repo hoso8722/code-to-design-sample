@@ -1,0 +1,6 @@
+$ java CopyArray.java
+b = a のあとで b[0] を変更: a = [99, 2, 3]
+Arrays.copyOf のあとで c[1] を変更: a = [99, 2, 3]、c = [99, 77, 3]
+長さ5にコピー: [99, 2, 3, 0, 0]
+a == b : true、a == d : false
+Arrays.equals(a, c) : false、Arrays.equals(a, d) : true

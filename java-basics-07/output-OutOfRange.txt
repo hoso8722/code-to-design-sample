@@ -1,0 +1,4 @@
+$ java OutOfRange.java
+例外: Index 3 out of bounds for length 3
+例外: Index -1 out of bounds for length 3
+例外: -1

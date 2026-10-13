@@ -1,0 +1,2 @@
+$ java MaxMin.java
+最高点: 90、最低点: 55

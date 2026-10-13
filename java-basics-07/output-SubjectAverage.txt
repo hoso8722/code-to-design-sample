@@ -1,0 +1,4 @@
+$ java SubjectAverage.java
+国語の平均: 81.7
+数学の平均: 80.0
+英語の平均: 83.3
