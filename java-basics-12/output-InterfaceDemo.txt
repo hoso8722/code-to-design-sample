@@ -1,0 +1,5 @@
+$ java InterfaceDemo.java
+Circle の面積: 3.14
+Rectangle の面積: 6.00
+面積の合計: 9.14
+円を見つけた: 3.141592653589793

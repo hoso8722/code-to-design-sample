@@ -1,0 +1,6 @@
+$ java GenericsDemo.java
+先頭: 田中、件数: 2
+田中の点数: 75
+文字列 と 42
+first(names) = 田中
+first(List.of(1, 2, 3)) = 1

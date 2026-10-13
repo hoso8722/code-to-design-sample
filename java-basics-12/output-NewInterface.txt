@@ -1,0 +1,7 @@
+$ java NewInterface.java
+NewInterface.java:8: error: Shape is abstract; cannot be instantiated
+        Shape shape = new Shape();
+                      ^
+1 error
+error: compilation failed
+(終了コード: 1)

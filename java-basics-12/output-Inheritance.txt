@@ -1,0 +1,9 @@
+$ java Inheritance.java
+new Student を実行:
+  Person のコンストラクタ: 田中
+  Student のコンストラクタ: 75
+私は田中です。点数は75点です
+親の型の変数から呼んでも、子の introduce が動く:
+私は田中です。点数は75点です
+  Person のコンストラクタ: 鈴木
+私は鈴木です

@@ -1,0 +1,3 @@
+$ java PairDemo.java
+田中: 75点
+数学 の成績は A

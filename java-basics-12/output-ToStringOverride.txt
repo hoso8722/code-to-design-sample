@@ -1,0 +1,3 @@
+$ java ToStringOverride.java
+田中(75点)
+学生: 田中(75点)

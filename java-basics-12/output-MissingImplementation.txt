@@ -1,0 +1,7 @@
+$ java MissingImplementation.java
+MissingImplementation.java:6: error: Circle is not abstract and does not override abstract method area() in Shape
+class Circle implements Shape {
+^
+1 error
+error: compilation failed
+(終了コード: 1)

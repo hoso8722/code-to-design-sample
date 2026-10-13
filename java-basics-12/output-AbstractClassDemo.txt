@@ -1,0 +1,2 @@
+$ java AbstractClassDemo.java
+【成績】田中 75点
