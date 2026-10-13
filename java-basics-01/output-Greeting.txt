@@ -1,0 +1,3 @@
+$ java Greeting.java
+学生の名前: 田中
+点数: 75

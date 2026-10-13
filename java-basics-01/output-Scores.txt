@@ -1,0 +1,4 @@
+$ java Scores.java
+80
+65
+90

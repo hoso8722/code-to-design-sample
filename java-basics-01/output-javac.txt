@@ -1,0 +1,6 @@
+$ javac Main.java
+$ ls
+Main.class
+Main.java
+$ java Main
+こんにちは、Java
