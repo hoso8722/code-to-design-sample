@@ -1,0 +1,5 @@
+5回実行した結果の範囲(java CompoundOperations.java を5回)
+  containsKey → put: 「自分が最初」と思った回数 128379〜196771(正しくは 100000)
+  synchronizedList(走査はロックなし): ConcurrentModificationException 2000〜2000 回(走査は2000回)
+  AtomicInteger が2つ: 合計が1000でなかった回数 1690664〜2218127(観測 4694616〜5800357 回、割合 34〜39%)
+  ロックでまとめる、不変なPairを差し替える、putIfAbsent、走査もロック、CopyOnWriteArrayList: 5回とも不整合・例外は 0 回

@@ -1,0 +1,12 @@
+$ java CompoundOperations.java
+## 1. check-then-act: 8 スレッドが、同じキーを先に登録しようとする
+  containsKey → put    キー数 100000、「自分が最初」と思った回数 178874(正しくは 100000)
+  putIfAbsent          キー数 100000、「自分が最初」と思った回数 100000(正しくは 100000)
+## 2. 走査中の変更
+  synchronizedList(走査はロックなし)         走査 2000 回のうち ConcurrentModificationException 2000 回
+  synchronizedList(走査もロックする)         走査 2000 回のうち ConcurrentModificationException 0 回
+  CopyOnWriteArrayList               走査 2000 回のうち ConcurrentModificationException 0 回
+## 3. 不変条件(a + b = 1000)を、別のスレッドが観測する
+  AtomicInteger が2つ            観測 5115018 回のうち、合計が 1000 でなかった回数 2205655
+  ロックでまとめる                     観測 2330969 回のうち、合計が 1000 でなかった回数 0
+  不変なPairをCASで差し替える            観測 35114875 回のうち、合計が 1000 でなかった回数 0
