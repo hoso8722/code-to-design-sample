@@ -1,0 +1,7 @@
+$ java PrivateAccess.java
+PrivateAccess.java:9: error: balance has private access in Account
+        System.out.println(account.balance);
+                                  ^
+1 error
+error: compilation failed
+(終了コード: 1)

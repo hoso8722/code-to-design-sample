@@ -1,0 +1,2 @@
+$ java TeacherExample.java
+数学担当の佐藤です

@@ -1,0 +1,3 @@
+$ java ThisKeyword.java
+Counter: 3
+this を付け忘れたときのフィールドの値: 0

@@ -1,0 +1,3 @@
+$ java Encapsulation.java
+残高: 1500
+例外: 入金額は正の数にしてください: -100

@@ -1,0 +1,4 @@
+$ java StudentGrade.java
+田中: 95点 → A
+鈴木: 72点 → C
+佐藤: 45点 → D

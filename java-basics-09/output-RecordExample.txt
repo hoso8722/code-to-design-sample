@@ -1,0 +1,5 @@
+$ java RecordExample.java
+Point[x=3, y=4]
+x = 3、y = 4
+StudentRecord[name=田中, score=75]、合格: true
+同じ値の record は equals で等しい: true

@@ -1,0 +1,3 @@
+$ java Coordinate.java
+Point2D[x=3, y=4]
+原点からの距離: 5.0
