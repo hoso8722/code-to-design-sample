@@ -1,0 +1,6 @@
+$ java StringEquality.java
+a == b : true
+a == c : false
+a.equals(c) : true
+c.intern() == a : true
+基本型 x == y : true

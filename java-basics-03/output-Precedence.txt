@@ -1,0 +1,8 @@
+$ java Precedence.java
+1 + 2 * 3 = 7
+(1 + 2) * 3 = 9
+true || false && false = true
+(true || false) && false = false
+合計: 12
+合計: 3
+3個

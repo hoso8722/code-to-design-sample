@@ -1,0 +1,5 @@
+$ java Parentheses.java
+括弧なし: true
+括弧あり: true
+出席1回のとき、括弧なし: true
+出席1回のとき、括弧あり: false

@@ -1,0 +1,2 @@
+$ java BrokenCompare.java
+合格と入力されていません

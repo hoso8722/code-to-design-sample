@@ -1,0 +1,2 @@
+$ java FixedCompare.java
+合格と入力されました

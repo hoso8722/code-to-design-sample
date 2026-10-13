@@ -1,0 +1,4 @@
+$ java Increment.java
+a = 5、i = 6
+b = 6、j = 6
+k = k++ の結果: 5

@@ -1,0 +1,12 @@
+$ java ShortCircuit.java
+false && ... :
+  左 を評価した
+  結果 false
+true || ... :
+  左 を評価した
+  結果 true
+false & ... (短絡しない):
+  左 を評価した
+  右 を評価した
+  結果 false
+null でも例外にならない: false

@@ -1,0 +1,4 @@
+$ java PassCondition.java
+合格: true
+点数55のとき: false
+出席2回のとき: false
