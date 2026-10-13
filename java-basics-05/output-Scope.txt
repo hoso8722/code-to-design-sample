@@ -1,0 +1,2 @@
+$ java Scope.java
+2乗の合計: 14

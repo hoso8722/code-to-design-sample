@@ -1,0 +1,2 @@
+$ java EvenSum.java
+1〜100 の偶数の合計: 2550

@@ -1,0 +1,2 @@
+$ java InfiniteLoop.java
+100ミリ秒たっても終わらない。i は負の値で減り続けている: true、繰り返した回数は10万回以上: true

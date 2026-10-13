@@ -1,0 +1,2 @@
+$ java StraySemicolon.java
+これは繰り返しの中のつもり

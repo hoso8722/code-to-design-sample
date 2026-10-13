@@ -1,0 +1,9 @@
+$ java ScopeError.java
+ScopeError.java:6: error: cannot find symbol
+    IO.println("最後の i = " + i);
+                            ^
+  symbol:   variable i
+  location: class ScopeError
+1 error
+error: compilation failed
+(終了コード: 1)

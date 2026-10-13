@@ -1,0 +1,6 @@
+$ java Loops.java
+for で 1〜10 の合計: 55
+while で 1〜10 の合計: 55
+do-while の実行回数: 1
+while の実行回数(条件が最初から false): 0
+拡張 for で点数の合計: 235
