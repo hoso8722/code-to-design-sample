@@ -1,4 +1,4 @@
-5回実行した結果(java ShareNothing.java を5回。16コア)
+5回実行した結果(java ShareNothing.java を5回。8コア16スレッド)
   1. SimpleDateFormat を共有: 結果が違った回数 130882〜137272、例外 9388〜13639(160000回中)
      スレッドごと、DateTimeFormatter: 違った回数・例外は5回とも {(0, 0)}
   3. 50,000,000回の読み取り: ThreadLocal 258〜305 ミリ秒、ScopedValue 120〜155 ミリ秒
