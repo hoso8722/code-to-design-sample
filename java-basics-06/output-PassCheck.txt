@@ -1,0 +1,4 @@
+$ java PassCheck.java
+72点・出席4回: true
+55点・出席4回: false
+80点・出席2回: false

@@ -1,0 +1,7 @@
+$ java MissingStatic.java
+MissingStatic.java:8: error: non-static method add(int,int) cannot be referenced from a static context
+        System.out.println(add(3, 4));
+                           ^
+1 error
+error: compilation failed
+(終了コード: 1)

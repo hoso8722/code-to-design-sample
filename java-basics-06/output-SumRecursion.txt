@@ -1,0 +1,3 @@
+$ java SumRecursion.java
+1 から 10 の合計: 55
+1 から 100 の合計: 5050

@@ -1,0 +1,4 @@
+$ java Recursion.java
+5! = 120
+20! = 2432902008176640000
+StackOverflowError が起きた。呼び出しの深さは1000以上: true
