@@ -1,0 +1,7 @@
+$ java Unicode.java
+"あいう".length() = 3
+"😀".length() = 2
+"😀".codePointCount = 1
+"a😀b".length() = 4
+"a😀b" の文字数(コードポイント) = 3
+charAt(1) は半分だけ: true

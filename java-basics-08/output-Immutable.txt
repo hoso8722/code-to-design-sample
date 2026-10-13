@@ -1,0 +1,5 @@
+$ java Immutable.java
+name = java、upper = JAVA
+concat の戻り値を捨てた後の name = java
+代入し直した後の name = java 25
+a = hello world、b = hello

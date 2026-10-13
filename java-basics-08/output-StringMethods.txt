@@ -1,0 +1,19 @@
+$ java StringMethods.java
+length: 20
+trim: [Java Programming]
+strip: [Java Programming]
+charAt(0): H
+substring(7): World
+substring(0, 5): Hello
+indexOf("o"): 4
+lastIndexOf("o"): 8
+indexOf("x"): -1
+contains("World"): true
+startsWith("Hello"): true
+replace("o", "0"): Hell0, W0rld
+toUpperCase(): HELLO, WORLD
+equalsIgnoreCase: true
+split の要素数: 3、[田中, 75, A]
+join: 田中/75/A
+repeat: ==========
+isEmpty: true、isBlank: true

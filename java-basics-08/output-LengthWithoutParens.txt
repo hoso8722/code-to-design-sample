@@ -1,0 +1,9 @@
+$ java LengthWithoutParens.java
+LengthWithoutParens.java:4: error: cannot find symbol
+    IO.println(s.length);
+                ^
+  symbol:   variable length
+  location: variable s of type String
+1 error
+error: compilation failed
+(終了コード: 1)

@@ -1,0 +1,5 @@
+$ java CharAtRange.java
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	... (JDK内部の行を省略)
+	at CharAtRange.main(CharAtRange.java:4)
+(終了コード: 1)

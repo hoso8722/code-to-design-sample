@@ -1,0 +1,4 @@
+$ java Builder.java
+文字数: 20000、20000
++ で連結: 29 ミリ秒、StringBuilder: 0.763366 ミリ秒
+StringBuilder の操作: fedcba>>
