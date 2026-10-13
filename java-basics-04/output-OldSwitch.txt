@@ -1,0 +1,7 @@
+$ java OldSwitch.java
+break がない switch 文:
+  レベル2
+  レベル3
+  default
+break がある switch 文:
+  レベル2

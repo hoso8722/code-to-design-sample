@@ -1,0 +1,2 @@
+$ java FixedIf.java
+結果の表示を終わります

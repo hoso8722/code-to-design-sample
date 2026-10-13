@@ -1,0 +1,3 @@
+$ java Ternary.java
+合格
+C

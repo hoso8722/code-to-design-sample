@@ -1,0 +1,8 @@
+$ java EnumSwitch.java
+MON : 平日
+TUE : 平日
+WED : 平日
+THU : 平日
+FRI : 平日
+SAT : 休み
+SUN : 休み
