@@ -1,0 +1,13 @@
+$ java FinalReassign.java
+FinalReassign.java:7: error: cannot assign a value to final variable limit
+        limit = 20;
+        ^
+FinalReassign.java:8: error: cannot assign a value to static final variable MAX
+        MAX = 200;
+        ^
+FinalReassign.java:10: error: cannot assign a value to final variable scores
+        scores = new int[3];
+        ^
+3 errors
+error: compilation failed
+(終了コード: 1)

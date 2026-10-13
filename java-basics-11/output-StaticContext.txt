@@ -1,0 +1,10 @@
+$ java StaticContext.java
+StaticContext.java:6: error: non-static variable counter cannot be referenced from a static context
+        counter++;
+        ^
+StaticContext.java:7: error: non-static variable counter cannot be referenced from a static context
+        System.out.println(counter);
+                           ^
+2 errors
+error: compilation failed
+(終了コード: 1)

@@ -1,0 +1,9 @@
+$ javac -d out src/school/model/Student.java src/school/util/Grades.java src/school/util/Stats.java src/school/app/Main.java
+$ java -cp out school.app.Main
+田中 の合否: true
+鈴木 の合否: false
+平均点: 65.0
+$ java src/school/app/Main.java
+田中 の合否: true
+鈴木 の合否: false
+平均点: 65.0

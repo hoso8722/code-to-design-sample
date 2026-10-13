@@ -1,0 +1,5 @@
+$ java FinalDemo.java
+limit = 10、MAX = 100
+final の配列の中身を変更: [99, 65, 90]
+final のリストに追加: [田中, 鈴木]
+label = 大きい

@@ -1,0 +1,7 @@
+$ java bad/school/app/Main.java
+bad/school/app/Main.java:9: error: secretNote() is not public in Student; cannot be accessed from outside package
+        System.out.println(tanaka.secretNote());
+                                 ^
+1 error
+error: compilation failed
+(終了コード: 1)

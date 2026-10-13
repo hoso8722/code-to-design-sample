@@ -1,0 +1,4 @@
+$ java AutoId.java
+No.1 田中
+No.2 鈴木
+No.3 佐藤

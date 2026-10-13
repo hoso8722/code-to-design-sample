@@ -1,0 +1,7 @@
+$ java FinalClass.java
+FinalClass.java:8: error: cannot inherit from final Base
+class Child extends Base {
+                    ^
+1 error
+error: compilation failed
+(終了コード: 1)

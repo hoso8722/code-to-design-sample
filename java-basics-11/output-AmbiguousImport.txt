@@ -1,0 +1,8 @@
+$ java AmbiguousImport.java
+AmbiguousImport.java:7: error: reference to Date is ambiguous
+        Date date = null;
+        ^
+  both class java.util.Date in java.util and class java.sql.Date in java.sql match
+1 error
+error: compilation failed
+(終了コード: 1)

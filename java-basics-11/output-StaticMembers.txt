@@ -1,0 +1,7 @@
+$ java StaticMembers.java
+作る前の Student.count = 0
+2人作った後の Student.count = 2
+a.count = 2、b.count = 2(同じ共有の値)
+Student.isValidScore(105) = false
+合格点: 60、田中: true、鈴木: false
+Math.max(3, 7) = 7
