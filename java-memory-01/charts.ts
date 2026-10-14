@@ -42,7 +42,7 @@ writeSvg(
     xLabel: "プログラムが保持しているデータ（MB）",
     yLabel: "MB",
     xTicks: [0, 128, 256, 384, 512],
-    yMax: 2000,
+    yMax: 800,
     series: [
       { name: "ヒープ committed", slot: 2, step: true, points: steps.map((r) => [r.allocated_mb, r.committed_mb]) },
       { name: "RSS", slot: 1, points: steps.map((r) => [r.allocated_mb, r.rss_mb]) },
