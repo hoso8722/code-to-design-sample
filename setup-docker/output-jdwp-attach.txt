@@ -1,0 +1,17 @@
+--- address=5005
+$ jdb -attach localhost:5005
+java.net.SocketException: Connection reset
+	... (スタックトレースを省略)
+--- address=127.0.0.1:5005
+$ jdb -attach localhost:5005
+java.io.IOException: handshake failed - connection prematurally closed
+	... (スタックトレースを省略)
+--- address=*:5005
+$ jdb -attach localhost:5005
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+Initializing jdb ...
+VM Started: > No frames on the current call stack
+main[1] Deferring breakpoint Average:6.
+It will be set after the class is loaded.
+main[1]

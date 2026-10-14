@@ -1,0 +1,25 @@
+$ docker run --rm -v "$PWD":/work -w /work gcc-gdb-demo gdb -batch -iex "set auto-load safe-path /" -ex "break average" -ex run -ex bt ./average
+warning: Error disabling address space randomization: Operation not permitted
+Breakpoint 1 at 0x4011d2: file average.cpp, line 6.
+
+Breakpoint 1, average (scores=std::vector of length 3, capacity 3 = {...}) at average.cpp:6
+6	    int sum = 0;
+#0  average (scores=std::vector of length 3, capacity 3 = {...}) at average.cpp:6
+#1  0x00000000004012d2 in main () at average.cpp:15
+
+$ (同じコマンドに) --cap-add=SYS_PTRACE を付ける
+warning: Error disabling address space randomization: Operation not permitted
+Breakpoint 1 at 0x4011d2: file average.cpp, line 6.
+
+Breakpoint 1, average (scores=std::vector of length 3, capacity 3 = {...}) at average.cpp:6
+6	    int sum = 0;
+#0  average (scores=std::vector of length 3, capacity 3 = {...}) at average.cpp:6
+#1  0x00000000004012d2 in main () at average.cpp:15
+
+$ (同じコマンドに) --security-opt seccomp=unconfined を付ける
+Breakpoint 1 at 0x4011d2: file average.cpp, line 6.
+
+Breakpoint 1, average (scores=std::vector of length 3, capacity 3 = {...}) at average.cpp:6
+6	    int sum = 0;
+#0  average (scores=std::vector of length 3, capacity 3 = {...}) at average.cpp:6
+#1  0x00000000004012d2 in main () at average.cpp:15
