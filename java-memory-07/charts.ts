@@ -32,7 +32,7 @@ export function mean(kind: string, count: number, depth: number, key: "rss" | "h
       xLabel: "スレッドの数",
       yLabel: "MB（スレッドを作る前との差）",
       xTicks: [0, 1000, 2000, 3000, 4000],
-      yTicks: [0, 30, 60, 90, 120],
+      yTicks: [0, 40, 80, 120, 160],
       rightPad: 180,
       series: [
         { name: "プラットフォームスレッド：RSS", endLabel: "プラットフォーム RSS", slot: 2, markers: true, points: counts.map((c) => [c, mean("platform", c, 10, "rss")]) },
@@ -45,9 +45,11 @@ export function mean(kind: string, count: number, depth: number, key: "rss" | "h
 
 // 2. 1本あたりのメモリ
 {
+  // -Xint の 4,000 本の RSS の増分（stack-rss-xint.txt の1行目: kind,count,depth,rss,heap）
+  const xintRssMB = Number(readFileSync(join(DATA, "stack-rss-xint.txt"), "utf-8").split("\n")[0].split(",")[3]);
   const perKB = (mb: number, n: number) => (mb * 1024) / n;
   const r = [
-    { label: "プラットフォーム（-Xint）", note: "4,000本の RSS の増分から", value: perKB(380, 4000), slot: 2 },
+    { label: "プラットフォーム（-Xint）", note: "4,000本の RSS の増分から", value: perKB(xintRssMB, 4000), slot: 2 },
     { label: "プラットフォーム", note: "4,000本の RSS の増分から", value: perKB(mean("platform", 4000, 10, "rss"), 4000), slot: 2 },
     { label: "仮想（深さ100）", note: "10万本のヒープの増分から", value: perKB(mean("virtual", 100000, 100, "heap"), 100000), slot: 1 },
     { label: "仮想（深さ10）", note: "10万本のヒープの増分から", value: perKB(mean("virtual", 100000, 10, "heap"), 100000), slot: 1 },
