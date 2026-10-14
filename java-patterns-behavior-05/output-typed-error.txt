@@ -1,0 +1,6 @@
+typed/exam/Bad.java:7: error: cannot find symbol
+        new Typed.Applied().announce();
+                           ^
+  symbol:   method announce()
+  location: class Applied
+1 error

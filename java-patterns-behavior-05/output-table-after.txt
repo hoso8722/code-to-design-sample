@@ -1,0 +1,6 @@
+APPLIED    | take=OK(TAKEN)      grade=拒否             announce=拒否             cancel=OK(CANCELLED)
+TAKEN      | take=拒否             grade=OK(GRADING)    announce=拒否             cancel=OK(CANCELLED)
+GRADING    | take=拒否             grade=拒否             announce=OK(ANNOUNCED)  cancel=拒否
+ANNOUNCED  | take=拒否             grade=拒否             announce=拒否             cancel=拒否
+CANCELLED  | take=拒否             grade=拒否             announce=拒否             cancel=拒否
+ラベル: 結果発表済み（80点）

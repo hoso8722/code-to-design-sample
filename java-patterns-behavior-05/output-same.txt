@@ -1,0 +1,6 @@
+before: stateclass はフラグ版と出力が同じ
+before: enumtype はフラグ版と出力が同じ
+before: sealedv はフラグ版と出力が同じ
+after: stateclass はフラグ版と出力が同じ
+after: enumtype はフラグ版と出力が同じ
+after: sealedv はフラグ版と出力が同じ
