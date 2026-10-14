@@ -1,0 +1,5 @@
+StackRedPages = 1
+StackReservedPages = 1
+StackShadowPages = 20
+StackYellowPages = 2
+ThreadStackSize = 1024
