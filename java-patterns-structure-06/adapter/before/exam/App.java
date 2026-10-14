@@ -1,3 +1,4 @@
+// 検証しない: 複数ファイルの例。collect.sh でコンパイルして実行している
 package exam;
 
 import java.util.List;

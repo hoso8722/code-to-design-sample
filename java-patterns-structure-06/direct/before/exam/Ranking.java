@@ -8,10 +8,10 @@ public class Ranking {
         int bestTotal = -1;
         for (String line : lines) {
             String[] c = line.split(",");
-                    String name = c[0];
-                    int math = Integer.parseInt(c[1]);
-                    int english = Integer.parseInt(c[2]);
-                    int science = Integer.parseInt(c[3]);
+            String name = c[0];
+            int math = Integer.parseInt(c[1]);
+            int english = Integer.parseInt(c[2]);
+            int science = Integer.parseInt(c[3]);
             int total = math + english + science;
             if (total > bestTotal) {
                 bestTotal = total;
