@@ -1,32 +1,31 @@
-起動直後       used=   3 MB  committed= 244 MB  max=3844 MB  RSS=  39 MB
-[0.334s][debug][gc,heap           ] GC(4) Uncommittable regions after shrink: 26
-[0.334s][debug][gc,task           ] GC(4) G1 Service Thread (G1 Uncommit Region Task) (register)
-[0.334s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.076ms after schedule)
-[0.335s][debug][gc,heap,region    ] Uncommit regions [337, 363)
-[0.335s][debug][gc,heap           ] Concurrent Uncommit Summary: 53248K, 26 regions, 0.430ms
-[0.335s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 0.780ms) (cpu: 0.447ms)
-256MB保持    used= 267 MB  committed= 680 MB  max=3844 MB  RSS= 354 MB
-[0.458s][debug][gc,heap           ] GC(6) Uncommittable regions after shrink: 326
-GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 354 MB
-[0.559s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.882ms after schedule)
-[0.591s][debug][gc,heap,region    ] Uncommit regions [14, 78)
-[0.591s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 31.627ms) (cpu: 30.161ms)
-[0.601s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.307ms after schedule)
-[0.623s][debug][gc,heap,region    ] Uncommit regions [78, 142)
-[0.623s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 21.558ms) (cpu: 20.554ms)
-[0.633s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.299ms after schedule)
-[0.634s][debug][gc,heap,region    ] Uncommit regions [142, 206)
-[0.634s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 1.404ms) (cpu: 1.352ms)
-[0.645s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.279ms after schedule)
-[0.645s][debug][gc,heap,region    ] Uncommit regions [206, 270)
-[0.646s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 0.835ms) (cpu: 0.809ms)
-[0.656s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.226ms after schedule)
-[0.672s][debug][gc,heap,region    ] Uncommit regions [270, 334)
-[0.672s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 15.920ms) (cpu: 15.189ms)
-[0.682s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.147ms after schedule)
-[0.684s][debug][gc,heap,region    ] Uncommit regions [334, 337)
-[0.685s][debug][gc,heap,region    ] Uncommit regions [363, 365)
-[0.685s][debug][gc,heap,region    ] Uncommit regions [1921, 1922)
-[0.685s][debug][gc,heap           ] Concurrent Uncommit Summary: 652M, 326 regions, 74.438ms
-[0.685s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 3.522ms) (cpu: 3.376ms)
-1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  69 MB
+起動直後       used=   3 MB  committed= 244 MB  max=3844 MB  RSS=  40 MB
+[0.326s][debug][gc,heap           ] GC(4) Uncommittable regions after shrink: 29
+[0.326s][debug][gc,task           ] GC(4) G1 Service Thread (G1 Uncommit Region Task) (register)
+[0.326s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.064ms after schedule)
+[0.326s][debug][gc,heap,region    ] Uncommit regions [334, 363)
+[0.326s][debug][gc,heap           ] Concurrent Uncommit Summary: 59392K, 29 regions, 0.347ms
+[0.326s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 0.625ms) (cpu: 0.398ms)
+256MB保持    used= 266 MB  committed= 674 MB  max=3844 MB  RSS= 354 MB
+[0.437s][debug][gc,heap           ] GC(6) Uncommittable regions after shrink: 323
+GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 355 MB
+[0.539s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 1.480ms after schedule)
+[0.575s][debug][gc,heap,region    ] Uncommit regions [14, 78)
+[0.575s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 35.923ms) (cpu: 34.257ms)
+[0.585s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.296ms after schedule)
+[0.609s][debug][gc,heap,region    ] Uncommit regions [78, 142)
+[0.609s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 24.105ms) (cpu: 22.992ms)
+[0.619s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.176ms after schedule)
+[0.620s][debug][gc,heap,region    ] Uncommit regions [142, 206)
+[0.620s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 0.967ms) (cpu: 0.940ms)
+[0.630s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.185ms after schedule)
+[0.632s][debug][gc,heap,region    ] Uncommit regions [206, 270)
+[0.632s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 1.268ms) (cpu: 1.226ms)
+[0.642s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.325ms after schedule)
+[0.659s][debug][gc,heap,region    ] Uncommit regions [270, 334)
+[0.659s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 17.521ms) (cpu: 16.720ms)
+[0.670s][debug][gc,task,start     ] G1 Service Thread (G1 Uncommit Region Task) (run 0.285ms after schedule)
+[0.671s][debug][gc,heap,region    ] Uncommit regions [363, 365)
+[0.671s][debug][gc,heap,region    ] Uncommit regions [1921, 1922)
+[0.671s][debug][gc,heap           ] Concurrent Uncommit Summary: 646M, 323 regions, 80.977ms
+[0.671s][debug][gc,task           ] G1 Service Thread (G1 Uncommit Region Task) (run: 1.780ms) (cpu: 1.714ms)
+1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  70 MB

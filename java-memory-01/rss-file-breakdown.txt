@@ -3,6 +3,6 @@
     6088 kB  [anon]
     1876 kB  libc.so.6
     1024 kB  modules
-     296 kB  libm.so.6
+     316 kB  libm.so.6
      232 kB  ld-linux-x86-64.so.2
      140 kB  libjava.so
