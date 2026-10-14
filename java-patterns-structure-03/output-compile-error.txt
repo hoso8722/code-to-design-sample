@@ -1,0 +1,4 @@
+client/app/BadClient.java:9: error: ScholarshipRule is not public in exam; cannot be accessed from outside package
+        PassingRule rule = new exam.ScholarshipRule();
+                                   ^
+1 error

@@ -1,0 +1,30 @@
+== scatter/before
+奨学：平均70点以上、各科目60点以上
+true
+佐藤: PASS
+鈴木: PASS
+高橋: PASS
+== scatter/after (推薦を追加)
+推薦：3科目の合計が150点以上、英語が70点以上
+true
+山田: PASS
+== factory/before
+奨学：平均70点以上、各科目60点以上
+true
+佐藤: PASS
+鈴木: PASS
+高橋: PASS
+== factory/after (推薦を追加)
+推薦：3科目の合計が150点以上、英語が70点以上
+true
+山田: PASS
+== enumtype/before
+奨学：平均70点以上、各科目60点以上
+true
+佐藤: PASS
+鈴木: PASS
+高橋: PASS
+== enumtype/after (推薦を追加)
+推薦：3科目の合計が150点以上、英語が70点以上
+true
+山田: PASS

@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.IllegalArgumentException: unknown type: recommendation
+	at exam.ReportPrinter.describe(ReportPrinter.java:13)
+	at exam.MainRecommendation.main(MainRecommendation.java:6)

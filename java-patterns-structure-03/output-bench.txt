@@ -1,0 +1,5 @@
+run 1: new=75.9 ns, 静的ファクトリ=163.0 ns, リフレクション(Constructor保持)=76.6 ns, リフレクション(毎回Class.forName)=447.5 ns (hits=9999800)
+run 2: new=24.2 ns, 静的ファクトリ=8.1 ns, リフレクション(Constructor保持)=16.7 ns, リフレクション(毎回Class.forName)=450.9 ns (hits=9999800)
+run 3: new=4.6 ns, 静的ファクトリ=6.8 ns, リフレクション(Constructor保持)=13.1 ns, リフレクション(毎回Class.forName)=452.9 ns (hits=9999800)
+run 4: new=4.6 ns, 静的ファクトリ=5.2 ns, リフレクション(Constructor保持)=14.4 ns, リフレクション(毎回Class.forName)=547.2 ns (hits=9999800)
+run 5: new=5.1 ns, 静的ファクトリ=5.4 ns, リフレクション(Constructor保持)=20.0 ns, リフレクション(毎回Class.forName)=425.0 ns (hits=9999800)
