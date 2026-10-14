@@ -1,0 +1,4 @@
+古典的な Singleton：デシリアライズ後も同じインスタンスか = false
+enum：デシリアライズ後も同じインスタンスか = true
+古典的な Singleton：リフレクションで作ったものは同じか = false
+enum：リフレクションで作ろうとすると IllegalArgumentException（Cannot reflectively create enum objects）

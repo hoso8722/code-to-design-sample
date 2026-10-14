@@ -1,0 +1,12 @@
+singleton T1,T2,T3 -> T1:OK T2:OK T3:NG
+singleton T1,T3,T2 -> T1:OK T3:OK T2:OK
+singleton T2,T1,T3 -> T2:OK T1:NG T3:NG
+singleton T2,T3,T1 -> T2:OK T3:NG T1:NG
+singleton T3,T1,T2 -> T3:OK T1:OK T2:OK
+singleton T3,T2,T1 -> T3:OK T2:OK T1:NG
+config T1,T2,T3 -> T1:OK T2:OK T3:OK
+config T1,T3,T2 -> T1:OK T3:OK T2:OK
+config T2,T1,T3 -> T2:OK T1:OK T3:OK
+config T2,T3,T1 -> T2:OK T3:OK T1:OK
+config T3,T1,T2 -> T3:OK T1:OK T2:OK
+config T3,T2,T1 -> T3:OK T2:OK T1:OK
