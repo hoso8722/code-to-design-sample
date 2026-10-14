@@ -1,0 +1,5 @@
+exam/BadSwap.java:8: error: incompatible types: Preference cannot be converted to Bonus
+                new TypedApplication.Preference(1), new TypedApplication.Bonus(10));
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

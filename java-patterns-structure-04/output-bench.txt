@@ -1,0 +1,5 @@
+run 1: コンストラクタ=5.8 ns, Builder=5.9 ns (sum=2549999520)
+run 2: コンストラクタ=7.8 ns, Builder=2.4 ns (sum=2549999520)
+run 3: コンストラクタ=2.5 ns, Builder=2.6 ns (sum=2549999520)
+run 4: コンストラクタ=2.6 ns, Builder=2.8 ns (sum=2549999520)
+run 5: コンストラクタ=2.7 ns, Builder=2.4 ns (sum=2549999520)
