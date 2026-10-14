@@ -2,7 +2,7 @@
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
+
 
 // 短い間だけ使うリスナーを、長く生きる送り手に登録し続けたときの、GC後のヒープ使用量
 public class Leak {

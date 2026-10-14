@@ -38,5 +38,6 @@ public class Demo {
         Replay.apply(replayed, history.effectiveLog());
         System.out.println("記録: " + history.effectiveLog());
         System.out.println("記録から再現した状態: " + replayed);
+        System.out.println("再現した状態は、操作後の帳簿と同じか: " + replayed.snapshot().equals(book.snapshot()));
     }
 }
