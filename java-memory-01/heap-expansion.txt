@@ -1,0 +1,2 @@
+[0.009s][debug][gc,ergo,heap] Expand the heap. requested expansion amount: 253755392B expansion amount: 253755392B
+[0.235s][debug][gc,ergo,heap] GC(0) Heap expansion: short term pause time ratio 0.00% long term pause time ratio 0.00% threshold 1.00% pause time ratio 7.69% fully expanded false resize by 0B

@@ -1,8 +1,8 @@
-   16404 kB  libjvm.so
-   13780 kB  classes.jsa
-    8620 kB  [anon]
-    1756 kB  libc.so.6
+   17972 kB  libjvm.so
+   14776 kB  classes.jsa
+    6088 kB  [anon]
+    1876 kB  libc.so.6
     1024 kB  modules
-     312 kB  libm.so.6
+     296 kB  libm.so.6
      232 kB  ld-linux-x86-64.so.2
      140 kB  libjava.so
