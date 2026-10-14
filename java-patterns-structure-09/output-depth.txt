@@ -9,6 +9,6 @@ modern  深さ 1,000: 合計=1
 modern  深さ 2,000: 合計=1
 modern  深さ 5,000: StackOverflowError
 modern  深さ 10,000: StackOverflowError
-modern  深さ 20,000: 合計=1
+modern  深さ 20,000: StackOverflowError
 modern  深さ 50,000: StackOverflowError
 modern  深さ 100,000: StackOverflowError

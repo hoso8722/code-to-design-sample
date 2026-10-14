@@ -18,5 +18,6 @@ python3 diffstat.py > output-diffstat.txt
 { run bad-d direct/before exam.BadDirect; run bad-a translate exam.Bad; } > output-bad.txt
 { run forgot direct/before exam.BadForgotten; } > output-forgotten.txt
 run forms forms exam.Forms > output-forms.txt
+run sqldate forms exam.SqlDateCheck > output-sqldate.txt
 java bench/exam/Bench.java > output-bench.txt
 rm -rf "$WORK"

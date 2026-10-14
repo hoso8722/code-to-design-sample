@@ -1,0 +1,2 @@
+java.util.Date の toInstant(): 使えた
+java.sql.Date の toInstant(): UnsupportedOperationException

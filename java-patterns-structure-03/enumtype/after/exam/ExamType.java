@@ -17,6 +17,6 @@ public enum ExamType {
     }
 
     public static ExamType from(String text) {
-        return valueOf(text.toUpperCase());
+        return valueOf(text.toUpperCase(java.util.Locale.ROOT));
     }
 }

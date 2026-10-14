@@ -4,7 +4,12 @@ set -e
 cd "$(dirname "$0")"
 WORK=$(mktemp -d)
 javac -d "$WORK" exam/*.java
-java -cp "$WORK" exam.Race > output-race.txt
+: > output-race.txt
+for i in 1 2 3; do
+  echo "== ${i}回目の実行" >> output-race.txt
+  java -cp "$WORK" exam.Race >> output-race.txt
+done
+java -cp "$WORK" exam.RuntimeCheck > output-runtime.txt
 # 3つのテストを、すべての順序で実行する（順序ごとに新しいJVM）
 : > output-order.txt
 for mode in singleton config; do

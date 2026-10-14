@@ -111,7 +111,7 @@ def enumv(line=180, recommend=False, logfmt=False, v2=False):
 
         public boolean passes(Student s) {{ return rule.test(s); }}
 
-        public static ExamType from(String text) {{ return valueOf(text.toUpperCase()); }}
+        public static ExamType from(String text) {{ return valueOf(text.toUpperCase(java.util.Locale.ROOT)); }}
     }}
 '''
     exam = f'''

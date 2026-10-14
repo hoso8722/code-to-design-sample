@@ -1,5 +1,5 @@
 [   0 ms] データベースへ接続した
-記録された呼び出し: [find, ids, toString]
+記録された呼び出し: [find, ids, toString, hashCode, equals]
 プロキシのクラスは Proxy か: true
 プロキシのクラスは StudentRepository を実装しているか: true
 プロキシのクラスは DatabaseRepository か: false

@@ -1,6 +1,6 @@
 package exam;
 
-// holder idiom：内部クラスが読み込まれたときに作る（遅延初期化で、同期の記述も要らない）
+// holder idiom：内部クラスが初期化されたときに作る（遅延初期化で、同期の記述も要らない）
 public class Holder {
     private final int passLine;
 

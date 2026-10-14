@@ -12,7 +12,10 @@ public class DynamicDemo {
 
         repository.find("s1");
         repository.ids();
-        repository.toString();   // Object のメソッドも、ハンドラを通る
+        repository.toString();   // Object のメソッドのうち、toString・hashCode・equals は、ハンドラを通る
+        repository.hashCode();
+        repository.equals(repository);
+        repository.getClass();   // getClass は final なので、ハンドラを通らない
         System.out.println("記録された呼び出し: " + holder[0].calls);
         System.out.println("プロキシのクラスは Proxy か: " + Proxy.isProxyClass(repository.getClass()));
         System.out.println("プロキシのクラスは StudentRepository を実装しているか: " + (repository instanceof StudentRepository));

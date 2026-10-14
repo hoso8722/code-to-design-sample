@@ -1,6 +1,6 @@
 package exam;
 
-// record：検証をコンパイル時に近い場所（コンストラクタ）に置く。引数の取り違えは防げない
+// record：検証を、オブジェクトを作る場所（コンストラクタ）に置く。引数の取り違えは防げない
 public record Application(String name, int math, int english, int science, int bonus, int preference,
                           boolean scholarship, boolean transfer) {
     public Application {
