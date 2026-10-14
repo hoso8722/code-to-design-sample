@@ -1,0 +1,2 @@
+read(byte[]) が返した長さ: 5、子クラスの read() が呼ばれた回数: 6
+toString: [科目0, 科目1, 科目2]、contains("科目2"): true

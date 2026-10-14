@@ -1,0 +1,4 @@
+before: template は複製版と出力が同じ
+before: function は複製版と出力が同じ
+after: template は複製版と出力が同じ
+after: function は複製版と出力が同じ
