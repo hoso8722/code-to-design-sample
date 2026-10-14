@@ -1,0 +1,38 @@
+== type-plain
+missing/type-plain/exam/Oral.java:3: error: Oral is not abstract and does not override abstract method valid() in Subject
+public class Oral extends Subject {
+       ^
+1 error
+== type-visitor
+missing/type-visitor/exam/DescribeVisitor.java:3: error: DescribeVisitor is not abstract and does not override abstract method visitOral(Oral) in SubjectVisitor
+public class DescribeVisitor implements SubjectVisitor<String> {
+       ^
+missing/type-visitor/exam/ScoreVisitor.java:3: error: ScoreVisitor is not abstract and does not override abstract method visitOral(Oral) in SubjectVisitor
+public class ScoreVisitor implements SubjectVisitor<Integer> {
+       ^
+missing/type-visitor/exam/ValidVisitor.java:3: error: ValidVisitor is not abstract and does not override abstract method visitOral(Oral) in SubjectVisitor
+public class ValidVisitor implements SubjectVisitor<Boolean> {
+       ^
+3 errors
+== type-sealedv
+missing/type-sealedv/exam/Subjects.java:7: error: the switch expression does not cover all possible input values
+        return switch (subject) {
+               ^
+missing/type-sealedv/exam/Subjects.java:15: error: the switch expression does not cover all possible input values
+        return switch (subject) {
+               ^
+missing/type-sealedv/exam/Subjects.java:23: error: the switch expression does not cover all possible input values
+        return switch (subject) {
+               ^
+3 errors
+== op-plain
+missing/op-plain/exam/Elective.java:3: error: Elective is not abstract and does not override abstract method maxPoints() in Subject
+public class Elective extends Subject {
+       ^
+missing/op-plain/exam/Practical.java:3: error: Practical is not abstract and does not override abstract method maxPoints() in Subject
+public class Practical extends Subject {
+       ^
+missing/op-plain/exam/Required.java:3: error: Required is not abstract and does not override abstract method maxPoints() in Subject
+public class Required extends Subject {
+       ^
+3 errors

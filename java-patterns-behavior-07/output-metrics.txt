@@ -1,0 +1,12 @@
+書き方,ファイル数,行数の合計
+各クラスのメソッド,4,33
+Visitor,8,45
+sealed + switch,5,35
+
+依頼,書き方,変更したファイル,追加したファイル,追加した行,削除した行,変更したファイルの名前
+処理を1つ足す（maxPoints）,各クラスのメソッド,4,0,4,0,Elective Practical Required Subject
+処理を1つ足す（maxPoints）,Visitor,0,1,6,0,
+処理を1つ足す（maxPoints）,sealed + switch,1,0,8,0,Subjects
+種類を1つ足す（口述 Oral）,各クラスのメソッド,0,1,7,0,
+種類を1つ足す（口述 Oral）,Visitor,4,1,9,0,DescribeVisitor ScoreVisitor SubjectVisitor ValidVisitor
+種類を1つ足す（口述 Oral）,sealed + switch,2,1,6,1,Subject Subjects

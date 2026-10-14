@@ -1,0 +1,15 @@
+Required: 80
+Required: 必須科目「数学」80点（配点100%）
+Required: true
+Elective: 45
+Elective: 選択科目「音楽」90点（配点50%）
+Elective: true
+Practical: 56
+Practical: 実技科目「実験」70点（配点80%）
+Practical: true
+Required: 105
+Required: 必須科目「英語」105点（配点100%）
+Required: false
+Oral: 36
+Oral: 口述科目「面接」60点（配点60%）
+Oral: true

@@ -1,0 +1,6 @@
+before: visitor は plain と出力が同じ
+before: sealedv は plain と出力が同じ
+op: visitor は plain と出力が同じ
+op: sealedv は plain と出力が同じ
+type: visitor は plain と出力が同じ
+type: sealedv は plain と出力が同じ
