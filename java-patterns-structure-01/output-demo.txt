@@ -1,0 +1,5 @@
+佐藤 (general): 70/70/70 -> PASS
+鈴木 (general): 60/60/59 -> FAIL
+高橋 (scholarship): 70/70/69 -> FAIL
+田中 (scholarship): 100/100/59 -> FAIL
+伊藤 (transfer): 60/60/0 -> PASS
