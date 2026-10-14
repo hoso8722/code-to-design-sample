@@ -1,0 +1,15 @@
+plain before 3e516a16
+plain r1 caad923b
+plain r2 8bdb27b9
+plain r3 901e427e
+plain r4 3e516a16
+enum before 3e516a16
+enum r1 caad923b
+enum r2 8bdb27b9
+enum r3 901e427e
+enum r4 3e516a16
+patterns before 3e516a16
+patterns r1 caad923b
+patterns r2 8bdb27b9
+patterns r3 901e427e
+patterns r4 3e516a16

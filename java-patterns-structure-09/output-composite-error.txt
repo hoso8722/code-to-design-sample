@@ -1,0 +1,7 @@
+composite/modern-add/exam/Node.java:8: error: the switch expression does not cover all possible input values
+        return switch (node) {
+               ^
+composite/modern-add/exam/Node.java:19: error: the switch expression does not cover all possible input values
+        return switch (node) {
+               ^
+2 errors

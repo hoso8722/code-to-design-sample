@@ -1,0 +1,5 @@
+佐藤 (general) -> PASS
+鈴木 (scholarship) -> FAIL
+高橋 (transfer) -> PASS
+伊藤 (general) -> FAIL
+山田 (recommendation) -> PASS
