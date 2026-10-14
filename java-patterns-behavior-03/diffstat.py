@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""before と after を比べて、変更・追加されたファイルの数と、追加・削除された行の数を数える（組み立てを行う App.java も含む）"""
+import difflib, os, sys
+
+def files(root):
+    out = {}
+    for d, _, fs in os.walk(root):
+        for f in fs:
+            if f.endswith(".java") and True:
+                p = os.path.join(d, f)
+                out[os.path.relpath(p, root)] = open(p, encoding="utf-8").read().split("\n")
+    return out
+
+print("方式,変更したファイル,追加したファイル,追加した行,削除した行,変更したファイルの名前")
+for variant, label in [("direct", "判定のコードが直接呼ぶ"), ("listener", "リスナーを登録する")]:
+    before, after = files(f"{variant}/before"), files(f"{variant}/after")
+    changed = added = plus = minus = 0
+    names = []
+    for name in sorted(after):
+        if name not in before:
+            added += 1
+            plus += len(after[name]) - 1
+            continue
+        diff = list(difflib.unified_diff(before[name], after[name], lineterm="", n=0))
+        p = sum(1 for l in diff if l.startswith("+") and not l.startswith("+++"))
+        m = sum(1 for l in diff if l.startswith("-") and not l.startswith("---"))
+        if p or m:
+            changed += 1
+            names.append(name)
+            plus += p
+            minus += m
+    print(f"{label},{changed},{added},{plus},{minus},{' '.join(names)}")

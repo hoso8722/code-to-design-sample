@@ -1,0 +1,10 @@
+old/OldObservable.java:6: warning: [deprecation] Observable in java.util has been deprecated
+    static class Source extends Observable {
+                                ^
+old/OldObservable.java:12: warning: [deprecation] Observer in java.util has been deprecated
+        Observer observer = (o, arg) -> System.out.println("通知: " + arg);
+        ^
+old/OldObservable.java:12: warning: [deprecation] Observable in java.util has been deprecated
+        Observer observer = (o, arg) -> System.out.println("通知: " + arg);
+                             ^
+3 warnings
