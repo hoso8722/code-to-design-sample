@@ -1,2 +1,2 @@
-強い参照があるとき: java.lang.Object@29f69090
+強い参照があるとき: java.lang.Object@2b2fa4f7
 強い参照がないとき: null

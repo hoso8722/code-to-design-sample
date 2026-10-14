@@ -1,8 +1,8 @@
-70227:
+1571066:
  num     #instances         #bytes  class name (module)
 -------------------------------------------------------
-   1:         29654       11133056  [B (java.base@21.0.12.1)
-   2:         19573         469752  java.lang.String (java.base@21.0.12.1)
-   3:         10000         400000  java.util.LinkedHashMap$Entry (java.base@21.0.12.1)
-   4:          1622         199872  java.lang.Class (java.base@21.0.12.1)
-   5:          1209         148944  [Ljava.lang.Object; (java.base@21.0.12.1)
+   1:         30268       11163048  [B (java.base@25.0.4)
+   2:         20187         484488  java.lang.String (java.base@25.0.4)
+   3:         10000         400000  java.util.LinkedHashMap$Entry (java.base@25.0.4)
+   4:          1799         237344  java.lang.Class (java.base@25.0.4)
+   5:          1178         154992  [Ljava.lang.Object; (java.base@25.0.4)
