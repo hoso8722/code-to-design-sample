@@ -1,6 +1,6 @@
-int[]                         4.3 MB    4.3 bytes/要素
+int[]                         4.2 MB    4.2 bytes/要素
 Integer[]                    24.4 MB   24.4 bytes/要素
-ArrayList<Integer>           26.5 MB   26.5 bytes/要素
+ArrayList<Integer>           26.7 MB   26.7 bytes/要素
 LinkedList<Integer>          56.1 MB   56.1 bytes/要素
 HashSet<Integer>             74.9 MB   74.9 bytes/要素
 HashMap<Integer,Integer>     90.9 MB   90.9 bytes/要素
