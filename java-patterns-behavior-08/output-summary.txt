@@ -1,0 +1,7 @@
+回,比べたもの,簡単な書き方,パターンの書き方
+第1回 Strategy,区分を1つ足したときの追加行数,1行（ラムダ）,7行（interface）
+第2回 Template Method,全体の行数,24行（関数を渡す）,34行（Template Method）
+第5回 State,4状態のときの行数,28行（フラグ）,44行（状態ごとのクラス）
+第7回 Visitor,全体の行数,35行（sealed + switch）,45行（Visitor）
+第3回 Observer,通知先を1つ足したときの追加行数,7行（直接呼ぶ）,6行（リスナー）
+第6回 Chain of Responsibility,検証を1つ足したときの追加行数,3行（長いメソッド）,2行（部品を連ねる）
