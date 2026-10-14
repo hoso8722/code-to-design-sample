@@ -1,19 +1,72 @@
-== --memory=512m -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB
+== --memory=512m --cpus=1 -XX:MaxRAMPercentage=75, heap 300MB + direct 200MB
 max heap = 371 MB
 heap: 300 MB
 direct: 50 MB
 direct: 100 MB
+direct: 150 MB
+Killed
 exit code: 137
-== --memory=512m -XX:MaxRAMPercentage=50, heap 300MB + direct 150MB
+events: low 0
+events: high 0
+events: max 0
+events: oom 0
+events: oom_kill 1
+events: oom_group_kill 0
+podman: ExitCode=137 OOMKilled=false
+== --memory=512m --cpus=1 -XX:MaxRAMPercentage=50, heap 300MB + direct 200MB
 max heap = 247 MB
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at FillMemory.main(FillMemory.java:16)
 exit code: 1
-ExitCode=137 OOMKilled=false
-java exit=137
-low 0
-high 0
-max 0
-oom 0
-oom_kill 1
-oom_group_kill 0
+events: low 0
+events: high 0
+events: max 0
+events: oom 0
+events: oom_kill 0
+events: oom_group_kill 0
+podman: ExitCode=1 OOMKilled=false
+== --memory=512m --cpus=1 -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB (run 1)
+max heap = 371 MB
+heap: 300 MB
+direct: 50 MB
+direct: 100 MB
+direct: 150 MB
+done
+exit code: 0
+events: low 0
+events: high 0
+events: max 0
+events: oom 0
+events: oom_kill 0
+events: oom_group_kill 0
+podman: ExitCode=0 OOMKilled=false
+== --memory=512m --cpus=1 -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB (run 2)
+max heap = 371 MB
+heap: 300 MB
+direct: 50 MB
+direct: 100 MB
+direct: 150 MB
+done
+exit code: 0
+events: low 0
+events: high 0
+events: max 0
+events: oom 0
+events: oom_kill 0
+events: oom_group_kill 0
+podman: ExitCode=0 OOMKilled=false
+== --memory=512m --cpus=1 -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB (run 3)
+max heap = 371 MB
+heap: 300 MB
+direct: 50 MB
+direct: 100 MB
+direct: 150 MB
+done
+exit code: 0
+events: low 0
+events: high 0
+events: max 0
+events: oom 0
+events: oom_kill 0
+events: oom_group_kill 0
+podman: ExitCode=0 OOMKilled=false

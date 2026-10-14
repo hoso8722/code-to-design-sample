@@ -19,7 +19,6 @@ const gcs = [
   { id: "parallel", label: "Parallel" },
   { id: "g1", label: "G1" },
   { id: "zgc", label: "ZGC" },
-  { id: "zgc-gen", label: "ZGC（世代別）" },
 ];
 const bench = csv("gc-bench.csv");
 const pauses = csv("pauses.csv");
