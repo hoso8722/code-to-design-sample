@@ -1,0 +1,7 @@
+6回の操作のあと: [Student[name=佐藤, math=75, english=70, science=85]]
+6回取り消したあと: []（最初の状態と同じか: true）
+6回やり直したあと: [Student[name=佐藤, math=75, english=70, science=85]]（6回の操作のあとの状態と同じか: true）
+2回取り消した直後: 実行済み 4 件、やり直せる 2 件
+新しい操作のあと: 実行済み 5 件、やり直せる 0 件
+記録: [ADD 佐藤 60 70 80, ADD 鈴木 90 50 40, SET 佐藤 math 75, SET 鈴木 english 65, SET 佐藤 english 99]
+記録から再現した状態: [Student[name=佐藤, math=75, english=99, science=80], Student[name=鈴木, math=90, english=65, science=40]]

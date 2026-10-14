@@ -1,0 +1,3 @@
+Runnable で変更したあと: [Student[name=佐藤, math=99, english=70, science=80]]（取り消す方法: なし）
+組で変更したあと: [Student[name=佐藤, math=99, english=70, science=80]]
+取り消したあと  : [Student[name=佐藤, math=60, english=70, science=80]]
