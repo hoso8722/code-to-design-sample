@@ -1,0 +1,8 @@
+[   0 ms] データベースへ接続した
+記録された呼び出し: [find, ids, toString]
+プロキシのクラスは Proxy か: true
+プロキシのクラスは StudentRepository を実装しているか: true
+プロキシのクラスは DatabaseRepository か: false
+Runnable を実行した
+Runnable の記録: [run]
+クラスを渡したとき: IllegalArgumentException: exam.DatabaseRepository is not an interface
