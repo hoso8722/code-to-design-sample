@@ -1,0 +1,4 @@
+直接読む: NumberFormatException: For input string: "九十"
+  発生した場所: exam.ExamService.countPassed(ExamService.java:11)
+アダプタ経由: InvalidRecordException: 不正な行: "鈴木,九十,50,40"
+  原因: java.lang.NumberFormatException: For input string: "九十"
