@@ -1,0 +1,5 @@
+方式,奨学生入試の条件が書かれたファイル,そのファイルの行数
+条件分岐,ExamService.java,15
+interface（Strategy）,ScholarshipRule.java,5
+関数（ラムダ）,ExamService.java,18
+enum,ExamType.java,15

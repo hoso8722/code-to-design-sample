@@ -1,0 +1,6 @@
+before: iface は branch と出力が同じ
+before: lambda は branch と出力が同じ
+before: enumtype は branch と出力が同じ
+after: iface は branch と出力が同じ
+after: lambda は branch と出力が同じ
+after: enumtype は branch と出力が同じ

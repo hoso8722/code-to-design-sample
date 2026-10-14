@@ -1,0 +1,3 @@
+春（general）: 合格 3 人
+夏（transfer）: 合格 3 人
+秋（easy）: 合格 4 人
