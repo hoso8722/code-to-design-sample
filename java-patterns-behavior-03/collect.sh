@@ -22,6 +22,9 @@ for mode in strong unregister weak; do java -Xmx512m leak/Leak.java $mode >> out
 java errors/Errors.java > output-errors.txt
 java slow/FlowErrors.java > output-flow-errors.txt
 : > output-slow.txt
-for mode in sync submit16 submit256 offer16; do java slow/Slow.java $mode >> output-slow.txt; done
+for i in 1 2 3; do
+  echo "== ${i}回目の実行" >> output-slow.txt
+  for mode in sync submit16 submit256 offer16; do java slow/Slow.java $mode >> output-slow.txt; done
+done
 javac -Xlint:deprecation -d "$WORK/old" old/OldObservable.java > output-old.txt 2>&1 || true
 rm -rf "$WORK"

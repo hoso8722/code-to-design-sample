@@ -25,6 +25,8 @@ missing/type-sealedv/exam/Subjects.java:23: error: the switch expression does no
         return switch (subject) {
                ^
 3 errors
+== type-sealedv-default
+コンパイル: 成功（エラーなし）
 == op-plain
 missing/op-plain/exam/Elective.java:3: error: Elective is not abstract and does not override abstract method maxPoints() in Subject
 public class Elective extends Subject {

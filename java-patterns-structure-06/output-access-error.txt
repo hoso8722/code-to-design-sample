@@ -1,0 +1,6 @@
+access/BadAccess.java:10: error: cannot find symbol
+        System.out.println(candidate.getFullName());
+                                    ^
+  symbol:   method getFullName()
+  location: variable candidate of type Candidate
+1 error

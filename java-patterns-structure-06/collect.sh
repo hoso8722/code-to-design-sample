@@ -19,5 +19,6 @@ python3 diffstat.py > output-diffstat.txt
 { run forgot direct/before exam.BadForgotten; } > output-forgotten.txt
 run forms forms exam.Forms > output-forms.txt
 run sqldate forms exam.SqlDateCheck > output-sqldate.txt
+mkdir -p "$WORK/access"; javac -d "$WORK/access" forms/exam/ExternalApplicant.java forms/exam/Candidate.java forms/exam/ObjectAdapter.java forms/exam/ClassAdapter.java access/BadAccess.java > output-access-error.txt 2>&1 || true
 java bench/exam/Bench.java > output-bench.txt
 rm -rf "$WORK"

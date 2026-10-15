@@ -19,8 +19,8 @@ done
 java -cp "$WORK/sealedv-type" exam.App > output-run.txt
 python3 metrics.py > output-metrics.txt
 : > output-missing.txt
-for m in type-plain type-visitor type-sealedv op-plain; do
+for m in type-plain type-visitor type-sealedv type-sealedv-default op-plain; do
   echo "== $m" >> output-missing.txt
-  javac -d "$WORK/miss-$m" missing/$m/exam/*.java >> output-missing.txt 2>&1 || true
+  if javac -d "$WORK/miss-$m" missing/$m/exam/*.java >> output-missing.txt 2>&1; then echo "コンパイル: 成功（エラーなし）" >> output-missing.txt; fi
 done
 rm -rf "$WORK"

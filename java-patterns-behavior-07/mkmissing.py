@@ -23,3 +23,17 @@ prep('type-visitor', 'visitor', {'SubjectVisitor.java': ('}\n', '    R visitOral
 prep('type-sealedv', 'sealedv', {'Subject.java': ('permits Required, Elective, Practical', 'permits Required, Elective, Practical, Oral')},
      {'Oral.java': 'package exam;\n\npublic record Oral(String name, int points) implements Subject {}\n'})
 prep('op-plain', 'plain', {'Subject.java': ('abstract boolean valid();\n', 'abstract boolean valid();\n    abstract int maxPoints();\n')}, {})
+
+# default を付けた switch は、種類を足してもコンパイルエラーにならない
+import shutil as _sh, re as _re
+_sh.copytree('missing/type-sealedv', 'missing/type-sealedv-default', dirs_exist_ok=True)
+_p = 'missing/type-sealedv-default/exam/Subjects.java'
+_s = open(_p, encoding='utf-8').read()
+_out = []
+for _part in _re.split(r'(?=    static )', _s):
+    _m = _re.match(r'    static (int|String|boolean) ', _part)
+    if _m:
+        _d = {'int': '0', 'String': '""', 'boolean': 'false'}[_m.group(1)]
+        _part = _part.replace('        };', '            default -> %s;\n        };' % _d)
+    _out.append(_part)
+open(_p, 'w', encoding='utf-8').write(''.join(_out))

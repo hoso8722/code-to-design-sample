@@ -7,10 +7,10 @@ import java.util.Map;
 
 // 履歴のために、操作ごとに全体の写しを持つ方式と、操作（変更前の値だけ）を持つ方式の、GC後のメモリ
 public class Memory {
-    static long usedMB() {
+    static long usedKB() {
         for (int i = 0; i < 3; i++) System.gc();
         Runtime rt = Runtime.getRuntime();
-        return (rt.totalMemory() - rt.freeMemory()) / (1024 * 1024);
+        return (rt.totalMemory() - rt.freeMemory()) / 1024;
     }
 
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Memory {
         int operations = 2000;
         ScoreBook book = new ScoreBook();
         for (int i = 0; i < students; i++) book.put(new Student("受験者" + i, i % 101, (i * 7) % 101, (i * 13) % 101));
-        long before = usedMB();
+        long before = usedKB();
 
         Deque<Object> history = new ArrayDeque<>();
         for (int i = 0; i < operations; i++) {
@@ -33,8 +33,8 @@ public class Memory {
                 history.push(command);
             }
         }
-        long after = usedMB();
-        System.out.printf("%-8s 受験者 %,d 人、操作 %,d 回の履歴を持ったあとのGC後の使用量の増加: %d MB%n", mode, students, operations, after - before);
+        long after = usedKB();
+        System.out.printf("%-8s 受験者 %,d 人、操作 %,d 回の履歴を持ったあとのGC後の使用量の増加: %,d KB%n", mode, students, operations, after - before);
         java.lang.ref.Reference.reachabilityFence(history);
     }
 }

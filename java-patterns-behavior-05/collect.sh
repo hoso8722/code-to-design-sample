@@ -40,4 +40,8 @@ mkdir -p "$WORK/typed"
 javac -d "$WORK/typed" typed/exam/Typed.java typed/exam/Good.java
 java -cp "$WORK/typed" exam.Good > output-typed-good.txt
 javac -d "$WORK/typed-bad" typed/exam/Typed.java typed/exam/Bad.java > output-typed-error.txt 2>&1 || true
+mkdir -p "$WORK/cancel-sealedv"
+javac -d "$WORK/cancel-sealedv" missing/cancel-sealedv/exam/*.java > output-cancel-forgotten-sealed.txt 2>&1 && echo "コンパイル: 成功" >> output-cancel-forgotten-sealed.txt
+java -cp "$WORK/cancel-sealedv" exam.CancelTaken >> output-cancel-forgotten-sealed.txt 2>&1 || true
+sed -i '/^\tat /d; s#^Exception in thread "main" #実行時: #' output-cancel-forgotten-sealed.txt
 rm -rf "$WORK"
