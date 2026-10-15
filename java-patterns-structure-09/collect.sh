@@ -6,7 +6,16 @@ WORK=$(mktemp -d)
 javac -d "$WORK/c" composite/classic/exam/*.java
 javac -d "$WORK/m" composite/modern/exam/*.java
 { java -cp "$WORK/c" exam.Demo; java -cp "$WORK/m" exam.Demo; } > output-composite.txt
-{ java -cp "$WORK/c" exam.Depth; java -cp "$WORK/m" exam.Depth; } > output-depth.txt
+# 再帰の限界は実行ごとに揺れるので、新しいJVMで5回ずつ実行して、成功した最大の深さを集める
+: > output-depth.txt
+for kind in c m; do
+  label="古典的な書き方"; [ $kind = m ] && label="現代的な書き方"
+  for i in 1 2 3 4 5; do
+    java -cp "$WORK/$kind" exam.Depth > "$WORK/depth-$kind-$i.txt"
+    pattern=$(sed -E 's/^[a-z]+ +深さ ([0-9,]+): StackOverflowError$/\1:NG/; s/^[a-z]+ +深さ ([0-9,]+): 合計=.*$/\1:OK/' "$WORK/depth-$kind-$i.txt" | tr '\n' ' ')
+    echo "$label ${i}回目: $pattern" >> output-depth.txt
+  done
+done
 javac -d "$WORK/bad" composite/modern-add/exam/*.java > output-composite-error.txt 2>&1 || true
 # 3つの設計 × 変更の依頼（r1〜r4）：すべてコンパイルして実行し、設計が違っても出力が同じことを確かめる
 (cd compare && python3 gen.py)

@@ -30,6 +30,10 @@ for v in flag stateclass enumtype sealedv; do
     java -cp "$WORK/missing-$v" exam.Cancel >> output-missing.txt 2>&1 || true
   fi
 done
+mkdir -p "$WORK/cancel-stateclass"
+javac -d "$WORK/cancel-stateclass" missing/cancel-stateclass/exam/*.java > output-cancel-forgotten.txt 2>&1 && echo "コンパイル: 成功" >> output-cancel-forgotten.txt
+java -cp "$WORK/cancel-stateclass" exam.CancelTaken >> output-cancel-forgotten.txt 2>&1 || true
+sed -i '/^\tat /d; s#^Exception in thread "main" #実行時: #' output-cancel-forgotten.txt
 sed -i 's#^Exception in thread "main" #実行時: #; /^\tat /d' output-missing.txt
 # 状態ごとに型を分けた書き方：許されない操作は、コンパイルできない
 mkdir -p "$WORK/typed"

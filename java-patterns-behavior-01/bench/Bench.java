@@ -16,12 +16,23 @@ public class Bench {
         throw new IllegalArgumentException(type);
     }
 
+    enum Kind { GENERAL, TRANSFER }
+
+    // 文字列の比較を使わず、enum の switch で選ぶ条件分岐
+    static boolean branchEnum(Kind kind, Student s) {
+        return switch (kind) {
+            case GENERAL -> s.total() >= 180;
+            case TRANSFER -> s.math() + s.english() >= 120;
+        };
+    }
+
     static final int N = 20_000_000;
 
     public static void main(String[] args) {
         Student[] students = new Student[1000];
         for (int i = 0; i < students.length; i++) students[i] = new Student("s" + i, i % 101, (i * 7) % 101, (i * 13) % 101);
         String[] types = {"general", "transfer"};
+        Kind[] kinds = {Kind.GENERAL, Kind.TRANSFER};
         Rule[] rules = {new GeneralRule(), new TransferRule()};
         Predicate<Student>[] lambdas = new Predicate[] {(Predicate<Student>) s -> s.total() >= 180, (Predicate<Student>) s -> s.math() + s.english() >= 120};
         for (int run = 1; run <= 5; run++) {
@@ -33,8 +44,10 @@ public class Bench {
             long t2 = System.nanoTime();
             for (int i = 0; i < N; i++) if (lambdas[i & 1].test(students[i % 1000])) hits++;
             long t3 = System.nanoTime();
-            System.out.printf("run %d: 条件分岐=%.2f ns, interface=%.2f ns, ラムダ=%.2f ns (hits=%d)%n", run,
-                (t1 - t0) / (double) N, (t2 - t1) / (double) N, (t3 - t2) / (double) N, hits);
+            for (int i = 0; i < N; i++) if (branchEnum(kinds[i & 1], students[i % 1000])) hits++;
+            long t4 = System.nanoTime();
+            System.out.printf("run %d: 条件分岐(文字列)=%.2f ns, interface=%.2f ns, ラムダ=%.2f ns, 条件分岐(enum)=%.2f ns (hits=%d)%n", run,
+                (t1 - t0) / (double) N, (t2 - t1) / (double) N, (t3 - t2) / (double) N, (t4 - t3) / (double) N, hits);
         }
     }
 }

@@ -6,6 +6,7 @@ WORK=$(mktemp -d)
 javac -d "$WORK" exam/*.java
 java -cp "$WORK" exam.Demo > output-demo.txt
 java -cp "$WORK" exam.Lambdas > output-lambdas.txt
+java -cp "$WORK" exam.MissingTarget > output-missing-target.txt
 : > output-memory.txt
 for mode in snapshot command; do java -Xmx1g -cp "$WORK" exam.Memory $mode >> output-memory.txt; done
 rm -rf "$WORK"

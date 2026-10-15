@@ -1,0 +1,2 @@
+例外を投げる受け手: 届いた値 [1, 2]、通知 [onError(IllegalStateException: 集計で障害)]
+ふつうの受け手: 届いた値 [1, 2, 3, 4, 5]、通知 [onComplete]

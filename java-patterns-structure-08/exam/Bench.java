@@ -17,6 +17,7 @@ public class Bench {
         LoggingRepository handwritten = new LoggingRepository(new Light());
         CountingHandler[] holder = new CountingHandler[1];
         StudentRepository dynamic = CountingHandler.wrap(StudentRepository.class, new Light(), holder);
+        StudentRepository passThrough = PassThroughHandler.wrap(StudentRepository.class, new Light());
         for (int run = 1; run <= 5; run++) {
             long sum = 0;
             long t0 = System.nanoTime();
@@ -30,8 +31,10 @@ public class Bench {
                 if (holder[0].calls.size() > 1000) holder[0].calls.clear();
             }
             long t3 = System.nanoTime();
-            System.out.printf("run %d: 直接=%.1f ns, 手で書いたプロキシ=%.1f ns, 動的プロキシ=%.1f ns (sum=%d)%n",
-                run, (t1 - t0) / (double) N, (t2 - t1) / (double) N, (t3 - t2) / (double) N, sum);
+            for (int i = 0; i < N; i++) sum += passThrough.find("s1").total();
+            long t4 = System.nanoTime();
+            System.out.printf("run %d: 直接=%.1f ns, 手で書いたプロキシ=%.1f ns, 動的プロキシ(記録あり)=%.1f ns, 動的プロキシ(記録なし)=%.1f ns (sum=%d)%n",
+                run, (t1 - t0) / (double) N, (t2 - t1) / (double) N, (t3 - t2) / (double) N, (t4 - t3) / (double) N, sum);
         }
     }
 }

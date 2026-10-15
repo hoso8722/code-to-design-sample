@@ -20,6 +20,7 @@ python3 diffstat.py > output-diffstat.txt
 : > output-leak.txt
 for mode in strong unregister weak; do java -Xmx512m leak/Leak.java $mode >> output-leak.txt; done
 java errors/Errors.java > output-errors.txt
+java slow/FlowErrors.java > output-flow-errors.txt
 : > output-slow.txt
 for mode in sync submit16 submit256 offer16; do java slow/Slow.java $mode >> output-slow.txt; done
 javac -Xlint:deprecation -d "$WORK/old" old/OldObservable.java > output-old.txt 2>&1 || true

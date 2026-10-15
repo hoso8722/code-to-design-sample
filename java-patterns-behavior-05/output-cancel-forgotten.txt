@@ -1,0 +1,2 @@
+コンパイル: 成功
+実行時: java.lang.IllegalStateException: TAKEN では取り消せません
