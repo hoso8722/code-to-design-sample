@@ -3,11 +3,9 @@ $ jdb -attach 127.0.0.1:5006
 VM Started: > No frames on the current call stack
 main[1] Deferring breakpoint Average:6.
 It will be set after the class is loaded.
-main[1] All threads resumed.
+main[1] 
 Breakpoint hit: "thread=main", Average.average(), line=6 bci=10
 main[1] Local variable information not available.  Compile with -g to generate variable information
 main[1] com.sun.tools.example.debug.expr.ParseException: Name unknown: sum
  sum = null
 main[1] Removed: breakpoint Average:6
-main[1] > 
-The application exited

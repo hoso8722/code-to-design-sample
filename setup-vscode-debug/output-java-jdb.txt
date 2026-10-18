@@ -1,14 +1,13 @@
 # javac -g でコンパイルしたクラスを、JDWPで待ち受けさせて jdb で接続し、sum += scores[i] の行(6行目)で止める
 $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=127.0.0.1:5005 -cp out Average
 $ jdb -attach 127.0.0.1:5005
-> 
-VM Started: No frames on the current call stack
+VM Started: > No frames on the current call stack
 main[1] Deferring breakpoint Average:6.
 It will be set after the class is loaded.
-main[1] All threads resumed.
+main[1] 
 Breakpoint hit: "thread=main", Average.average(), line=6 bci=10
 main[1] Method arguments:
-scores = instance of int[3] (id=431)
+scores = instance of int[3] (id=449)
 Local variables:
 sum = 0
 i = 1
@@ -17,10 +16,8 @@ main[1]  scores[i] = 70
 main[1] > 
 Breakpoint hit: "thread=main", Average.average(), line=6 bci=10
 main[1] Method arguments:
-scores = instance of int[3] (id=431)
+scores = instance of int[3] (id=449)
 Local variables:
 sum = 70
 i = 2
 main[1] Removed: breakpoint Average:6
-main[1] > 
-The application exited

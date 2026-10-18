@@ -1,6 +1,5 @@
-# Javaのコードを動作させるためのイメージ。JDKのバージョンは --build-arg JDK=21 のように変えられる
-ARG JDK=25
-FROM eclipse-temurin:${JDK}-jdk
+# Javaのコードを動作させるためのイメージ
+FROM eclipse-temurin:21-jdk
 
 # ライブラリのJARファイルを、Maven Centralから /opt/lib に入れる
 ARG MAVEN=https://repo1.maven.org/maven2

@@ -1,14 +1,6 @@
 # Docker Engine 29.1.3（WSL2 上の Ubuntu 24.04）で、2026年10月に実行
 $ docker --version
 Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2
-$ docker run --rm -v "$PWD":/work -w /work eclipse-temurin:25-jdk java Check.java
-Javaのバージョン: 25.0.4.1+1-LTS
-JDKの場所（java.home）: /opt/java/openjdk
-提供元: Eclipse Adoptium
-OS: Linux amd64
-既定の文字コード: UTF-8
-使えるCPUの数: 16
-ヒープの上限: 3844 MB
 $ docker run --rm -v "$PWD":/work -w /work eclipse-temurin:21-jdk java Check.java
 Javaのバージョン: 21.0.12.1+1-LTS
 JDKの場所（java.home）: /opt/java/openjdk
@@ -17,19 +9,14 @@ OS: Linux amd64
 既定の文字コード: UTF-8
 使えるCPUの数: 16
 ヒープの上限: 3844 MB
-$ docker image inspect (25-jdk vs 25.0.4.1_1-jdk)
-docker.io/library/eclipse-temurin:25.0.4.1_1-jdk
-sha256:8c0a84ea11c8f6ed52600fc19f1040121f2a162998e9f50a5faebbbad9172dcc
-sha256:8c0a84ea11c8f6ed52600fc19f1040121f2a162998e9f50a5faebbbad9172dcc
-$ docker build -t code-to-design:25 .
-            https://docs.docker.com/go/buildx/
-
-sha256:dbb0868f24e5af464067bfd2625864df59bfaa5831b9dea9a316c2488beca366
-$ docker build --build-arg JDK=21 -t code-to-design:21 .
-            https://docs.docker.com/go/buildx/
-
-sha256:23be0a85b5ba8ca5c9222a88ec6e09cca6b8b097cc78cba03f2392c0ad2cded0
-$ ls -l /opt/lib (25)
+$ docker image inspect (21-jdk vs 21.0.12.1_1-jdk)
+[eclipse-temurin:21-jdk eclipse-temurin:21.0.12.1_1-jdk] sha256:23cc5734ff46e776f51ce66eb9ee08444fd47caabec0a95b7eb6e94be2d3696d
+[eclipse-temurin:21-jdk eclipse-temurin:21.0.12.1_1-jdk] sha256:23cc5734ff46e776f51ce66eb9ee08444fd47caabec0a95b7eb6e94be2d3696d
+$ docker build -t code-to-design:21 .  (Dockerfile を FROM eclipse-temurin:21-jdk に変えて再ビルド)
+sha256:ff714eb6c844a64ed5a529c1c1c271757ea86a57a990280d59a0d0c14f8845e4
+$ docker run code-to-design:21 java -version
+openjdk version "21.0.12.1" 2026-08-18 LTS
+$ ls -l /opt/lib
 total 5748
 -rw-r--r-- 1 root root 2213560 Mar 17  2016 commons-math3-3.6.1.jar
 -rw-r--r-- 1 root root  552986 Aug  3  2023 jmh-core-1.37.jar
@@ -49,7 +36,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 │     └─ 合計が合格ラインより高ければ合格() ✔
 └─ JUnit Vintage ✔
 
-Test run finished after 176 ms
+Test run finished after 146 ms
 [         4 containers found      ]
 [         0 containers skipped    ]
 [         4 containers started    ]
@@ -63,24 +50,8 @@ Test run finished after 176 ms
 [         3 tests successful      ]
 [         0 tests failed          ]
 
-$ ls -ld out
-drwxr-xr-x 2 root root 4096 Oct  4 06:27 out
-total 12
--rw-r--r-- 1 root root 1224 Oct  4 06:27 PassingRule.class
--rw-r--r-- 1 root root  961 Oct  4 06:27 PassingRuleTest.class
-$ rm -rf out
-rm: cannot remove 'out/PassingRuleTest.class': Permission denied
-rm: cannot remove 'out/Student.class': Permission denied
-rm: cannot remove 'out/PassingRule.class': Permission denied
-rc=1
-drwxr-xr-x 2 root root 4096 Oct  4 06:27 out
-$ docker run --user junit
-[         3 tests successful      ]
-$ ls -ld out
-drwxr-xr-x 2 hoso hoso 4096 Oct  4 06:28 out
-rm-rc=0
 $ docker run --rm --cpus=2 --memory=1g ... Check.java
-Javaのバージョン: 25.0.4.1+1-LTS
+Javaのバージョン: 21.0.12.1+1-LTS
 JDKの場所（java.home）: /opt/java/openjdk
 提供元: Eclipse Adoptium
 OS: Linux amd64
@@ -93,5 +64,3 @@ $ nproc; taskset
 $ no -v
 Error: Could not find or load main class Check.java
 Caused by: java.lang.ClassNotFoundException: Check.java
-$ /proc
-Name:	head

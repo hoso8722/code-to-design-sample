@@ -1,6 +1,6 @@
 --- address=5005
 $ jdb -attach localhost:5005
-java.net.SocketException: Connection reset
+java.io.IOException: handshake failed - connection prematurally closed
 	... (スタックトレースを省略)
 --- address=127.0.0.1:5005
 $ jdb -attach localhost:5005
