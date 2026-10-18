@@ -1,5 +1,0 @@
-親（where の中） から見た USER = alice
-子タスク1 から見た USER = alice
-子タスク2 から見た USER = alice
-ふつうに start したスレッド から見た USER = （束縛されていない）
-親（where の外） から見た USER = （束縛されていない）
