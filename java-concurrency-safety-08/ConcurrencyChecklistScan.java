@@ -17,7 +17,7 @@ public class ConcurrencyChecklistScan {
             new Rule("#03", Pattern.compile("if \\(instance == null\\)"), "ダブルチェックドロッキングの疑い。instance は volatile か。ホルダーイディオムにできないか"),
             new Rule("#04", Pattern.compile("synchronized\\s*\\(this\\)\\s*\\{[^}]*\\.(on\\w+|notify\\w+)\\("), "ロックを持ったまま、コールバックを呼んでいないか"),
             new Rule("#05", Pattern.compile("static\\s+(final\\s+)?SimpleDateFormat"), "SimpleDateFormat はスレッドセーフではない。DateTimeFormatter にする"),
-            new Rule("#05", Pattern.compile("ThreadLocal<"), "スレッドプールで使うなら、finally で remove() しているか。ScopedValue にできないか"),
+            new Rule("#05", Pattern.compile("ThreadLocal<"), "スレッドプールで使うなら、finally で remove() しているか。値を引数で渡せないか"),
             new Rule("#06", Pattern.compile("new LinkedBlockingQueue<>\\(\\)|new LinkedBlockingDeque<>\\(\\)"), "容量が Integer.MAX_VALUE。生産が速いと伸び続ける。容量を決める"),
             new Rule("#06", Pattern.compile("computeIfAbsent\\(.*\\b(map|cache|memo)\\.(put|compute|computeIfAbsent|merge)\\("), "関数の中で同じマップを更新していないか(Recursive update)"));
 

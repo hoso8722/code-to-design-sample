@@ -77,36 +77,47 @@ public class ShareNothing {
         pool.shutdown();
     }
 
-    // ===== 3. ScopedValue: 値の範囲を、コードの範囲に限る =====
-    static final ScopedValue<String> SCOPED_USER = ScopedValue.newInstance();
+    // ===== 3. 範囲を閉じる(try-finally)と、InheritableThreadLocal が引き継ぐ値 =====
+    // 値を設定して、必ず片付ける。ThreadLocal を「範囲つき」で使うための小さな関数
+    static void runWithUser(String user, Runnable body) {
+        CURRENT_USER.set(user);
+        try {
+            body.run();
+        } finally {
+            CURRENT_USER.remove();
+        }
+    }
 
-    static void scopedValue() throws Exception {
+    static final InheritableThreadLocal<String> INHERITED_USER = new InheritableThreadLocal<>();
+
+    static void scopedAndInherited() throws Exception {
         ExecutorService pool = Executors.newFixedThreadPool(1);
-        pool.submit(() -> ScopedValue.where(SCOPED_USER, "alice").run(() -> {
-            System.out.println("  where(...).run の中: " + SCOPED_USER.get());
+        pool.submit(() -> runWithUser("alice", () -> {
+            System.out.println("  runWithUser の中: " + CURRENT_USER.get());
         })).get();
-        boolean bound = pool.submit(() -> SCOPED_USER.isBound()).get();
-        System.out.println("  同じスレッドの、run の外: isBound = " + bound);
+        String after = pool.submit(() -> CURRENT_USER.get()).get();
+        System.out.println("  同じスレッドの、runWithUser の外: " + after);
+        try {
+            pool.submit(() -> runWithUser("bob", () -> { throw new IllegalStateException("途中で失敗"); })).get();
+        } catch (java.util.concurrent.ExecutionException e) {
+            // 例外で抜けても、finally で片付く
+        }
+        System.out.println("  例外で抜けた後の、同じスレッド: " + pool.submit(() -> CURRENT_USER.get()).get());
         pool.shutdown();
 
-        // 読み取りの速さ(ざっくりした比較)
-        int n = 50_000_000;
-        ThreadLocal<String> tl = ThreadLocal.withInitial(() -> "alice");
-        for (int round = 0; round < 3; round++) { // 3回目の値を使う(ウォームアップ)
-            long t0 = System.nanoTime();
-            long sum = 0;
-            for (int i = 0; i < n; i++) sum += tl.get().length();
-            long tThread = System.nanoTime() - t0;
-            long[] box = new long[1];
-            long t1 = System.nanoTime();
-            ScopedValue.where(SCOPED_USER, "alice").run(() -> {
-                long s = 0;
-                for (int i = 0; i < n; i++) s += SCOPED_USER.get().length();
-                box[0] = s;
-            });
-            long tScoped = System.nanoTime() - t1;
-            if (round == 2) System.out.printf("  %d 回の読み取り: ThreadLocal %.0f ミリ秒、ScopedValue %.0f ミリ秒(合計 %d, %d)%n", n, tThread / 1e6, tScoped / 1e6, sum, box[0]);
-        }
+        // InheritableThreadLocal: 子のスレッドは、作られた時点の親の値を引き継ぐ
+        INHERITED_USER.set("alice");
+        ExecutorService inheritedPool = Executors.newFixedThreadPool(1);
+        String first = inheritedPool.submit(() -> INHERITED_USER.get()).get(); // このとき、プールのスレッドが作られる
+        INHERITED_USER.set("bob");                                              // 親は、あとから値を変える
+        String second = inheritedPool.submit(() -> INHERITED_USER.get()).get(); // 作り済みのスレッドを使い回す
+        String[] fresh = new String[1];
+        Thread t = new Thread(() -> fresh[0] = INHERITED_USER.get());          // 変えたあとに作った新しいスレッド
+        t.start(); t.join();
+        System.out.println("  親が alice を設定し、プールのスレッドが作られたとき: " + first);
+        System.out.println("  親が bob に変えたあと、同じプールのスレッドが読んだ値: " + second);
+        System.out.println("  親が bob に変えたあとに作った新しいスレッドが読んだ値: " + fresh[0]);
+        inheritedPool.shutdown();
     }
 
     // ===== 4. 共有変数で渡す / キューで渡す =====
@@ -167,8 +178,8 @@ public class ShareNothing {
         formatters();
         System.out.println("## 2. スレッドプールで ThreadLocal を使う");
         threadLocalLeftover();
-        System.out.println("## 3. ScopedValue");
-        scopedValue();
+        System.out.println("## 3. 範囲を閉じる関数と、InheritableThreadLocal");
+        scopedAndInherited();
         System.out.println("## 4. データを共有変数で渡す場合と、キューで渡す場合");
         handOff();
         System.out.println("## 5. CopyOnWriteArrayList");

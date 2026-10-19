@@ -1,17 +1,20 @@
 $ java ShareNothing.java
 ## 1. スレッドセーフでないオブジェクトを共有する(8スレッド × 20000 回)
-  SimpleDateFormat を共有                   160000 回のうち、結果が違った回数 135549、例外 9476
+  SimpleDateFormat を共有                   160000 回のうち、結果が違った回数 120340、例外 19570
   SimpleDateFormat をスレッドごとに持つ            160000 回のうち、結果が違った回数 0、例外 0
   DateTimeFormatter(不変)を共有               160000 回のうち、結果が違った回数 0、例外 0
 ## 2. スレッドプールで ThreadLocal を使う
   片付けなし: 別のタスクが読んだ CURRENT_USER = alice
   remove() あり: 別のタスクが読んだ CURRENT_USER = null
-## 3. ScopedValue
-  where(...).run の中: alice
-  同じスレッドの、run の外: isBound = false
-  50000000 回の読み取り: ThreadLocal 261 ミリ秒、ScopedValue 115 ミリ秒(合計 250000000, 250000000)
+## 3. 範囲を閉じる関数と、InheritableThreadLocal
+  runWithUser の中: alice
+  同じスレッドの、runWithUser の外: null
+  例外で抜けた後の、同じスレッド: null
+  親が alice を設定し、プールのスレッドが作られたとき: alice
+  親が bob に変えたあと、同じプールのスレッドが読んだ値: alice
+  親が bob に変えたあとに作った新しいスレッドが読んだ値: bob
 ## 4. データを共有変数で渡す場合と、キューで渡す場合
-  共有変数(volatile)で渡す: 1000000 個のうち受け取れた個数 106607
+  共有変数(volatile)で渡す: 1000000 個のうち受け取れた個数 75868
   BlockingQueue で渡す      : 1000000 個のうち受け取れた個数 1000000、順番が違った個数 0
 ## 5. CopyOnWriteArrayList
-  末尾に 50000 件追加: synchronizedList 0.5 ミリ秒、CopyOnWriteArrayList 660.2 ミリ秒
+  末尾に 50000 件追加: synchronizedList 0.5 ミリ秒、CopyOnWriteArrayList 637.7 ミリ秒

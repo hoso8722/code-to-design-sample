@@ -7,7 +7,7 @@ BadConcurrent.java:5 [#06] 容量が Integer.MAX_VALUE。生産が速いと伸�
     private final BlockingQueue<Task> queue = new LinkedBlockingQueue<>();
 BadConcurrent.java:7 [#01] 走査するときは、手動でロックしているか。複合操作を1つのロックにまとめているか
     private final List<Integer> list = Collections.synchronizedList(new ArrayList<>());
-BadConcurrent.java:8 [#05] スレッドプールで使うなら、finally で remove() しているか。ScopedValue にできないか
+BadConcurrent.java:8 [#05] スレッドプールで使うなら、finally で remove() しているか。値を引数で渡せないか
     static final ThreadLocal<User> CURRENT = new ThreadLocal<>();
 BadConcurrent.java:11 [#03] コンストラクタの中で this を外に出していないか
     registry.add(this);

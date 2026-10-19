@@ -1,0 +1,7 @@
+$ java -Djdk.tracePinnedThreads=short -Djdk.virtualThreadScheduler.parallelism=1 -Djdk.virtualThreadScheduler.maxPoolSize=1 VirtualThreadPinning.java
+  JDK: 21.0.12.1、キャリアの数: parallelism = 1、maxPoolSize = 1
+VirtualThread[#32]/runnable@ForkJoinPool-1-worker-1 reason:MONITOR
+    VirtualThreadPinning.lambda$delayOfSecond$0(VirtualThreadPinning.java:23) <== monitors:1
+  synchronized の中で1秒ブロック中に、2つ目の仮想スレッドが動き出すまで: 1000 ミリ秒
+  ReentrantLock の中で1秒ブロック中に、2つ目の仮想スレッドが動き出すまで: 0 ミリ秒
+  (対照)ブロックせずに1秒計算し続ける間に、2つ目の仮想スレッドが動き出すまで: 1000 ミリ秒

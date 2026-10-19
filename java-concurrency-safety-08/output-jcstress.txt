@@ -7,22 +7,20 @@ RUN RESULTS:
   Results across all configurations:
 
   RESULT      SAMPLES     FREQ       EXPECT  DESCRIPTION
-    0, 0  185,134,935   32.30%   Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
-   0, 42      569,074    0.10%   Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
-    1, 0      193,454    0.03%  Interesting  ready を見たのに data が古い
-   1, 42  387,264,120   67.57%   Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
-
+    0, 0  193,685,200   32.31%   Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
+   0, 42      769,348    0.13%   Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
+    1, 0      163,071    0.03%  Interesting  ready を見たのに data が古い
+   1, 42  404,807,722   67.53%   Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
 
 [OK] example.MemoryModelTests.StoreLoadPlain
 
   Results across all configurations:
 
   RESULT      SAMPLES     FREQ       EXPECT  DESCRIPTION
-    0, 0  108,942,587   21.74%  Interesting  両方とも0。逐次一貫では説明できない
-    0, 1  205,270,491   40.97%   Acceptable  逐次一貫で説明できる結果
-    1, 0  186,810,948   37.28%   Acceptable  逐次一貫で説明できる結果
-    1, 1       18,477   <0.01%   Acceptable  逐次一貫で説明できる結果
-
+    0, 0  104,869,136   20.12%  Interesting  両方とも0。逐次一貫では説明できない
+    0, 1  217,404,510   41.72%   Acceptable  逐次一貫で説明できる結果
+    1, 0  198,813,883   38.15%   Acceptable  逐次一貫で説明できる結果
+    1, 1       17,225   <0.01%   Acceptable  逐次一貫で説明できる結果
 
 
   Failed tests: No matches.
@@ -36,11 +34,10 @@ RUN RESULTS:
   Results across all configurations:
 
   RESULT      SAMPLES     FREQ      EXPECT  DESCRIPTION
-    0, 0  309,601,307   61.97%  Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
-   0, 42      136,743    0.03%  Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
+    0, 0  298,427,020   60.28%  Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
+   0, 42      210,299    0.04%  Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
     1, 0            0    0.00%   Forbidden  volatile の ready を見たなら、data は必ず見える
-   1, 42  189,825,805   38.00%  Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
-
+   1, 42  196,422,199   39.68%  Acceptable  ready を見たなら data も見える、または ready をまだ見ていない
 
 [OK] example.MemoryModelTests.StoreLoadVolatile
 
@@ -48,10 +45,6 @@ RUN RESULTS:
 
   RESULT      SAMPLES     FREQ      EXPECT  DESCRIPTION
     0, 0            0    0.00%   Forbidden  volatile では起きてはならない
-    0, 1  139,549,752   46.62%  Acceptable  逐次一貫で説明できる結果
-    1, 0  130,378,504   43.56%  Acceptable  逐次一貫で説明できる結果
-    1, 1   29,408,766    9.82%  Acceptable  逐次一貫で説明できる結果
-
-
-
-
+    0, 1  153,028,766   46.12%  Acceptable  逐次一貫で説明できる結果
+    1, 0  144,364,977   43.51%  Acceptable  逐次一貫で説明できる結果
+    1, 1   34,434,349   10.38%  Acceptable  逐次一貫で説明できる結果

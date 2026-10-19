@@ -1,6 +1,6 @@
 5回実行した結果(java ShareNothing.java を5回。8コア16スレッド)
-  1. SimpleDateFormat を共有: 結果が違った回数 130882〜137272、例外 9388〜13639(160000回中)
+  1. SimpleDateFormat を共有: 結果が違った回数 112379〜120340、例外 18340〜19696(160000回中)
      スレッドごと、DateTimeFormatter: 違った回数・例外は5回とも {(0, 0)}
-  3. 50,000,000回の読み取り: ThreadLocal 258〜305 ミリ秒、ScopedValue 120〜155 ミリ秒
-  4. 共有変数で受け取れた個数(100万個中): [95666, 103187, 177073, 191580, 228271]
-  5. 50,000件追加: synchronizedList 0.4〜0.5 ミリ秒、CopyOnWriteArrayList 626.0〜739.1 ミリ秒
+  3. runWithUser の外の値は5回とも null、例外で抜けた後も5回とも null。InheritableThreadLocal は5回とも alice、alice、bob
+  4. 共有変数で受け取れた個数(100万個中): [71697, 75868, 78652, 95215, 97501]
+  5. 50,000件追加: synchronizedList 0.5〜0.7 ミリ秒、CopyOnWriteArrayList 623.7〜648.1 ミリ秒

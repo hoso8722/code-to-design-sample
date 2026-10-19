@@ -51,10 +51,6 @@
                 <configuration>
                     <source>${javac.target}</source>
                     <target>${javac.target}</target>
-                    <!-- JDK 23 以降は、既定ではアノテーション処理が動かないため、JCStress のテスト一覧の生成に必要 -->
-                    <compilerArgs>
-                        <arg>-proc:full</arg>
-                    </compilerArgs>
                 </configuration>
             </plugin>
 
