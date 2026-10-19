@@ -1,6 +1,6 @@
 $ java ImmutableList.java
 Exception in thread "main" java.lang.UnsupportedOperationException
-	at java.base/java.util.ImmutableCollections.uoe(ImmutableCollections.java:159)
-	at java.base/java.util.ImmutableCollections$AbstractImmutableCollection.add(ImmutableCollections.java:164)
+	at java.base/java.util.ImmutableCollections.uoe(ImmutableCollections.java:142)
+	at java.base/java.util.ImmutableCollections$AbstractImmutableCollection.add(ImmutableCollections.java:147)
 	at ImmutableList.main(ImmutableList.java:7)
 (終了コード: 1)

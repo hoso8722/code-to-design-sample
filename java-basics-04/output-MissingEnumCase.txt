@@ -1,7 +1,7 @@
 $ java MissingEnumCase.java
-MissingEnumCase.java:6: error: the switch expression does not cover all possible input values
-    boolean holiday = switch (day) {
-                      ^
+MissingEnumCase.java:7: error: the switch expression does not cover all possible input values
+        boolean holiday = switch (day) {
+                          ^
 1 error
 error: compilation failed
 (終了コード: 1)

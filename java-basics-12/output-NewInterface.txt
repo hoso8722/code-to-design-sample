@@ -1,5 +1,5 @@
 $ java NewInterface.java
-NewInterface.java:8: error: Shape is abstract; cannot be instantiated
+NewInterface.java:4: error: Shape is abstract; cannot be instantiated
         Shape shape = new Shape();
                       ^
 1 error

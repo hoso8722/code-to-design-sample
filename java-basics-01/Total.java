@@ -1,6 +1,8 @@
 // 実行: java Total.java
-void main() {
-    int price = 1000;
-    int tax = price / 10;
-    IO.println(price + tax);
+public class Total {
+    public static void main(String[] args) {
+        int price = 1000;
+        int tax = price / 10;
+        System.out.println(price + tax);
+    }
 }

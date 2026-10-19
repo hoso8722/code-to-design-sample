@@ -1,4 +1,6 @@
 // 検証しない: コンパイルエラーを見せるための、わざと間違えたコード
-void main() {
-    int[] scores = new int[3] {80, 65, 90};
+public class BadInit {
+    public static void main(String[] args) {
+        int[] scores = new int[3] {80, 65, 90};
+    }
 }

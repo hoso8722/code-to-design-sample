@@ -1,4 +1,15 @@
 // 実行: java ThisKeyword.java
+public class ThisKeyword {
+    public static void main(String[] args) {
+        Counter c = new Counter(0);
+        c.increment().increment().increment();     // return this で、続けて呼べる
+        System.out.println("Counter: " + c.count);
+
+        Wrong w = new Wrong(10);
+        System.out.println("this を付け忘れたときのフィールドの値: " + w.value);
+    }
+}
+
 class Counter {
     int count;
 
@@ -17,16 +28,5 @@ class Wrong {
 
     Wrong(int value) {
         value = value;        // 引数 value に引数 value を代入している(フィールドには入らない)
-    }
-}
-
-public class ThisKeyword {
-    public static void main(String[] args) {
-        Counter c = new Counter(0);
-        c.increment().increment().increment();     // return this で、続けて呼べる
-        System.out.println("Counter: " + c.count);
-
-        Wrong w = new Wrong(10);
-        System.out.println("this を付け忘れたときのフィールドの値: " + w.value);
     }
 }

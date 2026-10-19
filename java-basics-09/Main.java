@@ -1,4 +1,18 @@
 // 実行: java Main.java
+public class Main {
+    public static void main(String[] args) {
+        Student tanaka = new Student("田中", 75);
+        Student suzuki = new Student("鈴木", 55);
+
+        System.out.println(tanaka.describe());
+        System.out.println(suzuki.describe());
+
+        tanaka.score = 40;    // フィールドを書き換える
+        System.out.println("田中さんの点数を40にした後: " + tanaka.describe());
+        System.out.println("鈴木さんは変わらない: " + suzuki.describe());
+    }
+}
+
 // Student クラスを作り、同じファイルの main から使う
 class Student {
     String name;      // フィールド: オブジェクトが持つデータ
@@ -17,19 +31,5 @@ class Student {
 
     String describe() {
         return name + " さん: " + score + "点(" + (isPassed() ? "合格" : "不合格") + ")";
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Student tanaka = new Student("田中", 75);
-        Student suzuki = new Student("鈴木", 55);
-
-        System.out.println(tanaka.describe());
-        System.out.println(suzuki.describe());
-
-        tanaka.score = 40;    // フィールドを書き換える
-        System.out.println("田中さんの点数を40にした後: " + tanaka.describe());
-        System.out.println("鈴木さんは変わらない: " + suzuki.describe());
     }
 }

@@ -3,20 +3,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-record Student(String name, int score) {
-    boolean isPassed() {
-        return score >= 60;
-    }
-
-    String grade() {
-        if (score >= 90) return "A";
-        if (score >= 80) return "B";
-        if (score >= 60) return "C";
-        return "D";
-    }
-}
-
 public class GradeReport {
     // 「名前,点数」の形式の行を Student に変換する。形式が違う場合は例外を投げる
     static Student parse(String line) {
@@ -68,5 +54,18 @@ public class GradeReport {
         System.out.println("最高点: " + top + " " + max + "点");
         System.out.println("成績ごとの人数: " + new java.util.TreeMap<>(gradeCount));
         System.out.println("不合格: " + failed);
+    }
+}
+
+record Student(String name, int score) {
+    boolean isPassed() {
+        return score >= 60;
+    }
+
+    String grade() {
+        if (score >= 90) return "A";
+        if (score >= 80) return "B";
+        if (score >= 60) return "C";
+        return "D";
     }
 }

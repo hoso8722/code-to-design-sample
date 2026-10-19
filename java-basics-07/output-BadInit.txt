@@ -1,7 +1,7 @@
 $ java BadInit.java
-BadInit.java:3: error: array creation with both dimension expression and initialization is illegal
-    int[] scores = new int[3] {80, 65, 90};
-                              ^
+BadInit.java:4: error: array creation with both dimension expression and initialization is illegal
+        int[] scores = new int[3] {80, 65, 90};
+                                  ^
 1 error
 error: compilation failed
 (終了コード: 1)

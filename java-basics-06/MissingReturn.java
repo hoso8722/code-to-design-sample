@@ -1,10 +1,12 @@
 // 検証しない: コンパイルエラーを見せるための、わざと間違えたコード
-int grade(int score) {
-    if (score >= 60) {
-        return 1;
+public class MissingReturn {
+    static int grade(int score) {
+        if (score >= 60) {
+            return 1;
+        }
     }
-}
 
-void main() {
-    IO.println(grade(80));
+    public static void main(String[] args) {
+        System.out.println(grade(80));
+    }
 }

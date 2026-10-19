@@ -1,7 +1,7 @@
 $ java NotExhaustive.java
-NotExhaustive.java:4: error: the switch expression does not cover all possible input values
-    String grade = switch (score / 10) {
-                   ^
+NotExhaustive.java:5: error: the switch expression does not cover all possible input values
+        String grade = switch (score / 10) {
+                       ^
 1 error
 error: compilation failed
 (終了コード: 1)

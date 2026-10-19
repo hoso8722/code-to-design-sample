@@ -1,4 +1,11 @@
 // 実行: java TeacherExample.java
+public class TeacherExample {
+    public static void main(String[] args) {
+        Teacher teacher = new Teacher("佐藤", "数学");
+        System.out.println(teacher.introduce());
+    }
+}
+
 class Teacher {
     String name;
     String subject;
@@ -10,12 +17,5 @@ class Teacher {
 
     String introduce() {
         return subject + "担当の" + name + "です";
-    }
-}
-
-public class TeacherExample {
-    public static void main(String[] args) {
-        Teacher teacher = new Teacher("佐藤", "数学");
-        System.out.println(teacher.introduce());
     }
 }

@@ -1,7 +1,7 @@
 $ java LengthWithoutParens.java
-LengthWithoutParens.java:4: error: cannot find symbol
-    IO.println(s.length);
-                ^
+LengthWithoutParens.java:5: error: cannot find symbol
+        System.out.println(s.length);
+                            ^
   symbol:   variable length
   location: variable s of type String
 1 error

@@ -1,4 +1,12 @@
 // 実行: java AutoId.java
+public class AutoId {
+    public static void main(String[] args) {
+        System.out.println(new Student("田中").describe());
+        System.out.println(new Student("鈴木").describe());
+        System.out.println(new Student("佐藤").describe());
+    }
+}
+
 class Student {
     private static int nextId = 1;      // 次に配る学籍番号。全員で共有する
 
@@ -12,13 +20,5 @@ class Student {
 
     String describe() {
         return "No." + id + " " + name;
-    }
-}
-
-public class AutoId {
-    public static void main(String[] args) {
-        System.out.println(new Student("田中").describe());
-        System.out.println(new Student("鈴木").describe());
-        System.out.println(new Student("佐藤").describe());
     }
 }

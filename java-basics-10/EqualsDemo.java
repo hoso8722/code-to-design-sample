@@ -1,4 +1,19 @@
 // 実行: java EqualsDemo.java
+public class EqualsDemo {
+    public static void main(String[] args) {
+        PlainStudent p1 = new PlainStudent(1, "田中");
+        PlainStudent p2 = new PlainStudent(1, "田中");
+        System.out.println("equals を書いていない: p1.equals(p2) = " + p1.equals(p2));
+
+        StudentWithEquals s1 = new StudentWithEquals(1, "田中");
+        StudentWithEquals s2 = new StudentWithEquals(1, "田中(別のオブジェクト)");
+        System.out.println("equals を書いた: s1.equals(s2) = " + s1.equals(s2));
+        System.out.println("equals を書いても、s1 == s2 は " + (s1 == s2));
+
+        System.out.println("equals に null を渡す: " + s1.equals(null));
+    }
+}
+
 class PlainStudent {
     int id;
     String name;
@@ -28,20 +43,5 @@ class StudentWithEquals {
     @Override
     public int hashCode() {
         return Integer.hashCode(id);
-    }
-}
-
-public class EqualsDemo {
-    public static void main(String[] args) {
-        PlainStudent p1 = new PlainStudent(1, "田中");
-        PlainStudent p2 = new PlainStudent(1, "田中");
-        System.out.println("equals を書いていない: p1.equals(p2) = " + p1.equals(p2));
-
-        StudentWithEquals s1 = new StudentWithEquals(1, "田中");
-        StudentWithEquals s2 = new StudentWithEquals(1, "田中(別のオブジェクト)");
-        System.out.println("equals を書いた: s1.equals(s2) = " + s1.equals(s2));
-        System.out.println("equals を書いても、s1 == s2 は " + (s1 == s2));
-
-        System.out.println("equals に null を渡す: " + s1.equals(null));
     }
 }

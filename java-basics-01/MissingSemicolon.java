@@ -1,4 +1,6 @@
 // 検証しない: コンパイルエラーを見せるための、わざと間違えたコード
-void main() {
-    IO.println("こんにちは")
+public class MissingSemicolon {
+    public static void main(String[] args) {
+        System.out.println("こんにちは")
+    }
 }

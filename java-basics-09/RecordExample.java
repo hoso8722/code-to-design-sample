@@ -1,13 +1,4 @@
 // 実行: java RecordExample.java
-// 値を持つだけのクラスは、record で短く書ける
-record Point(int x, int y) {}
-
-record StudentRecord(String name, int score) {
-    boolean isPassed() {
-        return score >= 60;
-    }
-}
-
 public class RecordExample {
     public static void main(String[] args) {
         Point p = new Point(3, 4);
@@ -18,5 +9,14 @@ public class RecordExample {
         System.out.println(s + "、合格: " + s.isPassed());
 
         System.out.println("同じ値の record は equals で等しい: " + new Point(3, 4).equals(p));
+    }
+}
+
+// 値を持つだけのクラスは、record で短く書ける
+record Point(int x, int y) {}
+
+record StudentRecord(String name, int score) {
+    boolean isPassed() {
+        return score >= 60;
     }
 }

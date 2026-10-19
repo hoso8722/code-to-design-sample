@@ -1,5 +1,5 @@
 $ java NoDefaultConstructor.java
-NoDefaultConstructor.java:12: error: constructor Student in class Student cannot be applied to given types;
+NoDefaultConstructor.java:4: error: constructor Student in class Student cannot be applied to given types;
         Student s = new Student();
                     ^
   required: String

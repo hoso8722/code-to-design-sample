@@ -1,7 +1,7 @@
 $ java TooLarge.java
-TooLarge.java:3: error: integer number too large
-    long population = 8000000000;
-                      ^
+TooLarge.java:4: error: integer number too large
+        long population = 8000000000;
+                          ^
 1 error
 error: compilation failed
 (終了コード: 1)

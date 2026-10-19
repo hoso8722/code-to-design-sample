@@ -1,7 +1,7 @@
 $ java BadOperand.java
-BadOperand.java:4: error: bad operand types for binary operator '<='
-    boolean inRange = 0 <= score <= 100;
-                                 ^
+BadOperand.java:5: error: bad operand types for binary operator '<='
+        boolean inRange = 0 <= score <= 100;
+                                     ^
   first type:  boolean
   second type: int
 1 error

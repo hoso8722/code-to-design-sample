@@ -1,5 +1,7 @@
 // 実行: java Greeting.java
-void main() {
-    IO.println("学生の名前: 田中");
-    IO.println("点数: 75");
+public class Greeting {
+    public static void main(String[] args) {
+        System.out.println("学生の名前: 田中");
+        System.out.println("点数: 75");
+    }
 }

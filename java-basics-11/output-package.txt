@@ -4,6 +4,46 @@ $ java -cp out school.app.Main
 鈴木 の合否: false
 平均点: 65.0
 $ java src/school/app/Main.java
-田中 の合否: true
-鈴木 の合否: false
-平均点: 65.0
+src/school/app/Main.java:4: error: package school.model does not exist
+import school.model.Student;
+                   ^
+src/school/app/Main.java:5: error: package school.util does not exist
+import school.util.Grades;
+                  ^
+src/school/app/Main.java:6: error: package school.util does not exist
+import school.util.Stats;
+                  ^
+src/school/app/Main.java:10: error: cannot find symbol
+        Student tanaka = new Student("田中", 75);
+        ^
+  symbol:   class Student
+  location: class Main
+src/school/app/Main.java:10: error: cannot find symbol
+        Student tanaka = new Student("田中", 75);
+                             ^
+  symbol:   class Student
+  location: class Main
+src/school/app/Main.java:11: error: cannot find symbol
+        System.out.println(tanaka.name() + " の合否: " + Grades.isPassed(tanaka));
+                                                      ^
+  symbol:   variable Grades
+  location: class Main
+src/school/app/Main.java:14: error: package school.model does not exist
+        school.model.Student suzuki = new school.model.Student("鈴木", 55);
+                    ^
+src/school/app/Main.java:14: error: package school.model does not exist
+        school.model.Student suzuki = new school.model.Student("鈴木", 55);
+                                                      ^
+src/school/app/Main.java:15: error: cannot find symbol
+        System.out.println(suzuki.name() + " の合否: " + Grades.isPassed(suzuki));
+                                                      ^
+  symbol:   variable Grades
+  location: class Main
+src/school/app/Main.java:18: error: cannot find symbol
+        System.out.println("平均点: " + Stats.average(scores));
+                                     ^
+  symbol:   variable Stats
+  location: class Main
+10 errors
+error: compilation failed
+(終了コード: 1)

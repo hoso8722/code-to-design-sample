@@ -1,9 +1,11 @@
 // 検証しない: コンパイルエラーを見せるための、わざと間違えたコード
-int add(int a, int b) {
-    return a + b;
-}
+public class WrongArguments {
+    static int add(int a, int b) {
+        return a + b;
+    }
 
-void main() {
-    IO.println(add(1));
-    IO.println(add("1", 2));
+    public static void main(String[] args) {
+        System.out.println(add(1));
+        System.out.println(add("1", 2));
+    }
 }

@@ -1,15 +1,17 @@
 // 実行: java StringEquality.java
-void main() {
-    String a = "java";
-    String b = "java";
-    String c = new String("java");
+public class StringEquality {
+    public static void main(String[] args) {
+        String a = "java";
+        String b = "java";
+        String c = new String("java");
 
-    IO.println("a == b : " + (a == b));
-    IO.println("a == c : " + (a == c));
-    IO.println("a.equals(c) : " + a.equals(c));
-    IO.println("c.intern() == a : " + (c.intern() == a));
+        System.out.println("a == b : " + (a == b));
+        System.out.println("a == c : " + (a == c));
+        System.out.println("a.equals(c) : " + a.equals(c));
+        System.out.println("c.intern() == a : " + (c.intern() == a));
 
-    int x = 1000;
-    int y = 1000;
-    IO.println("基本型 x == y : " + (x == y));
+        int x = 1000;
+        int y = 1000;
+        System.out.println("基本型 x == y : " + (x == y));
+    }
 }

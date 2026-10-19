@@ -1,7 +1,7 @@
 $ java BrokenTotal.java
-BrokenTotal.java:4: error: ';' expected
-    int tax = price / 10
-                        ^
+BrokenTotal.java:5: error: ';' expected
+        int tax = price / 10
+                            ^
 1 error
 error: compilation failed
 (終了コード: 1)

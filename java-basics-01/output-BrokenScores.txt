@@ -3,5 +3,5 @@ $ java BrokenScores.java
 65
 90
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-	at BrokenScores.main(BrokenScores.java:5)
+	at BrokenScores.main(BrokenScores.java:6)
 (終了コード: 1)

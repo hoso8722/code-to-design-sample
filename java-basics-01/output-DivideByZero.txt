@@ -1,4 +1,4 @@
 $ java DivideByZero.java
 Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at DivideByZero.main(DivideByZero.java:5)
+	at DivideByZero.main(DivideByZero.java:6)
 (終了コード: 1)

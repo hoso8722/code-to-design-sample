@@ -1,13 +1,13 @@
 $ java WrongArguments.java
-WrongArguments.java:7: error: method add in class WrongArguments cannot be applied to given types;
-    IO.println(add(1));
-               ^
+WrongArguments.java:8: error: method add in class WrongArguments cannot be applied to given types;
+        System.out.println(add(1));
+                           ^
   required: int,int
   found:    int
   reason: actual and formal argument lists differ in length
-WrongArguments.java:8: error: method add in class WrongArguments cannot be applied to given types;
-    IO.println(add("1", 2));
-               ^
+WrongArguments.java:9: error: method add in class WrongArguments cannot be applied to given types;
+        System.out.println(add("1", 2));
+                           ^
   required: int,int
   found:    String,int
   reason: argument mismatch; String cannot be converted to int

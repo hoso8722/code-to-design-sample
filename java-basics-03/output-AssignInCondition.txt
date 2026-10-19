@@ -1,7 +1,7 @@
 $ java AssignInCondition.java
-AssignInCondition.java:4: error: incompatible types: int cannot be converted to boolean
-    if (score = 100) {
-              ^
+AssignInCondition.java:5: error: incompatible types: int cannot be converted to boolean
+        if (score = 100) {
+                  ^
 1 error
 error: compilation failed
 (終了コード: 1)

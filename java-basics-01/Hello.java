@@ -1,4 +1,6 @@
 // 実行: java Hello.java
-void main() {
-    IO.println("こんにちは、Java");
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("こんにちは、Java");
+    }
 }

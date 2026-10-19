@@ -1,7 +1,7 @@
 $ java MissingSemicolon.java
-MissingSemicolon.java:3: error: ';' expected
-    IO.println("こんにちは")
-                       ^
+MissingSemicolon.java:4: error: ';' expected
+        System.out.println("こんにちは")
+                                   ^
 1 error
 error: compilation failed
 (終了コード: 1)

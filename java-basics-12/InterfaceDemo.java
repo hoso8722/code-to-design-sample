@@ -1,4 +1,24 @@
 // 実行: java InterfaceDemo.java
+public class InterfaceDemo {
+    public static void main(String[] args) {
+        // interface の型の変数に、異なる実装のオブジェクトを入れられる
+        Shape[] shapes = {new Circle(1.0), new Rectangle(2.0, 3.0)};
+        double total = 0;
+        for (Shape shape : shapes) {
+            System.out.println(shape.describe());
+            total += shape.area();
+        }
+        System.out.println("面積の合計: " + String.format("%.2f", total));
+
+        // 型を調べて、その型として扱う(パターンマッチング)
+        for (Shape shape : shapes) {
+            if (shape instanceof Circle c) {
+                System.out.println("円を見つけた: " + c.area());
+            }
+        }
+    }
+}
+
 interface Shape {
     double area();                       // 実装のないメソッド(約束)
 
@@ -32,25 +52,5 @@ class Rectangle implements Shape {
     @Override
     public double area() {
         return width * height;
-    }
-}
-
-public class InterfaceDemo {
-    public static void main(String[] args) {
-        // interface の型の変数に、異なる実装のオブジェクトを入れられる
-        Shape[] shapes = {new Circle(1.0), new Rectangle(2.0, 3.0)};
-        double total = 0;
-        for (Shape shape : shapes) {
-            System.out.println(shape.describe());
-            total += shape.area();
-        }
-        System.out.println("面積の合計: " + String.format("%.2f", total));
-
-        // 型を調べて、その型として扱う(パターンマッチング)
-        for (Shape shape : shapes) {
-            if (shape instanceof Circle c) {
-                System.out.println("円を見つけた: " + c.area());
-            }
-        }
     }
 }

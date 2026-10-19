@@ -1,6 +1,6 @@
 5回実行した結果(java Builder.java。+ による連結と StringBuilder の時間)
-+ で連結: 30 ミリ秒、StringBuilder: 0.688262 ミリ秒
-+ で連結: 36 ミリ秒、StringBuilder: 1.254258 ミリ秒
-+ で連結: 29 ミリ秒、StringBuilder: 0.690287 ミリ秒
-+ で連結: 30 ミリ秒、StringBuilder: 0.586191 ミリ秒
-+ で連結: 31 ミリ秒、StringBuilder: 0.837044 ミリ秒
++ で連結: 26 ミリ秒、StringBuilder: 0.766472 ミリ秒
++ で連結: 29 ミリ秒、StringBuilder: 0.636343 ミリ秒
++ で連結: 27 ミリ秒、StringBuilder: 0.596735 ミリ秒
++ で連結: 26 ミリ秒、StringBuilder: 0.809755 ミリ秒
++ で連結: 26 ミリ秒、StringBuilder: 0.655236 ミリ秒

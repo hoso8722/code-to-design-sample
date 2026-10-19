@@ -1,4 +1,11 @@
 // 実行: java AbstractClassDemo.java
+public class AbstractClassDemo {
+    public static void main(String[] args) {
+        Report report = new ScoreReport();
+        System.out.println(report.render());
+    }
+}
+
 abstract class Report {
     // 共通の流れは、親が実装する
     String render() {
@@ -20,12 +27,5 @@ class ScoreReport extends Report {
     @Override
     String body() {
         return "田中 75点";
-    }
-}
-
-public class AbstractClassDemo {
-    public static void main(String[] args) {
-        Report report = new ScoreReport();
-        System.out.println(report.render());
     }
 }

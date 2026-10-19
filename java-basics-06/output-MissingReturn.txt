@@ -1,7 +1,7 @@
 $ java MissingReturn.java
-MissingReturn.java:6: error: missing return statement
-}
-^
+MissingReturn.java:7: error: missing return statement
+    }
+    ^
 1 error
 error: compilation failed
 (終了コード: 1)

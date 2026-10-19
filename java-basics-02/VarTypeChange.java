@@ -1,6 +1,8 @@
 // 検証しない: コンパイルエラーを見せるための、わざと間違えたコード
-void main() {
-    var count = 10;
-    count = "ten";
-    IO.println(count);
+public class VarTypeChange {
+    public static void main(String[] args) {
+        var count = 10;
+        count = "ten";
+        System.out.println(count);
+    }
 }

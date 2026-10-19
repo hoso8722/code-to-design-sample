@@ -1,10 +1,4 @@
 // 実行: java ThrowException.java
-class InvalidScoreException extends Exception {          // 自作の検査例外
-    InvalidScoreException(String message) {
-        super(message);
-    }
-}
-
 public class ThrowException {
     // throws: この例外を投げうることを宣言する(検査例外は、宣言か処理が必要)
     static void checkScore(int score) throws InvalidScoreException {
@@ -33,5 +27,11 @@ public class ThrowException {
         } catch (IllegalArgumentException e) {
             System.out.println("非検査例外を捕まえた: " + e.getMessage());
         }
+    }
+}
+
+class InvalidScoreException extends Exception {          // 自作の検査例外
+    InvalidScoreException(String message) {
+        super(message);
     }
 }

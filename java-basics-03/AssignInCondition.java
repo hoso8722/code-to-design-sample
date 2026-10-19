@@ -1,7 +1,9 @@
 // 検証しない: コンパイルエラーを見せるための、わざと間違えたコード
-void main() {
-    int score = 80;
-    if (score = 100) {
-        IO.println("満点");
+public class AssignInCondition {
+    public static void main(String[] args) {
+        int score = 80;
+        if (score = 100) {
+            System.out.println("満点");
+        }
     }
 }

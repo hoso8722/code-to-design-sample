@@ -1,7 +1,7 @@
 $ java VarTypeChange.java
-VarTypeChange.java:4: error: incompatible types: String cannot be converted to int
-    count = "ten";
-            ^
+VarTypeChange.java:5: error: incompatible types: String cannot be converted to int
+        count = "ten";
+                ^
 1 error
 error: compilation failed
 (終了コード: 1)

@@ -1,3 +1,0 @@
-$ java MethodsClassic.java
-3 + 4 = 7
-1000円の税込み価格: 1100

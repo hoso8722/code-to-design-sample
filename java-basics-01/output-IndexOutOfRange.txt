@@ -1,5 +1,5 @@
 $ java IndexOutOfRange.java
 先に表示される行
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-	at IndexOutOfRange.main(IndexOutOfRange.java:5)
+	at IndexOutOfRange.main(IndexOutOfRange.java:6)
 (終了コード: 1)

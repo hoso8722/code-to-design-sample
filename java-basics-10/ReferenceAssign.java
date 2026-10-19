@@ -1,14 +1,4 @@
 // 実行: java ReferenceAssign.java
-class Student {
-    String name;
-    int score;
-
-    Student(String name, int score) {
-        this.name = name;
-        this.score = score;
-    }
-}
-
 public class ReferenceAssign {
     public static void main(String[] args) {
         // 基本型: 代入は、値のコピー
@@ -31,5 +21,15 @@ public class ReferenceAssign {
         // 変数を別のオブジェクトに向け直しても、もう一方は変わらない
         b = new Student("鈴木", 60);
         System.out.println("b を向け直したあと: a.name = " + a.name + "、b.name = " + b.name);
+    }
+}
+
+class Student {
+    String name;
+    int score;
+
+    Student(String name, int score) {
+        this.name = name;
+        this.score = score;
     }
 }

@@ -3,19 +3,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-class Box<T> {                           // T: 使うときに決まる型
-    private final T value;
-
-    Box(T value) {
-        this.value = value;
-    }
-
-    T get() {
-        return value;
-    }
-}
-
 public class GenericsDemo {
     // ジェネリクスのメソッド
     static <T> T first(List<T> list) {
@@ -40,5 +27,17 @@ public class GenericsDemo {
 
         System.out.println("first(names) = " + first(names));
         System.out.println("first(List.of(1, 2, 3)) = " + first(List.of(1, 2, 3)));
+    }
+}
+
+class Box<T> {                           // T: 使うときに決まる型
+    private final T value;
+
+    Box(T value) {
+        this.value = value;
+    }
+
+    T get() {
+        return value;
     }
 }

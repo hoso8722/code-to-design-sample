@@ -1,7 +1,7 @@
 $ java UndefinedVariable.java
-UndefinedVariable.java:4: error: cannot find symbol
-    IO.println(prce);
-               ^
+UndefinedVariable.java:5: error: cannot find symbol
+        System.out.println(prce);
+                           ^
   symbol:   variable prce
   location: class UndefinedVariable
 1 error

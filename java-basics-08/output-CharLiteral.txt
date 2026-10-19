@@ -1,7 +1,7 @@
 $ java CharLiteral.java
-CharLiteral.java:3: error: incompatible types: String cannot be converted to char
-    char c = "a";
-             ^
+CharLiteral.java:4: error: incompatible types: String cannot be converted to char
+        char c = "a";
+                 ^
 1 error
 error: compilation failed
 (終了コード: 1)
