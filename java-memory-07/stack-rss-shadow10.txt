@@ -1,8 +1,8 @@
-platform,4000,10,104,1
-stacks=4025 total_rss_kb=65668
-    12 KB   3431 本
-    48 KB    458 本
-    16 KB    102 本
-    20 KB     11 本
-    32 KB      7 本
-     8 KB      7 本
+platform,4000,10,100,1
+stacks=4027 total_rss_kb=66780
+    12 KB   3423 本
+    48 KB    456 本
+    16 KB    104 本
+    20 KB     12 本
+     8 KB      8 本
+    24 KB      6 本

@@ -18,7 +18,8 @@ const gcs = [
   { id: "serial", label: "Serial" },
   { id: "parallel", label: "Parallel" },
   { id: "g1", label: "G1" },
-  { id: "zgc", label: "ZGC" },
+  { id: "zgc", label: "ZGC（世代別でない）" },
+  { id: "zgcgen", label: "ZGC（世代別）" },
 ];
 const bench = csv("gc-bench.csv");
 const pauses = csv("pauses.csv");
@@ -39,7 +40,7 @@ writeSvg(
   stackedBarChart({
     title: "同じ処理にかかった時間とその内訳（ヒープ1GB・CPU 4）",
     unit: "秒",
-    labelWidth: 130,
+    labelWidth: 170,
     format: (v) => fmt(v),
     segments: [
       { name: "Safepoint停止", slot: 2 },
@@ -60,7 +61,7 @@ writeSvg(
   hBarChart({
     title: "1回のSafepoint停止の最大（3回の平均）",
     unit: "ミリ秒",
-    labelWidth: 130,
+    labelWidth: 170,
     xTicks: [0, 100, 200, 300, 400, 500],
     rows: summary.map((s) => ({ label: s.label, value: s.pauseMax, valueLabel: s.pauseMax < 1 ? `${fmt(s.pauseMax, 2)} ms` : `${fmt(s.pauseMax)} ms`, slot: 1 })),
   })

@@ -16,6 +16,7 @@ gc_option() {
     parallel) echo "-XX:+UseParallelGC";;
     g1) echo "-XX:+UseG1GC";;
     zgc) echo "-XX:+UseZGC";;
+    zgcgen) echo "-XX:+UseZGC -XX:+ZGenerational";;   # JDK 21 では、世代別ZGCを選ぶ指定
   esac
 }
 # 確保待ち(Allocation Stall)の合計ミリ秒
@@ -25,7 +26,7 @@ stall_count() { grep -c 'Allocation Stall' "$1" || true; }
 # 1. 4つのGC × 3回 (--memory=2g --cpus=4, ヒープ1GB)
 echo "gc,run,elapsed_ms,peak_rss_mb" > gc-bench.csv
 : > stalls.txt
-for gc in serial parallel g1 zgc; do
+for gc in serial parallel g1 zgc zgcgen; do
   for run in 1 2 3; do
     out=$(podman run --rm --memory=2g --cpus=4 -v $JDK:/jdk:ro -v $WORK/app:/app $IMAGE \
       /jdk/bin/java -Xms1g -Xmx1g $(gc_option $gc) \
@@ -33,14 +34,14 @@ for gc in serial parallel g1 zgc; do
     echo "$gc,$run,$(echo "$out" | sed -n 's/.*elapsed_ms=\([0-9]*\).*/\1/p'),$(echo "$out" | sed -n 's/.*peak_rss_mb=\([0-9]*\).*/\1/p')" >> gc-bench.csv
     cp "$WORK/app/safepoint.log" logs/safepoint-$gc-$run.log
     cp "$WORK/app/gc.log" logs/gc-$gc-$run.log
-    [ $gc = zgc ] && echo "$gc-$run stall_total_ms=$(stall_ms logs/gc-$gc-$run.log) count=$(stall_count logs/gc-$gc-$run.log)" >> stalls.txt
+    case $gc in zgc|zgcgen) echo "$gc-$run stall_total_ms=$(stall_ms logs/gc-$gc-$run.log) count=$(stall_count logs/gc-$gc-$run.log)" >> stalls.txt;; esac
   done
 done
 python3 parse-safepoints.py safepoint > pauses.csv
 
 # 2. ヒープに余裕を持たせる (--memory=4g, ヒープ3GB, G1・ZGC・Parallel × 3回)
 echo "gc,run,elapsed_ms,peak_rss_mb" > gc-bench-3g.csv
-for gc in g1 zgc parallel; do
+for gc in g1 zgc zgcgen parallel; do
   for run in 1 2 3; do
     out=$(podman run --rm --memory=4g --cpus=4 -v $JDK:/jdk:ro -v $WORK/app:/app $IMAGE \
       /jdk/bin/java -Xms3g -Xmx3g $(gc_option $gc) \
@@ -99,7 +100,7 @@ done
 
 # 6. ヒープ全体に書き込んだときのRSS(-Xms1g -Xmx1g -XX:+AlwaysPreTouch)
 : > zgc-rss.txt
-for gc in zgc g1; do
+for gc in zgc zgcgen g1; do
   podman run --rm --memory=2g --cpus=4 -v $JDK:/jdk:ro -v $WORK/app:/app $IMAGE \
     sh -c "/jdk/bin/java -Xms1g -Xmx1g -XX:+AlwaysPreTouch $(gc_option $gc) -cp /app Idle & sleep 4; echo -n '$(gc_option $gc): '; grep -E 'VmRSS|RssAnon|RssFile|RssShmem' /proc/\$!/status | tr -s ' \t' ' ' | tr '\n' ' '; echo" >> zgc-rss.txt
 done

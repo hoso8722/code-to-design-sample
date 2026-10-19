@@ -1,6 +1,6 @@
 phase,classes,metaspace_kb,class_space_kb,loaded_classes
-define,0,635,50,870
-define,2000,3674,1115,2980
-define,4000,6503,2162,4980
-define,6000,9332,3209,6980
+define,0,707,60,825
+define,2000,3764,1107,2926
+define,4000,6578,2138,4926
+define,6000,9398,3170,6926
 Exception in thread "main" java.lang.OutOfMemoryError: Metaspace

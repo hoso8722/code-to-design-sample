@@ -3,9 +3,8 @@ max heap = 371 MB
 heap: 300 MB
 direct: 50 MB
 direct: 100 MB
-direct: 150 MB
-Killed
 exit code: 137
+Killed
 events: low 0
 events: high 0
 events: max 0
@@ -30,43 +29,40 @@ max heap = 371 MB
 heap: 300 MB
 direct: 50 MB
 direct: 100 MB
-direct: 150 MB
-done
-exit code: 0
+exit code: 137
+Killed
 events: low 0
 events: high 0
 events: max 0
 events: oom 0
-events: oom_kill 0
+events: oom_kill 1
 events: oom_group_kill 0
-podman: ExitCode=0 OOMKilled=false
+podman: ExitCode=137 OOMKilled=false
 == --memory=512m --cpus=1 -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB (run 2)
 max heap = 371 MB
 heap: 300 MB
 direct: 50 MB
 direct: 100 MB
-direct: 150 MB
-done
-exit code: 0
+Killed
+exit code: 137
 events: low 0
 events: high 0
 events: max 0
 events: oom 0
-events: oom_kill 0
+events: oom_kill 1
 events: oom_group_kill 0
-podman: ExitCode=0 OOMKilled=false
+podman: ExitCode=137 OOMKilled=false
 == --memory=512m --cpus=1 -XX:MaxRAMPercentage=75, heap 300MB + direct 150MB (run 3)
 max heap = 371 MB
 heap: 300 MB
 direct: 50 MB
 direct: 100 MB
-direct: 150 MB
-done
-exit code: 0
+exit code: 137
+Killed
 events: low 0
 events: high 0
 events: max 0
 events: oom 0
-events: oom_kill 0
+events: oom_kill 1
 events: oom_group_kill 0
-podman: ExitCode=0 OOMKilled=false
+podman: ExitCode=137 OOMKilled=false

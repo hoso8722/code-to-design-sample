@@ -43,4 +43,7 @@ java -Xlog:gc+ergo+heap=debug -cp "$WORK" HeapVsRss | grep -E "resize by [1-9]|E
 # 6. ヒープを縮めたあと、メモリをOSに返すログ
 java -Xlog:gc*=debug -cp "$WORK" HeapVsRss | grep -E "^(起動直後|256MB保持|GC直後|1秒後)|Uncommit|Uncommittable" > uncommit-log.txt
 
+# 7. 保持するデータを増やしていく間の、ヒープを広げた記録
+java -Xlog:gc+ergo+heap=debug -cp "$WORK" AllocSteps | grep -E "Expand the heap" > heap-expansion-steps.txt
+
 rm -rf "$WORK"

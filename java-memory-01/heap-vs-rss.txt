@@ -1,20 +1,20 @@
-起動直後       used=   3 MB  committed= 244 MB  max=3844 MB  RSS=  39 MB
-256MB保持    used= 265 MB  committed= 674 MB  max=3844 MB  RSS= 354 MB
-GC直後       used=   2 MB  committed=  34 MB  max=3844 MB  RSS= 354 MB
-1秒後        used=   2 MB  committed=  34 MB  max=3844 MB  RSS=  75 MB
+起動直後       used=   2 MB  committed= 244 MB  max=3844 MB  RSS=  37 MB
+256MB保持    used= 265 MB  committed= 732 MB  max=3844 MB  RSS= 348 MB
+GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 356 MB
+1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  68 MB
 
-起動直後       used=   3 MB  committed= 244 MB  max=3844 MB  RSS=  39 MB
-256MB保持    used= 267 MB  committed= 674 MB  max=3844 MB  RSS= 354 MB
-GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 354 MB
-1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  69 MB
+起動直後       used=   2 MB  committed= 244 MB  max=3844 MB  RSS=  37 MB
+256MB保持    used= 266 MB  committed= 732 MB  max=3844 MB  RSS= 348 MB
+GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 356 MB
+1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  68 MB
 
-起動直後       used=   3 MB  committed= 244 MB  max=3844 MB  RSS=  39 MB
-256MB保持    used= 266 MB  committed= 674 MB  max=3844 MB  RSS= 354 MB
-GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 355 MB
-1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  70 MB
+起動直後       used=   2 MB  committed= 244 MB  max=3844 MB  RSS=  37 MB
+256MB保持    used= 267 MB  committed= 732 MB  max=3844 MB  RSS= 352 MB
+GC直後       used=   2 MB  committed=  28 MB  max=3844 MB  RSS= 360 MB
+1秒後        used=   2 MB  committed=  28 MB  max=3844 MB  RSS=  68 MB
 
 --- source-file mode
-起動直後       used=  37 MB  committed= 244 MB  max=3844 MB  RSS= 118 MB
-256MB保持    used= 268 MB  committed= 728 MB  max=3844 MB  RSS= 388 MB
-GC直後       used=   4 MB  committed=  34 MB  max=3844 MB  RSS= 389 MB
-1秒後        used=   4 MB  committed=  34 MB  max=3844 MB  RSS= 121 MB
+起動直後       used=  12 MB  committed= 244 MB  max=3844 MB  RSS= 115 MB
+256MB保持    used= 273 MB  committed= 548 MB  max=3844 MB  RSS= 400 MB
+GC直後       used=   4 MB  committed=  48 MB  max=3844 MB  RSS= 400 MB
+1秒後        used=   4 MB  committed=  48 MB  max=3844 MB  RSS= 139 MB

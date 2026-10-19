@@ -1,12 +1,12 @@
 platform,0,10,3,0
 platform,0,10,2,0
-platform,0,10,3,0
+platform,0,10,1,0
 platform,100,10,13,0
+platform,100,10,12,0
 platform,100,10,13,0
-platform,100,10,13,0
+virtual,0,10,3,0
 virtual,0,10,2,0
-virtual,0,10,3,0
-virtual,0,10,3,0
+virtual,0,10,2,0
 virtual,100,10,5,0
 virtual,100,10,5,0
-virtual,100,10,4,0
+virtual,100,10,3,0

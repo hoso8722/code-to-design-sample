@@ -1,0 +1,3 @@
+[0.005s][debug][gc,ergo,heap] Expand the heap. requested expansion amount: 253755392B expansion amount: 253755392B
+[0.186s][debug][gc,ergo,heap] GC(4) Expand the heap. requested expansion amount: 511705088B expansion amount: 511705088B
+[0.433s][debug][gc,ergo,heap] GC(8) Expand the heap. requested expansion amount: 1305267404B expansion amount: 1306525696B

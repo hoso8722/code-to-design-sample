@@ -1,9 +1,9 @@
-1670086:
+161631:
  num     #instances         #bytes  class name (module)
 -------------------------------------------------------
-   1:        100000       67028608  jdk.internal.vm.StackChunk (java.base@25.0.4)
-   2:        100000       16800000  java.lang.VirtualThread (java.base@25.0.4)
-   3:        100000        4800000  java.lang.VirtualThread$VThreadContinuation (java.base@25.0.4)
-   4:        101240        3239680  java.util.concurrent.ConcurrentHashMap$Node (java.base@25.0.4)
-   5:        100001        3200032  java.util.concurrent.locks.AbstractQueuedSynchronizer$SharedNode (java.base@25.0.4)
-   6:        100000        2400000  ManyThreads$$Lambda/0x0000000025040210
+   1:        100000       84292240  jdk.internal.vm.StackChunk (java.base@21.0.12.1)
+   2:        100000       14400000  java.lang.VirtualThread (java.base@21.0.12.1)
+   3:        100000        4800000  java.lang.VirtualThread$VThreadContinuation (java.base@21.0.12.1)
+   4:        101415        3245280  java.util.concurrent.ConcurrentHashMap$Node (java.base@21.0.12.1)
+   5:        100001        3200032  java.util.concurrent.locks.AbstractQueuedSynchronizer$SharedNode (java.base@21.0.12.1)
+   6:        100000        2400000  ManyThreads$$Lambda/0x0000776da8000a08

@@ -1,4 +1,3 @@
-[0.364s][debug][gc,ergo,heap] GC(5) Heap expansion: short term pause time ratio 82.69% long term pause time ratio 26.52% threshold 1.00% pause time ratio 7.69% fully expanded false resize by 511705088B
-[0.364s][debug][gc,ergo,heap] GC(5) Expand the heap. requested expansion amount: 511705088B expansion amount: 511705088B
-[0.372s][debug][gc,ergo,heap] GC(4) Shrink the heap. requested shrinking amount: 61516459B aligned shrinking amount: 60817408B actual amount shrunk: 60817408B
-[0.544s][debug][gc,ergo,heap] GC(6) Shrink the heap. requested shrinking amount: 678778198B aligned shrinking amount: 677380096B actual amount shrunk: 677380096B
+[0.244s][debug][gc,ergo,heap] GC(4) Heap expansion: short term pause time ratio 71.51% long term pause time ratio 20.25% threshold 1.00% pause time ratio 7.69% fully expanded false resize by 511705088B
+[0.244s][debug][gc,ergo,heap] GC(4) Expand the heap. requested expansion amount: 511705088B expansion amount: 511705088B
+[0.462s][debug][gc,ergo,heap] GC(7) Shrink the heap. requested shrinking amount: 739595606B aligned shrinking amount: 738197504B actual amount shrunk: 738197504B

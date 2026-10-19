@@ -7,7 +7,7 @@ import { readCsv } from "../../scripts/lib/nmt.js";
 const DATA = "data/java-memory-03";
 const OUT = "site/public/images/java-memory-03";
 
-// 1. オブジェクトのレイアウト（JOL の出力 jol-layouts.txt と同じ並び。JDK 25・64bit・圧縮参照あり）
+// 1. オブジェクトのレイアウト（JOL の出力 jol-layouts.txt と同じ並び。JDK 21・64bit・圧縮参照あり）
 {
   type Cell = { from: number; size: number; label: string; kind: "header" | "field" | "pad" };
   const header: Cell[] = [
@@ -45,7 +45,7 @@ const OUT = "site/public/images/java-memory-03";
   const left = 160;
   const unit = 19; // 1バイトの幅
   const parts: string[] = [];
-  const title = "オブジェクトのレイアウト（JDK 25・64bit・圧縮参照あり）";
+  const title = "オブジェクトのレイアウト（JDK 21・64bit・圧縮参照あり）";
   parts.push(`<text x="0" y="18" class="title">${esc(title)}</text>`);
   const legendItems: [string, string][] = [["ヘッダ", "f1"], ["フィールド", "f3"], ["パディング（すき間）", "pad"]];
   let lx = 0;
