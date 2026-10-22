@@ -1,6 +1,6 @@
 $ java RateLimitDemo.java
 ## 1. 制限なし: 4桁のPIN(10,000通り)を、すべて試す
-  7392 回の試行で 7391 を発見(132.2 ms)
+  7392 回の試行で 7391 を発見(149.8 ms)
 ## 2. トークンバケット(容量5、1秒に1個補充)で、10ミリ秒ごとに試行する
   仮想の100秒間に、許された試行: 104 回(10,000通り全部を試すには、約 2.8 時間)
 ## 3. ロック方式: 利用者名だけで数える(5回失敗で15分ロック)
@@ -14,7 +14,7 @@ $ java RateLimitDemo.java
   uniform  alice  : ユーザー名かパスワードが違います
   uniform  nobody : ユーザー名かパスワードが違います
 ## 6. 応答時間の違い(各20回の平均)
-  verbose  alice  : 39.3 ms
+  verbose  alice  : 44.3 ms
   verbose  nobody : 0.0 ms
-  uniform  alice  : 39.4 ms
-  uniform  nobody : 41.0 ms
+  uniform  alice  : 35.7 ms
+  uniform  nobody : 34.5 ms

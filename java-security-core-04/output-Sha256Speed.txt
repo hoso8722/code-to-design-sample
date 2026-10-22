@@ -1,5 +1,5 @@
 $ java -cp target/classes:<依存のjar> example.Sha256Speed
-SHA-256を、1つのスレッドで、1秒間に計算できた回数: 5,376,178
+SHA-256を、1つのスレッドで、1秒間に計算できた回数: 4,787,461
 ## ソルトなし
   利用者A: ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
   利用者B: ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f

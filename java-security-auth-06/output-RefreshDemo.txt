@@ -5,15 +5,15 @@ $ java -cp target/classes:<依存のjar> example.RefreshDemo
   認可コード            : PT5M
   リフレッシュトークンの使い回し(既定): true
 ## 2. reuse-client(リフレッシュトークンを使い回す)
-  最初の取得                  : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…)
-  refresh1 で更新             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…) [同じ値]
-  refresh1 をもう一度使う     : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…)
-  refresh2 を使う             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン i3-3OZg7…)
+  最初の取得                  : 成功(アクセストークン eyJraWQi…, リフレッシュトークン TPoIJ66B…)
+  refresh1 で更新             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン TPoIJ66B…) [同じ値]
+  refresh1 をもう一度使う     : 成功(アクセストークン eyJraWQi…, リフレッシュトークン TPoIJ66B…)
+  refresh2 を使う             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン TPoIJ66B…)
 ## 2. rotate-client(リフレッシュトークンをローテーションする)
-  最初の取得                  : 成功(アクセストークン eyJraWQi…, リフレッシュトークン q4axNYHV…)
-  refresh1 で更新             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン X5txv4Jm…) [新しい値]
+  最初の取得                  : 成功(アクセストークン eyJraWQi…, リフレッシュトークン xvztIHBb…)
+  refresh1 で更新             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン eQXrR_sH…) [新しい値]
   refresh1 をもう一度使う     : 拒否 {"error":"invalid_grant"}
-  refresh2 を使う             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン XYFopiTz…)
+  refresh2 を使う             : 成功(アクセストークン eyJraWQi…, リフレッシュトークン Lzs71Xuy…)
 ## 3. 失効(revocation)
   失効前: introspection で active        : true
   リフレッシュトークンを失効した後
