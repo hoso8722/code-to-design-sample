@@ -1,5 +1,5 @@
 #!/bin/bash
-# 第8回の出力を集め直す。JAVA_HOME か PATH に JDK 25 を置いて、このフォルダの中で実行する
+# 第8回の出力を集め直す。JAVA_HOME か PATH に JDK 21 を置いて、このフォルダの中で実行する
 set -e
 cd "$(dirname "$0")"
 WORK=$(mktemp -d)

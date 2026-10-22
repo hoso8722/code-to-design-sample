@@ -1,5 +1,5 @@
 元のリストに追加したあと、ラップしたリストの大きさ: 3
 ラップしたリストへの追加: UnsupportedOperationException
-run 1: 5MBを1バイトずつ読む FileInputStream=7227 ms, BufferedInputStream で包む=58 ms (sum=0)
-run 2: 5MBを1バイトずつ読む FileInputStream=7244 ms, BufferedInputStream で包む=47 ms (sum=0)
-run 3: 5MBを1バイトずつ読む FileInputStream=7175 ms, BufferedInputStream で包む=45 ms (sum=0)
+run 1: 5MBを1バイトずつ読む FileInputStream=7519 ms, BufferedInputStream で包む=64 ms (sum=0)
+run 2: 5MBを1バイトずつ読む FileInputStream=7425 ms, BufferedInputStream で包む=66 ms (sum=0)
+run 3: 5MBを1バイトずつ読む FileInputStream=7412 ms, BufferedInputStream で包む=66 ms (sum=0)
