@@ -1,9 +1,9 @@
 $ java -cp target/classes:<依存のjar> example.CrossCutting   (所要時間の行は、実行のたびに変わる)
 1. 監査(@Audited)
   [監査] 貸出 引数=[sora, こころ] 結果=sora が「こころ」を借りた
-  [監査]   所要時間: 6 ms
+  [監査]   所要時間: 7 ms
   [監査] 削除 引数=[-1] 失敗=IllegalArgumentException: idが不正: -1
-  [監査]   所要時間: 9 ms
+  [監査]   所要時間: 7 ms
   呼び出し側にも、例外が届いた: idが不正: -1
 2. 再試行(@Retry): 冪等な処理
   [再試行] 1回目に失敗: 接続がタイムアウト(1回目)

@@ -1,11 +1,11 @@
 $ mvn test   (コンテキストの生成と、各テストクラスの所要時間だけを抜き出した。クラスの実行順は、実行のたびに変わることがある)
 [コンテキスト生成] 1個目
-Tests run: 1, Time elapsed: 3.394 s -- in example.MockBeanTest
+Tests run: 1, Time elapsed: 3.536 s -- in example.MockBeanTest
 [コンテキスト生成] 2個目
-Tests run: 1, Time elapsed: 0.316 s -- in example.FullContextTest
-Tests run: 1, Time elapsed: 0.006 s -- in example.PlainUnitTest
-Tests run: 1, Time elapsed: 0.037 s -- in example.MockBeanSameConfigTest
+Tests run: 1, Time elapsed: 0.456 s -- in example.FullContextTest
+Tests run: 1, Time elapsed: 0.011 s -- in example.PlainUnitTest
+Tests run: 1, Time elapsed: 0.039 s -- in example.MockBeanSameConfigTest
 [コンテキスト生成] 3個目
-Tests run: 1, Time elapsed: 0.446 s -- in example.MockBeanOtherConfigTest
+Tests run: 1, Time elapsed: 0.430 s -- in example.MockBeanOtherConfigTest
 Tests run: 5
 BUILD SUCCESS

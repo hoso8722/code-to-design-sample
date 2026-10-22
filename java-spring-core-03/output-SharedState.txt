@@ -1,4 +1,4 @@
 $ java -cp target/classes:<依存のjar> example.SharedState
 4スレッドが、10万回ずつ増やした(期待値は 400000)
-可変の状態(int):       227310
+可変の状態(int):       210321
 AtomicInteger:         400000
