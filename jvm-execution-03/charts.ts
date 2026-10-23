@@ -29,7 +29,7 @@ const OUT = "site/public/images/jvm-execution-03";
       xLabel: "JVMの起動からの時間（ミリ秒）",
       lanes,
       laneWidth: 150,
-      xTicks: [0, 40, 80, 120, 160, 200, 240],
+      xTicks: [0, 50, 100, 150, 200, 250],
       legendItems: [
         { name: "ティア3（C1・プロファイルを集める）", slot: 2 },
         { name: "ティア4（C2）", slot: 1 },
@@ -53,7 +53,7 @@ const OUT = "site/public/images/jvm-execution-03";
       title: "同じ処理（Tiers）の処理時間（3回の平均）",
       unit: "秒",
       labelWidth: 280,
-      xTicks: [0, 5, 10, 15],
+      xTicks: [0, 5, 10, 15, 20],
       rows: [
         { label: "通常（C1 → C2）", value: mean("normal"), valueLabel: `${fmt(mean("normal"), 2)} 秒`, slot: 1 },
         { label: "-XX:TieredStopAtLevel=1（C1だけ）", value: mean("c1"), valueLabel: `${fmt(mean("c1"), 2)} 秒`, slot: 2 },

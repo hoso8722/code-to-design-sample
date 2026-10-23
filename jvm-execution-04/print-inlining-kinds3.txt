@@ -1,14 +1,61 @@
-105   30       3       Morphism$Square::area (10 bytes)
-106   31       3       Morphism$Rect::area (10 bytes)
-106   32       3       Morphism$Circle::area (14 bytes)
-106   33       4       Morphism$Square::area (10 bytes)
-106   30       3       Morphism$Square::area (10 bytes)   made not entrant: not used
-106   34       4       Morphism$Rect::area (10 bytes)
-107   31       3       Morphism$Rect::area (10 bytes)   made not entrant: not used
-107   35       4       Morphism$Circle::area (14 bytes)
-107   32       3       Morphism$Circle::area (14 bytes)   made not entrant: not used
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: virtual call
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: virtual call
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: virtual call
+65   13       3       Morphism$Square::<init> (10 bytes)
+66   14       3       Morphism$Rect::<init> (15 bytes)
+67   17       4       Morphism$Square::<init> (10 bytes)
+67   15       2       Morphism$Circle::<init> (10 bytes)
+67   13       3       Morphism$Square::<init> (10 bytes)   made not entrant
+67   19       4       Morphism$Rect::<init> (15 bytes)
+67   14       3       Morphism$Rect::<init> (15 bytes)   made not entrant
+68   20       4       Morphism$Circle::<init> (10 bytes)
+68   15       2       Morphism$Circle::<init> (10 bytes)   made not entrant
+72   21 %     3       Morphism::main @ 24 (243 bytes)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline
+                              @ 102   Morphism$Circle::<init> (10 bytes)   inline
+                              @ 120  Morphism$Triangle::<init> (not loaded)   not inlineable
+                              @ 144   Morphism::total (42 bytes)   callee is too large
+                              @ 172   Morphism::total (42 bytes)   callee is too large
+76   22       3       Morphism::main (243 bytes)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline
+                              @ 102   Morphism$Circle::<init> (10 bytes)   inline
+                              @ 120  Morphism$Triangle::<init> (not loaded)   not inlineable
+                              @ 144   Morphism::total (42 bytes)   callee is too large
+                              @ 172   Morphism::total (42 bytes)   callee is too large
+79   23 %     4       Morphism::main @ 24 (243 bytes)
+87   21 %     3       Morphism::main @ 24 (243 bytes)   made not entrant
+                              @ 102   Morphism$Circle::<init> (10 bytes)   inline (hot)
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline (hot)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline (hot)
+88   23 %     4       Morphism::main @ 24 (243 bytes)   made not entrant
+88   24 %     4       Morphism::main @ 24 (243 bytes)
+                              @ 102   Morphism$Circle::<init> (10 bytes)   inline (hot)
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline (hot)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline (hot)
+104   24 %     4       Morphism::main @ 24 (243 bytes)   made not entrant
+104   25 %     4       Morphism::main @ 24 (243 bytes)
+                              @ 102   Morphism$Circle::<init> (10 bytes)   inline (hot)
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline (hot)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline (hot)
+150   25 %     4       Morphism::main @ 24 (243 bytes)   made not entrant
+150   26       3       Morphism$Square::area (10 bytes)
+151   28       3       Morphism$Circle::area (14 bytes)
+151   29       4       Morphism$Square::area (10 bytes)
+151   27       3       Morphism$Rect::area (10 bytes)
+151   26       3       Morphism$Square::area (10 bytes)   made not entrant
+151   30       4       Morphism$Circle::area (14 bytes)
+152   28       3       Morphism$Circle::area (14 bytes)   made not entrant
+152   31       4       Morphism$Rect::area (10 bytes)
+152   27       3       Morphism$Rect::area (10 bytes)   made not entrant
+153   32 %     4       Morphism::total @ 11 (42 bytes)
+                              @ 27   Morphism$Shape::area (0 bytes)   virtual call
+173   32 %     4       Morphism::total @ 11 (42 bytes)   made not entrant
+173   33 %     3       Morphism::total @ 11 (42 bytes)
+                              @ 27   Morphism$Shape::area (0 bytes)   no static binding
+174   34       3       Morphism::total (42 bytes)
+                              @ 27   Morphism$Shape::area (0 bytes)   no static binding
+174   35 %     4       Morphism::total @ 11 (42 bytes)
+176   33 %     3       Morphism::total @ 11 (42 bytes)   made not entrant
+                              @ 27   Morphism$Shape::area (0 bytes)   virtual call
+176   36       4       Morphism::total (42 bytes)
+178   34       3       Morphism::total (42 bytes)   made not entrant
+                              @ 27   Morphism$Shape::area (0 bytes)   virtual call

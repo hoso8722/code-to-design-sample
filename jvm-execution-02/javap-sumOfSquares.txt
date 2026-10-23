@@ -1,31 +1,31 @@
   static long sumOfSquares(int[]);
     Code:
-         0: lconst_0
-         1: lstore_1
-         2: aload_0
-         3: astore_3
-         4: aload_3
-         5: arraylength
-         6: istore        4
-         8: iconst_0
-         9: istore        5
-        11: iload         5
-        13: iload         4
-        15: if_icmpge     40
-        18: aload_3
-        19: iload         5
-        21: iaload
-        22: istore        6
-        24: lload_1
-        25: iload         6
-        27: i2l
-        28: iload         6
-        30: i2l
-        31: lmul
-        32: ladd
-        33: lstore_1
-        34: iinc          5, 1
-        37: goto          11
-        40: lload_1
-        41: lreturn
+       0: lconst_0
+       1: lstore_1
+       2: aload_0
+       3: astore_3
+       4: aload_3
+       5: arraylength
+       6: istore        4
+       8: iconst_0
+       9: istore        5
+      11: iload         5
+      13: iload         4
+      15: if_icmpge     40
+      18: aload_3
+      19: iload         5
+      21: iaload
+      22: istore        6
+      24: lload_1
+      25: iload         6
+      27: i2l
+      28: iload         6
+      30: i2l
+      31: lmul
+      32: ladd
+      33: lstore_1
+      34: iinc          5, 1
+      37: goto          11
+      40: lload_1
+      41: lreturn
 

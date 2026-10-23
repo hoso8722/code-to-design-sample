@@ -1,0 +1,2 @@
+      3                               @ 27   Morphism$Square::area (10 bytes)   too big
+      2                               @ 27   Morphism$Square::area (10 bytes)   inline

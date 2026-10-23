@@ -1,11 +1,61 @@
-106   27       3       Morphism$Square::area (10 bytes)
-106   28       3       Morphism$Rect::area (10 bytes)
-106   29       4       Morphism$Square::area (10 bytes)
-107   27       3       Morphism$Square::area (10 bytes)   made not entrant: not used
-108   30       4       Morphism$Rect::area (10 bytes)
-108   28       3       Morphism$Rect::area (10 bytes)   made not entrant: not used
-                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)   callee changed to  Morphism$Rect::area (10 bytes)   inline (hot)   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (30427/60854 counts) = Morphism$Rect   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (30427/60854 counts) = Morphism$Square
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
-                              @ 27   Morphism$Shape::area (0 bytes)   failed to inline: no static binding
-                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)   callee changed to  Morphism$Rect::area (10 bytes)   inline (hot)   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (153933/307867 counts) = Morphism$Rect   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (153934/307867 counts) = Morphism$Square
-                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)   callee changed to  Morphism$Rect::area (10 bytes)   inline (hot)   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (471551/943103 counts) = Morphism$Rect   callee changed to  Morphism::total (42 bytes)    \-> TypeProfile (471552/943103 counts) = Morphism$Square
+62   13       3       Morphism$Square::<init> (10 bytes)
+62   14       3       Morphism$Rect::<init> (15 bytes)
+64   16       4       Morphism$Square::<init> (10 bytes)
+64   13       3       Morphism$Square::<init> (10 bytes)   made not entrant
+64   17       4       Morphism$Rect::<init> (15 bytes)
+65   14       3       Morphism$Rect::<init> (15 bytes)   made not entrant
+69   18 %     3       Morphism::main @ 24 (243 bytes)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline
+                              @ 102  Morphism$Circle::<init> (not loaded)   not inlineable
+                              @ 120  Morphism$Triangle::<init> (not loaded)   not inlineable
+                              @ 144   Morphism::total (42 bytes)   callee is too large
+                              @ 172   Morphism::total (42 bytes)   callee is too large
+72   19       3       Morphism::main (243 bytes)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline
+                              @ 102  Morphism$Circle::<init> (not loaded)   not inlineable
+                              @ 120  Morphism$Triangle::<init> (not loaded)   not inlineable
+                              @ 144   Morphism::total (42 bytes)   callee is too large
+                              @ 172   Morphism::total (42 bytes)   callee is too large
+75   20 %     4       Morphism::main @ 24 (243 bytes)
+82   18 %     3       Morphism::main @ 24 (243 bytes)   made not entrant
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline (hot)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline (hot)
+83   20 %     4       Morphism::main @ 24 (243 bytes)   made not entrant
+83   21 %     4       Morphism::main @ 24 (243 bytes)
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline (hot)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline (hot)
+100   21 %     4       Morphism::main @ 24 (243 bytes)   made not entrant
+100   22 %     4       Morphism::main @ 24 (243 bytes)
+                              @ 87   Morphism$Rect::<init> (15 bytes)   inline (hot)
+                              @ 69   Morphism$Square::<init> (10 bytes)   inline (hot)
+148   22 %     4       Morphism::main @ 24 (243 bytes)   made not entrant
+149   24       3       Morphism$Rect::area (10 bytes)
+149   23       2       Morphism$Square::area (10 bytes)
+149   25       4       Morphism$Rect::area (10 bytes)
+150   24       3       Morphism$Rect::area (10 bytes)   made not entrant
+150   26       4       Morphism$Square::area (10 bytes)
+150   23       2       Morphism$Square::area (10 bytes)   made not entrant
+151   27 %     4       Morphism::total @ 11 (42 bytes)
+                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)
+                              @ 27   Morphism$Rect::area (10 bytes)   inline (hot)
+                               \-> TypeProfile (21340/42680 counts) = Morphism$Rect
+                               \-> TypeProfile (21340/42680 counts) = Morphism$Square
+157   27 %     4       Morphism::total @ 11 (42 bytes)   made not entrant
+157   28 %     3       Morphism::total @ 11 (42 bytes)
+                              @ 27   Morphism$Shape::area (0 bytes)   no static binding
+158   29       3       Morphism::total (42 bytes)
+                              @ 27   Morphism$Shape::area (0 bytes)   no static binding
+159   30 %     4       Morphism::total @ 11 (42 bytes)
+163   28 %     3       Morphism::total @ 11 (42 bytes)   made not entrant
+                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)
+                              @ 27   Morphism$Rect::area (10 bytes)   inline (hot)
+                               \-> TypeProfile (113098/226196 counts) = Morphism$Rect
+                               \-> TypeProfile (113098/226196 counts) = Morphism$Square
+163   31       4       Morphism::total (42 bytes)
+167   29       3       Morphism::total (42 bytes)   made not entrant
+                              @ 27   Morphism$Square::area (10 bytes)   inline (hot)
+                              @ 27   Morphism$Rect::area (10 bytes)   inline (hot)
+                               \-> TypeProfile (365055/730111 counts) = Morphism$Rect
+                               \-> TypeProfile (365056/730111 counts) = Morphism$Square

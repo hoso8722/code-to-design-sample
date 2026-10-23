@@ -1,24 +1,24 @@
-10億回の計算：結果を捨てる 4 ms、結果を使う 1775 ms（sum=2000000001）
+10億回の計算：結果を捨てる 4 ms、結果を使う 1962 ms（sum=2000000001）
 plusLoop → builder の順に計る
-  plusLoop 2,000回で 73,382 µs（length=380000）
-  builder  2,000回で 13,191 µs（length=380000）
-10億回の計算：結果を捨てる 4 ms、結果を使う 1751 ms（sum=2000000001）
+  plusLoop 2,000回で 112,984 µs（length=380000）
+  builder  2,000回で 14,023 µs（length=380000）
+10億回の計算：結果を捨てる 4 ms、結果を使う 2043 ms（sum=2000000001）
 plusLoop → builder の順に計る
-  plusLoop 2,000回で 77,075 µs（length=380000）
-  builder  2,000回で 15,476 µs（length=380000）
-10億回の計算：結果を捨てる 3 ms、結果を使う 1785 ms（sum=2000000001）
+  plusLoop 2,000回で 119,325 µs（length=380000）
+  builder  2,000回で 14,456 µs（length=380000）
+10億回の計算：結果を捨てる 4 ms、結果を使う 1968 ms（sum=2000000001）
 plusLoop → builder の順に計る
-  plusLoop 2,000回で 69,000 µs（length=380000）
-  builder  2,000回で 11,895 µs（length=380000）
-10億回の計算：結果を捨てる 3 ms、結果を使う 1814 ms（sum=2000000001）
+  plusLoop 2,000回で 105,457 µs（length=380000）
+  builder  2,000回で 12,925 µs（length=380000）
+10億回の計算：結果を捨てる 4 ms、結果を使う 1889 ms（sum=2000000001）
 builder → plusLoop の順に計る
-  builder  2,000回で 16,867 µs（length=380000）
-  plusLoop 2,000回で 68,490 µs（length=380000）
-10億回の計算：結果を捨てる 4 ms、結果を使う 1777 ms（sum=2000000001）
+  builder  2,000回で 21,215 µs（length=380000）
+  plusLoop 2,000回で 101,839 µs（length=380000）
+10億回の計算：結果を捨てる 4 ms、結果を使う 1911 ms（sum=2000000001）
 builder → plusLoop の順に計る
-  builder  2,000回で 21,271 µs（length=380000）
-  plusLoop 2,000回で 66,808 µs（length=380000）
-10億回の計算：結果を捨てる 3 ms、結果を使う 1780 ms（sum=2000000001）
+  builder  2,000回で 18,497 µs（length=380000）
+  plusLoop 2,000回で 102,578 µs（length=380000）
+10億回の計算：結果を捨てる 4 ms、結果を使う 1865 ms（sum=2000000001）
 builder → plusLoop の順に計る
-  builder  2,000回で 15,259 µs（length=380000）
-  plusLoop 2,000回で 66,659 µs（length=380000）
+  builder  2,000回で 20,015 µs（length=380000）
+  plusLoop 2,000回で 114,466 µs（length=380000）

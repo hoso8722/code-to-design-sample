@@ -23,7 +23,7 @@ const OUT = "site/public/images/jvm-execution-04";
       yLabel: "1要素あたりの時間（ナノ秒）",
       xTicks: [0, 1, 2, 3, 4],
       xFormat: (v) => (v === 0 ? "" : String(v)),
-      yTicks: [0, 2, 4, 6, 8],
+      yTicks: [0, 5, 10, 15],
       rightPad: 170,
       series: [
         { name: "インライン展開なし（-XX:-Inline）", endLabel: "-XX:-Inline", slot: 2, markers: true, points: ks.map((k) => [k, mean("noinline", k)]) },

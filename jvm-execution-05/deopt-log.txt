@@ -1,7 +1,6 @@
-[0.099s][debug][deoptimization] cid=  89     level=4 java.lang.String.isLatin1()Z trap_bci=10 unstable_if reinterpret pc=0x000077b67bfa6c2c relative_pc=0x00000000000000ac
-[0.102s][debug][deoptimization] cid=  25 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=15 osr_bci=11 unstable_if reinterpret pc=0x000077b67bfa1d54 relative_pc=0x00000000000002d4
-[0.224s][debug][deoptimization] cid= 108     level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 class_check maybe_recompile pc=0x000077b67bfa7de8 relative_pc=0x00000000000001c8
-[0.225s][debug][deoptimization] cid= 110 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 osr_bci=11 class_check maybe_recompile pc=0x000077b67bfa8ae4 relative_pc=0x0000000000000264
-[0.225s][debug][deoptimization] cid= 110 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 osr_bci=11 class_check maybe_recompile pc=0x000077b67bfa8ae4 relative_pc=0x0000000000000264
-[0.225s][debug][deoptimization] cid= 110 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 osr_bci=11 class_check maybe_recompile pc=0x000077b67bfa8ae4 relative_pc=0x0000000000000264
-[0.229s][debug][deoptimization] cid= 108     level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 class_check maybe_recompile pc=0x000077b67bfa7de8 relative_pc=0x00000000000001c8
+[0.131s][debug][deoptimization] cid=  18 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=15 osr_bci=11 unstable_if reinterpret pc=0x00007d32ac3a2114 relative_pc=0x00000000000002d4
+[0.239s][debug][deoptimization] cid= 137     level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 class_check maybe_recompile pc=0x00007d32ac3ad530 relative_pc=0x00000000000001d0
+[0.240s][debug][deoptimization] cid= 155 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 osr_bci=11 class_check maybe_recompile pc=0x00007d32ac3ae1a4 relative_pc=0x0000000000000264
+[0.240s][debug][deoptimization] cid= 155 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 osr_bci=11 class_check maybe_recompile pc=0x00007d32ac3ae1a4 relative_pc=0x0000000000000264
+[0.240s][debug][deoptimization] cid= 155 osr level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 osr_bci=11 class_check maybe_recompile pc=0x00007d32ac3ae1a4 relative_pc=0x0000000000000264
+[0.244s][debug][deoptimization] cid= 137     level=4 Deopt.total([LDeopt$Shape;)D trap_bci=27 class_check maybe_recompile pc=0x00007d32ac3ad530 relative_pc=0x00000000000001d0
