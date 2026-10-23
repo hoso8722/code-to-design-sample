@@ -1,13 +1,13 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: source","Param: work"
-"bench.ParallelSource.parallel","avgt",1,10,222.249529,13.884638,"us/op",ArrayList,light
-"bench.ParallelSource.parallel","avgt",1,10,5216.743183,105.728376,"us/op",ArrayList,heavy
-"bench.ParallelSource.parallel","avgt",1,10,786.537430,123.667001,"us/op",LinkedList,light
-"bench.ParallelSource.parallel","avgt",1,10,5581.929940,73.713977,"us/op",LinkedList,heavy
-"bench.ParallelSource.parallel","avgt",1,10,1890.966499,45.044437,"us/op",Stream.iterate,light
-"bench.ParallelSource.parallel","avgt",1,10,7269.644960,327.211725,"us/op",Stream.iterate,heavy
-"bench.ParallelSource.sequential","avgt",1,10,141.031765,4.996660,"us/op",ArrayList,light
-"bench.ParallelSource.sequential","avgt",1,10,64359.311781,913.384453,"us/op",ArrayList,heavy
-"bench.ParallelSource.sequential","avgt",1,10,238.386991,6.926572,"us/op",LinkedList,light
-"bench.ParallelSource.sequential","avgt",1,10,63966.464813,1552.316568,"us/op",LinkedList,heavy
-"bench.ParallelSource.sequential","avgt",1,10,699.380379,42.056841,"us/op",Stream.iterate,light
-"bench.ParallelSource.sequential","avgt",1,10,65281.219096,2713.926905,"us/op",Stream.iterate,heavy
+"bench.ParallelSource.parallel","avgt",1,10,368.170548,19.622732,"us/op",ArrayList,light
+"bench.ParallelSource.parallel","avgt",1,10,6710.644754,636.722505,"us/op",ArrayList,heavy
+"bench.ParallelSource.parallel","avgt",1,10,1259.957696,131.598923,"us/op",LinkedList,light
+"bench.ParallelSource.parallel","avgt",1,10,6711.445583,355.849527,"us/op",LinkedList,heavy
+"bench.ParallelSource.parallel","avgt",1,10,2989.923123,190.607961,"us/op",Stream.iterate,light
+"bench.ParallelSource.parallel","avgt",1,10,8957.823561,462.972579,"us/op",Stream.iterate,heavy
+"bench.ParallelSource.sequential","avgt",1,10,161.000506,10.065591,"us/op",ArrayList,light
+"bench.ParallelSource.sequential","avgt",1,10,64725.303910,1769.966784,"us/op",ArrayList,heavy
+"bench.ParallelSource.sequential","avgt",1,10,257.965513,46.287370,"us/op",LinkedList,light
+"bench.ParallelSource.sequential","avgt",1,10,65126.728616,1724.169076,"us/op",LinkedList,heavy
+"bench.ParallelSource.sequential","avgt",1,10,696.309990,32.717078,"us/op",Stream.iterate,light
+"bench.ParallelSource.sequential","avgt",1,10,67964.849320,1221.926840,"us/op",Stream.iterate,heavy

@@ -1,10 +1,6 @@
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -16,44 +12,36 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 
 # Run progress: 0.00% complete, ETA 00:00:32
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 797.738 us/op
-# Warmup Iteration   2: 810.431 us/op
-# Warmup Iteration   3: 790.668 us/op
-Iteration   1: 807.327 us/op
-Iteration   2: 792.832 us/op
-Iteration   3: 822.798 us/op
-Iteration   4: 802.390 us/op
-Iteration   5: 782.009 us/op
+# Warmup Iteration   1: 917.963 us/op
+# Warmup Iteration   2: 514.907 us/op
+# Warmup Iteration   3: 527.402 us/op
+Iteration   1: 521.609 us/op
+Iteration   2: 525.252 us/op
+Iteration   3: 510.951 us/op
+Iteration   4: 540.907 us/op
+Iteration   5: 528.054 us/op
 
 # Run progress: 25.00% complete, ETA 00:00:25
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 890.497 us/op
-# Warmup Iteration   2: 760.539 us/op
-# Warmup Iteration   3: 811.615 us/op
-Iteration   1: 775.489 us/op
-Iteration   2: 864.166 us/op
-Iteration   3: 802.523 us/op
-Iteration   4: 763.835 us/op
-Iteration   5: 799.201 us/op
+# Warmup Iteration   1: 958.867 us/op
+# Warmup Iteration   2: 569.431 us/op
+# Warmup Iteration   3: 576.750 us/op
+Iteration   1: 530.114 us/op
+Iteration   2: 560.630 us/op
+Iteration   3: 555.735 us/op
+Iteration   4: 563.612 us/op
+Iteration   5: 638.112 us/op
 
 
 Result "bench.RangeCount.hashMapScan":
-  801.257 ±(99.9%) 42.078 us/op [Average]
-  (min, avg, max) = (763.835, 801.257, 864.166), stdev = 27.832
-  CI (99.9%): [759.179, 843.335] (assumes normal distribution)
+  547.498 ±(99.9%) 55.057 us/op [Average]
+  (min, avg, max) = (510.951, 547.498, 638.112), stdev = 36.416
+  CI (99.9%): [492.441, 602.554] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -65,39 +53,31 @@ Result "bench.RangeCount.hashMapScan":
 
 # Run progress: 50.00% complete, ETA 00:00:17
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 8.256 us/op
-# Warmup Iteration   2: 7.862 us/op
-# Warmup Iteration   3: 5.608 us/op
-Iteration   1: 5.732 us/op
-Iteration   2: 5.775 us/op
-Iteration   3: 5.896 us/op
-Iteration   4: 6.186 us/op
-Iteration   5: 5.553 us/op
+# Warmup Iteration   1: 5.856 us/op
+# Warmup Iteration   2: 5.556 us/op
+# Warmup Iteration   3: 5.959 us/op
+Iteration   1: 5.920 us/op
+Iteration   2: 5.802 us/op
+Iteration   3: 6.019 us/op
+Iteration   4: 5.793 us/op
+Iteration   5: 6.705 us/op
 
 # Run progress: 75.00% complete, ETA 00:00:08
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 8.019 us/op
-# Warmup Iteration   2: 7.478 us/op
-# Warmup Iteration   3: 5.574 us/op
-Iteration   1: 5.613 us/op
-Iteration   2: 5.642 us/op
-Iteration   3: 5.841 us/op
-Iteration   4: 5.865 us/op
-Iteration   5: 5.613 us/op
+# Warmup Iteration   1: 6.421 us/op
+# Warmup Iteration   2: 7.025 us/op
+# Warmup Iteration   3: 8.259 us/op
+Iteration   1: 7.247 us/op
+Iteration   2: 6.120 us/op
+Iteration   3: 7.518 us/op
+Iteration   4: 6.935 us/op
+Iteration   5: 5.779 us/op
 
 
 Result "bench.RangeCount.treeMapSubMap":
-  5.772 ±(99.9%) 0.284 us/op [Average]
-  (min, avg, max) = (5.553, 5.772, 6.186), stdev = 0.188
-  CI (99.9%): [5.488, 6.056] (assumes normal distribution)
+  6.384 ±(99.9%) 0.997 us/op [Average]
+  (min, avg, max) = (5.779, 6.384, 7.518), stdev = 0.659
+  CI (99.9%): [5.387, 7.380] (assumes normal distribution)
 
 
 # Run complete. Total time: 00:00:34
@@ -115,7 +95,7 @@ different JVMs are already problematic, the performance difference caused by dif
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
 Benchmark                 Mode  Cnt    Score    Error  Units
-RangeCount.hashMapScan    avgt   10  801.257 ± 42.078  us/op
-RangeCount.treeMapSubMap  avgt   10    5.772 ±  0.284  us/op
+RangeCount.hashMapScan    avgt   10  547.498 ± 55.057  us/op
+RangeCount.treeMapSubMap  avgt   10    6.384 ±  0.997  us/op
 
-Benchmark result is saved to data/java-collections-04/jmh-RangeCount.csv
+Benchmark result is saved to jmh-RangeCount.csv

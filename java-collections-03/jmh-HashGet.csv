@@ -1,10 +1,10 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: keyType","Param: n"
-"bench.HashGet.get","avgt",1,10,8.905101,0.413815,"ns/op",good,100
-"bench.HashGet.get","avgt",1,10,8.985889,0.405472,"ns/op",good,1000
-"bench.HashGet.get","avgt",1,10,8.908353,0.249733,"ns/op",good,10000
-"bench.HashGet.get","avgt",1,10,53.984432,6.811548,"ns/op",badComparable,100
-"bench.HashGet.get","avgt",1,10,66.219280,8.320324,"ns/op",badComparable,1000
-"bench.HashGet.get","avgt",1,10,80.501112,11.484651,"ns/op",badComparable,10000
-"bench.HashGet.get","avgt",1,10,178.006497,172.764540,"ns/op",badPlain,100
-"bench.HashGet.get","avgt",1,10,2436.814728,2278.510179,"ns/op",badPlain,1000
-"bench.HashGet.get","avgt",1,10,33840.426182,2380.690437,"ns/op",badPlain,10000
+"bench.HashGet.get","avgt",1,10,9.913622,0.769223,"ns/op",good,100
+"bench.HashGet.get","avgt",1,10,9.787174,0.494154,"ns/op",good,1000
+"bench.HashGet.get","avgt",1,10,9.444460,0.273568,"ns/op",good,10000
+"bench.HashGet.get","avgt",1,10,53.057318,3.791760,"ns/op",badComparable,100
+"bench.HashGet.get","avgt",1,10,65.477296,8.321274,"ns/op",badComparable,1000
+"bench.HashGet.get","avgt",1,10,79.997463,5.799112,"ns/op",badComparable,10000
+"bench.HashGet.get","avgt",1,10,236.674882,7.636265,"ns/op",badPlain,100
+"bench.HashGet.get","avgt",1,10,2050.901956,1653.827597,"ns/op",badPlain,1000
+"bench.HashGet.get","avgt",1,10,23217.291430,8838.083612,"ns/op",badPlain,10000

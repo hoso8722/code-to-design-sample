@@ -1,10 +1,6 @@
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -16,44 +12,36 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 
 # Run progress: 0.00% complete, ETA 00:00:48
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6.615 ns/op
-# Warmup Iteration   2: 6.869 ns/op
-# Warmup Iteration   3: 5.536 ns/op
-Iteration   1: 5.375 ns/op
-Iteration   2: 5.112 ns/op
-Iteration   3: 5.317 ns/op
-Iteration   4: 5.119 ns/op
-Iteration   5: 5.541 ns/op
+# Warmup Iteration   1: 6.842 ns/op
+# Warmup Iteration   2: 7.151 ns/op
+# Warmup Iteration   3: 6.340 ns/op
+Iteration   1: 6.539 ns/op
+Iteration   2: 6.437 ns/op
+Iteration   3: 6.371 ns/op
+Iteration   4: 6.203 ns/op
+Iteration   5: 6.277 ns/op
 
 # Run progress: 16.67% complete, ETA 00:00:42
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6.102 ns/op
-# Warmup Iteration   2: 6.488 ns/op
-# Warmup Iteration   3: 5.259 ns/op
-Iteration   1: 5.233 ns/op
-Iteration   2: 5.069 ns/op
-Iteration   3: 5.244 ns/op
-Iteration   4: 5.171 ns/op
-Iteration   5: 5.212 ns/op
+# Warmup Iteration   1: 7.109 ns/op
+# Warmup Iteration   2: 7.188 ns/op
+# Warmup Iteration   3: 6.263 ns/op
+Iteration   1: 6.305 ns/op
+Iteration   2: 6.594 ns/op
+Iteration   3: 6.294 ns/op
+Iteration   4: 6.498 ns/op
+Iteration   5: 6.223 ns/op
 
 
 Result "bench.QueueOps.arrayDeque":
-  5.239 ±(99.9%) 0.214 ns/op [Average]
-  (min, avg, max) = (5.069, 5.239, 5.541), stdev = 0.142
-  CI (99.9%): [5.025, 5.454] (assumes normal distribution)
+  6.374 ±(99.9%) 0.206 ns/op [Average]
+  (min, avg, max) = (6.203, 6.374, 6.594), stdev = 0.136
+  CI (99.9%): [6.168, 6.580] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -65,44 +53,36 @@ Result "bench.QueueOps.arrayDeque":
 
 # Run progress: 33.33% complete, ETA 00:00:34
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 922.829 ns/op
-# Warmup Iteration   2: 981.524 ns/op
-# Warmup Iteration   3: 901.114 ns/op
-Iteration   1: 924.041 ns/op
-Iteration   2: 953.026 ns/op
-Iteration   3: 958.820 ns/op
-Iteration   4: 922.070 ns/op
-Iteration   5: 917.983 ns/op
+# Warmup Iteration   1: 996.093 ns/op
+# Warmup Iteration   2: 973.970 ns/op
+# Warmup Iteration   3: 938.592 ns/op
+Iteration   1: 894.520 ns/op
+Iteration   2: 929.912 ns/op
+Iteration   3: 944.903 ns/op
+Iteration   4: 926.255 ns/op
+Iteration   5: 938.605 ns/op
 
 # Run progress: 50.00% complete, ETA 00:00:25
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 983.521 ns/op
-# Warmup Iteration   2: 923.526 ns/op
-# Warmup Iteration   3: 906.595 ns/op
-Iteration   1: 910.009 ns/op
-Iteration   2: 914.426 ns/op
-Iteration   3: 890.142 ns/op
-Iteration   4: 911.834 ns/op
-Iteration   5: 937.072 ns/op
+# Warmup Iteration   1: 957.323 ns/op
+# Warmup Iteration   2: 943.999 ns/op
+# Warmup Iteration   3: 957.245 ns/op
+Iteration   1: 934.595 ns/op
+Iteration   2: 949.802 ns/op
+Iteration   3: 917.667 ns/op
+Iteration   4: 956.229 ns/op
+Iteration   5: 945.323 ns/op
 
 
 Result "bench.QueueOps.arrayList":
-  923.942 ±(99.9%) 31.259 ns/op [Average]
-  (min, avg, max) = (890.142, 923.942, 958.820), stdev = 20.676
-  CI (99.9%): [892.683, 955.201] (assumes normal distribution)
+  933.781 ±(99.9%) 27.205 ns/op [Average]
+  (min, avg, max) = (894.520, 933.781, 956.229), stdev = 17.994
+  CI (99.9%): [906.576, 960.986] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -114,39 +94,31 @@ Result "bench.QueueOps.arrayList":
 
 # Run progress: 66.67% complete, ETA 00:00:17
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 19.857 ns/op
-# Warmup Iteration   2: 14.351 ns/op
-# Warmup Iteration   3: 14.380 ns/op
-Iteration   1: 13.193 ns/op
-Iteration   2: 10.195 ns/op
-Iteration   3: 9.961 ns/op
-Iteration   4: 10.293 ns/op
-Iteration   5: 13.125 ns/op
+# Warmup Iteration   1: 18.596 ns/op
+# Warmup Iteration   2: 14.155 ns/op
+# Warmup Iteration   3: 17.196 ns/op
+Iteration   1: 19.034 ns/op
+Iteration   2: 13.547 ns/op
+Iteration   3: 13.578 ns/op
+Iteration   4: 13.590 ns/op
+Iteration   5: 14.269 ns/op
 
 # Run progress: 83.33% complete, ETA 00:00:08
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 17.531 ns/op
-# Warmup Iteration   2: 18.113 ns/op
-# Warmup Iteration   3: 14.181 ns/op
-Iteration   1: 12.259 ns/op
-Iteration   2: 10.231 ns/op
-Iteration   3: 10.366 ns/op
-Iteration   4: 10.934 ns/op
-Iteration   5: 9.967 ns/op
+# Warmup Iteration   1: 15.685 ns/op
+# Warmup Iteration   2: 15.392 ns/op
+# Warmup Iteration   3: 15.078 ns/op
+Iteration   1: 14.062 ns/op
+Iteration   2: 13.334 ns/op
+Iteration   3: 13.881 ns/op
+Iteration   4: 13.631 ns/op
+Iteration   5: 13.924 ns/op
 
 
 Result "bench.QueueOps.linkedList":
-  11.052 ±(99.9%) 1.963 ns/op [Average]
-  (min, avg, max) = (9.961, 11.052, 13.193), stdev = 1.298
-  CI (99.9%): [9.089, 13.015] (assumes normal distribution)
+  14.285 ±(99.9%) 2.558 ns/op [Average]
+  (min, avg, max) = (13.334, 14.285, 19.034), stdev = 1.692
+  CI (99.9%): [11.727, 16.843] (assumes normal distribution)
 
 
 # Run complete. Total time: 00:00:51
@@ -164,8 +136,8 @@ different JVMs are already problematic, the performance difference caused by dif
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
 Benchmark            Mode  Cnt    Score    Error  Units
-QueueOps.arrayDeque  avgt   10    5.239 ±  0.214  ns/op
-QueueOps.arrayList   avgt   10  923.942 ± 31.259  ns/op
-QueueOps.linkedList  avgt   10   11.052 ±  1.963  ns/op
+QueueOps.arrayDeque  avgt   10    6.374 ±  0.206  ns/op
+QueueOps.arrayList   avgt   10  933.781 ± 27.205  ns/op
+QueueOps.linkedList  avgt   10   14.285 ±  2.558  ns/op
 
-Benchmark result is saved to data/java-collections-01/jmh-QueueOps.csv
+Benchmark result is saved to jmh-QueueOps.csv

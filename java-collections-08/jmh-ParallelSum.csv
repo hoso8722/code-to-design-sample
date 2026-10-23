@@ -1,13 +1,13 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: n","Param: work"
-"bench.ParallelSum.parallel","avgt",1,10,191.330141,16.729945,"us/op",1000,light
-"bench.ParallelSum.parallel","avgt",1,10,275.784800,14.712608,"us/op",1000,heavy
-"bench.ParallelSum.parallel","avgt",1,10,164.449818,22.086578,"us/op",100000,light
-"bench.ParallelSum.parallel","avgt",1,10,5133.374616,133.495420,"us/op",100000,heavy
-"bench.ParallelSum.parallel","avgt",1,10,878.372574,19.900417,"us/op",10000000,light
-"bench.ParallelSum.parallel","avgt",1,10,476552.686483,28001.217340,"us/op",10000000,heavy
-"bench.ParallelSum.sequential","avgt",1,10,0.581989,0.040662,"us/op",1000,light
-"bench.ParallelSum.sequential","avgt",1,10,631.527638,13.996527,"us/op",1000,heavy
-"bench.ParallelSum.sequential","avgt",1,10,52.903265,15.705455,"us/op",100000,light
-"bench.ParallelSum.sequential","avgt",1,10,62541.376560,1675.387741,"us/op",100000,heavy
-"bench.ParallelSum.sequential","avgt",1,10,4637.436107,351.622901,"us/op",10000000,light
-"bench.ParallelSum.sequential","avgt",1,10,6289653.558500,93555.627611,"us/op",10000000,heavy
+"bench.ParallelSum.parallel","avgt",1,10,288.796042,13.021121,"us/op",1000,light
+"bench.ParallelSum.parallel","avgt",1,10,375.822374,24.178044,"us/op",1000,heavy
+"bench.ParallelSum.parallel","avgt",1,10,414.868379,140.252150,"us/op",100000,light
+"bench.ParallelSum.parallel","avgt",1,10,8871.528818,2866.573839,"us/op",100000,heavy
+"bench.ParallelSum.parallel","avgt",1,10,1865.628492,329.459248,"us/op",10000000,light
+"bench.ParallelSum.parallel","avgt",1,10,687898.052150,81197.156336,"us/op",10000000,heavy
+"bench.ParallelSum.sequential","avgt",1,10,0.576959,0.014011,"us/op",1000,light
+"bench.ParallelSum.sequential","avgt",1,10,630.797449,15.996848,"us/op",1000,heavy
+"bench.ParallelSum.sequential","avgt",1,10,59.884978,21.108119,"us/op",100000,light
+"bench.ParallelSum.sequential","avgt",1,10,62750.385552,1171.861078,"us/op",100000,heavy
+"bench.ParallelSum.sequential","avgt",1,10,7619.155307,52.672924,"us/op",10000000,light
+"bench.ParallelSum.sequential","avgt",1,10,6325277.157400,98567.462375,"us/op",10000000,heavy

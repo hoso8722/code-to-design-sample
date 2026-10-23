@@ -1,10 +1,6 @@
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -17,44 +13,36 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 
 # Run progress: 0.00% complete, ETA 00:03:12
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 251.337 us/op
-# Warmup Iteration   2: 251.967 us/op
-# Warmup Iteration   3: 216.519 us/op
-Iteration   1: 238.642 us/op
-Iteration   2: 227.436 us/op
-Iteration   3: 217.043 us/op
-Iteration   4: 214.753 us/op
-Iteration   5: 209.075 us/op
+# Warmup Iteration   1: 498.590 us/op
+# Warmup Iteration   2: 391.375 us/op
+# Warmup Iteration   3: 415.211 us/op
+Iteration   1: 382.296 us/op
+Iteration   2: 349.460 us/op
+Iteration   3: 378.535 us/op
+Iteration   4: 369.181 us/op
+Iteration   5: 380.984 us/op
 
-# Run progress: 4.17% complete, ETA 00:03:17
+# Run progress: 4.17% complete, ETA 00:03:20
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 208.683 us/op
-# Warmup Iteration   2: 236.990 us/op
-# Warmup Iteration   3: 220.728 us/op
-Iteration   1: 230.739 us/op
-Iteration   2: 211.714 us/op
-Iteration   3: 222.861 us/op
-Iteration   4: 226.947 us/op
-Iteration   5: 223.285 us/op
+# Warmup Iteration   1: 464.995 us/op
+# Warmup Iteration   2: 416.421 us/op
+# Warmup Iteration   3: 386.742 us/op
+Iteration   1: 372.142 us/op
+Iteration   2: 368.539 us/op
+Iteration   3: 362.246 us/op
+Iteration   4: 374.662 us/op
+Iteration   5: 343.661 us/op
 
 
 Result "bench.ParallelSource.parallel":
-  222.250 ±(99.9%) 13.885 us/op [Average]
-  (min, avg, max) = (209.075, 222.250, 238.642), stdev = 9.184
-  CI (99.9%): [208.365, 236.134] (assumes normal distribution)
+  368.171 ±(99.9%) 19.623 us/op [Average]
+  (min, avg, max) = (343.661, 368.171, 382.296), stdev = 12.979
+  CI (99.9%): [348.548, 387.793] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -65,46 +53,38 @@ Result "bench.ParallelSource.parallel":
 # Benchmark: bench.ParallelSource.parallel
 # Parameters: (source = ArrayList, work = heavy)
 
-# Run progress: 8.33% complete, ETA 00:03:07
+# Run progress: 8.33% complete, ETA 00:03:09
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 5768.245 us/op
-# Warmup Iteration   2: 5170.631 us/op
-# Warmup Iteration   3: 5312.417 us/op
-Iteration   1: 5262.283 us/op
-Iteration   2: 5244.247 us/op
-Iteration   3: 5111.104 us/op
-Iteration   4: 5180.317 us/op
-Iteration   5: 5202.955 us/op
+# Warmup Iteration   1: 7015.112 us/op
+# Warmup Iteration   2: 6869.050 us/op
+# Warmup Iteration   3: 6947.883 us/op
+Iteration   1: 6298.210 us/op
+Iteration   2: 6850.728 us/op
+Iteration   3: 6549.001 us/op
+Iteration   4: 6483.787 us/op
+Iteration   5: 7702.760 us/op
 
-# Run progress: 12.50% complete, ETA 00:02:59
+# Run progress: 12.50% complete, ETA 00:03:00
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 5940.920 us/op
-# Warmup Iteration   2: 5311.418 us/op
-# Warmup Iteration   3: 5346.300 us/op
-Iteration   1: 5184.520 us/op
-Iteration   2: 5111.528 us/op
-Iteration   3: 5281.033 us/op
-Iteration   4: 5301.975 us/op
-Iteration   5: 5287.469 us/op
+# Warmup Iteration   1: 7725.072 us/op
+# Warmup Iteration   2: 7470.811 us/op
+# Warmup Iteration   3: 6843.987 us/op
+Iteration   1: 6547.828 us/op
+Iteration   2: 6398.021 us/op
+Iteration   3: 6703.210 us/op
+Iteration   4: 6463.246 us/op
+Iteration   5: 7109.656 us/op
 
 
 Result "bench.ParallelSource.parallel":
-  5216.743 ±(99.9%) 105.728 us/op [Average]
-  (min, avg, max) = (5111.104, 5216.743, 5301.975), stdev = 69.933
-  CI (99.9%): [5111.015, 5322.472] (assumes normal distribution)
+  6710.645 ±(99.9%) 636.723 us/op [Average]
+  (min, avg, max) = (6298.210, 6710.645, 7702.760), stdev = 421.153
+  CI (99.9%): [6073.922, 7347.367] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -115,46 +95,38 @@ Result "bench.ParallelSource.parallel":
 # Benchmark: bench.ParallelSource.parallel
 # Parameters: (source = LinkedList, work = light)
 
-# Run progress: 16.67% complete, ETA 00:02:50
+# Run progress: 16.67% complete, ETA 00:02:51
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1200.239 us/op
-# Warmup Iteration   2: 897.373 us/op
-# Warmup Iteration   3: 879.418 us/op
-Iteration   1: 749.715 us/op
-Iteration   2: 847.333 us/op
-Iteration   3: 820.960 us/op
-Iteration   4: 761.340 us/op
-Iteration   5: 774.307 us/op
+# Warmup Iteration   1: 1871.699 us/op
+# Warmup Iteration   2: 1318.641 us/op
+# Warmup Iteration   3: 1232.079 us/op
+Iteration   1: 1418.142 us/op
+Iteration   2: 1337.060 us/op
+Iteration   3: 1202.433 us/op
+Iteration   4: 1269.810 us/op
+Iteration   5: 1324.144 us/op
 
 # Run progress: 20.83% complete, ETA 00:02:42
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 982.187 us/op
-# Warmup Iteration   2: 803.879 us/op
-# Warmup Iteration   3: 802.724 us/op
-Iteration   1: 735.994 us/op
-Iteration   2: 983.635 us/op
-Iteration   3: 770.651 us/op
-Iteration   4: 705.928 us/op
-Iteration   5: 715.511 us/op
+# Warmup Iteration   1: 1813.480 us/op
+# Warmup Iteration   2: 1174.372 us/op
+# Warmup Iteration   3: 1275.397 us/op
+Iteration   1: 1211.633 us/op
+Iteration   2: 1314.746 us/op
+Iteration   3: 1178.186 us/op
+Iteration   4: 1204.107 us/op
+Iteration   5: 1139.315 us/op
 
 
 Result "bench.ParallelSource.parallel":
-  786.537 ±(99.9%) 123.667 us/op [Average]
-  (min, avg, max) = (705.928, 786.537, 983.635), stdev = 81.798
-  CI (99.9%): [662.870, 910.204] (assumes normal distribution)
+  1259.958 ±(99.9%) 131.599 us/op [Average]
+  (min, avg, max) = (1139.315, 1259.958, 1418.142), stdev = 87.045
+  CI (99.9%): [1128.359, 1391.557] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -167,44 +139,36 @@ Result "bench.ParallelSource.parallel":
 
 # Run progress: 25.00% complete, ETA 00:02:33
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6301.328 us/op
-# Warmup Iteration   2: 5780.674 us/op
-# Warmup Iteration   3: 5513.882 us/op
-Iteration   1: 5645.158 us/op
-Iteration   2: 5546.056 us/op
-Iteration   3: 5520.748 us/op
-Iteration   4: 5558.789 us/op
-Iteration   5: 5579.110 us/op
+# Warmup Iteration   1: 8189.856 us/op
+# Warmup Iteration   2: 6836.279 us/op
+# Warmup Iteration   3: 6802.581 us/op
+Iteration   1: 6836.658 us/op
+Iteration   2: 6686.465 us/op
+Iteration   3: 6696.004 us/op
+Iteration   4: 6337.857 us/op
+Iteration   5: 6646.811 us/op
 
 # Run progress: 29.17% complete, ETA 00:02:25
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 6201.853 us/op
-# Warmup Iteration   2: 5676.405 us/op
-# Warmup Iteration   3: 5662.118 us/op
-Iteration   1: 5646.233 us/op
-Iteration   2: 5576.746 us/op
-Iteration   3: 5553.334 us/op
-Iteration   4: 5653.203 us/op
-Iteration   5: 5539.921 us/op
+# Warmup Iteration   1: 8221.752 us/op
+# Warmup Iteration   2: 6607.545 us/op
+# Warmup Iteration   3: 6546.294 us/op
+Iteration   1: 6932.255 us/op
+Iteration   2: 6373.466 us/op
+Iteration   3: 6738.704 us/op
+Iteration   4: 6737.787 us/op
+Iteration   5: 7128.448 us/op
 
 
 Result "bench.ParallelSource.parallel":
-  5581.930 ±(99.9%) 73.714 us/op [Average]
-  (min, avg, max) = (5520.748, 5581.930, 5653.203), stdev = 48.757
-  CI (99.9%): [5508.216, 5655.644] (assumes normal distribution)
+  6711.446 ±(99.9%) 355.850 us/op [Average]
+  (min, avg, max) = (6337.857, 6711.446, 7128.448), stdev = 235.372
+  CI (99.9%): [6355.596, 7067.295] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -217,44 +181,36 @@ Result "bench.ParallelSource.parallel":
 
 # Run progress: 33.33% complete, ETA 00:02:16
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 4077.385 us/op
-# Warmup Iteration   2: 2274.579 us/op
-# Warmup Iteration   3: 2301.505 us/op
-Iteration   1: 1928.619 us/op
-Iteration   2: 1858.487 us/op
-Iteration   3: 1855.623 us/op
-Iteration   4: 1845.852 us/op
-Iteration   5: 1871.404 us/op
+# Warmup Iteration   1: 6446.169 us/op
+# Warmup Iteration   2: 3790.075 us/op
+# Warmup Iteration   3: 3592.628 us/op
+Iteration   1: 3151.260 us/op
+Iteration   2: 2974.560 us/op
+Iteration   3: 2927.375 us/op
+Iteration   4: 3213.066 us/op
+Iteration   5: 2973.039 us/op
 
 # Run progress: 37.50% complete, ETA 00:02:08
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 3132.878 us/op
-# Warmup Iteration   2: 2181.563 us/op
-# Warmup Iteration   3: 2224.395 us/op
-Iteration   1: 1907.823 us/op
-Iteration   2: 1907.921 us/op
-Iteration   3: 1914.546 us/op
-Iteration   4: 1906.499 us/op
-Iteration   5: 1912.891 us/op
+# Warmup Iteration   1: 6038.213 us/op
+# Warmup Iteration   2: 3443.693 us/op
+# Warmup Iteration   3: 3304.026 us/op
+Iteration   1: 3055.073 us/op
+Iteration   2: 2961.324 us/op
+Iteration   3: 2807.117 us/op
+Iteration   4: 2834.444 us/op
+Iteration   5: 3001.973 us/op
 
 
 Result "bench.ParallelSource.parallel":
-  1890.966 ±(99.9%) 45.044 us/op [Average]
-  (min, avg, max) = (1845.852, 1890.966, 1928.619), stdev = 29.794
-  CI (99.9%): [1845.922, 1936.011] (assumes normal distribution)
+  2989.923 ±(99.9%) 190.608 us/op [Average]
+  (min, avg, max) = (2807.117, 2989.923, 3213.066), stdev = 126.075
+  CI (99.9%): [2799.315, 3180.531] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -267,44 +223,36 @@ Result "bench.ParallelSource.parallel":
 
 # Run progress: 41.67% complete, ETA 00:01:59
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 9331.582 us/op
-# Warmup Iteration   2: 8282.387 us/op
-# Warmup Iteration   3: 7115.782 us/op
-Iteration   1: 7253.332 us/op
-Iteration   2: 7170.403 us/op
-Iteration   3: 7205.923 us/op
-Iteration   4: 7074.766 us/op
-Iteration   5: 7298.397 us/op
+# Warmup Iteration   1: 14745.214 us/op
+# Warmup Iteration   2: 9086.504 us/op
+# Warmup Iteration   3: 9810.304 us/op
+Iteration   1: 9097.698 us/op
+Iteration   2: 8702.232 us/op
+Iteration   3: 8580.927 us/op
+Iteration   4: 8738.263 us/op
+Iteration   5: 9073.644 us/op
 
 # Run progress: 45.83% complete, ETA 00:01:51
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 9195.246 us/op
-# Warmup Iteration   2: 7964.586 us/op
-# Warmup Iteration   3: 7244.446 us/op
-Iteration   1: 7248.989 us/op
-Iteration   2: 7181.867 us/op
-Iteration   3: 7801.290 us/op
-Iteration   4: 7424.124 us/op
-Iteration   5: 7037.360 us/op
+# Warmup Iteration   1: 13842.509 us/op
+# Warmup Iteration   2: 10441.313 us/op
+# Warmup Iteration   3: 9405.795 us/op
+Iteration   1: 9133.673 us/op
+Iteration   2: 8719.968 us/op
+Iteration   3: 9632.394 us/op
+Iteration   4: 8869.908 us/op
+Iteration   5: 9029.529 us/op
 
 
 Result "bench.ParallelSource.parallel":
-  7269.645 ±(99.9%) 327.212 us/op [Average]
-  (min, avg, max) = (7037.360, 7269.645, 7801.290), stdev = 216.430
-  CI (99.9%): [6942.433, 7596.857] (assumes normal distribution)
+  8957.824 ±(99.9%) 462.973 us/op [Average]
+  (min, avg, max) = (8580.927, 8957.824, 9632.394), stdev = 306.228
+  CI (99.9%): [8494.851, 9420.796] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -317,44 +265,36 @@ Result "bench.ParallelSource.parallel":
 
 # Run progress: 50.00% complete, ETA 00:01:42
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 148.707 us/op
-# Warmup Iteration   2: 150.386 us/op
-# Warmup Iteration   3: 142.155 us/op
-Iteration   1: 138.172 us/op
-Iteration   2: 142.686 us/op
-Iteration   3: 142.400 us/op
-Iteration   4: 140.377 us/op
-Iteration   5: 137.423 us/op
+# Warmup Iteration   1: 167.240 us/op
+# Warmup Iteration   2: 155.327 us/op
+# Warmup Iteration   3: 151.058 us/op
+Iteration   1: 154.755 us/op
+Iteration   2: 155.533 us/op
+Iteration   3: 159.567 us/op
+Iteration   4: 165.294 us/op
+Iteration   5: 162.923 us/op
 
-# Run progress: 54.17% complete, ETA 00:01:33
+# Run progress: 54.17% complete, ETA 00:01:34
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 155.635 us/op
-# Warmup Iteration   2: 140.443 us/op
-# Warmup Iteration   3: 140.730 us/op
-Iteration   1: 137.288 us/op
-Iteration   2: 147.657 us/op
-Iteration   3: 140.819 us/op
-Iteration   4: 144.306 us/op
-Iteration   5: 139.189 us/op
+# Warmup Iteration   1: 160.610 us/op
+# Warmup Iteration   2: 150.317 us/op
+# Warmup Iteration   3: 148.853 us/op
+Iteration   1: 158.225 us/op
+Iteration   2: 157.716 us/op
+Iteration   3: 161.758 us/op
+Iteration   4: 177.412 us/op
+Iteration   5: 156.822 us/op
 
 
 Result "bench.ParallelSource.sequential":
-  141.032 ±(99.9%) 4.997 us/op [Average]
-  (min, avg, max) = (137.288, 141.032, 147.657), stdev = 3.305
-  CI (99.9%): [136.035, 146.028] (assumes normal distribution)
+  161.001 ±(99.9%) 10.066 us/op [Average]
+  (min, avg, max) = (154.755, 161.001, 177.412), stdev = 6.658
+  CI (99.9%): [150.935, 171.066] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -367,44 +307,36 @@ Result "bench.ParallelSource.sequential":
 
 # Run progress: 58.33% complete, ETA 00:01:25
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 65595.547 us/op
-# Warmup Iteration   2: 63963.892 us/op
-# Warmup Iteration   3: 64330.675 us/op
-Iteration   1: 64199.462 us/op
-Iteration   2: 64057.655 us/op
-Iteration   3: 63631.222 us/op
-Iteration   4: 64314.626 us/op
-Iteration   5: 65951.858 us/op
+# Warmup Iteration   1: 65054.412 us/op
+# Warmup Iteration   2: 64107.914 us/op
+# Warmup Iteration   3: 63938.758 us/op
+Iteration   1: 64404.355 us/op
+Iteration   2: 64059.047 us/op
+Iteration   3: 64182.199 us/op
+Iteration   4: 64263.419 us/op
+Iteration   5: 64117.622 us/op
 
 # Run progress: 62.50% complete, ETA 00:01:16
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 65448.375 us/op
-# Warmup Iteration   2: 64344.437 us/op
-# Warmup Iteration   3: 65459.093 us/op
-Iteration   1: 64117.643 us/op
-Iteration   2: 64281.695 us/op
-Iteration   3: 64213.418 us/op
-Iteration   4: 64478.546 us/op
-Iteration   5: 64346.993 us/op
+# Warmup Iteration   1: 65085.492 us/op
+# Warmup Iteration   2: 64308.387 us/op
+# Warmup Iteration   3: 65559.364 us/op
+Iteration   1: 64441.519 us/op
+Iteration   2: 64828.695 us/op
+Iteration   3: 64284.684 us/op
+Iteration   4: 67984.752 us/op
+Iteration   5: 64686.749 us/op
 
 
 Result "bench.ParallelSource.sequential":
-  64359.312 ±(99.9%) 913.384 us/op [Average]
-  (min, avg, max) = (63631.222, 64359.312, 65951.858), stdev = 604.147
-  CI (99.9%): [63445.927, 65272.696] (assumes normal distribution)
+  64725.304 ±(99.9%) 1769.967 us/op [Average]
+  (min, avg, max) = (64059.047, 64725.304, 67984.752), stdev = 1170.723
+  CI (99.9%): [62955.337, 66495.271] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -417,44 +349,36 @@ Result "bench.ParallelSource.sequential":
 
 # Run progress: 66.67% complete, ETA 00:01:08
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 247.979 us/op
-# Warmup Iteration   2: 238.735 us/op
-# Warmup Iteration   3: 241.772 us/op
-Iteration   1: 248.506 us/op
-Iteration   2: 235.252 us/op
-Iteration   3: 244.000 us/op
-Iteration   4: 238.337 us/op
-Iteration   5: 239.165 us/op
+# Warmup Iteration   1: 247.270 us/op
+# Warmup Iteration   2: 237.198 us/op
+# Warmup Iteration   3: 238.716 us/op
+Iteration   1: 239.095 us/op
+Iteration   2: 243.836 us/op
+Iteration   3: 243.630 us/op
+Iteration   4: 241.465 us/op
+Iteration   5: 256.774 us/op
 
 # Run progress: 70.83% complete, ETA 00:00:59
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 249.153 us/op
-# Warmup Iteration   2: 239.345 us/op
-# Warmup Iteration   3: 234.951 us/op
-Iteration   1: 238.264 us/op
-Iteration   2: 234.484 us/op
-Iteration   3: 235.788 us/op
-Iteration   4: 235.294 us/op
-Iteration   5: 234.780 us/op
+# Warmup Iteration   1: 260.642 us/op
+# Warmup Iteration   2: 565.213 us/op
+# Warmup Iteration   3: 458.054 us/op
+Iteration   1: 319.832 us/op
+Iteration   2: 246.435 us/op
+Iteration   3: 239.222 us/op
+Iteration   4: 239.112 us/op
+Iteration   5: 310.254 us/op
 
 
 Result "bench.ParallelSource.sequential":
-  238.387 ±(99.9%) 6.927 us/op [Average]
-  (min, avg, max) = (234.484, 238.387, 248.506), stdev = 4.581
-  CI (99.9%): [231.460, 245.314] (assumes normal distribution)
+  257.966 ±(99.9%) 46.287 us/op [Average]
+  (min, avg, max) = (239.095, 257.966, 319.832), stdev = 30.616
+  CI (99.9%): [211.678, 304.253] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -467,44 +391,36 @@ Result "bench.ParallelSource.sequential":
 
 # Run progress: 75.00% complete, ETA 00:00:51
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 64659.138 us/op
-# Warmup Iteration   2: 64503.890 us/op
-# Warmup Iteration   3: 64149.223 us/op
-Iteration   1: 65149.070 us/op
-Iteration   2: 64170.837 us/op
-Iteration   3: 64325.888 us/op
-Iteration   4: 64134.405 us/op
-Iteration   5: 64263.285 us/op
+# Warmup Iteration   1: 64833.125 us/op
+# Warmup Iteration   2: 64759.706 us/op
+# Warmup Iteration   3: 64499.146 us/op
+Iteration   1: 64574.136 us/op
+Iteration   2: 64572.770 us/op
+Iteration   3: 68147.439 us/op
+Iteration   4: 65487.688 us/op
+Iteration   5: 64528.006 us/op
 
 # Run progress: 79.17% complete, ETA 00:00:42
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 64415.242 us/op
-# Warmup Iteration   2: 64597.959 us/op
-# Warmup Iteration   3: 64284.076 us/op
-Iteration   1: 63824.299 us/op
-Iteration   2: 64311.415 us/op
-Iteration   3: 64369.946 us/op
-Iteration   4: 63886.545 us/op
-Iteration   5: 61228.957 us/op
+# Warmup Iteration   1: 65474.194 us/op
+# Warmup Iteration   2: 64698.571 us/op
+# Warmup Iteration   3: 64674.326 us/op
+Iteration   1: 64129.362 us/op
+Iteration   2: 65192.341 us/op
+Iteration   3: 65201.129 us/op
+Iteration   4: 64453.034 us/op
+Iteration   5: 64981.382 us/op
 
 
 Result "bench.ParallelSource.sequential":
-  63966.465 ±(99.9%) 1552.317 us/op [Average]
-  (min, avg, max) = (61228.957, 63966.465, 65149.070), stdev = 1026.761
-  CI (99.9%): [62414.148, 65518.781] (assumes normal distribution)
+  65126.729 ±(99.9%) 1724.169 us/op [Average]
+  (min, avg, max) = (64129.362, 65126.729, 68147.439), stdev = 1140.431
+  CI (99.9%): [63402.560, 66850.898] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -517,44 +433,36 @@ Result "bench.ParallelSource.sequential":
 
 # Run progress: 83.33% complete, ETA 00:00:34
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1573.066 us/op
-# Warmup Iteration   2: 1376.559 us/op
-# Warmup Iteration   3: 996.471 us/op
-Iteration   1: 727.227 us/op
-Iteration   2: 710.074 us/op
-Iteration   3: 675.335 us/op
-Iteration   4: 685.292 us/op
-Iteration   5: 668.706 us/op
+# Warmup Iteration   1: 1885.143 us/op
+# Warmup Iteration   2: 959.359 us/op
+# Warmup Iteration   3: 878.303 us/op
+Iteration   1: 704.733 us/op
+Iteration   2: 720.735 us/op
+Iteration   3: 695.143 us/op
+Iteration   4: 705.373 us/op
+Iteration   5: 675.939 us/op
 
 # Run progress: 87.50% complete, ETA 00:00:25
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1163.876 us/op
-# Warmup Iteration   2: 1304.588 us/op
-# Warmup Iteration   3: 1176.946 us/op
-Iteration   1: 754.614 us/op
-Iteration   2: 688.098 us/op
-Iteration   3: 681.709 us/op
-Iteration   4: 680.649 us/op
-Iteration   5: 722.099 us/op
+# Warmup Iteration   1: 1233.685 us/op
+# Warmup Iteration   2: 826.820 us/op
+# Warmup Iteration   3: 883.251 us/op
+Iteration   1: 676.139 us/op
+Iteration   2: 739.431 us/op
+Iteration   3: 684.192 us/op
+Iteration   4: 689.334 us/op
+Iteration   5: 672.082 us/op
 
 
 Result "bench.ParallelSource.sequential":
-  699.380 ±(99.9%) 42.057 us/op [Average]
-  (min, avg, max) = (668.706, 699.380, 754.614), stdev = 27.818
-  CI (99.9%): [657.324, 741.437] (assumes normal distribution)
+  696.310 ±(99.9%) 32.717 us/op [Average]
+  (min, avg, max) = (672.082, 696.310, 739.431), stdev = 21.640
+  CI (99.9%): [663.593, 729.027] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -567,39 +475,31 @@ Result "bench.ParallelSource.sequential":
 
 # Run progress: 91.67% complete, ETA 00:00:17
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 70052.749 us/op
-# Warmup Iteration   2: 69075.983 us/op
-# Warmup Iteration   3: 67479.736 us/op
-Iteration   1: 67209.225 us/op
-Iteration   2: 65177.943 us/op
-Iteration   3: 64519.805 us/op
-Iteration   4: 67029.586 us/op
-Iteration   5: 67096.041 us/op
+# Warmup Iteration   1: 68761.327 us/op
+# Warmup Iteration   2: 66432.901 us/op
+# Warmup Iteration   3: 66261.824 us/op
+Iteration   1: 67558.838 us/op
+Iteration   2: 68634.052 us/op
+Iteration   3: 67482.501 us/op
+Iteration   4: 68874.984 us/op
+Iteration   5: 66898.878 us/op
 
 # Run progress: 95.83% complete, ETA 00:00:08
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 69874.674 us/op
-# Warmup Iteration   2: 67797.002 us/op
-# Warmup Iteration   3: 65823.736 us/op
-Iteration   1: 66224.187 us/op
-Iteration   2: 66543.034 us/op
-Iteration   3: 62816.865 us/op
-Iteration   4: 63454.004 us/op
-Iteration   5: 62741.502 us/op
+# Warmup Iteration   1: 69714.026 us/op
+# Warmup Iteration   2: 66737.690 us/op
+# Warmup Iteration   3: 67194.918 us/op
+Iteration   1: 67935.096 us/op
+Iteration   2: 69022.941 us/op
+Iteration   3: 67674.754 us/op
+Iteration   4: 68731.528 us/op
+Iteration   5: 66834.922 us/op
 
 
 Result "bench.ParallelSource.sequential":
-  65281.219 ±(99.9%) 2713.927 us/op [Average]
-  (min, avg, max) = (62741.502, 65281.219, 67209.225), stdev = 1795.095
-  CI (99.9%): [62567.292, 67995.146] (assumes normal distribution)
+  67964.849 ±(99.9%) 1221.927 us/op [Average]
+  (min, avg, max) = (66834.922, 67964.849, 69022.941), stdev = 808.229
+  CI (99.9%): [66742.922, 69186.776] (assumes normal distribution)
 
 
 # Run complete. Total time: 00:03:26
@@ -617,17 +517,17 @@ different JVMs are already problematic, the performance difference caused by dif
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
 Benchmark                        (source)  (work)  Mode  Cnt      Score      Error  Units
-ParallelSource.parallel         ArrayList   light  avgt   10    222.250 ±   13.885  us/op
-ParallelSource.parallel         ArrayList   heavy  avgt   10   5216.743 ±  105.728  us/op
-ParallelSource.parallel        LinkedList   light  avgt   10    786.537 ±  123.667  us/op
-ParallelSource.parallel        LinkedList   heavy  avgt   10   5581.930 ±   73.714  us/op
-ParallelSource.parallel    Stream.iterate   light  avgt   10   1890.966 ±   45.044  us/op
-ParallelSource.parallel    Stream.iterate   heavy  avgt   10   7269.645 ±  327.212  us/op
-ParallelSource.sequential       ArrayList   light  avgt   10    141.032 ±    4.997  us/op
-ParallelSource.sequential       ArrayList   heavy  avgt   10  64359.312 ±  913.384  us/op
-ParallelSource.sequential      LinkedList   light  avgt   10    238.387 ±    6.927  us/op
-ParallelSource.sequential      LinkedList   heavy  avgt   10  63966.465 ± 1552.317  us/op
-ParallelSource.sequential  Stream.iterate   light  avgt   10    699.380 ±   42.057  us/op
-ParallelSource.sequential  Stream.iterate   heavy  avgt   10  65281.219 ± 2713.927  us/op
+ParallelSource.parallel         ArrayList   light  avgt   10    368.171 ±   19.623  us/op
+ParallelSource.parallel         ArrayList   heavy  avgt   10   6710.645 ±  636.723  us/op
+ParallelSource.parallel        LinkedList   light  avgt   10   1259.958 ±  131.599  us/op
+ParallelSource.parallel        LinkedList   heavy  avgt   10   6711.446 ±  355.850  us/op
+ParallelSource.parallel    Stream.iterate   light  avgt   10   2989.923 ±  190.608  us/op
+ParallelSource.parallel    Stream.iterate   heavy  avgt   10   8957.824 ±  462.973  us/op
+ParallelSource.sequential       ArrayList   light  avgt   10    161.001 ±   10.066  us/op
+ParallelSource.sequential       ArrayList   heavy  avgt   10  64725.304 ± 1769.967  us/op
+ParallelSource.sequential      LinkedList   light  avgt   10    257.966 ±   46.287  us/op
+ParallelSource.sequential      LinkedList   heavy  avgt   10  65126.729 ± 1724.169  us/op
+ParallelSource.sequential  Stream.iterate   light  avgt   10    696.310 ±   32.717  us/op
+ParallelSource.sequential  Stream.iterate   heavy  avgt   10  67964.849 ± 1221.927  us/op
 
-Benchmark result is saved to data/java-collections-08/jmh-ParallelSource.csv
+Benchmark result is saved to jmh-ParallelSource.csv

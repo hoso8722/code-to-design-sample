@@ -1,7 +1,7 @@
-1回目: 共有の ArrayList に add → size=49832（正しくは 100000）
-2回目: 共有の ArrayList に add → size=23046（正しくは 100000）
+1回目: 共有の ArrayList に add → size=47664（正しくは 100000）
+2回目: 共有の ArrayList に add → size=16896（正しくは 100000）
 3回目: 共有の ArrayList に add → ArrayIndexOutOfBoundsException（正しくは 100000）
 collect で集める → size=100000、先頭10個 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-forEach        : 7 8 6 10 11 1 9 2 4 3 5 0 
+forEach        : 7 9 10 6 3 5 0 1 2 11 8 4 
 forEachOrdered : 0 1 2 3 4 5 6 7 8 9 10 11 
 動いたスレッド（16本）: [ForkJoinPool.commonPool-worker-1, ForkJoinPool.commonPool-worker-10, ForkJoinPool.commonPool-worker-11, ForkJoinPool.commonPool-worker-12, ForkJoinPool.commonPool-worker-13, ForkJoinPool.commonPool-worker-14, ForkJoinPool.commonPool-worker-15, ForkJoinPool.commonPool-worker-2, ForkJoinPool.commonPool-worker-3, ForkJoinPool.commonPool-worker-4, ForkJoinPool.commonPool-worker-5, ForkJoinPool.commonPool-worker-6, ForkJoinPool.commonPool-worker-7, ForkJoinPool.commonPool-worker-8, ForkJoinPool.commonPool-worker-9, main]

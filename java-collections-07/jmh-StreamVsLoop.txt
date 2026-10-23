@@ -1,10 +1,6 @@
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -17,69 +13,61 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 
 # Run progress: 0.00% complete, ETA 00:04:48
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.170 us/op
-# Warmup Iteration   2: 0.152 us/op
-# Warmup Iteration   3: 0.150 us/op
-Iteration   1: 0.149 us/op
+# Warmup Iteration   1: 0.178 us/op
+# Warmup Iteration   2: 0.167 us/op
+# Warmup Iteration   3: 0.172 us/op
+Iteration   1: 0.154 us/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: 0.001 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.158 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 0.152 us/op
+Iteration   3: 0.154 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 0.155 us/op
+Iteration   4: 0.180 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 0.155 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.001 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 0.157 us/op
+Iteration   5: 0.158 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
 
-# Run progress: 2.78% complete, ETA 00:04:59
+# Run progress: 2.78% complete, ETA 00:05:00
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.156 us/op
-# Warmup Iteration   2: 0.154 us/op
-# Warmup Iteration   3: 0.150 us/op
-Iteration   1: 0.160 us/op
+# Warmup Iteration   1: 0.167 us/op
+# Warmup Iteration   2: 0.159 us/op
+# Warmup Iteration   3: 0.155 us/op
+Iteration   1: 0.152 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 0.141 us/op
+Iteration   2: 0.156 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 0.146 us/op
+Iteration   3: 0.150 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 0.143 us/op
+Iteration   4: 0.152 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 0.157 us/op
+Iteration   5: 0.158 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.001 B/op
                  gc.count:           ≈ 0 counts
@@ -87,13 +75,13 @@ Iteration   5: 0.157 us/op
 
 
 Result "bench.StreamVsLoop.filterMapFor":
-  0.151 ±(99.9%) 0.010 us/op [Average]
-  (min, avg, max) = (0.141, 0.151, 0.160), stdev = 0.006
-  CI (99.9%): [0.142, 0.161] (assumes normal distribution)
+  0.157 ±(99.9%) 0.013 us/op [Average]
+  (min, avg, max) = (0.150, 0.157, 0.180), stdev = 0.009
+  CI (99.9%): [0.144, 0.170] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate":
   0.007 ±(99.9%) 0.001 MB/sec [Average]
-  (min, avg, max) = (0.007, 0.007, 0.007), stdev = 0.001
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
   CI (99.9%): [0.007, 0.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate.norm":
@@ -106,8 +94,8 @@ Secondary result "bench.StreamVsLoop.filterMapFor:gc.count":
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -118,99 +106,91 @@ Secondary result "bench.StreamVsLoop.filterMapFor:gc.count":
 # Benchmark: bench.StreamVsLoop.filterMapFor
 # Parameters: (n = 10000)
 
-# Run progress: 5.56% complete, ETA 00:04:49
+# Run progress: 5.56% complete, ETA 00:04:50
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 13.298 us/op
-# Warmup Iteration   2: 12.963 us/op
-# Warmup Iteration   3: 13.016 us/op
-Iteration   1: 12.764 us/op
+# Warmup Iteration   1: 13.148 us/op
+# Warmup Iteration   2: 12.462 us/op
+# Warmup Iteration   3: 13.099 us/op
+Iteration   1: 13.258 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.089 B/op
+                 gc.alloc.rate.norm: 0.091 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 12.298 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.086 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   3: 12.600 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.088 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   4: 12.797 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.090 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 12.488 us/op
+Iteration   2: 12.708 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.087 B/op
                  gc.count:           ≈ 0 counts
 
-
-# Run progress: 8.33% complete, ETA 00:04:41
-# Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 13.096 us/op
-# Warmup Iteration   2: 13.423 us/op
-# Warmup Iteration   3: 12.308 us/op
-Iteration   1: 12.318 us/op
+Iteration   3: 13.248 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.086 B/op
+                 gc.alloc.rate.norm: 0.091 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 12.850 us/op
+Iteration   4: 14.095 us/op
                  gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: 0.097 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 12.822 us/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: 0.088 B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 8.33% complete, ETA 00:04:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 14.679 us/op
+# Warmup Iteration   2: 14.578 us/op
+# Warmup Iteration   3: 13.189 us/op
+Iteration   1: 13.264 us/op
+                 gc.alloc.rate:      0.006 MB/sec
                  gc.alloc.rate.norm: 0.090 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 13.348 us/op
+Iteration   2: 13.257 us/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: 0.091 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 13.490 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.093 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 12.805 us/op
+Iteration   4: 12.982 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.090 B/op
+                 gc.alloc.rate.norm: 0.089 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 12.195 us/op
+Iteration   5: 13.244 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.085 B/op
+                 gc.alloc.rate.norm: 0.091 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.filterMapFor":
-  12.646 ±(99.9%) 0.518 us/op [Average]
-  (min, avg, max) = (12.195, 12.646, 13.348), stdev = 0.343
-  CI (99.9%): [12.128, 13.164] (assumes normal distribution)
+  13.237 ±(99.9%) 0.579 us/op [Average]
+  (min, avg, max) = (12.708, 13.237, 14.095), stdev = 0.383
+  CI (99.9%): [12.658, 13.816] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate":
   0.007 ±(99.9%) 0.001 MB/sec [Average]
-  (min, avg, max) = (0.007, 0.007, 0.007), stdev = 0.001
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
   CI (99.9%): [0.007, 0.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate.norm":
-  0.088 ±(99.9%) 0.004 B/op [Average]
-  (min, avg, max) = (0.085, 0.088, 0.093), stdev = 0.002
-  CI (99.9%): [0.085, 0.092] (assumes normal distribution)
+  0.091 ±(99.9%) 0.004 B/op [Average]
+  (min, avg, max) = (0.087, 0.091, 0.097), stdev = 0.003
+  CI (99.9%): [0.087, 0.095] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.count":
   ≈ 0 counts
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -223,79 +203,71 @@ Secondary result "bench.StreamVsLoop.filterMapFor:gc.count":
 
 # Run progress: 11.11% complete, ETA 00:04:33
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1595.090 us/op
-# Warmup Iteration   2: 1444.331 us/op
-# Warmup Iteration   3: 1436.719 us/op
-Iteration   1: 1402.311 us/op
+# Warmup Iteration   1: 1813.309 us/op
+# Warmup Iteration   2: 1589.754 us/op
+# Warmup Iteration   3: 1659.519 us/op
+Iteration   1: 1655.754 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 9.804 B/op
+                 gc.alloc.rate.norm: 11.348 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 1492.690 us/op
+Iteration   2: 1623.457 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.385 B/op
+                 gc.alloc.rate.norm: 11.112 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 1394.209 us/op
+Iteration   3: 1558.537 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 9.749 B/op
+                 gc.alloc.rate.norm: 10.663 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 1473.212 us/op
+Iteration   4: 1643.062 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.247 B/op
+                 gc.alloc.rate.norm: 11.292 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 1474.625 us/op
+Iteration   5: 1597.497 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.474 B/op
+                 gc.alloc.rate.norm: 10.967 B/op
                  gc.count:           ≈ 0 counts
 
 
-# Run progress: 13.89% complete, ETA 00:04:24
+# Run progress: 13.89% complete, ETA 00:04:25
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1577.022 us/op
-# Warmup Iteration   2: 1445.630 us/op
-# Warmup Iteration   3: 1529.441 us/op
-Iteration   1: 1559.567 us/op
+# Warmup Iteration   1: 1564.174 us/op
+# Warmup Iteration   2: 1708.578 us/op
+# Warmup Iteration   3: 1524.655 us/op
+Iteration   1: 1496.037 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.886 B/op
+                 gc.alloc.rate.norm: 10.296 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 1499.455 us/op
+Iteration   2: 1612.036 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.479 B/op
+                 gc.alloc.rate.norm: 11.092 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 1447.738 us/op
+Iteration   3: 1531.490 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.130 B/op
+                 gc.alloc.rate.norm: 10.532 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 1559.550 us/op
+Iteration   4: 1539.362 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.854 B/op
+                 gc.alloc.rate.norm: 10.646 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 1468.103 us/op
+Iteration   5: 1526.878 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 10.217 B/op
+                 gc.alloc.rate.norm: 10.500 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.filterMapFor":
-  1477.146 ±(99.9%) 83.981 us/op [Average]
-  (min, avg, max) = (1394.209, 1477.146, 1559.567), stdev = 55.548
-  CI (99.9%): [1393.165, 1561.127] (assumes normal distribution)
+  1578.411 ±(99.9%) 83.188 us/op [Average]
+  (min, avg, max) = (1496.037, 1578.411, 1655.754), stdev = 55.023
+  CI (99.9%): [1495.223, 1661.599] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate":
   0.007 ±(99.9%) 0.001 MB/sec [Average]
@@ -303,17 +275,17 @@ Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate":
   CI (99.9%): [0.007, 0.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.alloc.rate.norm":
-  10.323 ±(99.9%) 0.575 B/op [Average]
-  (min, avg, max) = (9.749, 10.323, 10.886), stdev = 0.380
-  CI (99.9%): [9.747, 10.898] (assumes normal distribution)
+  10.845 ±(99.9%) 0.550 B/op [Average]
+  (min, avg, max) = (10.296, 10.845, 11.348), stdev = 0.364
+  CI (99.9%): [10.295, 11.394] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapFor:gc.count":
   ≈ 0 counts
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -324,116 +296,108 @@ Secondary result "bench.StreamVsLoop.filterMapFor:gc.count":
 # Benchmark: bench.StreamVsLoop.filterMapStream
 # Parameters: (n = 100)
 
-# Run progress: 16.67% complete, ETA 00:04:16
+# Run progress: 16.67% complete, ETA 00:04:17
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.329 us/op
-# Warmup Iteration   2: 0.440 us/op
-# Warmup Iteration   3: 0.517 us/op
-Iteration   1: 0.423 us/op
-                 gc.alloc.rate:      756.936 MB/sec
-                 gc.alloc.rate.norm: 336.003 B/op
-                 gc.count:           3.000 counts
-                 gc.time:            14.000 ms
-
-Iteration   2: 0.426 us/op
-                 gc.alloc.rate:      751.718 MB/sec
+# Warmup Iteration   1: 0.333 us/op
+# Warmup Iteration   2: 0.441 us/op
+# Warmup Iteration   3: 0.376 us/op
+Iteration   1: 0.374 us/op
+                 gc.alloc.rate:      856.809 MB/sec
                  gc.alloc.rate.norm: 336.003 B/op
                  gc.count:           4.000 counts
                  gc.time:            13.000 ms
 
-Iteration   3: 0.470 us/op
-                 gc.alloc.rate:      681.776 MB/sec
+Iteration   2: 0.373 us/op
+                 gc.alloc.rate:      858.208 MB/sec
                  gc.alloc.rate.norm: 336.003 B/op
-                 gc.count:           3.000 counts
-                 gc.time:            8.000 ms
-
-Iteration   4: 0.421 us/op
-                 gc.alloc.rate:      760.222 MB/sec
-                 gc.alloc.rate.norm: 336.003 B/op
-                 gc.count:           3.000 counts
+                 gc.count:           4.000 counts
                  gc.time:            10.000 ms
 
-Iteration   5: 0.438 us/op
-                 gc.alloc.rate:      730.492 MB/sec
-                 gc.alloc.rate.norm: 336.003 B/op
-                 gc.count:           3.000 counts
-                 gc.time:            9.000 ms
-
-
-# Run progress: 19.44% complete, ETA 00:04:07
-# Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.246 us/op
-# Warmup Iteration   2: 0.552 us/op
-# Warmup Iteration   3: 0.426 us/op
-Iteration   1: 0.440 us/op
-                 gc.alloc.rate:      727.702 MB/sec
+Iteration   3: 0.396 us/op
+                 gc.alloc.rate:      807.635 MB/sec
                  gc.alloc.rate.norm: 336.003 B/op
                  gc.count:           4.000 counts
-                 gc.time:            13.000 ms
-
-Iteration   2: 0.445 us/op
-                 gc.alloc.rate:      720.284 MB/sec
-                 gc.alloc.rate.norm: 336.003 B/op
-                 gc.count:           3.000 counts
                  gc.time:            11.000 ms
 
-Iteration   3: 0.434 us/op
-                 gc.alloc.rate:      738.282 MB/sec
+Iteration   4: 0.429 us/op
+                 gc.alloc.rate:      745.530 MB/sec
                  gc.alloc.rate.norm: 336.003 B/op
                  gc.count:           3.000 counts
-                 gc.time:            9.000 ms
+                 gc.time:            10.000 ms
 
-Iteration   4: 0.431 us/op
-                 gc.alloc.rate:      742.540 MB/sec
+Iteration   5: 0.388 us/op
+                 gc.alloc.rate:      824.889 MB/sec
                  gc.alloc.rate.norm: 336.003 B/op
                  gc.count:           4.000 counts
                  gc.time:            10.000 ms
 
-Iteration   5: 0.432 us/op
-                 gc.alloc.rate:      741.410 MB/sec
+
+# Run progress: 19.44% complete, ETA 00:04:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 0.311 us/op
+# Warmup Iteration   2: 0.439 us/op
+# Warmup Iteration   3: 0.384 us/op
+Iteration   1: 0.458 us/op
+                 gc.alloc.rate:      697.745 MB/sec
+                 gc.alloc.rate.norm: 336.003 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            12.000 ms
+
+Iteration   2: 0.393 us/op
+                 gc.alloc.rate:      815.223 MB/sec
                  gc.alloc.rate.norm: 336.003 B/op
                  gc.count:           3.000 counts
                  gc.time:            9.000 ms
+
+Iteration   3: 0.385 us/op
+                 gc.alloc.rate:      832.726 MB/sec
+                 gc.alloc.rate.norm: 336.003 B/op
+                 gc.count:           4.000 counts
+                 gc.time:            13.000 ms
+
+Iteration   4: 0.388 us/op
+                 gc.alloc.rate:      825.882 MB/sec
+                 gc.alloc.rate.norm: 336.003 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            9.000 ms
+
+Iteration   5: 0.377 us/op
+                 gc.alloc.rate:      848.547 MB/sec
+                 gc.alloc.rate.norm: 336.003 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            12.000 ms
 
 
 
 Result "bench.StreamVsLoop.filterMapStream":
-  0.436 ±(99.9%) 0.021 us/op [Average]
-  (min, avg, max) = (0.421, 0.436, 0.470), stdev = 0.014
-  CI (99.9%): [0.415, 0.457] (assumes normal distribution)
+  0.396 ±(99.9%) 0.041 us/op [Average]
+  (min, avg, max) = (0.373, 0.396, 0.458), stdev = 0.027
+  CI (99.9%): [0.355, 0.437] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.alloc.rate":
-  735.136 ±(99.9%) 34.285 MB/sec [Average]
-  (min, avg, max) = (681.776, 735.136, 760.222), stdev = 22.677
-  CI (99.9%): [700.851, 769.421] (assumes normal distribution)
+  811.319 ±(99.9%) 77.688 MB/sec [Average]
+  (min, avg, max) = (697.745, 811.319, 858.208), stdev = 51.386
+  CI (99.9%): [733.632, 889.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.alloc.rate.norm":
   336.003 ±(99.9%) 0.001 B/op [Average]
   (min, avg, max) = (336.003, 336.003, 336.003), stdev = 0.001
-  CI (99.9%): [336.003, 336.003] (assumes normal distribution)
+  CI (99.9%): [336.002, 336.003] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.count":
-  33.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (3.000, 3.300, 4.000), stdev = 0.483
-  CI (99.9%): [33.000, 33.000] (assumes normal distribution)
+  35.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (3.000, 3.500, 4.000), stdev = 0.527
+  CI (99.9%): [35.000, 35.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.time":
-  106.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (8.000, 10.600, 14.000), stdev = 2.066
-  CI (99.9%): [106.000, 106.000] (assumes normal distribution)
+  109.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (9.000, 10.900, 13.000), stdev = 1.524
+  CI (99.9%): [109.000, 109.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -444,93 +408,85 @@ Secondary result "bench.StreamVsLoop.filterMapStream:gc.time":
 # Benchmark: bench.StreamVsLoop.filterMapStream
 # Parameters: (n = 10000)
 
-# Run progress: 22.22% complete, ETA 00:03:59
+# Run progress: 22.22% complete, ETA 00:04:00
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 15.635 us/op
-# Warmup Iteration   2: 37.923 us/op
-# Warmup Iteration   3: 35.991 us/op
-Iteration   1: 38.640 us/op
-                 gc.alloc.rate:      8.293 MB/sec
-                 gc.alloc.rate.norm: 336.277 B/op
+# Warmup Iteration   1: 17.027 us/op
+# Warmup Iteration   2: 31.545 us/op
+# Warmup Iteration   3: 32.823 us/op
+Iteration   1: 33.246 us/op
+                 gc.alloc.rate:      8.718 MB/sec
+                 gc.alloc.rate.norm: 304.227 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 33.997 us/op
+                 gc.alloc.rate:      8.529 MB/sec
+                 gc.alloc.rate.norm: 304.236 B/op
                  gc.count:           1.000 counts
-                 gc.time:            6.000 ms
+                 gc.time:            4.000 ms
 
-Iteration   2: 36.300 us/op
-                 gc.alloc.rate:      8.830 MB/sec
-                 gc.alloc.rate.norm: 336.254 B/op
+Iteration   3: 30.980 us/op
+                 gc.alloc.rate:      9.360 MB/sec
+                 gc.alloc.rate.norm: 304.213 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 37.453 us/op
-                 gc.alloc.rate:      8.556 MB/sec
-                 gc.alloc.rate.norm: 336.262 B/op
+Iteration   4: 31.206 us/op
+                 gc.alloc.rate:      9.291 MB/sec
+                 gc.alloc.rate.norm: 304.216 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 36.533 us/op
-                 gc.alloc.rate:      8.773 MB/sec
-                 gc.alloc.rate.norm: 336.254 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 38.062 us/op
-                 gc.alloc.rate:      8.421 MB/sec
-                 gc.alloc.rate.norm: 336.266 B/op
+Iteration   5: 31.667 us/op
+                 gc.alloc.rate:      9.156 MB/sec
+                 gc.alloc.rate.norm: 304.218 B/op
                  gc.count:           ≈ 0 counts
 
 
-# Run progress: 25.00% complete, ETA 00:03:50
+# Run progress: 25.00% complete, ETA 00:03:51
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 14.951 us/op
-# Warmup Iteration   2: 36.464 us/op
-# Warmup Iteration   3: 36.339 us/op
-Iteration   1: 39.045 us/op
-                 gc.alloc.rate:      8.206 MB/sec
+# Warmup Iteration   1: 15.909 us/op
+# Warmup Iteration   2: 41.249 us/op
+# Warmup Iteration   3: 39.691 us/op
+Iteration   1: 40.102 us/op
+                 gc.alloc.rate:      7.992 MB/sec
+                 gc.alloc.rate.norm: 336.275 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 40.798 us/op
+                 gc.alloc.rate:      7.857 MB/sec
+                 gc.alloc.rate.norm: 336.280 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 42.584 us/op
+                 gc.alloc.rate:      7.525 MB/sec
+                 gc.alloc.rate.norm: 336.293 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 40.342 us/op
+                 gc.alloc.rate:      7.940 MB/sec
                  gc.alloc.rate.norm: 336.280 B/op
                  gc.count:           1.000 counts
-                 gc.time:            5.000 ms
+                 gc.time:            4.000 ms
 
-Iteration   2: 36.587 us/op
-                 gc.alloc.rate:      8.761 MB/sec
-                 gc.alloc.rate.norm: 336.256 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   3: 35.958 us/op
-                 gc.alloc.rate:      8.914 MB/sec
-                 gc.alloc.rate.norm: 336.252 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   4: 39.204 us/op
-                 gc.alloc.rate:      8.176 MB/sec
-                 gc.alloc.rate.norm: 336.274 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 35.579 us/op
-                 gc.alloc.rate:      9.008 MB/sec
-                 gc.alloc.rate.norm: 336.249 B/op
+Iteration   5: 40.538 us/op
+                 gc.alloc.rate:      7.904 MB/sec
+                 gc.alloc.rate.norm: 336.279 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.filterMapStream":
-  37.336 ±(99.9%) 2.010 us/op [Average]
-  (min, avg, max) = (35.579, 37.336, 39.204), stdev = 1.330
-  CI (99.9%): [35.326, 39.347] (assumes normal distribution)
+  36.546 ±(99.9%) 7.095 us/op [Average]
+  (min, avg, max) = (30.980, 36.546, 42.584), stdev = 4.693
+  CI (99.9%): [29.451, 43.641] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.alloc.rate":
-  8.594 ±(99.9%) 0.461 MB/sec [Average]
-  (min, avg, max) = (8.176, 8.594, 9.008), stdev = 0.305
-  CI (99.9%): [8.133, 9.054] (assumes normal distribution)
+  8.427 ±(99.9%) 1.018 MB/sec [Average]
+  (min, avg, max) = (7.525, 8.427, 9.360), stdev = 0.673
+  CI (99.9%): [7.409, 9.445] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.alloc.rate.norm":
-  336.262 ±(99.9%) 0.017 B/op [Average]
-  (min, avg, max) = (336.249, 336.262, 336.280), stdev = 0.011
-  CI (99.9%): [336.245, 336.279] (assumes normal distribution)
+  320.252 ±(99.9%) 25.546 B/op [Average]
+  (min, avg, max) = (304.213, 320.252, 336.293), stdev = 16.897
+  CI (99.9%): [294.706, 345.797] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.count":
   2.000 ±(99.9%) 0.001 counts [Sum]
@@ -538,14 +494,14 @@ Secondary result "bench.StreamVsLoop.filterMapStream:gc.count":
   CI (99.9%): [2.000, 2.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.time":
-  11.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (≈ 0, 1.100, 6.000), stdev = 2.331
-  CI (99.9%): [11.000, 11.000] (assumes normal distribution)
+  8.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 0.800, 4.000), stdev = 1.687
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -556,99 +512,91 @@ Secondary result "bench.StreamVsLoop.filterMapStream:gc.time":
 # Benchmark: bench.StreamVsLoop.filterMapStream
 # Parameters: (n = 1000000)
 
-# Run progress: 27.78% complete, ETA 00:03:42
+# Run progress: 27.78% complete, ETA 00:03:43
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1566.187 us/op
-# Warmup Iteration   2: 2895.428 us/op
-# Warmup Iteration   3: 2807.064 us/op
-Iteration   1: 2728.156 us/op
-                 gc.alloc.rate:      0.124 MB/sec
-                 gc.alloc.rate.norm: 354.986 B/op
+# Warmup Iteration   1: 1752.990 us/op
+# Warmup Iteration   2: 3239.003 us/op
+# Warmup Iteration   3: 3083.750 us/op
+Iteration   1: 3257.679 us/op
+                 gc.alloc.rate:      0.105 MB/sec
+                 gc.alloc.rate.norm: 358.260 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 2796.884 us/op
-                 gc.alloc.rate:      0.121 MB/sec
-                 gc.alloc.rate.norm: 355.553 B/op
+Iteration   2: 3149.417 us/op
+                 gc.alloc.rate:      0.108 MB/sec
+                 gc.alloc.rate.norm: 357.560 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 2809.505 us/op
-                 gc.alloc.rate:      0.121 MB/sec
-                 gc.alloc.rate.norm: 355.608 B/op
+Iteration   3: 3175.551 us/op
+                 gc.alloc.rate:      0.107 MB/sec
+                 gc.alloc.rate.norm: 357.696 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 2759.783 us/op
-                 gc.alloc.rate:      0.123 MB/sec
-                 gc.alloc.rate.norm: 355.284 B/op
+Iteration   4: 3324.359 us/op
+                 gc.alloc.rate:      0.103 MB/sec
+                 gc.alloc.rate.norm: 358.777 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 2693.052 us/op
-                 gc.alloc.rate:      0.126 MB/sec
-                 gc.alloc.rate.norm: 354.731 B/op
+Iteration   5: 3279.181 us/op
+                 gc.alloc.rate:      0.104 MB/sec
+                 gc.alloc.rate.norm: 358.510 B/op
                  gc.count:           ≈ 0 counts
 
 
-# Run progress: 30.56% complete, ETA 00:03:33
+# Run progress: 30.56% complete, ETA 00:03:34
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1663.879 us/op
-# Warmup Iteration   2: 2653.028 us/op
-# Warmup Iteration   3: 2812.316 us/op
-Iteration   1: 2741.340 us/op
-                 gc.alloc.rate:      0.123 MB/sec
-                 gc.alloc.rate.norm: 355.074 B/op
+# Warmup Iteration   1: 1740.878 us/op
+# Warmup Iteration   2: 3165.155 us/op
+# Warmup Iteration   3: 3119.763 us/op
+Iteration   1: 3319.892 us/op
+                 gc.alloc.rate:      0.103 MB/sec
+                 gc.alloc.rate.norm: 358.808 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 2923.632 us/op
-                 gc.alloc.rate:      0.116 MB/sec
-                 gc.alloc.rate.norm: 356.256 B/op
+Iteration   2: 3197.412 us/op
+                 gc.alloc.rate:      0.107 MB/sec
+                 gc.alloc.rate.norm: 357.936 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 2868.983 us/op
-                 gc.alloc.rate:      0.118 MB/sec
-                 gc.alloc.rate.norm: 355.943 B/op
+Iteration   3: 3245.762 us/op
+                 gc.alloc.rate:      0.105 MB/sec
+                 gc.alloc.rate.norm: 358.291 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 2884.032 us/op
-                 gc.alloc.rate:      0.118 MB/sec
-                 gc.alloc.rate.norm: 356.173 B/op
+Iteration   4: 3294.793 us/op
+                 gc.alloc.rate:      0.104 MB/sec
+                 gc.alloc.rate.norm: 358.658 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 2791.665 us/op
-                 gc.alloc.rate:      0.121 MB/sec
-                 gc.alloc.rate.norm: 355.302 B/op
+Iteration   5: 3099.096 us/op
+                 gc.alloc.rate:      0.110 MB/sec
+                 gc.alloc.rate.norm: 357.226 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.filterMapStream":
-  2799.703 ±(99.9%) 111.476 us/op [Average]
-  (min, avg, max) = (2693.052, 2799.703, 2923.632), stdev = 73.735
-  CI (99.9%): [2688.227, 2911.179] (assumes normal distribution)
+  3234.314 ±(99.9%) 115.013 us/op [Average]
+  (min, avg, max) = (3099.096, 3234.314, 3324.359), stdev = 76.074
+  CI (99.9%): [3119.301, 3349.328] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.alloc.rate":
-  0.121 ±(99.9%) 0.005 MB/sec [Average]
-  (min, avg, max) = (0.116, 0.121, 0.126), stdev = 0.003
-  CI (99.9%): [0.117, 0.126] (assumes normal distribution)
+  0.106 ±(99.9%) 0.004 MB/sec [Average]
+  (min, avg, max) = (0.103, 0.106, 0.110), stdev = 0.002
+  CI (99.9%): [0.102, 0.109] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.alloc.rate.norm":
-  355.491 ±(99.9%) 0.774 B/op [Average]
-  (min, avg, max) = (354.731, 355.491, 356.256), stdev = 0.512
-  CI (99.9%): [354.717, 356.265] (assumes normal distribution)
+  358.172 ±(99.9%) 0.827 B/op [Average]
+  (min, avg, max) = (357.226, 358.172, 358.808), stdev = 0.547
+  CI (99.9%): [357.345, 359.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.filterMapStream:gc.count":
   ≈ 0 counts
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -661,114 +609,106 @@ Secondary result "bench.StreamVsLoop.filterMapStream:gc.count":
 
 # Run progress: 33.33% complete, ETA 00:03:25
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1.263 us/op
-# Warmup Iteration   2: 1.606 us/op
-# Warmup Iteration   3: 0.919 us/op
-Iteration   1: 0.511 us/op
-                 gc.alloc.rate:      3983.873 MB/sec
-                 gc.alloc.rate.norm: 2136.004 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            29.000 ms
+# Warmup Iteration   1: 1.138 us/op
+# Warmup Iteration   2: 6.005 us/op
+# Warmup Iteration   3: 0.701 us/op
+Iteration   1: 1.443 us/op
+                 gc.alloc.rate:      1432.288 MB/sec
+                 gc.alloc.rate.norm: 2168.010 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            16.000 ms
 
-Iteration   2: 0.497 us/op
-                 gc.alloc.rate:      4096.357 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            28.000 ms
+Iteration   2: 0.698 us/op
+                 gc.alloc.rate:      2961.516 MB/sec
+                 gc.alloc.rate.norm: 2168.005 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            25.000 ms
 
-Iteration   3: 0.493 us/op
-                 gc.alloc.rate:      4132.335 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            27.000 ms
+Iteration   3: 0.598 us/op
+                 gc.alloc.rate:      3454.820 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            23.000 ms
 
-Iteration   4: 0.485 us/op
-                 gc.alloc.rate:      4193.084 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            27.000 ms
+Iteration   4: 0.588 us/op
+                 gc.alloc.rate:      3512.058 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            18.000 ms
 
-Iteration   5: 0.494 us/op
-                 gc.alloc.rate:      4122.124 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            26.000 ms
+Iteration   5: 0.599 us/op
+                 gc.alloc.rate:      3450.439 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            25.000 ms
 
 
 # Run progress: 36.11% complete, ETA 00:03:17
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.966 us/op
-# Warmup Iteration   2: 1.117 us/op
-# Warmup Iteration   3: 2.877 us/op
-Iteration   1: 0.941 us/op
-                 gc.alloc.rate:      2163.116 MB/sec
-                 gc.alloc.rate.norm: 2136.007 B/op
-                 gc.count:           3.000 counts
-                 gc.time:            13.000 ms
+# Warmup Iteration   1: 1.133 us/op
+# Warmup Iteration   2: 1.051 us/op
+# Warmup Iteration   3: 0.724 us/op
+Iteration   1: 0.544 us/op
+                 gc.alloc.rate:      3793.253 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            25.000 ms
 
-Iteration   2: 0.462 us/op
-                 gc.alloc.rate:      4406.249 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           5.000 counts
-                 gc.time:            19.000 ms
+Iteration   2: 0.542 us/op
+                 gc.alloc.rate:      3811.820 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            31.000 ms
 
-Iteration   3: 0.477 us/op
-                 gc.alloc.rate:      4269.565 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           5.000 counts
-                 gc.time:            20.000 ms
+Iteration   3: 0.526 us/op
+                 gc.alloc.rate:      3927.943 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            27.000 ms
 
-Iteration   4: 0.498 us/op
-                 gc.alloc.rate:      4085.479 MB/sec
-                 gc.alloc.rate.norm: 2136.003 B/op
-                 gc.count:           5.000 counts
-                 gc.time:            20.000 ms
+Iteration   4: 0.596 us/op
+                 gc.alloc.rate:      3469.679 MB/sec
+                 gc.alloc.rate.norm: 2168.004 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            27.000 ms
 
-Iteration   5: 0.499 us/op
-                 gc.alloc.rate:      4081.787 MB/sec
-                 gc.alloc.rate.norm: 2136.004 B/op
+Iteration   5: 0.715 us/op
+                 gc.alloc.rate:      2887.714 MB/sec
+                 gc.alloc.rate.norm: 2168.005 B/op
                  gc.count:           5.000 counts
-                 gc.time:            30.000 ms
+                 gc.time:            25.000 ms
 
 
 
 Result "bench.StreamVsLoop.sumBoxedStream":
-  0.536 ±(99.9%) 0.216 us/op [Average]
-  (min, avg, max) = (0.462, 0.536, 0.941), stdev = 0.143
-  CI (99.9%): [0.319, 0.752] (assumes normal distribution)
+  0.685 ±(99.9%) 0.413 us/op [Average]
+  (min, avg, max) = (0.526, 0.685, 1.443), stdev = 0.273
+  CI (99.9%): [0.271, 1.098] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.alloc.rate":
-  3953.397 ±(99.9%) 967.192 MB/sec [Average]
-  (min, avg, max) = (2163.116, 3953.397, 4406.249), stdev = 639.738
-  CI (99.9%): [2986.205, 4920.589] (assumes normal distribution)
+  3270.153 ±(99.9%) 1102.254 MB/sec [Average]
+  (min, avg, max) = (1432.288, 3270.153, 3927.943), stdev = 729.073
+  CI (99.9%): [2167.899, 4372.407] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm":
-  2136.004 ±(99.9%) 0.002 B/op [Average]
-  (min, avg, max) = (2136.003, 2136.004, 2136.007), stdev = 0.001
-  CI (99.9%): [2136.002, 2136.005] (assumes normal distribution)
+  2168.005 ±(99.9%) 0.003 B/op [Average]
+  (min, avg, max) = (2168.004, 2168.005, 2168.010), stdev = 0.002
+  CI (99.9%): [2168.002, 2168.008] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.count":
-  58.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (3.000, 5.800, 7.000), stdev = 1.398
-  CI (99.9%): [58.000, 58.000] (assumes normal distribution)
+  56.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (3.000, 5.600, 7.000), stdev = 1.174
+  CI (99.9%): [56.000, 56.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.time":
-  239.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (13.000, 23.900, 30.000), stdev = 5.547
-  CI (99.9%): [239.000, 239.000] (assumes normal distribution)
+  242.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (16.000, 24.200, 31.000), stdev = 4.367
+  CI (99.9%): [242.000, 242.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -779,116 +719,108 @@ Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.time":
 # Benchmark: bench.StreamVsLoop.sumBoxedStream
 # Parameters: (n = 10000)
 
-# Run progress: 38.89% complete, ETA 00:03:08
+# Run progress: 38.89% complete, ETA 00:03:09
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 124.433 us/op
-# Warmup Iteration   2: 94.868 us/op
-# Warmup Iteration   3: 43.909 us/op
-Iteration   1: 43.310 us/op
-                 gc.alloc.rate:      5274.150 MB/sec
-                 gc.alloc.rate.norm: 239684.898 B/op
-                 gc.count:           9.000 counts
-                 gc.time:            35.000 ms
+# Warmup Iteration   1: 186.258 us/op
+# Warmup Iteration   2: 266.622 us/op
+# Warmup Iteration   3: 122.961 us/op
+Iteration   1: 68.721 us/op
+                 gc.alloc.rate:      3319.188 MB/sec
+                 gc.alloc.rate.norm: 239736.477 B/op
+                 gc.count:           6.000 counts
+                 gc.time:            26.000 ms
 
-Iteration   2: 53.997 us/op
-                 gc.alloc.rate:      4232.687 MB/sec
-                 gc.alloc.rate.norm: 239768.381 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            33.000 ms
+Iteration   2: 102.192 us/op
+                 gc.alloc.rate:      2235.489 MB/sec
+                 gc.alloc.rate.norm: 239736.709 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            29.000 ms
 
-Iteration   3: 52.468 us/op
-                 gc.alloc.rate:      4355.368 MB/sec
-                 gc.alloc.rate.norm: 239768.376 B/op
+Iteration   3: 117.139 us/op
+                 gc.alloc.rate:      1950.308 MB/sec
+                 gc.alloc.rate.norm: 239736.813 B/op
+                 gc.count:           4.000 counts
+                 gc.time:            25.000 ms
+
+Iteration   4: 98.111 us/op
+                 gc.alloc.rate:      2328.576 MB/sec
+                 gc.alloc.rate.norm: 239736.681 B/op
+                 gc.count:           4.000 counts
+                 gc.time:            26.000 ms
+
+Iteration   5: 66.077 us/op
+                 gc.alloc.rate:      3457.075 MB/sec
+                 gc.alloc.rate.norm: 239766.157 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            29.000 ms
+
+
+# Run progress: 41.67% complete, ETA 00:03:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 168.445 us/op
+# Warmup Iteration   2: 139.776 us/op
+# Warmup Iteration   3: 239.858 us/op
+Iteration   1: 101.866 us/op
+                 gc.alloc.rate:      2242.935 MB/sec
+                 gc.alloc.rate.norm: 239736.707 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            25.000 ms
+
+Iteration   2: 86.990 us/op
+                 gc.alloc.rate:      2627.015 MB/sec
+                 gc.alloc.rate.norm: 239736.604 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            27.000 ms
+
+Iteration   3: 80.566 us/op
+                 gc.alloc.rate:      2836.200 MB/sec
+                 gc.alloc.rate.norm: 239736.559 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            23.000 ms
+
+Iteration   4: 61.144 us/op
+                 gc.alloc.rate:      3737.244 MB/sec
+                 gc.alloc.rate.norm: 239748.042 B/op
                  gc.count:           7.000 counts
                  gc.time:            27.000 ms
 
-Iteration   4: 52.153 us/op
-                 gc.alloc.rate:      4380.497 MB/sec
-                 gc.alloc.rate.norm: 239763.246 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            35.000 ms
-
-Iteration   5: 52.565 us/op
-                 gc.alloc.rate:      4347.402 MB/sec
-                 gc.alloc.rate.norm: 239768.371 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            34.000 ms
-
-
-# Run progress: 41.67% complete, ETA 00:03:00
-# Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 122.904 us/op
-# Warmup Iteration   2: 109.541 us/op
-# Warmup Iteration   3: 64.610 us/op
-Iteration   1: 43.233 us/op
-                 gc.alloc.rate:      5283.400 MB/sec
-                 gc.alloc.rate.norm: 239672.305 B/op
-                 gc.count:           9.000 counts
-                 gc.time:            35.000 ms
-
-Iteration   2: 49.402 us/op
-                 gc.alloc.rate:      4626.083 MB/sec
-                 gc.alloc.rate.norm: 239742.148 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            28.000 ms
-
-Iteration   3: 52.620 us/op
-                 gc.alloc.rate:      4343.130 MB/sec
-                 gc.alloc.rate.norm: 239768.371 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            30.000 ms
-
-Iteration   4: 51.855 us/op
-                 gc.alloc.rate:      4407.462 MB/sec
-                 gc.alloc.rate.norm: 239763.281 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            30.000 ms
-
-Iteration   5: 52.740 us/op
-                 gc.alloc.rate:      4332.331 MB/sec
-                 gc.alloc.rate.norm: 239768.370 B/op
+Iteration   5: 60.740 us/op
+                 gc.alloc.rate:      3761.789 MB/sec
+                 gc.alloc.rate.norm: 239768.420 B/op
                  gc.count:           6.000 counts
-                 gc.time:            25.000 ms
+                 gc.time:            24.000 ms
 
 
 
 Result "bench.StreamVsLoop.sumBoxedStream":
-  50.434 ±(99.9%) 5.965 us/op [Average]
-  (min, avg, max) = (43.233, 50.434, 53.997), stdev = 3.946
-  CI (99.9%): [44.469, 56.400] (assumes normal distribution)
+  84.355 ±(99.9%) 30.174 us/op [Average]
+  (min, avg, max) = (60.740, 84.355, 117.139), stdev = 19.958
+  CI (99.9%): [54.180, 114.529] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.alloc.rate":
-  4558.251 ±(99.9%) 593.342 MB/sec [Average]
-  (min, avg, max) = (4232.687, 4558.251, 5283.400), stdev = 392.459
-  CI (99.9%): [3964.910, 5151.593] (assumes normal distribution)
+  2849.582 ±(99.9%) 1018.512 MB/sec [Average]
+  (min, avg, max) = (1950.308, 2849.582, 3761.789), stdev = 673.682
+  CI (99.9%): [1831.070, 3868.093] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm":
-  239746.775 ±(99.9%) 55.828 B/op [Average]
-  (min, avg, max) = (239672.305, 239746.775, 239768.381), stdev = 36.927
-  CI (99.9%): [239690.947, 239802.602] (assumes normal distribution)
+  239743.917 ±(99.9%) 19.399 B/op [Average]
+  (min, avg, max) = (239736.477, 239743.917, 239768.420), stdev = 12.831
+  CI (99.9%): [239724.518, 239763.316] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.count":
-  76.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (6.000, 7.600, 9.000), stdev = 0.966
-  CI (99.9%): [76.000, 76.000] (assumes normal distribution)
+  54.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (4.000, 5.400, 7.000), stdev = 1.075
+  CI (99.9%): [54.000, 54.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.time":
-  312.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (25.000, 31.200, 35.000), stdev = 3.706
-  CI (99.9%): [312.000, 312.000] (assumes normal distribution)
+  261.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (23.000, 26.100, 29.000), stdev = 1.969
+  CI (99.9%): [261.000, 261.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -901,114 +833,106 @@ Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.time":
 
 # Run progress: 44.44% complete, ETA 00:02:52
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 13220.101 us/op
-# Warmup Iteration   2: 17002.379 us/op
-# Warmup Iteration   3: 12889.654 us/op
-Iteration   1: 8077.647 us/op
-                 gc.alloc.rate:      2830.189 MB/sec
-                 gc.alloc.rate.norm: 23999824.903 B/op
-                 gc.count:           4.000 counts
-                 gc.time:            31.000 ms
+# Warmup Iteration   1: 12860.969 us/op
+# Warmup Iteration   2: 10913.844 us/op
+# Warmup Iteration   3: 11381.034 us/op
+Iteration   1: 6542.334 us/op
+                 gc.alloc.rate:      3497.149 MB/sec
+                 gc.alloc.rate.norm: 23999813.091 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            30.000 ms
 
-Iteration   2: 4680.931 us/op
-                 gc.alloc.rate:      4887.191 MB/sec
-                 gc.alloc.rate.norm: 23999800.972 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            24.000 ms
-
-Iteration   3: 4924.512 us/op
-                 gc.alloc.rate:      4645.280 MB/sec
-                 gc.alloc.rate.norm: 23999802.431 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            26.000 ms
-
-Iteration   4: 4909.805 us/op
-                 gc.alloc.rate:      4659.542 MB/sec
-                 gc.alloc.rate.norm: 23999802.588 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            26.000 ms
-
-Iteration   5: 4908.173 us/op
-                 gc.alloc.rate:      4660.718 MB/sec
-                 gc.alloc.rate.norm: 23999802.263 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            25.000 ms
-
-
-# Run progress: 47.22% complete, ETA 00:02:43
-# Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 17936.397 us/op
-# Warmup Iteration   2: 22005.420 us/op
-# Warmup Iteration   3: 9213.772 us/op
-Iteration   1: 6050.287 us/op
-                 gc.alloc.rate:      3777.624 MB/sec
-                 gc.alloc.rate.norm: 23999810.506 B/op
+Iteration   2: 7162.789 us/op
+                 gc.alloc.rate:      3192.720 MB/sec
+                 gc.alloc.rate.norm: 23999817.600 B/op
                  gc.count:           5.000 counts
-                 gc.time:            28.000 ms
+                 gc.time:            21.000 ms
 
-Iteration   2: 5091.722 us/op
-                 gc.alloc.rate:      4492.905 MB/sec
-                 gc.alloc.rate.norm: 23999803.655 B/op
+Iteration   3: 6755.420 us/op
+                 gc.alloc.rate:      3386.544 MB/sec
+                 gc.alloc.rate.norm: 23999814.389 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            26.000 ms
+
+Iteration   4: 6473.257 us/op
+                 gc.alloc.rate:      3533.781 MB/sec
+                 gc.alloc.rate.norm: 23999812.800 B/op
                  gc.count:           6.000 counts
-                 gc.time:            24.000 ms
+                 gc.time:            27.000 ms
 
-Iteration   3: 5031.901 us/op
-                 gc.alloc.rate:      4544.352 MB/sec
-                 gc.alloc.rate.norm: 23999803.457 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            24.000 ms
-
-Iteration   4: 5008.889 us/op
-                 gc.alloc.rate:      4565.664 MB/sec
-                 gc.alloc.rate.norm: 23999803.440 B/op
+Iteration   5: 6899.780 us/op
+                 gc.alloc.rate:      3314.641 MB/sec
+                 gc.alloc.rate.norm: 23999815.342 B/op
                  gc.count:           7.000 counts
                  gc.time:            28.000 ms
 
-Iteration   5: 4908.638 us/op
-                 gc.alloc.rate:      4660.120 MB/sec
-                 gc.alloc.rate.norm: 23999802.431 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            24.000 ms
+
+# Run progress: 47.22% complete, ETA 00:02:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 13211.412 us/op
+# Warmup Iteration   2: 15886.818 us/op
+# Warmup Iteration   3: 14106.988 us/op
+Iteration   1: 13409.020 us/op
+                 gc.alloc.rate:      1704.368 MB/sec
+                 gc.alloc.rate.norm: 23999860.587 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            29.000 ms
+
+Iteration   2: 17180.383 us/op
+                 gc.alloc.rate:      1330.513 MB/sec
+                 gc.alloc.rate.norm: 23999885.695 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            22.000 ms
+
+Iteration   3: 14394.140 us/op
+                 gc.alloc.rate:      1587.256 MB/sec
+                 gc.alloc.rate.norm: 23999866.743 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            20.000 ms
+
+Iteration   4: 12654.695 us/op
+                 gc.alloc.rate:      1806.682 MB/sec
+                 gc.alloc.rate.norm: 23999854.800 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            21.000 ms
+
+Iteration   5: 13939.740 us/op
+                 gc.alloc.rate:      1639.711 MB/sec
+                 gc.alloc.rate.norm: 23999864.444 B/op
+                 gc.count:           3.000 counts
+                 gc.time:            21.000 ms
 
 
 
 Result "bench.StreamVsLoop.sumBoxedStream":
-  5359.250 ±(99.9%) 1547.251 us/op [Average]
-  (min, avg, max) = (4680.931, 5359.250, 8077.647), stdev = 1023.411
-  CI (99.9%): [3811.999, 6906.502] (assumes normal distribution)
+  10541.156 ±(99.9%) 6268.286 us/op [Average]
+  (min, avg, max) = (6473.257, 10541.156, 17180.383), stdev = 4146.083
+  CI (99.9%): [4272.870, 16809.442] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.alloc.rate":
-  4372.358 ±(99.9%) 929.440 MB/sec [Average]
-  (min, avg, max) = (2830.189, 4372.358, 4887.191), stdev = 614.767
-  CI (99.9%): [3442.918, 5301.799] (assumes normal distribution)
+  2499.337 ±(99.9%) 1429.581 MB/sec [Average]
+  (min, avg, max) = (1330.513, 2499.337, 3533.781), stdev = 945.580
+  CI (99.9%): [1069.755, 3928.918] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm":
-  23999805.665 ±(99.9%) 10.942 B/op [Average]
-  (min, avg, max) = (23999800.972, 23999805.665, 23999824.903), stdev = 7.237
-  CI (99.9%): [23999794.723, 23999816.606] (assumes normal distribution)
+  23999840.549 ±(99.9%) 42.970 B/op [Average]
+  (min, avg, max) = (23999812.800, 23999840.549, 23999885.695), stdev = 28.422
+  CI (99.9%): [23999797.579, 23999883.519] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.count":
-  58.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (4.000, 5.800, 7.000), stdev = 0.789
-  CI (99.9%): [58.000, 58.000] (assumes normal distribution)
+  47.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (3.000, 4.700, 7.000), stdev = 1.889
+  CI (99.9%): [47.000, 47.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.time":
-  260.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (24.000, 26.000, 31.000), stdev = 2.357
-  CI (99.9%): [260.000, 260.000] (assumes normal distribution)
+  245.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (20.000, 24.500, 30.000), stdev = 3.866
+  CI (99.9%): [245.000, 245.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1019,71 +943,63 @@ Secondary result "bench.StreamVsLoop.sumBoxedStream:gc.time":
 # Benchmark: bench.StreamVsLoop.sumForArray
 # Parameters: (n = 100)
 
-# Run progress: 50.00% complete, ETA 00:02:35
+# Run progress: 50.00% complete, ETA 00:02:36
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.019 us/op
-# Warmup Iteration   2: 0.019 us/op
-# Warmup Iteration   3: 0.018 us/op
-Iteration   1: 0.020 us/op
+# Warmup Iteration   1: 0.043 us/op
+# Warmup Iteration   2: 0.057 us/op
+# Warmup Iteration   3: 0.055 us/op
+Iteration   1: 0.030 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 0.017 us/op
+Iteration   2: 0.034 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 0.018 us/op
+Iteration   3: 0.039 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 0.018 us/op
+Iteration   4: 0.030 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 0.021 us/op
+Iteration   5: 0.030 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
 
-# Run progress: 52.78% complete, ETA 00:02:26
+# Run progress: 52.78% complete, ETA 00:02:28
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.018 us/op
-# Warmup Iteration   2: 0.019 us/op
-# Warmup Iteration   3: 0.019 us/op
-Iteration   1: 0.018 us/op
+# Warmup Iteration   1: 0.022 us/op
+# Warmup Iteration   2: 0.022 us/op
+# Warmup Iteration   3: 0.024 us/op
+Iteration   1: 0.023 us/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.026 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 0.018 us/op
+Iteration   3: 0.023 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 0.018 us/op
+Iteration   4: 0.022 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 0.018 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 0.018 us/op
+Iteration   5: 0.023 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: ≈ 10⁻⁴ B/op
                  gc.count:           ≈ 0 counts
@@ -1091,13 +1007,13 @@ Iteration   5: 0.018 us/op
 
 
 Result "bench.StreamVsLoop.sumForArray":
-  0.018 ±(99.9%) 0.002 us/op [Average]
-  (min, avg, max) = (0.017, 0.018, 0.021), stdev = 0.001
-  CI (99.9%): [0.017, 0.020] (assumes normal distribution)
+  0.028 ±(99.9%) 0.008 us/op [Average]
+  (min, avg, max) = (0.022, 0.028, 0.039), stdev = 0.006
+  CI (99.9%): [0.020, 0.036] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.alloc.rate":
   0.007 ±(99.9%) 0.001 MB/sec [Average]
-  (min, avg, max) = (0.007, 0.007, 0.007), stdev = 0.001
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
   CI (99.9%): [0.007, 0.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.alloc.rate.norm":
@@ -1108,8 +1024,8 @@ Secondary result "bench.StreamVsLoop.sumForArray:gc.count":
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1120,71 +1036,63 @@ Secondary result "bench.StreamVsLoop.sumForArray:gc.count":
 # Benchmark: bench.StreamVsLoop.sumForArray
 # Parameters: (n = 10000)
 
-# Run progress: 55.56% complete, ETA 00:02:18
+# Run progress: 55.56% complete, ETA 00:02:19
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1.483 us/op
-# Warmup Iteration   2: 1.469 us/op
-# Warmup Iteration   3: 1.422 us/op
-Iteration   1: 1.443 us/op
+# Warmup Iteration   1: 1.485 us/op
+# Warmup Iteration   2: 1.524 us/op
+# Warmup Iteration   3: 1.478 us/op
+Iteration   1: 1.493 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 1.427 us/op
+Iteration   2: 1.491 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 1.454 us/op
+Iteration   3: 1.478 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 1.444 us/op
+Iteration   4: 1.516 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 1.442 us/op
+Iteration   5: 1.502 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
 
-# Run progress: 58.33% complete, ETA 00:02:09
+# Run progress: 58.33% complete, ETA 00:02:10
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1.504 us/op
-# Warmup Iteration   2: 1.459 us/op
-# Warmup Iteration   3: 1.470 us/op
-Iteration   1: 1.450 us/op
+# Warmup Iteration   1: 1.489 us/op
+# Warmup Iteration   2: 1.612 us/op
+# Warmup Iteration   3: 1.486 us/op
+Iteration   1: 1.500 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 1.488 us/op
+Iteration   2: 1.701 us/op
                  gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: 0.012 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 1.559 us/op
+                 gc.alloc.rate:      0.007 MB/sec
+                 gc.alloc.rate.norm: 0.011 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 1.505 us/op
+                 gc.alloc.rate:      0.006 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 1.460 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.010 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   4: 1.477 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 0.010 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 1.456 us/op
+Iteration   5: 1.511 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 0.010 B/op
                  gc.count:           ≈ 0 counts
@@ -1192,27 +1100,27 @@ Iteration   5: 1.456 us/op
 
 
 Result "bench.StreamVsLoop.sumForArray":
-  1.454 ±(99.9%) 0.027 us/op [Average]
-  (min, avg, max) = (1.427, 1.454, 1.488), stdev = 0.018
-  CI (99.9%): [1.427, 1.481] (assumes normal distribution)
+  1.526 ±(99.9%) 0.099 us/op [Average]
+  (min, avg, max) = (1.478, 1.526, 1.701), stdev = 0.065
+  CI (99.9%): [1.427, 1.624] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.alloc.rate":
   0.007 ±(99.9%) 0.001 MB/sec [Average]
-  (min, avg, max) = (0.007, 0.007, 0.007), stdev = 0.001
-  CI (99.9%): [0.007, 0.007] (assumes normal distribution)
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
+  CI (99.9%): [0.006, 0.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.alloc.rate.norm":
   0.010 ±(99.9%) 0.001 B/op [Average]
-  (min, avg, max) = (0.010, 0.010, 0.010), stdev = 0.001
-  CI (99.9%): [0.010, 0.010] (assumes normal distribution)
+  (min, avg, max) = (0.010, 0.010, 0.012), stdev = 0.001
+  CI (99.9%): [0.010, 0.011] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.count":
   ≈ 0 counts
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1223,36 +1131,32 @@ Secondary result "bench.StreamVsLoop.sumForArray:gc.count":
 # Benchmark: bench.StreamVsLoop.sumForArray
 # Parameters: (n = 1000000)
 
-# Run progress: 61.11% complete, ETA 00:02:00
+# Run progress: 61.11% complete, ETA 00:02:01
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 150.264 us/op
-# Warmup Iteration   2: 148.817 us/op
-# Warmup Iteration   3: 150.032 us/op
-Iteration   1: 149.732 us/op
-                 gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.042 B/op
+# Warmup Iteration   1: 153.427 us/op
+# Warmup Iteration   2: 149.184 us/op
+# Warmup Iteration   3: 149.275 us/op
+Iteration   1: 153.826 us/op
+                 gc.alloc.rate:      0.006 MB/sec
+                 gc.alloc.rate.norm: 1.046 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 150.175 us/op
+Iteration   2: 148.186 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.050 B/op
+                 gc.alloc.rate.norm: 1.017 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 146.987 us/op
+Iteration   3: 149.468 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.024 B/op
+                 gc.alloc.rate.norm: 1.020 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 152.130 us/op
+Iteration   4: 150.073 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.059 B/op
+                 gc.alloc.rate.norm: 1.033 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 148.455 us/op
+Iteration   5: 150.761 us/op
                  gc.alloc.rate:      0.007 MB/sec
                  gc.alloc.rate.norm: 1.038 B/op
                  gc.count:           ≈ 0 counts
@@ -1260,62 +1164,58 @@ Iteration   5: 148.455 us/op
 
 # Run progress: 63.89% complete, ETA 00:01:52
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 151.388 us/op
-# Warmup Iteration   2: 148.318 us/op
-# Warmup Iteration   3: 151.981 us/op
-Iteration   1: 147.864 us/op
+# Warmup Iteration   1: 150.141 us/op
+# Warmup Iteration   2: 154.731 us/op
+# Warmup Iteration   3: 148.025 us/op
+Iteration   1: 147.593 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.035 B/op
+                 gc.alloc.rate.norm: 1.016 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 150.126 us/op
+Iteration   2: 145.121 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.045 B/op
+                 gc.alloc.rate.norm: 0.995 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 148.951 us/op
+Iteration   3: 144.935 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.042 B/op
+                 gc.alloc.rate.norm: 0.998 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 149.396 us/op
+Iteration   4: 147.170 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.045 B/op
+                 gc.alloc.rate.norm: 1.013 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 150.252 us/op
+Iteration   5: 144.991 us/op
                  gc.alloc.rate:      0.007 MB/sec
-                 gc.alloc.rate.norm: 1.046 B/op
+                 gc.alloc.rate.norm: 0.998 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.sumForArray":
-  149.407 ±(99.9%) 2.179 us/op [Average]
-  (min, avg, max) = (146.987, 149.407, 152.130), stdev = 1.441
-  CI (99.9%): [147.228, 151.586] (assumes normal distribution)
+  148.212 ±(99.9%) 4.370 us/op [Average]
+  (min, avg, max) = (144.935, 148.212, 153.826), stdev = 2.890
+  CI (99.9%): [143.843, 152.582] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.alloc.rate":
   0.007 ±(99.9%) 0.001 MB/sec [Average]
-  (min, avg, max) = (0.007, 0.007, 0.007), stdev = 0.001
-  CI (99.9%): [0.007, 0.007] (assumes normal distribution)
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
+  CI (99.9%): [0.006, 0.007] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.alloc.rate.norm":
-  1.043 ±(99.9%) 0.014 B/op [Average]
-  (min, avg, max) = (1.024, 1.043, 1.059), stdev = 0.009
-  CI (99.9%): [1.028, 1.057] (assumes normal distribution)
+  1.017 ±(99.9%) 0.027 B/op [Average]
+  (min, avg, max) = (0.995, 1.017, 1.046), stdev = 0.018
+  CI (99.9%): [0.991, 1.044] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumForArray:gc.count":
   ≈ 0 counts
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1326,116 +1226,108 @@ Secondary result "bench.StreamVsLoop.sumForArray:gc.count":
 # Benchmark: bench.StreamVsLoop.sumIntStream
 # Parameters: (n = 100)
 
-# Run progress: 66.67% complete, ETA 00:01:43
+# Run progress: 66.67% complete, ETA 00:01:44
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.105 us/op
-# Warmup Iteration   2: 0.174 us/op
-# Warmup Iteration   3: 0.080 us/op
-Iteration   1: 0.057 us/op
-                 gc.alloc.rate:      4247.015 MB/sec
+# Warmup Iteration   1: 0.130 us/op
+# Warmup Iteration   2: 0.150 us/op
+# Warmup Iteration   3: 0.127 us/op
+Iteration   1: 0.068 us/op
+                 gc.alloc.rate:      3568.143 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            33.000 ms
+                 gc.count:           7.000 counts
+                 gc.time:            27.000 ms
 
-Iteration   2: 0.058 us/op
-                 gc.alloc.rate:      4195.075 MB/sec
+Iteration   2: 0.070 us/op
+                 gc.alloc.rate:      3485.014 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            33.000 ms
+                 gc.count:           7.000 counts
+                 gc.time:            28.000 ms
 
-Iteration   3: 0.062 us/op
-                 gc.alloc.rate:      3953.601 MB/sec
+Iteration   3: 0.066 us/op
+                 gc.alloc.rate:      3683.140 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            32.000 ms
+                 gc.count:           7.000 counts
+                 gc.time:            28.000 ms
 
-Iteration   4: 0.076 us/op
-                 gc.alloc.rate:      3194.127 MB/sec
-                 gc.alloc.rate.norm: 256.001 B/op
+Iteration   4: 0.068 us/op
+                 gc.alloc.rate:      3584.479 MB/sec
+                 gc.alloc.rate.norm: 256.000 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            27.000 ms
+
+Iteration   5: 0.069 us/op
+                 gc.alloc.rate:      3531.446 MB/sec
+                 gc.alloc.rate.norm: 256.000 B/op
                  gc.count:           6.000 counts
-                 gc.time:            27.000 ms
-
-Iteration   5: 0.058 us/op
-                 gc.alloc.rate:      4191.010 MB/sec
-                 gc.alloc.rate.norm: 256.000 B/op
-                 gc.count:           7.000 counts
-                 gc.time:            27.000 ms
+                 gc.time:            23.000 ms
 
 
-# Run progress: 69.44% complete, ETA 00:01:34
+# Run progress: 69.44% complete, ETA 00:01:35
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.109 us/op
-# Warmup Iteration   2: 0.129 us/op
-# Warmup Iteration   3: 0.081 us/op
-Iteration   1: 0.060 us/op
-                 gc.alloc.rate:      4054.994 MB/sec
+# Warmup Iteration   1: 0.103 us/op
+# Warmup Iteration   2: 0.141 us/op
+# Warmup Iteration   3: 0.121 us/op
+Iteration   1: 0.064 us/op
+                 gc.alloc.rate:      3815.604 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            35.000 ms
+                 gc.count:           7.000 counts
+                 gc.time:            34.000 ms
 
-Iteration   2: 0.060 us/op
-                 gc.alloc.rate:      4098.403 MB/sec
+Iteration   2: 0.063 us/op
+                 gc.alloc.rate:      3861.324 MB/sec
+                 gc.alloc.rate.norm: 256.000 B/op
+                 gc.count:           7.000 counts
+                 gc.time:            27.000 ms
+
+Iteration   3: 0.065 us/op
+                 gc.alloc.rate:      3734.559 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
                  gc.count:           7.000 counts
                  gc.time:            28.000 ms
 
-Iteration   3: 0.060 us/op
-                 gc.alloc.rate:      4079.243 MB/sec
-                 gc.alloc.rate.norm: 256.000 B/op
-                 gc.count:           8.000 counts
-                 gc.time:            32.000 ms
-
-Iteration   4: 0.059 us/op
-                 gc.alloc.rate:      4163.221 MB/sec
+Iteration   4: 0.064 us/op
+                 gc.alloc.rate:      3795.026 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
                  gc.count:           7.000 counts
                  gc.time:            28.000 ms
 
-Iteration   5: 0.063 us/op
-                 gc.alloc.rate:      3851.813 MB/sec
+Iteration   5: 0.062 us/op
+                 gc.alloc.rate:      3940.152 MB/sec
                  gc.alloc.rate.norm: 256.000 B/op
                  gc.count:           7.000 counts
-                 gc.time:            32.000 ms
+                 gc.time:            29.000 ms
 
 
 
 Result "bench.StreamVsLoop.sumIntStream":
-  0.061 ±(99.9%) 0.008 us/op [Average]
-  (min, avg, max) = (0.057, 0.061, 0.076), stdev = 0.006
-  CI (99.9%): [0.053, 0.070] (assumes normal distribution)
+  0.066 ±(99.9%) 0.004 us/op [Average]
+  (min, avg, max) = (0.062, 0.066, 0.070), stdev = 0.003
+  CI (99.9%): [0.062, 0.070] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.alloc.rate":
-  4002.850 ±(99.9%) 465.889 MB/sec [Average]
-  (min, avg, max) = (3194.127, 4002.850, 4247.015), stdev = 308.157
-  CI (99.9%): [3536.961, 4468.739] (assumes normal distribution)
+  3699.889 ±(99.9%) 232.546 MB/sec [Average]
+  (min, avg, max) = (3485.014, 3699.889, 3940.152), stdev = 153.815
+  CI (99.9%): [3467.342, 3932.435] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.alloc.rate.norm":
   256.000 ±(99.9%) 0.001 B/op [Average]
-  (min, avg, max) = (256.000, 256.000, 256.001), stdev = 0.001
+  (min, avg, max) = (256.000, 256.000, 256.000), stdev = 0.001
   CI (99.9%): [256.000, 256.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.count":
-  74.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (6.000, 7.400, 8.000), stdev = 0.699
-  CI (99.9%): [74.000, 74.000] (assumes normal distribution)
+  69.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (6.000, 6.900, 7.000), stdev = 0.316
+  CI (99.9%): [69.000, 69.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.time":
-  307.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (27.000, 30.700, 35.000), stdev = 2.908
-  CI (99.9%): [307.000, 307.000] (assumes normal distribution)
+  279.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (23.000, 27.900, 34.000), stdev = 2.685
+  CI (99.9%): [279.000, 279.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1448,79 +1340,71 @@ Secondary result "bench.StreamVsLoop.sumIntStream:gc.time":
 
 # Run progress: 72.22% complete, ETA 00:01:26
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1.755 us/op
-# Warmup Iteration   2: 1.651 us/op
-# Warmup Iteration   3: 1.658 us/op
-Iteration   1: 1.539 us/op
-                 gc.alloc.rate:      157.974 MB/sec
+# Warmup Iteration   1: 1.862 us/op
+# Warmup Iteration   2: 1.826 us/op
+# Warmup Iteration   3: 1.573 us/op
+Iteration   1: 1.536 us/op
+                 gc.alloc.rate:      158.768 MB/sec
                  gc.alloc.rate.norm: 256.011 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            3.000 ms
+
+Iteration   2: 1.534 us/op
+                 gc.alloc.rate:      159.009 MB/sec
+                 gc.alloc.rate.norm: 256.011 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            3.000 ms
+
+Iteration   3: 1.529 us/op
+                 gc.alloc.rate:      159.574 MB/sec
+                 gc.alloc.rate.norm: 256.011 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            3.000 ms
+
+Iteration   4: 1.550 us/op
+                 gc.alloc.rate:      157.401 MB/sec
+                 gc.alloc.rate.norm: 256.011 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            3.000 ms
+
+Iteration   5: 1.598 us/op
+                 gc.alloc.rate:      152.666 MB/sec
+                 gc.alloc.rate.norm: 256.011 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            4.000 ms
+
+
+# Run progress: 75.00% complete, ETA 00:01:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 1.841 us/op
+# Warmup Iteration   2: 1.724 us/op
+# Warmup Iteration   3: 1.523 us/op
+Iteration   1: 1.490 us/op
+                 gc.alloc.rate:      163.716 MB/sec
+                 gc.alloc.rate.norm: 256.010 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            3.000 ms
+
+Iteration   2: 1.485 us/op
+                 gc.alloc.rate:      164.335 MB/sec
+                 gc.alloc.rate.norm: 256.010 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            2.000 ms
+
+Iteration   3: 1.506 us/op
+                 gc.alloc.rate:      162.067 MB/sec
+                 gc.alloc.rate.norm: 256.010 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            3.000 ms
+
+Iteration   4: 1.503 us/op
+                 gc.alloc.rate:      162.358 MB/sec
+                 gc.alloc.rate.norm: 256.010 B/op
                  gc.count:           2.000 counts
                  gc.time:            7.000 ms
 
-Iteration   2: 1.517 us/op
-                 gc.alloc.rate:      160.861 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            4.000 ms
-
-Iteration   3: 1.526 us/op
-                 gc.alloc.rate:      159.847 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            3.000 ms
-
-Iteration   4: 1.556 us/op
-                 gc.alloc.rate:      156.827 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            4.000 ms
-
-Iteration   5: 1.535 us/op
-                 gc.alloc.rate:      159.005 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            4.000 ms
-
-
-# Run progress: 75.00% complete, ETA 00:01:17
-# Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1.742 us/op
-# Warmup Iteration   2: 1.682 us/op
-# Warmup Iteration   3: 1.614 us/op
-Iteration   1: 1.560 us/op
-                 gc.alloc.rate:      156.228 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            3.000 ms
-
-Iteration   2: 1.603 us/op
-                 gc.alloc.rate:      152.213 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           2.000 counts
-                 gc.time:            6.000 ms
-
-Iteration   3: 1.562 us/op
-                 gc.alloc.rate:      156.213 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            3.000 ms
-
-Iteration   4: 1.509 us/op
-                 gc.alloc.rate:      161.741 MB/sec
-                 gc.alloc.rate.norm: 256.011 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            4.000 ms
-
-Iteration   5: 1.524 us/op
-                 gc.alloc.rate:      160.143 MB/sec
+Iteration   5: 1.541 us/op
+                 gc.alloc.rate:      158.358 MB/sec
                  gc.alloc.rate.norm: 256.011 B/op
                  gc.count:           1.000 counts
                  gc.time:            3.000 ms
@@ -1528,34 +1412,34 @@ Iteration   5: 1.524 us/op
 
 
 Result "bench.StreamVsLoop.sumIntStream":
-  1.543 ±(99.9%) 0.042 us/op [Average]
-  (min, avg, max) = (1.509, 1.543, 1.603), stdev = 0.028
-  CI (99.9%): [1.501, 1.585] (assumes normal distribution)
+  1.527 ±(99.9%) 0.051 us/op [Average]
+  (min, avg, max) = (1.485, 1.527, 1.598), stdev = 0.033
+  CI (99.9%): [1.477, 1.578] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.alloc.rate":
-  158.105 ±(99.9%) 4.285 MB/sec [Average]
-  (min, avg, max) = (152.213, 158.105, 161.741), stdev = 2.834
-  CI (99.9%): [153.820, 162.390] (assumes normal distribution)
+  159.825 ±(99.9%) 5.238 MB/sec [Average]
+  (min, avg, max) = (152.666, 159.825, 164.335), stdev = 3.465
+  CI (99.9%): [154.587, 165.064] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.alloc.rate.norm":
   256.011 ±(99.9%) 0.001 B/op [Average]
-  (min, avg, max) = (256.011, 256.011, 256.011), stdev = 0.001
-  CI (99.9%): [256.011, 256.011] (assumes normal distribution)
+  (min, avg, max) = (256.010, 256.011, 256.011), stdev = 0.001
+  CI (99.9%): [256.010, 256.011] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.count":
-  12.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (1.000, 1.200, 2.000), stdev = 0.422
-  CI (99.9%): [12.000, 12.000] (assumes normal distribution)
+  11.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (1.000, 1.100, 2.000), stdev = 0.316
+  CI (99.9%): [11.000, 11.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.time":
-  41.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (3.000, 4.100, 7.000), stdev = 1.370
-  CI (99.9%): [41.000, 41.000] (assumes normal distribution)
+  34.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (2.000, 3.400, 7.000), stdev = 1.350
+  CI (99.9%): [34.000, 34.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1566,99 +1450,100 @@ Secondary result "bench.StreamVsLoop.sumIntStream:gc.time":
 # Benchmark: bench.StreamVsLoop.sumIntStream
 # Parameters: (n = 1000000)
 
-# Run progress: 77.78% complete, ETA 00:01:08
+# Run progress: 77.78% complete, ETA 00:01:09
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 152.226 us/op
-# Warmup Iteration   2: 144.012 us/op
-# Warmup Iteration   3: 144.641 us/op
-Iteration   1: 145.696 us/op
-                 gc.alloc.rate:      1.315 MB/sec
-                 gc.alloc.rate.norm: 201.020 B/op
+# Warmup Iteration   1: 153.032 us/op
+# Warmup Iteration   2: 150.539 us/op
+# Warmup Iteration   3: 144.385 us/op
+Iteration   1: 154.799 us/op
+                 gc.alloc.rate:      1.238 MB/sec
+                 gc.alloc.rate.norm: 201.066 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 147.778 us/op
-                 gc.alloc.rate:      1.297 MB/sec
-                 gc.alloc.rate.norm: 201.034 B/op
+Iteration   2: 148.492 us/op
+                 gc.alloc.rate:      1.291 MB/sec
+                 gc.alloc.rate.norm: 201.023 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 145.669 us/op
-                 gc.alloc.rate:      1.315 MB/sec
-                 gc.alloc.rate.norm: 201.019 B/op
+Iteration   3: 148.485 us/op
+                 gc.alloc.rate:      1.291 MB/sec
+                 gc.alloc.rate.norm: 201.022 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 146.629 us/op
-                 gc.alloc.rate:      1.307 MB/sec
-                 gc.alloc.rate.norm: 201.026 B/op
-                 gc.count:           ≈ 0 counts
+Iteration   4: 149.969 us/op
+                 gc.alloc.rate:      1.278 MB/sec
+                 gc.alloc.rate.norm: 201.046 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            9.000 ms
 
-Iteration   5: 146.482 us/op
-                 gc.alloc.rate:      1.308 MB/sec
-                 gc.alloc.rate.norm: 201.025 B/op
+Iteration   5: 157.391 us/op
+                 gc.alloc.rate:      1.218 MB/sec
+                 gc.alloc.rate.norm: 201.084 B/op
                  gc.count:           ≈ 0 counts
 
 
 # Run progress: 80.56% complete, ETA 00:01:00
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 154.739 us/op
-# Warmup Iteration   2: 145.963 us/op
-# Warmup Iteration   3: 149.252 us/op
-Iteration   1: 150.038 us/op
-                 gc.alloc.rate:      1.277 MB/sec
+# Warmup Iteration   1: 150.606 us/op
+# Warmup Iteration   2: 155.644 us/op
+# Warmup Iteration   3: 151.147 us/op
+Iteration   1: 158.809 us/op
+                 gc.alloc.rate:      1.207 MB/sec
+                 gc.alloc.rate.norm: 201.093 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 147.687 us/op
+                 gc.alloc.rate:      1.297 MB/sec
+                 gc.alloc.rate.norm: 201.012 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 156.527 us/op
+                 gc.alloc.rate:      1.225 MB/sec
+                 gc.alloc.rate.norm: 201.078 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 152.008 us/op
+                 gc.alloc.rate:      1.261 MB/sec
+                 gc.alloc.rate.norm: 201.055 B/op
+                 gc.count:           1.000 counts
+                 gc.time:            6.000 ms
+
+Iteration   5: 151.540 us/op
+                 gc.alloc.rate:      1.264 MB/sec
                  gc.alloc.rate.norm: 201.043 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   2: 150.205 us/op
-                 gc.alloc.rate:      1.276 MB/sec
-                 gc.alloc.rate.norm: 201.046 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   3: 146.516 us/op
-                 gc.alloc.rate:      1.307 MB/sec
-                 gc.alloc.rate.norm: 201.021 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   4: 150.178 us/op
-                 gc.alloc.rate:      1.276 MB/sec
-                 gc.alloc.rate.norm: 201.049 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   5: 147.369 us/op
-                 gc.alloc.rate:      1.300 MB/sec
-                 gc.alloc.rate.norm: 201.030 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.sumIntStream":
-  147.656 ±(99.9%) 2.767 us/op [Average]
-  (min, avg, max) = (145.669, 147.656, 150.205), stdev = 1.830
-  CI (99.9%): [144.889, 150.423] (assumes normal distribution)
+  152.571 ±(99.9%) 6.133 us/op [Average]
+  (min, avg, max) = (147.687, 152.571, 158.809), stdev = 4.057
+  CI (99.9%): [146.438, 158.704] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.alloc.rate":
-  1.298 ±(99.9%) 0.024 MB/sec [Average]
-  (min, avg, max) = (1.276, 1.298, 1.315), stdev = 0.016
-  CI (99.9%): [1.274, 1.322] (assumes normal distribution)
+  1.257 ±(99.9%) 0.050 MB/sec [Average]
+  (min, avg, max) = (1.207, 1.257, 1.297), stdev = 0.033
+  CI (99.9%): [1.207, 1.307] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.alloc.rate.norm":
-  201.031 ±(99.9%) 0.017 B/op [Average]
-  (min, avg, max) = (201.019, 201.031, 201.049), stdev = 0.011
-  CI (99.9%): [201.014, 201.048] (assumes normal distribution)
+  201.052 ±(99.9%) 0.042 B/op [Average]
+  (min, avg, max) = (201.012, 201.052, 201.093), stdev = 0.028
+  CI (99.9%): [201.010, 201.094] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumIntStream:gc.count":
-  ≈ 0 counts
+  2.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.200, 1.000), stdev = 0.422
+  CI (99.9%): [2.000, 2.000] (assumes normal distribution)
+
+Secondary result "bench.StreamVsLoop.sumIntStream:gc.time":
+  15.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 1.500, 9.000), stdev = 3.240
+  CI (99.9%): [15.000, 15.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1671,94 +1556,86 @@ Secondary result "bench.StreamVsLoop.sumIntStream:gc.count":
 
 # Run progress: 83.33% complete, ETA 00:00:51
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 0.192 us/op
-# Warmup Iteration   2: 0.178 us/op
-# Warmup Iteration   3: 0.175 us/op
-Iteration   1: 0.137 us/op
-                 gc.alloc.rate:      1774.450 MB/sec
-                 gc.alloc.rate.norm: 256.001 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            23.000 ms
-
-Iteration   2: 0.170 us/op
-                 gc.alloc.rate:      1439.165 MB/sec
+# Warmup Iteration   1: 0.206 us/op
+# Warmup Iteration   2: 0.198 us/op
+# Warmup Iteration   3: 0.180 us/op
+Iteration   1: 0.196 us/op
+                 gc.alloc.rate:      1246.550 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
                  gc.count:           4.000 counts
                  gc.time:            16.000 ms
 
-Iteration   3: 0.130 us/op
-                 gc.alloc.rate:      1870.412 MB/sec
+Iteration   2: 0.154 us/op
+                 gc.alloc.rate:      1581.157 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
                  gc.count:           5.000 counts
-                 gc.time:            21.000 ms
+                 gc.time:            20.000 ms
 
-Iteration   4: 0.139 us/op
-                 gc.alloc.rate:      1760.020 MB/sec
+Iteration   3: 0.152 us/op
+                 gc.alloc.rate:      1605.436 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
-                 gc.count:           4.000 counts
-                 gc.time:            17.000 ms
+                 gc.count:           5.000 counts
+                 gc.time:            18.000 ms
 
-Iteration   5: 0.131 us/op
-                 gc.alloc.rate:      1857.671 MB/sec
+Iteration   4: 0.153 us/op
+                 gc.alloc.rate:      1598.914 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
                  gc.count:           5.000 counts
                  gc.time:            19.000 ms
+
+Iteration   5: 0.149 us/op
+                 gc.alloc.rate:      1638.257 MB/sec
+                 gc.alloc.rate.norm: 256.001 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            24.000 ms
 
 
 # Run progress: 86.11% complete, ETA 00:00:43
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 # Warmup Iteration   1: 0.189 us/op
-# Warmup Iteration   2: 0.176 us/op
-# Warmup Iteration   3: 0.177 us/op
-Iteration   1: 0.161 us/op
-                 gc.alloc.rate:      1512.840 MB/sec
+# Warmup Iteration   2: 0.184 us/op
+# Warmup Iteration   3: 0.174 us/op
+Iteration   1: 0.167 us/op
+                 gc.alloc.rate:      1458.955 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
                  gc.count:           4.000 counts
-                 gc.time:            16.000 ms
+                 gc.time:            17.000 ms
 
-Iteration   2: 0.139 us/op
-                 gc.alloc.rate:      1753.285 MB/sec
-                 gc.alloc.rate.norm: 256.001 B/op
-                 gc.count:           5.000 counts
-                 gc.time:            21.000 ms
-
-Iteration   3: 0.147 us/op
-                 gc.alloc.rate:      1656.762 MB/sec
+Iteration   2: 0.154 us/op
+                 gc.alloc.rate:      1587.708 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
                  gc.count:           5.000 counts
                  gc.time:            19.000 ms
 
-Iteration   4: 0.137 us/op
-                 gc.alloc.rate:      1785.108 MB/sec
-                 gc.alloc.rate.norm: 256.001 B/op
-                 gc.count:           6.000 counts
-                 gc.time:            23.000 ms
-
-Iteration   5: 0.145 us/op
-                 gc.alloc.rate:      1683.684 MB/sec
+Iteration   3: 0.152 us/op
+                 gc.alloc.rate:      1602.668 MB/sec
                  gc.alloc.rate.norm: 256.001 B/op
                  gc.count:           5.000 counts
-                 gc.time:            22.000 ms
+                 gc.time:            20.000 ms
+
+Iteration   4: 0.154 us/op
+                 gc.alloc.rate:      1583.049 MB/sec
+                 gc.alloc.rate.norm: 256.001 B/op
+                 gc.count:           4.000 counts
+                 gc.time:            15.000 ms
+
+Iteration   5: 0.154 us/op
+                 gc.alloc.rate:      1580.349 MB/sec
+                 gc.alloc.rate.norm: 256.001 B/op
+                 gc.count:           5.000 counts
+                 gc.time:            19.000 ms
 
 
 
 Result "bench.StreamVsLoop.sumMapToLong":
-  0.144 ±(99.9%) 0.019 us/op [Average]
-  (min, avg, max) = (0.130, 0.144, 0.170), stdev = 0.013
-  CI (99.9%): [0.124, 0.163] (assumes normal distribution)
+  0.159 ±(99.9%) 0.021 us/op [Average]
+  (min, avg, max) = (0.149, 0.159, 0.196), stdev = 0.014
+  CI (99.9%): [0.137, 0.180] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate":
-  1709.340 ±(99.9%) 212.293 MB/sec [Average]
-  (min, avg, max) = (1439.165, 1709.340, 1870.412), stdev = 140.418
-  CI (99.9%): [1497.047, 1921.632] (assumes normal distribution)
+  1548.304 ±(99.9%) 175.138 MB/sec [Average]
+  (min, avg, max) = (1246.550, 1548.304, 1638.257), stdev = 115.843
+  CI (99.9%): [1373.166, 1723.443] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate.norm":
   256.001 ±(99.9%) 0.001 B/op [Average]
@@ -1766,19 +1643,19 @@ Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate.norm":
   CI (99.9%): [256.001, 256.001] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.count":
-  49.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (4.000, 4.900, 6.000), stdev = 0.738
-  CI (99.9%): [49.000, 49.000] (assumes normal distribution)
+  47.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (4.000, 4.700, 5.000), stdev = 0.483
+  CI (99.9%): [47.000, 47.000] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.time":
-  197.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (16.000, 19.700, 23.000), stdev = 2.710
-  CI (99.9%): [197.000, 197.000] (assumes normal distribution)
+  187.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (15.000, 18.700, 24.000), stdev = 2.497
+  CI (99.9%): [187.000, 187.000] (assumes normal distribution)
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1791,106 +1668,89 @@ Secondary result "bench.StreamVsLoop.sumMapToLong:gc.time":
 
 # Run progress: 88.89% complete, ETA 00:00:34
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 10.395 us/op
-# Warmup Iteration   2: 10.782 us/op
-# Warmup Iteration   3: 11.499 us/op
-Iteration   1: 11.341 us/op
-                 gc.alloc.rate:      21.515 MB/sec
-                 gc.alloc.rate.norm: 256.079 B/op
+# Warmup Iteration   1: 10.249 us/op
+# Warmup Iteration   2: 13.867 us/op
+# Warmup Iteration   3: 14.403 us/op
+Iteration   1: 13.442 us/op
+                 gc.alloc.rate:      18.153 MB/sec
+                 gc.alloc.rate.norm: 256.092 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 11.684 us/op
-                 gc.alloc.rate:      20.891 MB/sec
-                 gc.alloc.rate.norm: 256.082 B/op
+Iteration   2: 13.838 us/op
+                 gc.alloc.rate:      17.643 MB/sec
+                 gc.alloc.rate.norm: 256.095 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 12.677 us/op
-                 gc.alloc.rate:      19.253 MB/sec
-                 gc.alloc.rate.norm: 256.089 B/op
+Iteration   3: 13.955 us/op
+                 gc.alloc.rate:      17.488 MB/sec
+                 gc.alloc.rate.norm: 256.096 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 11.789 us/op
-                 gc.alloc.rate:      20.706 MB/sec
-                 gc.alloc.rate.norm: 256.083 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            5.000 ms
+Iteration   4: 14.263 us/op
+                 gc.alloc.rate:      17.115 MB/sec
+                 gc.alloc.rate.norm: 256.098 B/op
+                 gc.count:           ≈ 0 counts
 
-Iteration   5: 11.976 us/op
-                 gc.alloc.rate:      20.382 MB/sec
-                 gc.alloc.rate.norm: 256.084 B/op
+Iteration   5: 14.172 us/op
+                 gc.alloc.rate:      17.220 MB/sec
+                 gc.alloc.rate.norm: 256.098 B/op
                  gc.count:           ≈ 0 counts
 
 
 # Run progress: 91.67% complete, ETA 00:00:25
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 9.788 us/op
-# Warmup Iteration   2: 9.294 us/op
-# Warmup Iteration   3: 11.542 us/op
-Iteration   1: 11.879 us/op
-                 gc.alloc.rate:      20.543 MB/sec
-                 gc.alloc.rate.norm: 256.083 B/op
+# Warmup Iteration   1: 9.958 us/op
+# Warmup Iteration   2: 14.362 us/op
+# Warmup Iteration   3: 14.514 us/op
+Iteration   1: 13.606 us/op
+                 gc.alloc.rate:      17.937 MB/sec
+                 gc.alloc.rate.norm: 256.093 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 11.628 us/op
-                 gc.alloc.rate:      20.995 MB/sec
-                 gc.alloc.rate.norm: 256.081 B/op
+Iteration   2: 14.111 us/op
+                 gc.alloc.rate:      17.299 MB/sec
+                 gc.alloc.rate.norm: 256.097 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 11.977 us/op
-                 gc.alloc.rate:      20.355 MB/sec
-                 gc.alloc.rate.norm: 256.084 B/op
+Iteration   3: 13.789 us/op
+                 gc.alloc.rate:      17.705 MB/sec
+                 gc.alloc.rate.norm: 256.095 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 12.057 us/op
-                 gc.alloc.rate:      20.246 MB/sec
-                 gc.alloc.rate.norm: 256.085 B/op
-                 gc.count:           1.000 counts
-                 gc.time:            4.000 ms
+Iteration   4: 14.355 us/op
+                 gc.alloc.rate:      17.006 MB/sec
+                 gc.alloc.rate.norm: 256.099 B/op
+                 gc.count:           ≈ 0 counts
 
-Iteration   5: 12.167 us/op
-                 gc.alloc.rate:      20.063 MB/sec
-                 gc.alloc.rate.norm: 256.085 B/op
+Iteration   5: 14.165 us/op
+                 gc.alloc.rate:      17.233 MB/sec
+                 gc.alloc.rate.norm: 256.097 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.sumMapToLong":
-  11.917 ±(99.9%) 0.541 us/op [Average]
-  (min, avg, max) = (11.341, 11.917, 12.677), stdev = 0.358
-  CI (99.9%): [11.376, 12.459] (assumes normal distribution)
+  13.969 ±(99.9%) 0.449 us/op [Average]
+  (min, avg, max) = (13.442, 13.969, 14.355), stdev = 0.297
+  CI (99.9%): [13.520, 14.419] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate":
-  20.495 ±(99.9%) 0.918 MB/sec [Average]
-  (min, avg, max) = (19.253, 20.495, 21.515), stdev = 0.607
-  CI (99.9%): [19.577, 21.413] (assumes normal distribution)
+  17.480 ±(99.9%) 0.565 MB/sec [Average]
+  (min, avg, max) = (17.006, 17.480, 18.153), stdev = 0.374
+  CI (99.9%): [16.914, 18.045] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate.norm":
-  256.083 ±(99.9%) 0.004 B/op [Average]
-  (min, avg, max) = (256.079, 256.083, 256.089), stdev = 0.003
-  CI (99.9%): [256.079, 256.087] (assumes normal distribution)
+  256.096 ±(99.9%) 0.003 B/op [Average]
+  (min, avg, max) = (256.092, 256.096, 256.099), stdev = 0.002
+  CI (99.9%): [256.093, 256.099] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.count":
-  2.000 ±(99.9%) 0.001 counts [Sum]
-  (min, avg, max) = (≈ 0, 0.200, 1.000), stdev = 0.422
-  CI (99.9%): [2.000, 2.000] (assumes normal distribution)
-
-Secondary result "bench.StreamVsLoop.sumMapToLong:gc.time":
-  9.000 ±(99.9%) 0.001 ms [Sum]
-  (min, avg, max) = (≈ 0, 0.900, 5.000), stdev = 1.912
-  CI (99.9%): [9.000, 9.000] (assumes normal distribution)
+  ≈ 0 counts
 
 
 # JMH version: 1.37
-# VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
-# VM invoker: /tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jdk-25.0.4.1+1/bin/java
+# VM version: JDK 21.0.12.1, OpenJDK 64-Bit Server VM, 21.0.12.1+1-LTS
+# VM invoker: /home/hoso/.sdkman/candidates/java/21.0.12+1.1-tem/bin/java
 # VM options: <none>
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 3 iterations, 1 s each
@@ -1903,95 +1763,87 @@ Secondary result "bench.StreamVsLoop.sumMapToLong:gc.time":
 
 # Run progress: 94.44% complete, ETA 00:00:17
 # Fork: 1 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1178.962 us/op
-# Warmup Iteration   2: 1197.699 us/op
-# Warmup Iteration   3: 1213.622 us/op
-Iteration   1: 1271.620 us/op
-                 gc.alloc.rate:      0.199 MB/sec
-                 gc.alloc.rate.norm: 264.883 B/op
+# Warmup Iteration   1: 1344.508 us/op
+# Warmup Iteration   2: 1354.334 us/op
+# Warmup Iteration   3: 1384.296 us/op
+Iteration   1: 1348.757 us/op
+                 gc.alloc.rate:      0.187 MB/sec
+                 gc.alloc.rate.norm: 265.283 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   2: 1162.638 us/op
-                 gc.alloc.rate:      0.217 MB/sec
-                 gc.alloc.rate.norm: 264.167 B/op
+Iteration   2: 1363.315 us/op
+                 gc.alloc.rate:      0.186 MB/sec
+                 gc.alloc.rate.norm: 265.384 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   3: 1202.681 us/op
-                 gc.alloc.rate:      0.210 MB/sec
-                 gc.alloc.rate.norm: 264.375 B/op
+Iteration   3: 1392.639 us/op
+                 gc.alloc.rate:      0.182 MB/sec
+                 gc.alloc.rate.norm: 265.580 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   4: 1367.583 us/op
-                 gc.alloc.rate:      0.185 MB/sec
-                 gc.alloc.rate.norm: 265.716 B/op
+Iteration   4: 1345.121 us/op
+                 gc.alloc.rate:      0.188 MB/sec
+                 gc.alloc.rate.norm: 265.215 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 1381.707 us/op
-                 gc.alloc.rate:      0.183 MB/sec
-                 gc.alloc.rate.norm: 265.611 B/op
+Iteration   5: 1447.569 us/op
+                 gc.alloc.rate:      0.175 MB/sec
+                 gc.alloc.rate.norm: 266.177 B/op
                  gc.count:           ≈ 0 counts
 
 
 # Run progress: 97.22% complete, ETA 00:00:08
 # Fork: 2 of 2
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/tmp/claude-1000/-home-hoso-code-to-design/b1e9ddfc-c2db-4c24-86a0-62d0d2a3fc4e/scratchpad/jmh/jmh-core-1.37.jar)
-WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
-WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-# Warmup Iteration   1: 1167.659 us/op
-# Warmup Iteration   2: 1230.742 us/op
-# Warmup Iteration   3: 1133.242 us/op
-Iteration   1: 1153.765 us/op
-                 gc.alloc.rate:      0.218 MB/sec
-                 gc.alloc.rate.norm: 264.028 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   2: 1162.264 us/op
-                 gc.alloc.rate:      0.217 MB/sec
-                 gc.alloc.rate.norm: 264.130 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   3: 1226.673 us/op
-                 gc.alloc.rate:      0.206 MB/sec
-                 gc.alloc.rate.norm: 264.578 B/op
-                 gc.count:           ≈ 0 counts
-
-Iteration   4: 1344.663 us/op
+# Warmup Iteration   1: 1314.905 us/op
+# Warmup Iteration   2: 1323.098 us/op
+# Warmup Iteration   3: 1350.731 us/op
+Iteration   1: 1346.719 us/op
                  gc.alloc.rate:      0.188 MB/sec
-                 gc.alloc.rate.norm: 265.559 B/op
+                 gc.alloc.rate.norm: 265.271 B/op
                  gc.count:           ≈ 0 counts
 
-Iteration   5: 1374.171 us/op
+Iteration   2: 1338.113 us/op
+                 gc.alloc.rate:      0.189 MB/sec
+                 gc.alloc.rate.norm: 265.209 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 1341.052 us/op
+                 gc.alloc.rate:      0.189 MB/sec
+                 gc.alloc.rate.norm: 265.233 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   4: 1374.740 us/op
                  gc.alloc.rate:      0.184 MB/sec
-                 gc.alloc.rate.norm: 265.659 B/op
+                 gc.alloc.rate.norm: 265.418 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   5: 1490.937 us/op
+                 gc.alloc.rate:      0.170 MB/sec
+                 gc.alloc.rate.norm: 266.480 B/op
                  gc.count:           ≈ 0 counts
 
 
 
 Result "bench.StreamVsLoop.sumMapToLong":
-  1264.776 ±(99.9%) 143.613 us/op [Average]
-  (min, avg, max) = (1153.765, 1264.776, 1381.707), stdev = 94.991
-  CI (99.9%): [1121.163, 1408.390] (assumes normal distribution)
+  1378.896 ±(99.9%) 77.906 us/op [Average]
+  (min, avg, max) = (1338.113, 1378.896, 1490.937), stdev = 51.530
+  CI (99.9%): [1300.990, 1456.802] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate":
-  0.201 ±(99.9%) 0.022 MB/sec [Average]
-  (min, avg, max) = (0.183, 0.201, 0.218), stdev = 0.014
-  CI (99.9%): [0.179, 0.222] (assumes normal distribution)
+  0.184 ±(99.9%) 0.010 MB/sec [Average]
+  (min, avg, max) = (0.170, 0.184, 0.189), stdev = 0.006
+  CI (99.9%): [0.174, 0.193] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.alloc.rate.norm":
-  264.871 ±(99.9%) 1.062 B/op [Average]
-  (min, avg, max) = (264.028, 264.871, 265.716), stdev = 0.703
-  CI (99.9%): [263.808, 265.933] (assumes normal distribution)
+  265.525 ±(99.9%) 0.671 B/op [Average]
+  (min, avg, max) = (265.209, 265.525, 266.480), stdev = 0.444
+  CI (99.9%): [264.853, 266.196] (assumes normal distribution)
 
 Secondary result "bench.StreamVsLoop.sumMapToLong:gc.count":
   ≈ 0 counts
 
 
-# Run complete. Total time: 00:05:09
+# Run complete. Total time: 00:05:11
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -2006,86 +1858,86 @@ different JVMs are already problematic, the performance difference caused by dif
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
 Benchmark                                            (n)  Mode  Cnt         Score      Error   Units
-StreamVsLoop.filterMapFor                            100  avgt   10         0.151 ±    0.010   us/op
+StreamVsLoop.filterMapFor                            100  avgt   10         0.157 ±    0.013   us/op
 StreamVsLoop.filterMapFor:gc.alloc.rate              100  avgt   10         0.007 ±    0.001  MB/sec
 StreamVsLoop.filterMapFor:gc.alloc.rate.norm         100  avgt   10         0.001 ±    0.001    B/op
 StreamVsLoop.filterMapFor:gc.count                   100  avgt   10           ≈ 0             counts
-StreamVsLoop.filterMapFor                          10000  avgt   10        12.646 ±    0.518   us/op
+StreamVsLoop.filterMapFor                          10000  avgt   10        13.237 ±    0.579   us/op
 StreamVsLoop.filterMapFor:gc.alloc.rate            10000  avgt   10         0.007 ±    0.001  MB/sec
-StreamVsLoop.filterMapFor:gc.alloc.rate.norm       10000  avgt   10         0.088 ±    0.004    B/op
+StreamVsLoop.filterMapFor:gc.alloc.rate.norm       10000  avgt   10         0.091 ±    0.004    B/op
 StreamVsLoop.filterMapFor:gc.count                 10000  avgt   10           ≈ 0             counts
-StreamVsLoop.filterMapFor                        1000000  avgt   10      1477.146 ±   83.981   us/op
+StreamVsLoop.filterMapFor                        1000000  avgt   10      1578.411 ±   83.188   us/op
 StreamVsLoop.filterMapFor:gc.alloc.rate          1000000  avgt   10         0.007 ±    0.001  MB/sec
-StreamVsLoop.filterMapFor:gc.alloc.rate.norm     1000000  avgt   10        10.323 ±    0.575    B/op
+StreamVsLoop.filterMapFor:gc.alloc.rate.norm     1000000  avgt   10        10.845 ±    0.550    B/op
 StreamVsLoop.filterMapFor:gc.count               1000000  avgt   10           ≈ 0             counts
-StreamVsLoop.filterMapStream                         100  avgt   10         0.436 ±    0.021   us/op
-StreamVsLoop.filterMapStream:gc.alloc.rate           100  avgt   10       735.136 ±   34.285  MB/sec
+StreamVsLoop.filterMapStream                         100  avgt   10         0.396 ±    0.041   us/op
+StreamVsLoop.filterMapStream:gc.alloc.rate           100  avgt   10       811.319 ±   77.688  MB/sec
 StreamVsLoop.filterMapStream:gc.alloc.rate.norm      100  avgt   10       336.003 ±    0.001    B/op
-StreamVsLoop.filterMapStream:gc.count                100  avgt   10        33.000             counts
-StreamVsLoop.filterMapStream:gc.time                 100  avgt   10       106.000                 ms
-StreamVsLoop.filterMapStream                       10000  avgt   10        37.336 ±    2.010   us/op
-StreamVsLoop.filterMapStream:gc.alloc.rate         10000  avgt   10         8.594 ±    0.461  MB/sec
-StreamVsLoop.filterMapStream:gc.alloc.rate.norm    10000  avgt   10       336.262 ±    0.017    B/op
+StreamVsLoop.filterMapStream:gc.count                100  avgt   10        35.000             counts
+StreamVsLoop.filterMapStream:gc.time                 100  avgt   10       109.000                 ms
+StreamVsLoop.filterMapStream                       10000  avgt   10        36.546 ±    7.095   us/op
+StreamVsLoop.filterMapStream:gc.alloc.rate         10000  avgt   10         8.427 ±    1.018  MB/sec
+StreamVsLoop.filterMapStream:gc.alloc.rate.norm    10000  avgt   10       320.252 ±   25.546    B/op
 StreamVsLoop.filterMapStream:gc.count              10000  avgt   10         2.000             counts
-StreamVsLoop.filterMapStream:gc.time               10000  avgt   10        11.000                 ms
-StreamVsLoop.filterMapStream                     1000000  avgt   10      2799.703 ±  111.476   us/op
-StreamVsLoop.filterMapStream:gc.alloc.rate       1000000  avgt   10         0.121 ±    0.005  MB/sec
-StreamVsLoop.filterMapStream:gc.alloc.rate.norm  1000000  avgt   10       355.491 ±    0.774    B/op
+StreamVsLoop.filterMapStream:gc.time               10000  avgt   10         8.000                 ms
+StreamVsLoop.filterMapStream                     1000000  avgt   10      3234.314 ±  115.013   us/op
+StreamVsLoop.filterMapStream:gc.alloc.rate       1000000  avgt   10         0.106 ±    0.004  MB/sec
+StreamVsLoop.filterMapStream:gc.alloc.rate.norm  1000000  avgt   10       358.172 ±    0.827    B/op
 StreamVsLoop.filterMapStream:gc.count            1000000  avgt   10           ≈ 0             counts
-StreamVsLoop.sumBoxedStream                          100  avgt   10         0.536 ±    0.216   us/op
-StreamVsLoop.sumBoxedStream:gc.alloc.rate            100  avgt   10      3953.397 ±  967.192  MB/sec
-StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm       100  avgt   10      2136.004 ±    0.002    B/op
-StreamVsLoop.sumBoxedStream:gc.count                 100  avgt   10        58.000             counts
-StreamVsLoop.sumBoxedStream:gc.time                  100  avgt   10       239.000                 ms
-StreamVsLoop.sumBoxedStream                        10000  avgt   10        50.434 ±    5.965   us/op
-StreamVsLoop.sumBoxedStream:gc.alloc.rate          10000  avgt   10      4558.251 ±  593.342  MB/sec
-StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm     10000  avgt   10    239746.775 ±   55.828    B/op
-StreamVsLoop.sumBoxedStream:gc.count               10000  avgt   10        76.000             counts
-StreamVsLoop.sumBoxedStream:gc.time                10000  avgt   10       312.000                 ms
-StreamVsLoop.sumBoxedStream                      1000000  avgt   10      5359.250 ± 1547.251   us/op
-StreamVsLoop.sumBoxedStream:gc.alloc.rate        1000000  avgt   10      4372.358 ±  929.440  MB/sec
-StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm   1000000  avgt   10  23999805.665 ±   10.942    B/op
-StreamVsLoop.sumBoxedStream:gc.count             1000000  avgt   10        58.000             counts
-StreamVsLoop.sumBoxedStream:gc.time              1000000  avgt   10       260.000                 ms
-StreamVsLoop.sumForArray                             100  avgt   10         0.018 ±    0.002   us/op
+StreamVsLoop.sumBoxedStream                          100  avgt   10         0.685 ±    0.413   us/op
+StreamVsLoop.sumBoxedStream:gc.alloc.rate            100  avgt   10      3270.153 ± 1102.254  MB/sec
+StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm       100  avgt   10      2168.005 ±    0.003    B/op
+StreamVsLoop.sumBoxedStream:gc.count                 100  avgt   10        56.000             counts
+StreamVsLoop.sumBoxedStream:gc.time                  100  avgt   10       242.000                 ms
+StreamVsLoop.sumBoxedStream                        10000  avgt   10        84.355 ±   30.174   us/op
+StreamVsLoop.sumBoxedStream:gc.alloc.rate          10000  avgt   10      2849.582 ± 1018.512  MB/sec
+StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm     10000  avgt   10    239743.917 ±   19.399    B/op
+StreamVsLoop.sumBoxedStream:gc.count               10000  avgt   10        54.000             counts
+StreamVsLoop.sumBoxedStream:gc.time                10000  avgt   10       261.000                 ms
+StreamVsLoop.sumBoxedStream                      1000000  avgt   10     10541.156 ± 6268.286   us/op
+StreamVsLoop.sumBoxedStream:gc.alloc.rate        1000000  avgt   10      2499.337 ± 1429.581  MB/sec
+StreamVsLoop.sumBoxedStream:gc.alloc.rate.norm   1000000  avgt   10  23999840.549 ±   42.970    B/op
+StreamVsLoop.sumBoxedStream:gc.count             1000000  avgt   10        47.000             counts
+StreamVsLoop.sumBoxedStream:gc.time              1000000  avgt   10       245.000                 ms
+StreamVsLoop.sumForArray                             100  avgt   10         0.028 ±    0.008   us/op
 StreamVsLoop.sumForArray:gc.alloc.rate               100  avgt   10         0.007 ±    0.001  MB/sec
 StreamVsLoop.sumForArray:gc.alloc.rate.norm          100  avgt   10        ≈ 10⁻⁴               B/op
 StreamVsLoop.sumForArray:gc.count                    100  avgt   10           ≈ 0             counts
-StreamVsLoop.sumForArray                           10000  avgt   10         1.454 ±    0.027   us/op
+StreamVsLoop.sumForArray                           10000  avgt   10         1.526 ±    0.099   us/op
 StreamVsLoop.sumForArray:gc.alloc.rate             10000  avgt   10         0.007 ±    0.001  MB/sec
 StreamVsLoop.sumForArray:gc.alloc.rate.norm        10000  avgt   10         0.010 ±    0.001    B/op
 StreamVsLoop.sumForArray:gc.count                  10000  avgt   10           ≈ 0             counts
-StreamVsLoop.sumForArray                         1000000  avgt   10       149.407 ±    2.179   us/op
+StreamVsLoop.sumForArray                         1000000  avgt   10       148.212 ±    4.370   us/op
 StreamVsLoop.sumForArray:gc.alloc.rate           1000000  avgt   10         0.007 ±    0.001  MB/sec
-StreamVsLoop.sumForArray:gc.alloc.rate.norm      1000000  avgt   10         1.043 ±    0.014    B/op
+StreamVsLoop.sumForArray:gc.alloc.rate.norm      1000000  avgt   10         1.017 ±    0.027    B/op
 StreamVsLoop.sumForArray:gc.count                1000000  avgt   10           ≈ 0             counts
-StreamVsLoop.sumIntStream                            100  avgt   10         0.061 ±    0.008   us/op
-StreamVsLoop.sumIntStream:gc.alloc.rate              100  avgt   10      4002.850 ±  465.889  MB/sec
+StreamVsLoop.sumIntStream                            100  avgt   10         0.066 ±    0.004   us/op
+StreamVsLoop.sumIntStream:gc.alloc.rate              100  avgt   10      3699.889 ±  232.546  MB/sec
 StreamVsLoop.sumIntStream:gc.alloc.rate.norm         100  avgt   10       256.000 ±    0.001    B/op
-StreamVsLoop.sumIntStream:gc.count                   100  avgt   10        74.000             counts
-StreamVsLoop.sumIntStream:gc.time                    100  avgt   10       307.000                 ms
-StreamVsLoop.sumIntStream                          10000  avgt   10         1.543 ±    0.042   us/op
-StreamVsLoop.sumIntStream:gc.alloc.rate            10000  avgt   10       158.105 ±    4.285  MB/sec
+StreamVsLoop.sumIntStream:gc.count                   100  avgt   10        69.000             counts
+StreamVsLoop.sumIntStream:gc.time                    100  avgt   10       279.000                 ms
+StreamVsLoop.sumIntStream                          10000  avgt   10         1.527 ±    0.051   us/op
+StreamVsLoop.sumIntStream:gc.alloc.rate            10000  avgt   10       159.825 ±    5.238  MB/sec
 StreamVsLoop.sumIntStream:gc.alloc.rate.norm       10000  avgt   10       256.011 ±    0.001    B/op
-StreamVsLoop.sumIntStream:gc.count                 10000  avgt   10        12.000             counts
-StreamVsLoop.sumIntStream:gc.time                  10000  avgt   10        41.000                 ms
-StreamVsLoop.sumIntStream                        1000000  avgt   10       147.656 ±    2.767   us/op
-StreamVsLoop.sumIntStream:gc.alloc.rate          1000000  avgt   10         1.298 ±    0.024  MB/sec
-StreamVsLoop.sumIntStream:gc.alloc.rate.norm     1000000  avgt   10       201.031 ±    0.017    B/op
-StreamVsLoop.sumIntStream:gc.count               1000000  avgt   10           ≈ 0             counts
-StreamVsLoop.sumMapToLong                            100  avgt   10         0.144 ±    0.019   us/op
-StreamVsLoop.sumMapToLong:gc.alloc.rate              100  avgt   10      1709.340 ±  212.293  MB/sec
+StreamVsLoop.sumIntStream:gc.count                 10000  avgt   10        11.000             counts
+StreamVsLoop.sumIntStream:gc.time                  10000  avgt   10        34.000                 ms
+StreamVsLoop.sumIntStream                        1000000  avgt   10       152.571 ±    6.133   us/op
+StreamVsLoop.sumIntStream:gc.alloc.rate          1000000  avgt   10         1.257 ±    0.050  MB/sec
+StreamVsLoop.sumIntStream:gc.alloc.rate.norm     1000000  avgt   10       201.052 ±    0.042    B/op
+StreamVsLoop.sumIntStream:gc.count               1000000  avgt   10         2.000             counts
+StreamVsLoop.sumIntStream:gc.time                1000000  avgt   10        15.000                 ms
+StreamVsLoop.sumMapToLong                            100  avgt   10         0.159 ±    0.021   us/op
+StreamVsLoop.sumMapToLong:gc.alloc.rate              100  avgt   10      1548.304 ±  175.138  MB/sec
 StreamVsLoop.sumMapToLong:gc.alloc.rate.norm         100  avgt   10       256.001 ±    0.001    B/op
-StreamVsLoop.sumMapToLong:gc.count                   100  avgt   10        49.000             counts
-StreamVsLoop.sumMapToLong:gc.time                    100  avgt   10       197.000                 ms
-StreamVsLoop.sumMapToLong                          10000  avgt   10        11.917 ±    0.541   us/op
-StreamVsLoop.sumMapToLong:gc.alloc.rate            10000  avgt   10        20.495 ±    0.918  MB/sec
-StreamVsLoop.sumMapToLong:gc.alloc.rate.norm       10000  avgt   10       256.083 ±    0.004    B/op
-StreamVsLoop.sumMapToLong:gc.count                 10000  avgt   10         2.000             counts
-StreamVsLoop.sumMapToLong:gc.time                  10000  avgt   10         9.000                 ms
-StreamVsLoop.sumMapToLong                        1000000  avgt   10      1264.776 ±  143.613   us/op
-StreamVsLoop.sumMapToLong:gc.alloc.rate          1000000  avgt   10         0.201 ±    0.022  MB/sec
-StreamVsLoop.sumMapToLong:gc.alloc.rate.norm     1000000  avgt   10       264.871 ±    1.062    B/op
+StreamVsLoop.sumMapToLong:gc.count                   100  avgt   10        47.000             counts
+StreamVsLoop.sumMapToLong:gc.time                    100  avgt   10       187.000                 ms
+StreamVsLoop.sumMapToLong                          10000  avgt   10        13.969 ±    0.449   us/op
+StreamVsLoop.sumMapToLong:gc.alloc.rate            10000  avgt   10        17.480 ±    0.565  MB/sec
+StreamVsLoop.sumMapToLong:gc.alloc.rate.norm       10000  avgt   10       256.096 ±    0.003    B/op
+StreamVsLoop.sumMapToLong:gc.count                 10000  avgt   10           ≈ 0             counts
+StreamVsLoop.sumMapToLong                        1000000  avgt   10      1378.896 ±   77.906   us/op
+StreamVsLoop.sumMapToLong:gc.alloc.rate          1000000  avgt   10         0.184 ±    0.010  MB/sec
+StreamVsLoop.sumMapToLong:gc.alloc.rate.norm     1000000  avgt   10       265.525 ±    0.671    B/op
 StreamVsLoop.sumMapToLong:gc.count               1000000  avgt   10           ≈ 0             counts
 
-Benchmark result is saved to data/java-collections-07/jmh-StreamVsLoop.csv
+Benchmark result is saved to jmh-StreamVsLoop.csv

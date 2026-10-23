@@ -1,4 +1,4 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"bench.QueueOps.arrayDeque","avgt",1,10,5.239252,0.214255,"ns/op"
-"bench.QueueOps.arrayList","avgt",1,10,923.942389,31.259088,"ns/op"
-"bench.QueueOps.linkedList","avgt",1,10,11.052319,1.963003,"ns/op"
+"bench.QueueOps.arrayDeque","avgt",1,10,6.374150,0.206234,"ns/op"
+"bench.QueueOps.arrayList","avgt",1,10,933.781087,27.204675,"ns/op"
+"bench.QueueOps.linkedList","avgt",1,10,14.284942,2.557844,"ns/op"
