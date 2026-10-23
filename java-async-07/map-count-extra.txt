@@ -1,0 +1,10 @@
+HashMap + get/put                    キーの数 101、合計  7,651,457（期待 8,000,000）、例外 0 件
+HashMap + merge                      キーの数 100、合計  5,796,446（期待 8,000,000）、例外 2 件（ConcurrentModificationExcep
+ConcurrentHashMap + get/put          キーの数 100、合計  7,425,233（期待 8,000,000）、例外 0 件
+ConcurrentHashMap + merge            キーの数 100、合計  8,000,000（期待 8,000,000）、例外 0 件
+---
+HashMap + get/put                    キーの数 100、合計  7,671,536（期待 8,000,000）、例外 0 件
+HashMap + merge                      キーの数 100、合計  6,667,825（期待 8,000,000）、例外 1 件（ConcurrentModificationExcep
+ConcurrentHashMap + get/put          キーの数 100、合計  7,577,414（期待 8,000,000）、例外 0 件
+ConcurrentHashMap + merge            キーの数 100、合計  8,000,000（期待 8,000,000）、例外 0 件
+---

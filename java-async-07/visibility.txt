@@ -4,12 +4,12 @@ main: 止まれと伝えた（volatile なし）
 main: 2秒待った。worker は まだ動いている
 main: 止まれと伝えた（volatile なし）
 main: 2秒待った。worker は まだ動いている
+worker: 止まった（879408019 回まわった）
 main: 止まれと伝えた（volatile あり）
-worker: 止まった（846854069 回まわった）
 main: 2秒待った。worker は 止まっている
+worker: 止まった（943083458 回まわった）
 main: 止まれと伝えた（volatile あり）
-worker: 止まった（727881048 回まわった）
 main: 2秒待った。worker は 止まっている
+worker: 止まった（898422772 回まわった）
 main: 止まれと伝えた（volatile あり）
-worker: 止まった（655910435 回まわった）
 main: 2秒待った。worker は 止まっている

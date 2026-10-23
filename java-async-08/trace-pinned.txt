@@ -1,0 +1,4 @@
+VirtualThread[#43]/runnable@ForkJoinPool-1-worker-14 reason:MONITOR
+    Pinning.lambda$main$0(Pinning.java:35) <== monitors:1
+64個のタスクが終わるまで: 472 ms
+task,carrier,start_ms,end_ms

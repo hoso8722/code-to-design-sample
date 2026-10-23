@@ -1,8 +1,8 @@
 == noclose
 タスクを実行した: pool-1-thread-1
 main: 終わる（close したか? false）
-終了コード: 124  経過: 5052 ms
+終了コード: 124  経過: 5037 ms
 == close
 タスクを実行した: pool-1-thread-1
 main: 終わる（close したか? true）
-終了コード: 0  経過: 109 ms
+終了コード: 0  経過: 118 ms

@@ -1,6 +1,6 @@
 使えるCPUの数: 16
 thread,start_ms,end_ms
-worker-1,9,81
-worker-2,9,94
-worker-3,10,92
-worker-4,10,86
+worker-1,6,62
+worker-2,7,74
+worker-3,7,61
+worker-4,8,80

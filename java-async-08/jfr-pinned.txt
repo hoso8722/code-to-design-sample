@@ -1,7 +1,7 @@
 == jdk-21: jdk.VirtualThreadPinned の件数 = 64
 jdk.VirtualThreadPinned {
-  startTime = 03:48:17.277 (2026-09-29)
-  duration = 100 ms
+  startTime = 04:53:30.623 (2026-10-24)
+  duration = 99.7 ms
   eventThread = "" (javaThreadId = 38, virtual)
   stackTrace = [
     java.lang.VirtualThread.parkOnCarrierThread(boolean, long) line: 689
@@ -13,12 +13,3 @@ jdk.VirtualThreadPinned {
   ]
 }
 
-jdk.VirtualThreadPinned {
-  startTime = 03:48:17.277 (2026-09-29)
-  duration = 101 ms
-  eventThread = "" (javaThreadId = 36, virtual)
-  stackTrace = [
-    java.lang.VirtualThread.parkOnCarrierThread(boolean, long) line: 689
-    java.lang.VirtualThread.parkNanos(long) line: 648
-    java.lang.VirtualThread.sleepNanos(long) line: 807
-== jdk-25: jdk.VirtualThreadPinned の件数 = 0

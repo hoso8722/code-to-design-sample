@@ -1,19 +1,19 @@
-順番に実行: 1620 ms
-同時に実行: 209 ms
+順番に実行: 1625 ms
+同時に実行: 208 ms
 mode,task,thread,start_ms,end_ms
-sequential,task-1,main,13,215
-sequential,task-2,main,215,416
-sequential,task-3,main,416,617
-sequential,task-4,main,617,817
-sequential,task-5,main,817,1018
-sequential,task-6,main,1018,1218
-sequential,task-7,main,1218,1419
-sequential,task-8,main,1419,1620
-concurrent,task-1,worker-1,1630,1831
-concurrent,task-2,worker-2,1630,1831
-concurrent,task-3,worker-3,1631,1831
-concurrent,task-4,worker-4,1631,1831
-concurrent,task-5,worker-5,1631,1832
-concurrent,task-6,worker-6,1632,1832
-concurrent,task-7,worker-7,1632,1833
-concurrent,task-8,worker-8,1633,1833
+sequential,task-1,main,19,221
+sequential,task-2,main,221,421
+sequential,task-3,main,421,621
+sequential,task-4,main,622,822
+sequential,task-5,main,822,1022
+sequential,task-6,main,1023,1223
+sequential,task-7,main,1223,1424
+sequential,task-8,main,1424,1625
+concurrent,task-1,worker-1,1638,1838
+concurrent,task-2,worker-2,1638,1838
+concurrent,task-3,worker-3,1639,1839
+concurrent,task-4,worker-4,1639,1839
+concurrent,task-5,worker-5,1639,1840
+concurrent,task-6,worker-6,1640,1840
+concurrent,task-7,worker-7,1640,1841
+concurrent,task-8,worker-8,1641,1841

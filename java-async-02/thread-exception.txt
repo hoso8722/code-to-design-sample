@@ -1,5 +1,5 @@
 Exception in thread "worker-1" java.lang.IllegalStateException: worker で失敗
 	at ThreadException.lambda$main$0(ThreadException.java:10)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 main: worker-1 は終わった（例外は届かない）
 main: ハンドラが受け取った例外 = [java.lang.IllegalStateException: worker-2 で失敗]

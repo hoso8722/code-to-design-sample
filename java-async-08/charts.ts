@@ -38,8 +38,8 @@ const OUT = "site/public/images/java-async-08";
   );
 }
 
-// 2. synchronized の中で待つ仮想スレッド：JDK 21 と JDK 25
-for (const v of ["21", "25"]) {
+// 2. synchronized の中で待つ仮想スレッド（JDK 21）
+for (const v of ["21"]) {
   const lines = readFileSync(join(DATA, `pinning-jdk-${v}.csv`), "utf-8").split("\n").filter((l) => l.startsWith("task-"));
   const rows = lines.map((l) => l.split(",")).map(([task, carrier, s, e]) => ({ task, carrier: carrier.replace("ForkJoinPool-1-", ""), start: Number(s), end: Number(e) }));
   const t0 = Math.min(...rows.map((r) => r.start));
