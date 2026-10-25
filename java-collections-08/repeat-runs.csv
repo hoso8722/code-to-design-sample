@@ -1,0 +1,26 @@
+# 同じ条件で JDK 21 と JDK 25 を交互に測った対照(us/op)。run0 は collect.sh の計測、r1・r2 は対照の計測
+benchmark,params,jdk21_run0,jdk21_r1,jdk21_r2,jdk25_r1,jdk25_r2
+ParallelSum,1000/heavy/parallel,375.8,557.9,542.4,515.8,735.5
+ParallelSum,1000/heavy/sequential,630.8,663.6,669.0,663.4,667.0
+ParallelSum,1000/light/parallel,288.8,424.7,413.3,393.6,507.2
+ParallelSum,1000/light/sequential,0.6,0.6,0.6,0.6,0.6
+ParallelSum,100000/heavy/parallel,8871.5,8609.9,8520.3,8493.5,9119.4
+ParallelSum,100000/heavy/sequential,62750.4,68462.7,66004.9,66200.4,66480.5
+ParallelSum,100000/light/parallel,414.9,441.8,428.5,383.7,422.8
+ParallelSum,100000/light/sequential,59.9,50.7,74.3,58.2,57.6
+ParallelSum,10000000/heavy/parallel,687898.1,793859.9,777212.5,781272.5,781919.8
+ParallelSum,10000000/heavy/sequential,6325277.2,6902903.6,6661099.0,6644176.1,6633907.1
+ParallelSum,10000000/light/parallel,1865.6,1842.1,1864.7,1867.5,1857.0
+ParallelSum,10000000/light/sequential,7619.2,8285.7,8008.9,4926.3,4953.6
+ParallelSource,ArrayList/heavy/parallel,6710.6,8693.6,8484.9,8508.8,8504.1
+ParallelSource,ArrayList/heavy/sequential,64725.3,66857.5,66854.4,67257.7,67215.9
+ParallelSource,ArrayList/light/parallel,368.2,496.9,467.8,448.4,439.9
+ParallelSource,ArrayList/light/sequential,161.0,167.8,164.7,158.1,158.3
+ParallelSource,LinkedList/heavy/parallel,6711.4,9341.6,8926.3,8960.2,8974.8
+ParallelSource,LinkedList/heavy/sequential,65126.7,66767.6,66806.9,67406.8,67065.5
+ParallelSource,LinkedList/light/parallel,1260.0,1605.3,1502.2,1472.7,1479.1
+ParallelSource,LinkedList/light/sequential,258.0,251.3,255.4,247.3,247.7
+ParallelSource,Stream.iterate/heavy/parallel,8957.8,12582.0,12398.3,12092.7,12167.3
+ParallelSource,Stream.iterate/heavy/sequential,67964.8,71190.0,71279.9,68864.3,68897.6
+ParallelSource,Stream.iterate/light/parallel,2989.9,4250.9,4253.0,3938.4,3879.7
+ParallelSource,Stream.iterate/light/sequential,696.3,853.5,829.2,832.4,807.1

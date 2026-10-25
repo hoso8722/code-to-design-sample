@@ -1,0 +1,8 @@
+# 同じ条件で JDK 21 と JDK 25 を交互に測った対照(us/op)。run0 は collect.sh の計測、r1・r2 は対照の計測
+benchmark,params,jdk21_run0,jdk21_r1,jdk21_r2,jdk25_r1,jdk25_r2
+Presize,100/defaultCapacity,0.6,0.5,0.7,0.6,0.6
+Presize,100/presized,0.4,0.4,0.8,0.4,0.4
+Presize,10000/defaultCapacity,55.6,63.2,60.3,60.4,58.4
+Presize,10000/presized,32.8,35.4,68.9,39.8,40.0
+Presize,1000000/defaultCapacity,21841.3,21487.1,26388.5,41590.8,37996.8
+Presize,1000000/presized,17949.5,18393.7,27910.4,19720.0,19375.0

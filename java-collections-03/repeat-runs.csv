@@ -1,0 +1,11 @@
+# 同じ条件で JDK 21 と JDK 25 を交互に測った対照(JMHの単位のまま: ns/op か us/op)。run0 は collect.sh の計測、r1・r2 は対照の計測
+benchmark,params,jdk21_run0,jdk21_r1,jdk21_r2,jdk25_r1,jdk25_r2
+HashGet,badComparable/100/get,53.1,60.0,62.7,66.6,64.1
+HashGet,badComparable/1000/get,65.5,72.7,76.5,77.5,72.3
+HashGet,badComparable/10000/get,80.0,88.7,92.2,93.3,93.4
+HashGet,badPlain/100/get,236.7,174.2,181.1,291.4,374.2
+HashGet,badPlain/1000/get,2050.9,2425.2,3136.7,3485.8,1887.8
+HashGet,badPlain/10000/get,23217.3,88090.0,98739.3,13536.7,12065.9
+HashGet,good/100/get,9.9,10.6,10.6,10.6,10.8
+HashGet,good/1000/get,9.8,10.7,11.0,10.2,10.7
+HashGet,good/10000/get,9.4,10.5,10.8,11.1,10.8

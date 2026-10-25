@@ -1,0 +1,20 @@
+# 同じ条件で JDK 21 と JDK 25 を交互に測った対照(JMHの単位のまま: ns/op か us/op)。run0 は collect.sh の計測、r1・r2 は対照の計測
+benchmark,params,jdk21_run0,jdk21_r1,jdk21_r2,jdk25_r1,jdk25_r2
+StreamVsLoop,100/filterMapFor,0.2,0.4,0.2,0.2,0.2
+StreamVsLoop,100/filterMapStream,0.4,0.3,0.3,0.3,0.3
+StreamVsLoop,100/sumBoxedStream,0.7,0.7,0.7,0.8,0.6
+StreamVsLoop,100/sumForArray,0.0,0.0,0.0,0.0,0.0
+StreamVsLoop,100/sumIntStream,0.1,0.1,0.1,0.1,0.1
+StreamVsLoop,100/sumMapToLong,0.2,0.2,0.2,0.2,0.2
+StreamVsLoop,10000/filterMapFor,13.2,15.3,14.5,15.6,15.4
+StreamVsLoop,10000/filterMapStream,36.5,17.9,17.7,19.3,18.1
+StreamVsLoop,10000/sumBoxedStream,84.4,75.4,58.9,67.1,58.5
+StreamVsLoop,10000/sumForArray,1.5,1.6,1.6,1.7,1.6
+StreamVsLoop,10000/sumIntStream,1.5,2.2,1.6,1.7,1.7
+StreamVsLoop,10000/sumMapToLong,14.0,11.7,11.4,11.2,11.2
+StreamVsLoop,1000000/filterMapFor,1578.4,1676.8,1690.9,1847.5,1779.3
+StreamVsLoop,1000000/filterMapStream,3234.3,1902.4,1864.8,2079.6,1845.5
+StreamVsLoop,1000000/sumBoxedStream,10541.2,7554.6,7244.5,9165.5,7724.2
+StreamVsLoop,1000000/sumForArray,148.2,207.8,165.6,162.1,160.1
+StreamVsLoop,1000000/sumIntStream,152.6,187.7,185.6,159.1,162.3
+StreamVsLoop,1000000/sumMapToLong,1378.9,1665.3,1383.5,1313.8,1305.9
