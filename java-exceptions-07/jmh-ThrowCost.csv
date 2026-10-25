@@ -1,13 +1,13 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: depth"
-"bench.ThrowCost.createOnly","avgt",1,10,1401.927617,104.214587,"ns/op",1
-"bench.ThrowCost.createOnly","avgt",1,10,1813.353996,49.505052,"ns/op",10
-"bench.ThrowCost.createOnly","avgt",1,10,6999.778513,222.477715,"ns/op",100
-"bench.ThrowCost.exception","avgt",1,10,1531.810489,54.741580,"ns/op",1
-"bench.ThrowCost.exception","avgt",1,10,2916.120754,133.826459,"ns/op",10
-"bench.ThrowCost.exception","avgt",1,10,16642.118521,938.915316,"ns/op",100
-"bench.ThrowCost.noTrace","avgt",1,10,118.498807,14.306830,"ns/op",1
-"bench.ThrowCost.noTrace","avgt",1,10,1083.791896,73.652339,"ns/op",10
-"bench.ThrowCost.noTrace","avgt",1,10,9586.300658,246.241516,"ns/op",100
-"bench.ThrowCost.returnCode","avgt",1,10,3.295409,0.064690,"ns/op",1
-"bench.ThrowCost.returnCode","avgt",1,10,24.828269,1.187935,"ns/op",10
-"bench.ThrowCost.returnCode","avgt",1,10,281.446596,13.560728,"ns/op",100
+"bench.ThrowCost.createOnly","avgt",1,10,2061.626015,324.755820,"ns/op",1
+"bench.ThrowCost.createOnly","avgt",1,10,2786.696812,807.725817,"ns/op",10
+"bench.ThrowCost.createOnly","avgt",1,10,10177.648608,1402.583815,"ns/op",100
+"bench.ThrowCost.exception","avgt",1,10,2458.857102,582.487339,"ns/op",1
+"bench.ThrowCost.exception","avgt",1,10,4529.408860,1602.560436,"ns/op",10
+"bench.ThrowCost.exception","avgt",1,10,22923.330764,4639.724662,"ns/op",100
+"bench.ThrowCost.noTrace","avgt",1,10,139.989353,23.569835,"ns/op",1
+"bench.ThrowCost.noTrace","avgt",1,10,1430.794187,258.944585,"ns/op",10
+"bench.ThrowCost.noTrace","avgt",1,10,12740.929039,2343.539939,"ns/op",100
+"bench.ThrowCost.returnCode","avgt",1,10,4.052884,0.449683,"ns/op",1
+"bench.ThrowCost.returnCode","avgt",1,10,28.320494,1.829678,"ns/op",10
+"bench.ThrowCost.returnCode","avgt",1,10,322.633630,31.963374,"ns/op",100

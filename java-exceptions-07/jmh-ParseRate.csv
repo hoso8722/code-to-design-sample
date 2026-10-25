@@ -1,9 +1,9 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: failurePercent"
-"bench.ParseRate.checkFirst","avgt",1,10,11.436780,0.322931,"us/op",0
-"bench.ParseRate.checkFirst","avgt",1,10,13.387362,0.386037,"us/op",1
-"bench.ParseRate.checkFirst","avgt",1,10,11.184110,0.317136,"us/op",10
-"bench.ParseRate.checkFirst","avgt",1,10,8.539094,0.309352,"us/op",50
-"bench.ParseRate.tryAndCatch","avgt",1,10,8.161245,0.205855,"us/op",0
-"bench.ParseRate.tryAndCatch","avgt",1,10,26.236021,1.164583,"us/op",1
-"bench.ParseRate.tryAndCatch","avgt",1,10,191.292685,17.454372,"us/op",10
-"bench.ParseRate.tryAndCatch","avgt",1,10,941.508798,102.987439,"us/op",50
+"bench.ParseRate.checkFirst","avgt",1,10,13.734757,1.585772,"us/op",0
+"bench.ParseRate.checkFirst","avgt",1,10,17.266522,4.840251,"us/op",1
+"bench.ParseRate.checkFirst","avgt",1,10,11.590887,1.082130,"us/op",10
+"bench.ParseRate.checkFirst","avgt",1,10,8.792863,0.410465,"us/op",50
+"bench.ParseRate.tryAndCatch","avgt",1,10,8.698115,0.581977,"us/op",0
+"bench.ParseRate.tryAndCatch","avgt",1,10,32.693947,3.339174,"us/op",1
+"bench.ParseRate.tryAndCatch","avgt",1,10,254.044366,44.777749,"us/op",10
+"bench.ParseRate.tryAndCatch","avgt",1,10,1396.006992,261.287726,"us/op",50

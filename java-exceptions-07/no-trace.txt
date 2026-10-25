@@ -1,0 +1,2 @@
+スタックトレースの行数: 0
+NoTrace$NoTraceException: 点数を数値にできません: 八十
